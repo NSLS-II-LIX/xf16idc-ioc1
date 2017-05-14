@@ -1,0 +1,4 @@
+NAME=picomtr8753
+USER=softioc
+PORT=4076
+HOST=xf16idc-ioc1

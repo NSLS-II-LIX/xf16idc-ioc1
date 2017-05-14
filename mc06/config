@@ -1,0 +1,4 @@
+NAME=mc06
+USER=softioc
+PORT=4058
+HOST=xf16idc-ioc1

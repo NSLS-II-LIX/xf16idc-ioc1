@@ -1,0 +1,12 @@
+file "db/autohome.db"
+{
+pattern
+{SYS,                  DEV,                   PLC,  PORT  }
+{"XF:16IDC-ES:InAir",  "{Stg:ScanC-Ax:X}",    8,    P0    }
+{"XF:16IDC-ES:InAir",  "{Stg:ScanC-Ax:Y}",    9,    P0    }
+{"XF:16IDC-ES:InAir",  "{Mscp:1-Ax:X}",       11,   P0    }
+{"XF:16IDC-ES:InAir",  "{Mscp:1-Ax:Y}",       12,   P0    }
+{"XF:16IDC-ES",        "{Stg:SAXS-Ax:X}",     13,   P0    }
+{"XF:16IDC-ES",        "{Stg:SAXS-Ax:Y}",     14,   P0    }
+{"XF:16IDC-ES",        "{Stg:SAXS-Ax:Z}",     15,   P0    }
+}

@@ -1,0 +1,4 @@
+NAME=mc10
+USER=softioc
+PORT=4075
+HOST=xf16idc-ioc1

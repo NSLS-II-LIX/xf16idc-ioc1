@@ -1,0 +1,46 @@
+CLOSE
+
+;###############################################################################
+; Operate a brake controlled through an output bit.
+; Original Author: Jonathan Thompson
+; 
+; Updates: 2014/10/07 - Wayne Lewis
+;          * Remove Park mode.
+;          * Add check of limit switches
+; 
+; Macros:
+;   PLC = 16              ; The PLC to use
+;   BRAKE = 32          ; The M variable that points to the brake output bit
+;   MOTOR = 8          ; The motor that the brake operates on
+;   APPLY = 0          ; The value to write to apply the brake
+;   RELEASE = 1      ; The value to write to release the brake
+; 
+; The PLC performs following tasks:
+;     If the motor is killed, the brake is applied
+;     If both limits are active, the brake is applied
+;     If the amplifier is enabled,  the brake is deactivate
+; 
+; P variable use:
+;    P1601    ; The current brake state
+;     
+;###############################################################################
+
+OPEN PLC 16
+CLEAR
+
+; Is the motor amplifier enabled?
+IF(M839 = 1)
+  ; Check limit switches
+  AND (M831 = 0 OR M832 = 0)
+    ; Release the brake
+    M32 = 1
+    P1601 = 0
+ELSE
+    ; Engage the brake
+    M32 = 0
+    P1601 = 1
+ENDIF
+
+CLOSE
+
+ENABLE PLC 16

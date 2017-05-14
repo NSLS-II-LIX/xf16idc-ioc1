@@ -1,0 +1,8 @@
+data/MotorConfig.py.i
+data/05ida_motor_database_build.sh.i
+data/.hgignore.i
+data/05idd_motor_database_build.sh.i
+data/Config.py.i
+data/28idc_motor_database_build.sh.i
+data/28ida_motor_database_build.sh.i
+data/motor_db_create.py.i

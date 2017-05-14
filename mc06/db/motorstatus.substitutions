@@ -1,0 +1,27 @@
+file "db/motorstatus.db"
+{
+pattern
+{SYS,                  DEV,                     PORT,  AXIS }
+{"XF:16IDC-OP",        "{Mir:HRM1-Ax:Th}",      "P0",  1    }
+{"XF:16IDC-OP",        "{Mir:HRM1-Ax:Y}",       "P0",  2    }
+{"XF:16IDC-OP",        "{Mir:HRM2-Ax:Y}",       "P0",  3    }
+{"XF:16IDC-ES:InAir",  "{Stg:ScanF-Ax:Rot}Mtr", "P0",  4    }
+{"XF:16IDC-OP",        "{CRL-Ax:UX}",           "P0",  5    }
+{"XF:16IDC-OP",        "{CRL-Ax:UY}",           "P0",  6    }
+{"XF:16IDC-OP",        "{CRL-Ax:DX}",           "P0",  7    }
+{"XF:16IDC-OP",        "{CRL-Ax:DY}",           "P0",  8    }
+}
+
+file "db/pmacStatusAxis.db"
+{
+pattern
+{SYS,             DEV,            PORT,  AXIS }
+{"XF:16IDC-ES",   "{MC:06-Ax:1}", "P0",  1    }
+{"XF:16IDC-ES",   "{MC:06-Ax:2}", "P0",  2    }
+{"XF:16IDC-ES",   "{MC:06-Ax:3}", "P0",  3    }
+{"XF:16IDC-ES",   "{MC:06-Ax:4}", "P0",  4    }
+{"XF:16IDC-ES",   "{MC:06-Ax:5}", "P0",  5    }
+{"XF:16IDC-ES",   "{MC:06-Ax:6}", "P0",  6    }
+{"XF:16IDC-ES",   "{MC:06-Ax:7}", "P0",  7    }
+{"XF:16IDC-ES",   "{MC:06-Ax:8}", "P0",  8    }
+}

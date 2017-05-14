@@ -1,0 +1,7 @@
+include "base.dbd"
+include "devSnmp.dbd"
+include "system.dbd"
+include "devIocStats.dbd"
+include "asSupport.dbd"
+include "caPutLog.dbd"
+include "calcSupport.dbd"

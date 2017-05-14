@@ -1,0 +1,13 @@
+file "db/pmac_asyn_motor.db"
+{
+pattern
+{SYS,                  DEV,                     MOTOR,  SPORT,  ADDR,  DESC,               DTYP        PREC,  EGU}
+{"XF:16IDC-OP",        "{Mir:HRM1-Ax:Th}",      "M0",   "P0",   1,     "pitch",            asynMotor,  3,     "um"}
+{"XF:16IDC-OP",        "{Mir:HRM1-Ax:Y}",       "M0",   "P0",   2,     "Y",                asynMotor,  3,     "um"}
+{"XF:16IDC-OP",        "{Mir:HRM2-Ax:Y}",       "M0",   "P0",   3,     "Y",                asynMotor,  3,     "um"}
+{"XF:16IDC-ES:InAir",  "{Stg:ScanF-Ax:Rot}Mtr", "M0",   "P0",   4,     "sample azimuthal", asynMotor,  3,     "deg"}
+{"XF:16IDC-OP",        "{CRL-Ax:UX}",           "M0",   "P0",   5,     "X Upstream",       asynMotor,  3,     "um"}
+{"XF:16IDC-OP",        "{CRL-Ax:UY}",           "M0",   "P0",   6,     "Y Upstream",       asynMotor,  3,     "um"}
+{"XF:16IDC-OP",        "{CRL-Ax:DX}",           "M0",   "P0",   7,     "X Downstream",     asynMotor,  3,     "um"}
+{"XF:16IDC-OP",        "{CRL-Ax:DY}",           "M0",   "P0",   8,     "Y Downstream",     asynMotor,  3,     "um"}
+}

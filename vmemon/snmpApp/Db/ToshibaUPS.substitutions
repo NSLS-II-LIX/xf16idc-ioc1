@@ -1,0 +1,58 @@
+# Toshiba UPS file
+#Test Utility Commands
+#snmpwalk -Os -c public -v 1 10.0.145.001 1.3.6.1.4.1.186.1.19.2
+#snmpget -v 1 -c public 10.0.145.001 1.3.6.1.4.1.186.1.19.2.1.2.1.0
+#sudo -E wireshark
+#
+file ToshibaUPSsnmp.template 
+{	
+
+     pattern { Pri,               Sec,        Dev,      Assembly,    Scan,          C,         IP,               Dev_N,    Sec_N,                    Flnk}
+
+	    { "SR",              ":C01",      "{UPS}",     "",     "10 second",   public,    "10.0.145.1",     "{UPS}",    ":C02",      "$(Pri)$(Sec_N)$(Dev_N)Sts:Raw__Sts"}
+	    { "SR",              ":C02",      "{UPS}",     "",     "Passive",     public,    "10.0.145.2",     "{UPS}",    ":C03",      "$(Pri)$(Sec_N)$(Dev_N)Sts:Raw__Sts"}
+	    { "SR",              ":C03",      "{UPS}",     "",     "Passive",     public,    "10.0.145.3",     "{UPS}",    ":C04",      "$(Pri)$(Sec_N)$(Dev_N)Sts:Raw__Sts"}
+	    { "SR",              ":C04",      "{UPS}",     "",     "Passive",     public,    "10.0.145.4",     "{UPS}",    ":C05",      "$(Pri)$(Sec_N)$(Dev_N)Sts:Raw__Sts"}
+	    { "SR",              ":C05",      "{UPS}",     "",     "Passive",     public,    "10.0.145.5",     "{UPS}",    ":C06",      "$(Pri)$(Sec_N)$(Dev_N)Sts:Raw__Sts"}
+	    { "SR",              ":C06",      "{UPS}",     "",     "Passive",     public,    "10.0.145.6",     "{UPS}",    ":C07",      "$(Pri)$(Sec_N)$(Dev_N)Sts:Raw__Sts"}
+	    { "SR",              ":C07",      "{UPS}",     "",     "Passive",     public,    "10.0.145.7",     "{UPS}",    ":C08",      "$(Pri)$(Sec_N)$(Dev_N)Sts:Raw__Sts"}
+	    { "SR",              ":C08",      "{UPS}",     "",     "Passive",     public,    "10.0.145.8",     "{UPS}",    ":C09",      "$(Pri)$(Sec_N)$(Dev_N)Sts:Raw__Sts"}
+	    { "SR",              ":C09",      "{UPS}",     "",     "Passive",     public,    "10.0.145.9",     "{UPS}",    ":C10",      "$(Pri)$(Sec_N)$(Dev_N)Sts:Raw__Sts"}
+	    { "SR",              ":C10",      "{UPS}",     "",     "Passive",     public,    "10.0.145.10",    "{UPS}",    ":C11",      "$(Pri)$(Sec_N)$(Dev_N)Sts:Raw__Sts"}
+	    { "SR",              ":C11",      "{UPS}",     "",     "Passive",     public,    "10.0.145.11",    "{UPS}",    ":C12",      "$(Pri)$(Sec_N)$(Dev_N)Sts:Raw__Sts"}
+	    { "SR",              ":C12",      "{UPS}",     "",     "Passive",     public,    "10.0.145.12",    "{UPS}",    ":C13",      "$(Pri)$(Sec_N)$(Dev_N)Sts:Raw__Sts"}
+	    { "SR",              ":C13",      "{UPS}",     "",     "Passive",     public,    "10.0.145.13",    "{UPS}",    ":C14",      "$(Pri)$(Sec_N)$(Dev_N)Sts:Raw__Sts"}
+	    { "SR",              ":C14",      "{UPS}",     "",     "Passive",     public,    "10.0.145.14",    "{UPS}",    ":C15",      "$(Pri)$(Sec_N)$(Dev_N)Sts:Raw__Sts"}
+	    { "SR",              ":C15",      "{UPS}",     "",     "Passive",     public,    "10.0.145.15",    "{UPS}",    ":C16",      "$(Pri)$(Sec_N)$(Dev_N)Sts:Raw__Sts"}
+	    { "SR",              ":C16",      "{UPS}",     "",     "Passive",     public,    "10.0.145.16",    "{UPS}",    ":C17",      "$(Pri)$(Sec_N)$(Dev_N)Sts:Raw__Sts"}
+	    { "SR",              ":C17",      "{UPS}",     "",     "Passive",     public,    "10.0.145.17",    "{UPS}",    ":C18",      "$(Pri)$(Sec_N)$(Dev_N)Sts:Raw__Sts"}
+	    { "SR",              ":C18",      "{UPS}",     "",     "Passive",     public,    "10.0.145.18",    "{UPS}",    ":C19",      "$(Pri)$(Sec_N)$(Dev_N)Sts:Raw__Sts"}
+	    { "SR",              ":C19",      "{UPS}",     "",     "Passive",     public,    "10.0.145.19",    "{UPS}",    ":C20",      "$(Pri)$(Sec_N)$(Dev_N)Sts:Raw__Sts"}
+	    { "SR",              ":C20",      "{UPS}",     "",     "Passive",     public,    "10.0.145.20",    "{UPS}",    ":C21",      "$(Pri)$(Sec_N)$(Dev_N)Sts:Raw__Sts"}
+	    { "SR",              ":C21",      "{UPS}",     "",     "Passive",     public,    "10.0.145.21",    "{UPS}",    ":C22",      "$(Pri)$(Sec_N)$(Dev_N)Sts:Raw__Sts"}
+	    { "SR",              ":C22",      "{UPS}",     "",     "Passive",     public,    "10.0.145.22",    "{UPS}",    ":C23",      "$(Pri)$(Sec_N)$(Dev_N)Sts:Raw__Sts"}
+	    { "SR",              ":C23",      "{UPS}",     "",     "Passive",     public,    "10.0.145.23",    "{UPS}",    ":C24",      "$(Pri)$(Sec_N)$(Dev_N)Sts:Raw__Sts"}
+	    { "SR",              ":C24",      "{UPS}",     "",     "Passive",     public,    "10.0.145.24",    "{UPS}",    ":C25",      "$(Pri)$(Sec_N)$(Dev_N)Sts:Raw__Sts"}
+	    { "SR",              ":C25",      "{UPS}",     "",     "Passive",     public,    "10.0.145.25",    "{UPS}",    ":C26",      "$(Pri)$(Sec_N)$(Dev_N)Sts:Raw__Sts"}
+	    { "SR",              ":C26",      "{UPS}",     "",     "Passive",     public,    "10.0.145.26",    "{UPS}",    ":C27",      "$(Pri)$(Sec_N)$(Dev_N)Sts:Raw__Sts"}
+	    { "SR",              ":C27",      "{UPS}",     "",     "Passive",     public,    "10.0.145.27",    "{UPS}",    ":C28",      "$(Pri)$(Sec_N)$(Dev_N)Sts:Raw__Sts"}
+	    { "SR",              ":C28",      "{UPS}",     "",     "Passive",     public,    "10.0.145.28",    "{UPS}",    ":C29",      "$(Pri)$(Sec_N)$(Dev_N)Sts:Raw__Sts"}
+	    { "SR",              ":C29",      "{UPS}",     "",     "Passive",     public,    "10.0.145.29",    "{UPS}",    ":C30",      "$(Pri)$(Sec_N)$(Dev_N)Sts:Raw__Sts"}
+#
+# Note The rest of these lines have the Flnk field specially edited to deal with the change of $(Pri)
+#
+	    { "SR",              ":C30",      "{UPS}",     "",     "Passive",     public,    "10.0.145.30",    "{UPS:1}",  ":CR",       "CF:CmptrRm$(Sec_N)$(Dev_N)Sts:Raw__Sts"}
+	    { "CF:CmptrRm",      ":CR",       "{UPS:1}",   "",     "Passive",     public,    "10.0.145.31",    "{UPS:2}",  ":CR",       "CF:CmptrRm$(Sec_N)$(Dev_N)Sts:Raw__Sts"}
+	    { "CF:CmptrRm",      ":CR",       "{UPS:2}",   "",     "Passive",     public,    "10.0.145.32",    "{UPS}",    ":IS-A",      "LTB$(Sec_N)$(Dev_N)Sts:Raw__Sts"}
+#
+#	Dev UPS inserted at end for testing real end should be LTB
+#
+#
+	    { "LTB",             ":IS-A",      "{UPS}",     "",     "Passive",     public,    "10.0.145.34",    	"{UPS}",     ":IS-B",     "LTB$(Sec_N)$(Dev_N)Sts:Raw__Sts"}
+	    { "LTB",             ":IS-B",      "{UPS}",     "",     "Passive",     public,    "10.0.145.35",    	"{UPS}",     ":TRANSFER", "LTB$(Sec_N)$(Dev_N)Sts:Raw__Sts"}
+	    { "LTB",             ":TRANSFER",  "{UPS}",     "",     "Passive",     public,    "10.0.145.36",    	"{UPS}",     ":RF",       "LTB$(Sec_N)$(Dev_N)Sts:Raw__Sts"}
+	    { "LTB",             ":RF",        "{UPS}",     "",     "Passive",     public,    "10.0.145.37",    	"",          "",         ""                               }
+	 
+}
+
+

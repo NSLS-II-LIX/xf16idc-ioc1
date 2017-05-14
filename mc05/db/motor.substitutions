@@ -1,0 +1,13 @@
+file "db/motor.db"
+{
+pattern
+{P,              M,                     MOTOR,  PORT,  ADDR,  DESC,               DTYP,      MRES,           EGU,  PREC,  ALIAS }
+{"XF:16IDB-OP",  "{Slt:aSSA-Ax:X}Mtr",  "M0",   "P0",  1,     "X",                asynMotor, "1.5879e-05",  "mm",  4,     ""    }
+{"XF:16IDB-OP",  "{Slt:aSSA-Ax:dX}Mtr", "M0",   "P0",  2,     "dX",               asynMotor, "3.1758e-05",  "mm",  4,     ""    }
+{"XF:16IDB-OP",  "{Slt:aSSA-Ax:Y}Mtr",  "M0",   "P0",  3,     "Y",                asynMotor, "1.5879e-05",  "mm",  4,     ""    }
+{"XF:16IDB-OP",  "{Slt:aSSA-Ax:dY}Mtr", "M0",   "P0",  4,     "dY",               asynMotor, "3.1758e-05",  "mm",  4,     ""    }
+{"XF:16IDB-OP",  "{Fltr:Atn-Ax:X1}Mtr", "M0",   "P0",  5,     "absorber set #1",  asynMotor, "0.0052",      "mm",  4,     ""    }
+{"XF:16IDB-OP",  "{Fltr:Atn-Ax:X2}Mtr", "M0",   "P0",  6,     "absorber set #2",  asynMotor, "0.0052",      "mm",  4,     ""    }
+{"XF:16IDB-OP",  "{Fltr:Atn-Ax:X3}Mtr", "M0",   "P0",  7,     "absorber set #3",  asynMotor, "0.0052",      "mm",  4,     ""    }
+{"XF:16IDC-OP",  "{Mir:HRM2-Ax:Th}Mtr", "M0",   "P0",  8,     "theta, tilt",      asynMotor, "1.0",         "rad", 3,     ""    }
+}

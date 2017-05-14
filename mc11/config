@@ -1,0 +1,4 @@
+NAME=mc11
+USER=softioc
+PORT=4077
+HOST=xf16idc-ioc1

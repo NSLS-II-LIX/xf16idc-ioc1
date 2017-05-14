@@ -1,0 +1,4 @@
+NAME=xps
+USER=softioc
+PORT=4084
+HOST=xf16idc-ioc1

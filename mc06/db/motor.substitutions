@@ -1,0 +1,13 @@
+file "db/motor.db"
+{
+pattern
+{P,                    M,                       MOTOR,  PORT,  ADDR,  DESC,               DTYP,      MRES,   EGU,   PREC,  ALIAS }
+{"XF:16IDC-OP",        "{Mir:HRM1-Ax:Th}Mtr",   "M0",   "P0",  1,     "pitch",            asynMotor, "1.0",  "um",  3,     ""    }
+{"XF:16IDC-OP",        "{Mir:HRM1-Ax:Y}Mtr",    "M0",   "P0",  2,     "Y",                asynMotor, "1.0",  "um",  3,     ""    }
+{"XF:16IDC-OP",        "{Mir:HRM2-Ax:Y}Mtr",    "M0",   "P0",  3,     "Y",                asynMotor, "1.0",  "um",  3,     ""    }
+{"XF:16IDC-ES:InAir",  "{Stg:ScanF-Ax:Rot}Mtr", "M0",   "P0",  4,     "sample azimuthal", asynMotor, "1.0",  "deg", 3,     ""    }
+{"XF:16IDC-OP",        "{CRL-Ax:UX}Mtr",        "M0",   "P0",  5,     "X Upstream",       asynMotor, "1.0",  "um",  3,     ""    }
+{"XF:16IDC-OP",        "{CRL-Ax:UY}Mtr",        "M0",   "P0",  6,     "Y Upstream",       asynMotor, "1.0",  "um",  3,     ""    }
+{"XF:16IDC-OP",        "{CRL-Ax:DX}Mtr",        "M0",   "P0",  7,     "X Downstream",     asynMotor, "1.0",  "um",  3,     ""    }
+{"XF:16IDC-OP",        "{CRL-Ax:DY}Mtr",        "M0",   "P0",  8,     "Y Downstream",     asynMotor, "1.0",  "um",  3,     ""    }
+}

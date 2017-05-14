@@ -1,0 +1,134 @@
+    1  apt-get install puppet
+    2  vi /etc/puppet/puppet.conf 
+    3  vi /etc/default/puppet 
+    4  ifconfig -a
+    5  vi /etc/hosts
+    6  vi /etc/network/interfaces 
+    7  puppetd --server puppeteer.cs.nsls2.local --waitforcert 60 --test
+    8  puppetd --server puppeteer.cs.nsls2.local --noop --test
+    9  /etc/init.d/puppet start
+   10  tail -100f /var/log/syslog  | grep puppet
+   11  cat /etc/apt/apt.conf
+   12  apt-get update
+   13  /etc/init.d/puppet restart
+   14  tail -100f /var/log/syslog  | grep puppet
+   15  /etc/init.d/puppet restart
+   16  tail -100f /var/log/syslog  | grep puppet
+   17  /etc/init.d/puppet restart
+   18  tail -100f /var/log/syslog  | grep puppet
+   19  apt-get upgrade -s
+   20  apt-get upgrade 
+   21  shutdown -h now
+   22  ifconfig -a
+   23  ping 10.0.144.254
+   24  ping 10.0.144.254
+   25  route add -net 10.0.144.0/23 gw 10.0.144.254 dev eth0
+   26  ping 10.0.144.254
+   27  ping 10.0.144.254
+   28  exit
+   29  su - jdalesio
+   30  finger mdavidsaver
+   31  exit
+   32  ifconfig -a
+   33  exit
+   34  echo $DISPLAY 
+   35  xhost
+   36  aptitude search xhost
+   37  xclock
+   38  apt-get install x11-xserver-utils
+   39  xhost
+   40  xhost
+   41  echo $DISPLAY 
+   42  cp .Xauthority ~/
+   43  xhost
+   44  wireshark
+   45  wireshark
+   46  scp
+   47  scp
+   48  man scp
+   49  wireshark &
+   50  history
+   51  telnet 10.0.133.115
+   52  telnet 10.0.133.115 4001
+   53  telnet 10.0.133.115 4001
+   54  telnet 10.0.133.115 4002
+   55  pwd
+   56  ls
+   57  cd ToshibaUPS_IOC/
+   58  ls
+   59  make clean
+   60  make
+   61  apt-get install netsnmp
+   62  make
+   63  make
+   64  make clean
+   65  make
+   66  cd iocBoot/iocUPS_IOC/
+   67  chmod 777 do.sh
+   68  chmod 777 st.cmd
+   69  ./do.sh
+   70  ping 10.0.145.25
+   71  ifconfig -a
+   72  ping 10.0.145.25
+   73  history
+   74  ifconfig -a
+   75  ./st.cmd
+   76  ./st.cmd
+   77  snmpwalk -Os -c public -v 1 10.0.145.001 1.3.6.1.4.1.186.1.19.2
+   78  snmpwalk -Os -c public -v 1 10.0.145.25 1.3.6.1.4.1.186.1.19.2
+   79  snmpwalk -Os -c public -v 1 10.0.145.26 1.3.6.1.4.1.186.1.19.2
+   80  ls
+   81  cd ..
+   82  ls
+   83  cd ..
+   84  ls
+   85  cd ../..
+   86  ls
+   87  cd jdalesio/
+   88  ls
+   89  cd ToshibaUPS_IOC/
+   90  ls
+   91  cd UPS_IOCApp/
+   92  ls
+   93  cd src
+   94  grep 2C *
+   95  cd ../..
+   96  cd iocBoot/iocUPS_IOC/
+   97  ./st.cmd
+   98  cd ../..
+   99  cd iocBoot/iocUPS_IOC/
+  100  ./do.sh
+  101  cd ToshibaUPS_IOC/
+  102  ls
+  103  cd UPS_IOCApp/
+  104  cd Db
+  105  ls
+  106  cat ToshibaUPSsnmp.db
+  107  cat ToshibaUPSsnmp.db
+  108  cat ToshibaUPSsnmp.db
+  109  cat ToshibaUPSsnmp.db
+  110  rm ToshibaUPSsnmp.db
+  111  pwd
+  112  cd ../..
+  113  make clean
+  114  make
+  115  cd UPS_IOCApp/
+  116  cd Db
+  117  ls
+  118  ls -l *.db
+  119  ls -la
+  120  ls -lart
+  121  ls -lart
+  122  cd ../..
+  123  make
+  124  make clean
+  125  make
+  126  cd iocBoot/iocUPS_IOC/
+  127  ./st.cmd
+  128  ./do.sh
+  129  ./do.sh
+  130  ./do.sh
+  131  ./do.sh
+  132  ./do.sh
+  133  history
+  134  history > upscmds.txt

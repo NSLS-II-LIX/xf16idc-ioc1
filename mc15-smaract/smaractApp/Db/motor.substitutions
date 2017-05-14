@@ -1,0 +1,12 @@
+file "db/motor.db"
+{
+
+# ADDR ---> axis #
+# NOTE ---> 2 asyn ports: 1) lowel comms ("P0"), and 2) Motor Record ("motor")
+pattern
+{ P,            M,                   MOTOR,   PORT, ADDR, DESC,           DTYP,      EGU,  MRES,   PREC }
+#{"XF:16IDC-ES", "{EM:Sol-Ax:X1}Mtr", "motor", "P0", 0,    "EM:Sol Ax:X1", asynMotor, "mm", "1e-6", 6    }
+{"XF:16IDC-BI", "{BPM:2-Ax:X}Mtr", "motor", "P0", 1,    "BPM:2 X", asynMotor, "mm", "1e-6", 6    }
+{"XF:16IDC-ES:Scan2", "{Ax:RX}Mtr", "motor", "P0", 2, "Scanning Stage Rotary", asynMotor, "deg", "1e-6", 6}
+}
+

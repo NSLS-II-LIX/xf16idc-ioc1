@@ -1,0 +1,4 @@
+NAME=mc14-smaract
+USER=softioc
+PORT=4073
+HOST=xf16idc-ioc1

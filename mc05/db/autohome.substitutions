@@ -1,0 +1,13 @@
+file "db/autohome.db"
+{
+pattern
+{SYS,            DEV,                   PLC,  PORT  }
+{"XF:16IDB-OP",  "{Slt:aSSA-Ax:X}",     8,    P0    }
+{"XF:16IDB-OP",  "{Slt:aSSA-Ax:dX}",    9,    P0    }
+{"XF:16IDB-OP",  "{Slt:aSSA-Ax:Y}",     10,   P0    }
+{"XF:16IDB-OP",  "{Slt:aSSA-Ax:dY}",    11,   P0    }
+{"XF:16IDB-OP",  "{Fltr:Atn-Ax:X1}",    12,   P0    }
+{"XF:16IDB-OP",  "{Fltr:Atn-Ax:X2}",    13,   P0    }
+{"XF:16IDB-OP",  "{Fltr:Atn-Ax:X3}",    14,   P0    }
+{"XF:16IDC-OP",  "{Mir:HRM2-Ax:Th}",    15,   P0    }
+}

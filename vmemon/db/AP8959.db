@@ -1,0 +1,3704 @@
+# Database for APC PDU
+
+record(ai,"$(SYS,undefined)$(DEV,undefined)I-I_")
+{
+	field(DTYP,"Snmp")
+	field(INP ,"@$(IP,undefined) private PowerNet-MIB::rPDULoadStatusLoad.1")
+	field(SCAN,"1 second")
+	field(FLNK,"$(SYS,undefined)$(DEV,undefined)I-I")
+}
+
+record(calc,"$(SYS,undefined)$(DEV,undefined)I-I")
+{
+	field(INPA, "$(SYS,undefined)$(DEV,undefined)I-I_")
+	field(DESC, "Load (Current)")
+	field(CALC, "A*0.1")
+	field(EGU , "Amps")
+	field(HIGH, "12")
+	field(HIHI, "16")
+	field(HHSV, "MAJOR")
+	field(HSV,  "MINOR")
+	field(HOPR, "20")
+	field(LOPR, "0")
+}
+
+record(longin, "$(SYS,undefined)$(DEV,undefined)I:Max-RB")
+{
+	field(DTYP,"Snmp")
+        field(INP ,"@$(IP,undefined) private .1.3.6.1.4.1.318.1.1.12.2.2.1.1.4.1") #PowerNet-MIB::rPDULoadPhaseConfigOverloadThreshold.phase1") 
+        field(SCAN,"5 second")
+}
+
+record(longout, "$(SYS,undefined)$(DEV,undefined)I:Max-SP")
+{
+        field(DTYP,"Snmp")
+        field(OUT ,"@$(IP,undefined) private .1.3.6.1.4.1.318.1.1.12.2.2.1.1.4.1")
+	field(VAL ,"16")
+	field(SCAN, "Passive")
+	field(PINI,"1")
+	field(FLNK,"$(SYS,undefined)$(DEV,undefined)I:Max-RB")
+	info(autosaveFields, "VAL")
+}
+
+record(longin, "$(SYS,undefined)$(DEV,undefined)I:Warn-RB")
+{
+        field(DTYP,"Snmp")
+        field(INP ,"@$(IP,undefined) private .1.3.6.1.4.1.318.1.1.12.2.2.1.1.3.1") # PowerNet-MIB::rPDULoadPhaseConfigNearOverloadThreshold.phase1
+        field(SCAN,"5 second")
+}
+
+record(longout, "$(SYS,undefined)$(DEV,undefined)I:Warn-SP")
+{
+        field(DTYP,"Snmp")
+        field(OUT ,"@$(IP,undefined) private .1.3.6.1.4.1.318.1.1.12.2.2.1.1.3.1")
+	field(VAL ,"12")
+	field(PINI,"1")
+	field(FLNK,"$(SYS,undefined)$(DEV,undefined)I:Warn-RB")
+	info(autosaveFields, "VAL")
+}       
+
+record(longin, "$(SYS,undefined)$(DEV,undefined)Pwr-Sts_")
+{
+	field(DTYP,"Snmp")
+	field(INP ,"@$(IP,undefined) private PowerNet-MIB::rPDULoadStatusLoadState.1")
+	field(SCAN,"1 second")
+	field(FLNK,"$(SYS,undefined)$(DEV,undefined)Pwr-Sts")
+}
+
+record(mbbi,"$(SYS,undefined)$(DEV,undefined)Pwr-Sts")
+{
+	field(DESC,"Load Status")
+	field(INP, "$(SYS,undefined)$(DEV,undefined)Pwr-Sts_")
+	field(ONST,"Normal")
+	field(TWST,"Low")
+	field(THST,"NearOverload")
+	field(FRST,"Overload")
+	field(ONSV,"NO_ALARM")
+	field(TWSV,"NO_ALARM")
+	field(THSV,"MINOR")
+	field(FRST,"MAJOR")
+}
+
+record(ai,"$(SYS,undefined)$(DEV,undefined)Pwr-I")
+{
+    	field(DESC,"Load (Power)")
+    	field(DTYP,"Snmp")
+    	field(INP,"@$(IP,undefined) private PowerNet-MIB::rPDUIdentDevicePowerWatts.0")
+    	field(SCAN,"1 second")
+	field(EGU, "Watts")
+	field(LOPR,"0")
+	field(HOPR,"4200")
+	field(HIGH,"2496")
+	field(HIHI,"3328")
+	field(HHSV, "MAJOR")
+        field(HSV,  "MINOR")
+}
+
+# Master Switch Status
+
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:All-Sel")
+{
+        field(DESC, "Set All Outlets Mode")
+        field(ZRST, "Off")
+        field(ONST, "On")
+        field(TWST, "On Sequence")
+        field(THST, "Reboot")
+        field(FRST, "Reboot Sequence")
+        field(FVST, "Off Sequence")
+	field(SXST, "No Command")
+        field(ZRVL, "3")
+        field(ONVL, "1")
+        field(TWVL, "2")
+        field(THVL, "4")
+        field(FRVL, "5")
+        field(FVVL, "7")
+	field(SXVL, "6")
+        field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:All-SP")
+}
+
+record (longout,"$(SYS,undefined)$(DEV,undefined)Sw:All-SP")
+{
+        field(DESC, "Setting Outlet State")
+        field(DTYP, "Snmp")
+        field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:All-Sel.RVAL")
+        field(OMSL, "closed_loop")
+        field(SCAN, "Passive")
+        field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUMasterControlSwitch.0")
+        #field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:All-RB")
+}
+
+#record (longin,"$(SYS,undefined)$(DEV,undefined)Sw:All-RB")
+#{
+#        field(DESC, "Setting Outlet State Readback")
+#        field(DTYP, "Snmp")
+#        field(SCAN, "1 second")
+#        field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUMasterControlSwitch.0")
+#	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:All-Sts")
+#}
+
+#record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:All-Sts")
+#{
+#        field(DESC, "All Outlets Mode")
+#	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:All-RB")
+#	field(DTYP, "Raw Soft Channel")
+#        field(ZRST, "Off")
+#        field(ONST, "On")
+#        field(TWST, "On Sequence")
+#        field(THST, "Reboot")
+#        field(FRST, "Reboot Sequence")
+#        field(FVST, "Off Sequence")
+#	field(SXST, "No Command")
+#        field(ZRVL, "2")
+#        field(ONVL, "3")
+#        field(TWVL, "1")
+#        field(THVL, "4")
+#        field(FRVL, "5")
+#        field(FVVL, "7")
+#	field(SXVL, "6")
+#}
+record(longin, "$(SYS,undefined)$(DEV,undefined)E-I")
+{
+        field(DTYP, "Snmp")
+        field(DESC, "Line Voltage")
+        field(INP,  "@$(IP,undefined) private .1.3.6.1.4.1.318.1.1.26.6.3.1.6.1") # PowerNet-MIB::rPDU2PhaseStatusVoltage.1
+        field(SCAN, "1 second")
+	field(HOPR, "250")
+	field(LOPR, "0")
+	field(HIGH, "220")
+	field(HIHI, "240")
+	field(LOW,  "200")
+	field(LOLO, "190")
+        field(HHSV, "MAJOR")
+        field(HSV,  "MINOR")
+	field(LSV,  "MINOR")
+	field(LLSV, "MAJOR")
+	field(EGU,  "V")
+}
+# Database for APC PDU
+
+# Set/Get the outlet name
+record(stringout, "$(SYS,undefined)$(DEV,undefined)Sw:Name1-SP")
+{
+	field(DESC, "Set Outlet1 Name")
+	field(DTYP, "Snmp")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.1")
+	field(SCAN, "Passive")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:Name1-RB")
+	field(VAL,  "Outlet 1")
+	info(autosaveFields, "VAL")
+	field(PINI, "1")
+}
+
+record(stringin, "$(SYS,undefined)$(DEV,undefined)Sw:Name1-RB")
+{
+	field(DESC, "Outlet1 Name")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.1")
+	field(SCAN, "10 second")
+}
+
+# Operate the outlet
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:1-Sel")
+{
+	field(DESC, "Set Outlet1 Mode")
+	field(ZRST, "Off")
+	field(ONST, "On")
+	field(TWST, "Reboot")
+	field(THST, "OnWithDelay")
+	field(FRST, "OffWithDelay")
+	field(FVST, "RebootWithDelay")
+	field(ZRVL, "2")
+	field(ONVL, "1")
+	field(TWVL, "3")
+	field(THVL, "5")
+	field(FRVL, "6")
+	field(FVVL, "7")
+	field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:1-SP")
+}
+
+record (longout,"$(SYS,undefined)$(DEV,undefined)Sw:1-SP")
+{
+	field(DESC, "Setting Outlet1 State")
+	field(DTYP, "Snmp")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:1-Sel.RVAL")
+	field(OMSL, "closed_loop")
+	field(SCAN, "Passive")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.1")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:1-RB")
+}
+
+# Get outlet status
+record (longin,"$(SYS,undefined)$(DEV,undefined)Sw:1-RB")
+{
+	field(DESC, "Raw Outlet1 Sts")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.1")
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:1-Sts")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:1-Sts")
+{
+	field(DTYP, "Raw Soft Channel")
+	field(DESC, "Outlet1 Sts")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:1-RB")
+	field(ZRST, "Off")
+        field(ONST, "On")
+        field(TWST, "Reboot")
+        field(THST, "OnWithDelay")
+        field(FRST, "OffWithDelay")
+        field(FVST, "RebootWithDelay")
+        field(ZRVL, "2")
+        field(ONVL, "1")
+        field(TWVL, "3")
+        field(THVL, "5")
+        field(FRVL, "6")
+        field(FVVL, "7")
+}
+
+record(longin,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime1-RB")
+{
+	field(DESC, "Raw Outlet1 Power On Delay Time")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.1")	
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime1-Sts")
+}
+
+record(longout,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime1-SP")
+{
+        field(DESC, "Raw Outlet1 Power On Delay Time")
+        field(DTYP, "Snmp")
+        field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.1")
+        field(SCAN, "2 second")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime1-Sel.RVAL")
+        field(OMSL, "closed_loop")
+        field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime1-RB")
+}
+
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime1-Sel")
+{
+        field(DESC, "Set Outlet1 On Time")
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+	field(SXST, "120 Seconds")
+	field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+	field(SXVL, "120")
+	field(SVVL, "300")
+        field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime1-SP")
+	info(autosaveFields, "VAL")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime1-Sts")
+{
+        field(DESC, "Set Outlet1 On Time")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime1-RB")
+	field(DTYP, "Raw Soft Channel")	
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+        field(SXST, "120 Seconds")
+        field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+        field(SXVL, "120")
+        field(SVVL, "300")
+}    
+# Database for APC PDU
+
+# Set/Get the outlet name
+record(stringout, "$(SYS,undefined)$(DEV,undefined)Sw:Name2-SP")
+{
+	field(DESC, "Set Outlet2 Name")
+	field(DTYP, "Snmp")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.2")
+	field(SCAN, "Passive")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:Name2-RB")
+	field(VAL,  "Outlet 2")
+	info(autosaveFields, "VAL")
+	field(PINI, "1")
+}
+
+record(stringin, "$(SYS,undefined)$(DEV,undefined)Sw:Name2-RB")
+{
+	field(DESC, "Outlet2 Name")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.2")
+	field(SCAN, "10 second")
+}
+
+# Operate the outlet
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:2-Sel")
+{
+	field(DESC, "Set Outlet2 Mode")
+	field(ZRST, "Off")
+	field(ONST, "On")
+	field(TWST, "Reboot")
+	field(THST, "OnWithDelay")
+	field(FRST, "OffWithDelay")
+	field(FVST, "RebootWithDelay")
+	field(ZRVL, "2")
+	field(ONVL, "1")
+	field(TWVL, "3")
+	field(THVL, "5")
+	field(FRVL, "6")
+	field(FVVL, "7")
+	field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:2-SP")
+}
+
+record (longout,"$(SYS,undefined)$(DEV,undefined)Sw:2-SP")
+{
+	field(DESC, "Setting Outlet2 State")
+	field(DTYP, "Snmp")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:2-Sel.RVAL")
+	field(OMSL, "closed_loop")
+	field(SCAN, "Passive")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.2")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:2-RB")
+}
+
+# Get outlet status
+record (longin,"$(SYS,undefined)$(DEV,undefined)Sw:2-RB")
+{
+	field(DESC, "Raw Outlet2 Sts")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.2")
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:2-Sts")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:2-Sts")
+{
+	field(DTYP, "Raw Soft Channel")
+	field(DESC, "Outlet2 Sts")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:2-RB")
+	field(ZRST, "Off")
+        field(ONST, "On")
+        field(TWST, "Reboot")
+        field(THST, "OnWithDelay")
+        field(FRST, "OffWithDelay")
+        field(FVST, "RebootWithDelay")
+        field(ZRVL, "2")
+        field(ONVL, "1")
+        field(TWVL, "3")
+        field(THVL, "5")
+        field(FRVL, "6")
+        field(FVVL, "7")
+}
+
+record(longin,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime2-RB")
+{
+	field(DESC, "Raw Outlet2 Power On Delay Time")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.2")	
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime2-Sts")
+}
+
+record(longout,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime2-SP")
+{
+        field(DESC, "Raw Outlet2 Power On Delay Time")
+        field(DTYP, "Snmp")
+        field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.2")
+        field(SCAN, "2 second")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime2-Sel.RVAL")
+        field(OMSL, "closed_loop")
+        field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime2-RB")
+}
+
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime2-Sel")
+{
+        field(DESC, "Set Outlet2 On Time")
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+	field(SXST, "120 Seconds")
+	field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+	field(SXVL, "120")
+	field(SVVL, "300")
+        field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime2-SP")
+	info(autosaveFields, "VAL")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime2-Sts")
+{
+        field(DESC, "Set Outlet2 On Time")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime2-RB")
+	field(DTYP, "Raw Soft Channel")	
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+        field(SXST, "120 Seconds")
+        field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+        field(SXVL, "120")
+        field(SVVL, "300")
+}    
+# Database for APC PDU
+
+# Set/Get the outlet name
+record(stringout, "$(SYS,undefined)$(DEV,undefined)Sw:Name3-SP")
+{
+	field(DESC, "Set Outlet3 Name")
+	field(DTYP, "Snmp")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.3")
+	field(SCAN, "Passive")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:Name3-RB")
+	field(VAL,  "Outlet 3")
+	info(autosaveFields, "VAL")
+	field(PINI, "1")
+}
+
+record(stringin, "$(SYS,undefined)$(DEV,undefined)Sw:Name3-RB")
+{
+	field(DESC, "Outlet3 Name")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.3")
+	field(SCAN, "10 second")
+}
+
+# Operate the outlet
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:3-Sel")
+{
+	field(DESC, "Set Outlet3 Mode")
+	field(ZRST, "Off")
+	field(ONST, "On")
+	field(TWST, "Reboot")
+	field(THST, "OnWithDelay")
+	field(FRST, "OffWithDelay")
+	field(FVST, "RebootWithDelay")
+	field(ZRVL, "2")
+	field(ONVL, "1")
+	field(TWVL, "3")
+	field(THVL, "5")
+	field(FRVL, "6")
+	field(FVVL, "7")
+	field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:3-SP")
+}
+
+record (longout,"$(SYS,undefined)$(DEV,undefined)Sw:3-SP")
+{
+	field(DESC, "Setting Outlet3 State")
+	field(DTYP, "Snmp")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:3-Sel.RVAL")
+	field(OMSL, "closed_loop")
+	field(SCAN, "Passive")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.3")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:3-RB")
+}
+
+# Get outlet status
+record (longin,"$(SYS,undefined)$(DEV,undefined)Sw:3-RB")
+{
+	field(DESC, "Raw Outlet3 Sts")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.3")
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:3-Sts")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:3-Sts")
+{
+	field(DTYP, "Raw Soft Channel")
+	field(DESC, "Outlet3 Sts")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:3-RB")
+	field(ZRST, "Off")
+        field(ONST, "On")
+        field(TWST, "Reboot")
+        field(THST, "OnWithDelay")
+        field(FRST, "OffWithDelay")
+        field(FVST, "RebootWithDelay")
+        field(ZRVL, "2")
+        field(ONVL, "1")
+        field(TWVL, "3")
+        field(THVL, "5")
+        field(FRVL, "6")
+        field(FVVL, "7")
+}
+
+record(longin,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime3-RB")
+{
+	field(DESC, "Raw Outlet3 Power On Delay Time")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.3")	
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime3-Sts")
+}
+
+record(longout,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime3-SP")
+{
+        field(DESC, "Raw Outlet3 Power On Delay Time")
+        field(DTYP, "Snmp")
+        field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.3")
+        field(SCAN, "2 second")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime3-Sel.RVAL")
+        field(OMSL, "closed_loop")
+        field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime3-RB")
+}
+
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime3-Sel")
+{
+        field(DESC, "Set Outlet3 On Time")
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+	field(SXST, "120 Seconds")
+	field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+	field(SXVL, "120")
+	field(SVVL, "300")
+        field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime3-SP")
+	info(autosaveFields, "VAL")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime3-Sts")
+{
+        field(DESC, "Set Outlet3 On Time")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime3-RB")
+	field(DTYP, "Raw Soft Channel")	
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+        field(SXST, "120 Seconds")
+        field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+        field(SXVL, "120")
+        field(SVVL, "300")
+}    
+# Database for APC PDU
+
+# Set/Get the outlet name
+record(stringout, "$(SYS,undefined)$(DEV,undefined)Sw:Name4-SP")
+{
+	field(DESC, "Set Outlet4 Name")
+	field(DTYP, "Snmp")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.4")
+	field(SCAN, "Passive")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:Name4-RB")
+	field(VAL,  "Outlet 4")
+	info(autosaveFields, "VAL")
+	field(PINI, "1")
+}
+
+record(stringin, "$(SYS,undefined)$(DEV,undefined)Sw:Name4-RB")
+{
+	field(DESC, "Outlet4 Name")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.4")
+	field(SCAN, "10 second")
+}
+
+# Operate the outlet
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:4-Sel")
+{
+	field(DESC, "Set Outlet4 Mode")
+	field(ZRST, "Off")
+	field(ONST, "On")
+	field(TWST, "Reboot")
+	field(THST, "OnWithDelay")
+	field(FRST, "OffWithDelay")
+	field(FVST, "RebootWithDelay")
+	field(ZRVL, "2")
+	field(ONVL, "1")
+	field(TWVL, "3")
+	field(THVL, "5")
+	field(FRVL, "6")
+	field(FVVL, "7")
+	field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:4-SP")
+}
+
+record (longout,"$(SYS,undefined)$(DEV,undefined)Sw:4-SP")
+{
+	field(DESC, "Setting Outlet4 State")
+	field(DTYP, "Snmp")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:4-Sel.RVAL")
+	field(OMSL, "closed_loop")
+	field(SCAN, "Passive")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.4")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:4-RB")
+}
+
+# Get outlet status
+record (longin,"$(SYS,undefined)$(DEV,undefined)Sw:4-RB")
+{
+	field(DESC, "Raw Outlet4 Sts")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.4")
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:4-Sts")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:4-Sts")
+{
+	field(DTYP, "Raw Soft Channel")
+	field(DESC, "Outlet4 Sts")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:4-RB")
+	field(ZRST, "Off")
+        field(ONST, "On")
+        field(TWST, "Reboot")
+        field(THST, "OnWithDelay")
+        field(FRST, "OffWithDelay")
+        field(FVST, "RebootWithDelay")
+        field(ZRVL, "2")
+        field(ONVL, "1")
+        field(TWVL, "3")
+        field(THVL, "5")
+        field(FRVL, "6")
+        field(FVVL, "7")
+}
+
+record(longin,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime4-RB")
+{
+	field(DESC, "Raw Outlet4 Power On Delay Time")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.4")	
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime4-Sts")
+}
+
+record(longout,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime4-SP")
+{
+        field(DESC, "Raw Outlet4 Power On Delay Time")
+        field(DTYP, "Snmp")
+        field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.4")
+        field(SCAN, "2 second")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime4-Sel.RVAL")
+        field(OMSL, "closed_loop")
+        field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime4-RB")
+}
+
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime4-Sel")
+{
+        field(DESC, "Set Outlet4 On Time")
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+	field(SXST, "120 Seconds")
+	field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+	field(SXVL, "120")
+	field(SVVL, "300")
+        field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime4-SP")
+	info(autosaveFields, "VAL")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime4-Sts")
+{
+        field(DESC, "Set Outlet4 On Time")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime4-RB")
+	field(DTYP, "Raw Soft Channel")	
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+        field(SXST, "120 Seconds")
+        field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+        field(SXVL, "120")
+        field(SVVL, "300")
+}    
+# Database for APC PDU
+
+# Set/Get the outlet name
+record(stringout, "$(SYS,undefined)$(DEV,undefined)Sw:Name5-SP")
+{
+	field(DESC, "Set Outlet5 Name")
+	field(DTYP, "Snmp")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.5")
+	field(SCAN, "Passive")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:Name5-RB")
+	field(VAL,  "Outlet 5")
+	info(autosaveFields, "VAL")
+	field(PINI, "1")
+}
+
+record(stringin, "$(SYS,undefined)$(DEV,undefined)Sw:Name5-RB")
+{
+	field(DESC, "Outlet5 Name")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.5")
+	field(SCAN, "10 second")
+}
+
+# Operate the outlet
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:5-Sel")
+{
+	field(DESC, "Set Outlet5 Mode")
+	field(ZRST, "Off")
+	field(ONST, "On")
+	field(TWST, "Reboot")
+	field(THST, "OnWithDelay")
+	field(FRST, "OffWithDelay")
+	field(FVST, "RebootWithDelay")
+	field(ZRVL, "2")
+	field(ONVL, "1")
+	field(TWVL, "3")
+	field(THVL, "5")
+	field(FRVL, "6")
+	field(FVVL, "7")
+	field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:5-SP")
+}
+
+record (longout,"$(SYS,undefined)$(DEV,undefined)Sw:5-SP")
+{
+	field(DESC, "Setting Outlet5 State")
+	field(DTYP, "Snmp")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:5-Sel.RVAL")
+	field(OMSL, "closed_loop")
+	field(SCAN, "Passive")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.5")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:5-RB")
+}
+
+# Get outlet status
+record (longin,"$(SYS,undefined)$(DEV,undefined)Sw:5-RB")
+{
+	field(DESC, "Raw Outlet5 Sts")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.5")
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:5-Sts")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:5-Sts")
+{
+	field(DTYP, "Raw Soft Channel")
+	field(DESC, "Outlet5 Sts")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:5-RB")
+	field(ZRST, "Off")
+        field(ONST, "On")
+        field(TWST, "Reboot")
+        field(THST, "OnWithDelay")
+        field(FRST, "OffWithDelay")
+        field(FVST, "RebootWithDelay")
+        field(ZRVL, "2")
+        field(ONVL, "1")
+        field(TWVL, "3")
+        field(THVL, "5")
+        field(FRVL, "6")
+        field(FVVL, "7")
+}
+
+record(longin,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime5-RB")
+{
+	field(DESC, "Raw Outlet5 Power On Delay Time")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.5")	
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime5-Sts")
+}
+
+record(longout,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime5-SP")
+{
+        field(DESC, "Raw Outlet5 Power On Delay Time")
+        field(DTYP, "Snmp")
+        field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.5")
+        field(SCAN, "2 second")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime5-Sel.RVAL")
+        field(OMSL, "closed_loop")
+        field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime5-RB")
+}
+
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime5-Sel")
+{
+        field(DESC, "Set Outlet5 On Time")
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+	field(SXST, "120 Seconds")
+	field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+	field(SXVL, "120")
+	field(SVVL, "300")
+        field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime5-SP")
+	info(autosaveFields, "VAL")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime5-Sts")
+{
+        field(DESC, "Set Outlet5 On Time")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime5-RB")
+	field(DTYP, "Raw Soft Channel")	
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+        field(SXST, "120 Seconds")
+        field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+        field(SXVL, "120")
+        field(SVVL, "300")
+}    
+# Database for APC PDU
+
+# Set/Get the outlet name
+record(stringout, "$(SYS,undefined)$(DEV,undefined)Sw:Name6-SP")
+{
+	field(DESC, "Set Outlet6 Name")
+	field(DTYP, "Snmp")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.6")
+	field(SCAN, "Passive")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:Name6-RB")
+	field(VAL,  "Outlet 6")
+	info(autosaveFields, "VAL")
+	field(PINI, "1")
+}
+
+record(stringin, "$(SYS,undefined)$(DEV,undefined)Sw:Name6-RB")
+{
+	field(DESC, "Outlet6 Name")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.6")
+	field(SCAN, "10 second")
+}
+
+# Operate the outlet
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:6-Sel")
+{
+	field(DESC, "Set Outlet6 Mode")
+	field(ZRST, "Off")
+	field(ONST, "On")
+	field(TWST, "Reboot")
+	field(THST, "OnWithDelay")
+	field(FRST, "OffWithDelay")
+	field(FVST, "RebootWithDelay")
+	field(ZRVL, "2")
+	field(ONVL, "1")
+	field(TWVL, "3")
+	field(THVL, "5")
+	field(FRVL, "6")
+	field(FVVL, "7")
+	field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:6-SP")
+}
+
+record (longout,"$(SYS,undefined)$(DEV,undefined)Sw:6-SP")
+{
+	field(DESC, "Setting Outlet6 State")
+	field(DTYP, "Snmp")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:6-Sel.RVAL")
+	field(OMSL, "closed_loop")
+	field(SCAN, "Passive")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.6")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:6-RB")
+}
+
+# Get outlet status
+record (longin,"$(SYS,undefined)$(DEV,undefined)Sw:6-RB")
+{
+	field(DESC, "Raw Outlet6 Sts")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.6")
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:6-Sts")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:6-Sts")
+{
+	field(DTYP, "Raw Soft Channel")
+	field(DESC, "Outlet6 Sts")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:6-RB")
+	field(ZRST, "Off")
+        field(ONST, "On")
+        field(TWST, "Reboot")
+        field(THST, "OnWithDelay")
+        field(FRST, "OffWithDelay")
+        field(FVST, "RebootWithDelay")
+        field(ZRVL, "2")
+        field(ONVL, "1")
+        field(TWVL, "3")
+        field(THVL, "5")
+        field(FRVL, "6")
+        field(FVVL, "7")
+}
+
+record(longin,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime6-RB")
+{
+	field(DESC, "Raw Outlet6 Power On Delay Time")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.6")	
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime6-Sts")
+}
+
+record(longout,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime6-SP")
+{
+        field(DESC, "Raw Outlet6 Power On Delay Time")
+        field(DTYP, "Snmp")
+        field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.6")
+        field(SCAN, "2 second")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime6-Sel.RVAL")
+        field(OMSL, "closed_loop")
+        field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime6-RB")
+}
+
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime6-Sel")
+{
+        field(DESC, "Set Outlet6 On Time")
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+	field(SXST, "120 Seconds")
+	field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+	field(SXVL, "120")
+	field(SVVL, "300")
+        field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime6-SP")
+	info(autosaveFields, "VAL")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime6-Sts")
+{
+        field(DESC, "Set Outlet6 On Time")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime6-RB")
+	field(DTYP, "Raw Soft Channel")	
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+        field(SXST, "120 Seconds")
+        field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+        field(SXVL, "120")
+        field(SVVL, "300")
+}    
+# Database for APC PDU
+
+# Set/Get the outlet name
+record(stringout, "$(SYS,undefined)$(DEV,undefined)Sw:Name7-SP")
+{
+	field(DESC, "Set Outlet7 Name")
+	field(DTYP, "Snmp")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.7")
+	field(SCAN, "Passive")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:Name7-RB")
+	field(VAL,  "Outlet 7")
+	info(autosaveFields, "VAL")
+	field(PINI, "1")
+}
+
+record(stringin, "$(SYS,undefined)$(DEV,undefined)Sw:Name7-RB")
+{
+	field(DESC, "Outlet7 Name")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.7")
+	field(SCAN, "10 second")
+}
+
+# Operate the outlet
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:7-Sel")
+{
+	field(DESC, "Set Outlet7 Mode")
+	field(ZRST, "Off")
+	field(ONST, "On")
+	field(TWST, "Reboot")
+	field(THST, "OnWithDelay")
+	field(FRST, "OffWithDelay")
+	field(FVST, "RebootWithDelay")
+	field(ZRVL, "2")
+	field(ONVL, "1")
+	field(TWVL, "3")
+	field(THVL, "5")
+	field(FRVL, "6")
+	field(FVVL, "7")
+	field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:7-SP")
+}
+
+record (longout,"$(SYS,undefined)$(DEV,undefined)Sw:7-SP")
+{
+	field(DESC, "Setting Outlet7 State")
+	field(DTYP, "Snmp")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:7-Sel.RVAL")
+	field(OMSL, "closed_loop")
+	field(SCAN, "Passive")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.7")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:7-RB")
+}
+
+# Get outlet status
+record (longin,"$(SYS,undefined)$(DEV,undefined)Sw:7-RB")
+{
+	field(DESC, "Raw Outlet7 Sts")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.7")
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:7-Sts")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:7-Sts")
+{
+	field(DTYP, "Raw Soft Channel")
+	field(DESC, "Outlet7 Sts")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:7-RB")
+	field(ZRST, "Off")
+        field(ONST, "On")
+        field(TWST, "Reboot")
+        field(THST, "OnWithDelay")
+        field(FRST, "OffWithDelay")
+        field(FVST, "RebootWithDelay")
+        field(ZRVL, "2")
+        field(ONVL, "1")
+        field(TWVL, "3")
+        field(THVL, "5")
+        field(FRVL, "6")
+        field(FVVL, "7")
+}
+
+record(longin,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime7-RB")
+{
+	field(DESC, "Raw Outlet7 Power On Delay Time")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.7")	
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime7-Sts")
+}
+
+record(longout,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime7-SP")
+{
+        field(DESC, "Raw Outlet7 Power On Delay Time")
+        field(DTYP, "Snmp")
+        field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.7")
+        field(SCAN, "2 second")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime7-Sel.RVAL")
+        field(OMSL, "closed_loop")
+        field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime7-RB")
+}
+
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime7-Sel")
+{
+        field(DESC, "Set Outlet7 On Time")
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+	field(SXST, "120 Seconds")
+	field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+	field(SXVL, "120")
+	field(SVVL, "300")
+        field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime7-SP")
+	info(autosaveFields, "VAL")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime7-Sts")
+{
+        field(DESC, "Set Outlet7 On Time")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime7-RB")
+	field(DTYP, "Raw Soft Channel")	
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+        field(SXST, "120 Seconds")
+        field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+        field(SXVL, "120")
+        field(SVVL, "300")
+}    
+# Database for APC PDU
+
+# Set/Get the outlet name
+record(stringout, "$(SYS,undefined)$(DEV,undefined)Sw:Name8-SP")
+{
+	field(DESC, "Set Outlet8 Name")
+	field(DTYP, "Snmp")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.8")
+	field(SCAN, "Passive")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:Name8-RB")
+	field(VAL,  "Outlet 8")
+	info(autosaveFields, "VAL")
+	field(PINI, "1")
+}
+
+record(stringin, "$(SYS,undefined)$(DEV,undefined)Sw:Name8-RB")
+{
+	field(DESC, "Outlet8 Name")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.8")
+	field(SCAN, "10 second")
+}
+
+# Operate the outlet
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:8-Sel")
+{
+	field(DESC, "Set Outlet8 Mode")
+	field(ZRST, "Off")
+	field(ONST, "On")
+	field(TWST, "Reboot")
+	field(THST, "OnWithDelay")
+	field(FRST, "OffWithDelay")
+	field(FVST, "RebootWithDelay")
+	field(ZRVL, "2")
+	field(ONVL, "1")
+	field(TWVL, "3")
+	field(THVL, "5")
+	field(FRVL, "6")
+	field(FVVL, "7")
+	field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:8-SP")
+}
+
+record (longout,"$(SYS,undefined)$(DEV,undefined)Sw:8-SP")
+{
+	field(DESC, "Setting Outlet8 State")
+	field(DTYP, "Snmp")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:8-Sel.RVAL")
+	field(OMSL, "closed_loop")
+	field(SCAN, "Passive")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.8")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:8-RB")
+}
+
+# Get outlet status
+record (longin,"$(SYS,undefined)$(DEV,undefined)Sw:8-RB")
+{
+	field(DESC, "Raw Outlet8 Sts")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.8")
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:8-Sts")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:8-Sts")
+{
+	field(DTYP, "Raw Soft Channel")
+	field(DESC, "Outlet8 Sts")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:8-RB")
+	field(ZRST, "Off")
+        field(ONST, "On")
+        field(TWST, "Reboot")
+        field(THST, "OnWithDelay")
+        field(FRST, "OffWithDelay")
+        field(FVST, "RebootWithDelay")
+        field(ZRVL, "2")
+        field(ONVL, "1")
+        field(TWVL, "3")
+        field(THVL, "5")
+        field(FRVL, "6")
+        field(FVVL, "7")
+}
+
+record(longin,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime8-RB")
+{
+	field(DESC, "Raw Outlet8 Power On Delay Time")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.8")	
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime8-Sts")
+}
+
+record(longout,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime8-SP")
+{
+        field(DESC, "Raw Outlet8 Power On Delay Time")
+        field(DTYP, "Snmp")
+        field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.8")
+        field(SCAN, "2 second")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime8-Sel.RVAL")
+        field(OMSL, "closed_loop")
+        field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime8-RB")
+}
+
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime8-Sel")
+{
+        field(DESC, "Set Outlet8 On Time")
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+	field(SXST, "120 Seconds")
+	field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+	field(SXVL, "120")
+	field(SVVL, "300")
+        field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime8-SP")
+	info(autosaveFields, "VAL")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime8-Sts")
+{
+        field(DESC, "Set Outlet8 On Time")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime8-RB")
+	field(DTYP, "Raw Soft Channel")	
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+        field(SXST, "120 Seconds")
+        field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+        field(SXVL, "120")
+        field(SVVL, "300")
+}    
+# Database for APC PDU
+
+# Set/Get the outlet name
+record(stringout, "$(SYS,undefined)$(DEV,undefined)Sw:Name9-SP")
+{
+	field(DESC, "Set Outlet9 Name")
+	field(DTYP, "Snmp")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.9")
+	field(SCAN, "Passive")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:Name9-RB")
+	field(VAL,  "Outlet 9")
+	info(autosaveFields, "VAL")
+	field(PINI, "1")
+}
+
+record(stringin, "$(SYS,undefined)$(DEV,undefined)Sw:Name9-RB")
+{
+	field(DESC, "Outlet9 Name")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.9")
+	field(SCAN, "10 second")
+}
+
+# Operate the outlet
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:9-Sel")
+{
+	field(DESC, "Set Outlet9 Mode")
+	field(ZRST, "Off")
+	field(ONST, "On")
+	field(TWST, "Reboot")
+	field(THST, "OnWithDelay")
+	field(FRST, "OffWithDelay")
+	field(FVST, "RebootWithDelay")
+	field(ZRVL, "2")
+	field(ONVL, "1")
+	field(TWVL, "3")
+	field(THVL, "5")
+	field(FRVL, "6")
+	field(FVVL, "7")
+	field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:9-SP")
+}
+
+record (longout,"$(SYS,undefined)$(DEV,undefined)Sw:9-SP")
+{
+	field(DESC, "Setting Outlet9 State")
+	field(DTYP, "Snmp")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:9-Sel.RVAL")
+	field(OMSL, "closed_loop")
+	field(SCAN, "Passive")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.9")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:9-RB")
+}
+
+# Get outlet status
+record (longin,"$(SYS,undefined)$(DEV,undefined)Sw:9-RB")
+{
+	field(DESC, "Raw Outlet9 Sts")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.9")
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:9-Sts")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:9-Sts")
+{
+	field(DTYP, "Raw Soft Channel")
+	field(DESC, "Outlet9 Sts")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:9-RB")
+	field(ZRST, "Off")
+        field(ONST, "On")
+        field(TWST, "Reboot")
+        field(THST, "OnWithDelay")
+        field(FRST, "OffWithDelay")
+        field(FVST, "RebootWithDelay")
+        field(ZRVL, "2")
+        field(ONVL, "1")
+        field(TWVL, "3")
+        field(THVL, "5")
+        field(FRVL, "6")
+        field(FVVL, "7")
+}
+
+record(longin,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime9-RB")
+{
+	field(DESC, "Raw Outlet9 Power On Delay Time")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.9")	
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime9-Sts")
+}
+
+record(longout,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime9-SP")
+{
+        field(DESC, "Raw Outlet9 Power On Delay Time")
+        field(DTYP, "Snmp")
+        field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.9")
+        field(SCAN, "2 second")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime9-Sel.RVAL")
+        field(OMSL, "closed_loop")
+        field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime9-RB")
+}
+
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime9-Sel")
+{
+        field(DESC, "Set Outlet9 On Time")
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+	field(SXST, "120 Seconds")
+	field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+	field(SXVL, "120")
+	field(SVVL, "300")
+        field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime9-SP")
+	info(autosaveFields, "VAL")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime9-Sts")
+{
+        field(DESC, "Set Outlet9 On Time")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime9-RB")
+	field(DTYP, "Raw Soft Channel")	
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+        field(SXST, "120 Seconds")
+        field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+        field(SXVL, "120")
+        field(SVVL, "300")
+}    
+# Database for APC PDU
+
+# Set/Get the outlet name
+record(stringout, "$(SYS,undefined)$(DEV,undefined)Sw:Name10-SP")
+{
+	field(DESC, "Set Outlet10 Name")
+	field(DTYP, "Snmp")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.10")
+	field(SCAN, "Passive")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:Name10-RB")
+	field(VAL,  "Outlet 10")
+	info(autosaveFields, "VAL")
+	field(PINI, "1")
+}
+
+record(stringin, "$(SYS,undefined)$(DEV,undefined)Sw:Name10-RB")
+{
+	field(DESC, "Outlet10 Name")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.10")
+	field(SCAN, "10 second")
+}
+
+# Operate the outlet
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:10-Sel")
+{
+	field(DESC, "Set Outlet10 Mode")
+	field(ZRST, "Off")
+	field(ONST, "On")
+	field(TWST, "Reboot")
+	field(THST, "OnWithDelay")
+	field(FRST, "OffWithDelay")
+	field(FVST, "RebootWithDelay")
+	field(ZRVL, "2")
+	field(ONVL, "1")
+	field(TWVL, "3")
+	field(THVL, "5")
+	field(FRVL, "6")
+	field(FVVL, "7")
+	field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:10-SP")
+}
+
+record (longout,"$(SYS,undefined)$(DEV,undefined)Sw:10-SP")
+{
+	field(DESC, "Setting Outlet10 State")
+	field(DTYP, "Snmp")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:10-Sel.RVAL")
+	field(OMSL, "closed_loop")
+	field(SCAN, "Passive")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.10")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:10-RB")
+}
+
+# Get outlet status
+record (longin,"$(SYS,undefined)$(DEV,undefined)Sw:10-RB")
+{
+	field(DESC, "Raw Outlet10 Sts")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.10")
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:10-Sts")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:10-Sts")
+{
+	field(DTYP, "Raw Soft Channel")
+	field(DESC, "Outlet10 Sts")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:10-RB")
+	field(ZRST, "Off")
+        field(ONST, "On")
+        field(TWST, "Reboot")
+        field(THST, "OnWithDelay")
+        field(FRST, "OffWithDelay")
+        field(FVST, "RebootWithDelay")
+        field(ZRVL, "2")
+        field(ONVL, "1")
+        field(TWVL, "3")
+        field(THVL, "5")
+        field(FRVL, "6")
+        field(FVVL, "7")
+}
+
+record(longin,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime10-RB")
+{
+	field(DESC, "Raw Outlet10 Power On Delay Time")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.10")	
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime10-Sts")
+}
+
+record(longout,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime10-SP")
+{
+        field(DESC, "Raw Outlet10 Power On Delay Time")
+        field(DTYP, "Snmp")
+        field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.10")
+        field(SCAN, "2 second")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime10-Sel.RVAL")
+        field(OMSL, "closed_loop")
+        field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime10-RB")
+}
+
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime10-Sel")
+{
+        field(DESC, "Set Outlet10 On Time")
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+	field(SXST, "120 Seconds")
+	field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+	field(SXVL, "120")
+	field(SVVL, "300")
+        field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime10-SP")
+	info(autosaveFields, "VAL")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime10-Sts")
+{
+        field(DESC, "Set Outlet10 On Time")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime10-RB")
+	field(DTYP, "Raw Soft Channel")	
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+        field(SXST, "120 Seconds")
+        field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+        field(SXVL, "120")
+        field(SVVL, "300")
+}    
+# Database for APC PDU
+
+# Set/Get the outlet name
+record(stringout, "$(SYS,undefined)$(DEV,undefined)Sw:Name11-SP")
+{
+	field(DESC, "Set Outlet11 Name")
+	field(DTYP, "Snmp")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.11")
+	field(SCAN, "Passive")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:Name11-RB")
+	field(VAL,  "Outlet 11")
+	info(autosaveFields, "VAL")
+	field(PINI, "1")
+}
+
+record(stringin, "$(SYS,undefined)$(DEV,undefined)Sw:Name11-RB")
+{
+	field(DESC, "Outlet11 Name")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.11")
+	field(SCAN, "10 second")
+}
+
+# Operate the outlet
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:11-Sel")
+{
+	field(DESC, "Set Outlet11 Mode")
+	field(ZRST, "Off")
+	field(ONST, "On")
+	field(TWST, "Reboot")
+	field(THST, "OnWithDelay")
+	field(FRST, "OffWithDelay")
+	field(FVST, "RebootWithDelay")
+	field(ZRVL, "2")
+	field(ONVL, "1")
+	field(TWVL, "3")
+	field(THVL, "5")
+	field(FRVL, "6")
+	field(FVVL, "7")
+	field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:11-SP")
+}
+
+record (longout,"$(SYS,undefined)$(DEV,undefined)Sw:11-SP")
+{
+	field(DESC, "Setting Outlet11 State")
+	field(DTYP, "Snmp")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:11-Sel.RVAL")
+	field(OMSL, "closed_loop")
+	field(SCAN, "Passive")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.11")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:11-RB")
+}
+
+# Get outlet status
+record (longin,"$(SYS,undefined)$(DEV,undefined)Sw:11-RB")
+{
+	field(DESC, "Raw Outlet11 Sts")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.11")
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:11-Sts")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:11-Sts")
+{
+	field(DTYP, "Raw Soft Channel")
+	field(DESC, "Outlet11 Sts")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:11-RB")
+	field(ZRST, "Off")
+        field(ONST, "On")
+        field(TWST, "Reboot")
+        field(THST, "OnWithDelay")
+        field(FRST, "OffWithDelay")
+        field(FVST, "RebootWithDelay")
+        field(ZRVL, "2")
+        field(ONVL, "1")
+        field(TWVL, "3")
+        field(THVL, "5")
+        field(FRVL, "6")
+        field(FVVL, "7")
+}
+
+record(longin,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime11-RB")
+{
+	field(DESC, "Raw Outlet11 Power On Delay Time")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.11")	
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime11-Sts")
+}
+
+record(longout,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime11-SP")
+{
+        field(DESC, "Raw Outlet11 Power On Delay Time")
+        field(DTYP, "Snmp")
+        field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.11")
+        field(SCAN, "2 second")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime11-Sel.RVAL")
+        field(OMSL, "closed_loop")
+        field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime11-RB")
+}
+
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime11-Sel")
+{
+        field(DESC, "Set Outlet11 On Time")
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+	field(SXST, "120 Seconds")
+	field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+	field(SXVL, "120")
+	field(SVVL, "300")
+        field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime11-SP")
+	info(autosaveFields, "VAL")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime11-Sts")
+{
+        field(DESC, "Set Outlet11 On Time")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime11-RB")
+	field(DTYP, "Raw Soft Channel")	
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+        field(SXST, "120 Seconds")
+        field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+        field(SXVL, "120")
+        field(SVVL, "300")
+}    
+# Database for APC PDU
+
+# Set/Get the outlet name
+record(stringout, "$(SYS,undefined)$(DEV,undefined)Sw:Name12-SP")
+{
+	field(DESC, "Set Outlet12 Name")
+	field(DTYP, "Snmp")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.12")
+	field(SCAN, "Passive")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:Name12-RB")
+	field(VAL,  "Outlet 12")
+	info(autosaveFields, "VAL")
+	field(PINI, "1")
+}
+
+record(stringin, "$(SYS,undefined)$(DEV,undefined)Sw:Name12-RB")
+{
+	field(DESC, "Outlet12 Name")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.12")
+	field(SCAN, "10 second")
+}
+
+# Operate the outlet
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:12-Sel")
+{
+	field(DESC, "Set Outlet12 Mode")
+	field(ZRST, "Off")
+	field(ONST, "On")
+	field(TWST, "Reboot")
+	field(THST, "OnWithDelay")
+	field(FRST, "OffWithDelay")
+	field(FVST, "RebootWithDelay")
+	field(ZRVL, "2")
+	field(ONVL, "1")
+	field(TWVL, "3")
+	field(THVL, "5")
+	field(FRVL, "6")
+	field(FVVL, "7")
+	field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:12-SP")
+}
+
+record (longout,"$(SYS,undefined)$(DEV,undefined)Sw:12-SP")
+{
+	field(DESC, "Setting Outlet12 State")
+	field(DTYP, "Snmp")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:12-Sel.RVAL")
+	field(OMSL, "closed_loop")
+	field(SCAN, "Passive")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.12")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:12-RB")
+}
+
+# Get outlet status
+record (longin,"$(SYS,undefined)$(DEV,undefined)Sw:12-RB")
+{
+	field(DESC, "Raw Outlet12 Sts")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.12")
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:12-Sts")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:12-Sts")
+{
+	field(DTYP, "Raw Soft Channel")
+	field(DESC, "Outlet12 Sts")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:12-RB")
+	field(ZRST, "Off")
+        field(ONST, "On")
+        field(TWST, "Reboot")
+        field(THST, "OnWithDelay")
+        field(FRST, "OffWithDelay")
+        field(FVST, "RebootWithDelay")
+        field(ZRVL, "2")
+        field(ONVL, "1")
+        field(TWVL, "3")
+        field(THVL, "5")
+        field(FRVL, "6")
+        field(FVVL, "7")
+}
+
+record(longin,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime12-RB")
+{
+	field(DESC, "Raw Outlet12 Power On Delay Time")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.12")	
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime12-Sts")
+}
+
+record(longout,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime12-SP")
+{
+        field(DESC, "Raw Outlet12 Power On Delay Time")
+        field(DTYP, "Snmp")
+        field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.12")
+        field(SCAN, "2 second")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime12-Sel.RVAL")
+        field(OMSL, "closed_loop")
+        field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime12-RB")
+}
+
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime12-Sel")
+{
+        field(DESC, "Set Outlet12 On Time")
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+	field(SXST, "120 Seconds")
+	field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+	field(SXVL, "120")
+	field(SVVL, "300")
+        field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime12-SP")
+	info(autosaveFields, "VAL")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime12-Sts")
+{
+        field(DESC, "Set Outlet12 On Time")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime12-RB")
+	field(DTYP, "Raw Soft Channel")	
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+        field(SXST, "120 Seconds")
+        field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+        field(SXVL, "120")
+        field(SVVL, "300")
+}    
+# Database for APC PDU
+
+# Set/Get the outlet name
+record(stringout, "$(SYS,undefined)$(DEV,undefined)Sw:Name13-SP")
+{
+	field(DESC, "Set Outlet13 Name")
+	field(DTYP, "Snmp")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.13")
+	field(SCAN, "Passive")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:Name13-RB")
+	field(VAL,  "Outlet 13")
+	info(autosaveFields, "VAL")
+	field(PINI, "1")
+}
+
+record(stringin, "$(SYS,undefined)$(DEV,undefined)Sw:Name13-RB")
+{
+	field(DESC, "Outlet13 Name")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.13")
+	field(SCAN, "10 second")
+}
+
+# Operate the outlet
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:13-Sel")
+{
+	field(DESC, "Set Outlet13 Mode")
+	field(ZRST, "Off")
+	field(ONST, "On")
+	field(TWST, "Reboot")
+	field(THST, "OnWithDelay")
+	field(FRST, "OffWithDelay")
+	field(FVST, "RebootWithDelay")
+	field(ZRVL, "2")
+	field(ONVL, "1")
+	field(TWVL, "3")
+	field(THVL, "5")
+	field(FRVL, "6")
+	field(FVVL, "7")
+	field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:13-SP")
+}
+
+record (longout,"$(SYS,undefined)$(DEV,undefined)Sw:13-SP")
+{
+	field(DESC, "Setting Outlet13 State")
+	field(DTYP, "Snmp")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:13-Sel.RVAL")
+	field(OMSL, "closed_loop")
+	field(SCAN, "Passive")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.13")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:13-RB")
+}
+
+# Get outlet status
+record (longin,"$(SYS,undefined)$(DEV,undefined)Sw:13-RB")
+{
+	field(DESC, "Raw Outlet13 Sts")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.13")
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:13-Sts")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:13-Sts")
+{
+	field(DTYP, "Raw Soft Channel")
+	field(DESC, "Outlet13 Sts")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:13-RB")
+	field(ZRST, "Off")
+        field(ONST, "On")
+        field(TWST, "Reboot")
+        field(THST, "OnWithDelay")
+        field(FRST, "OffWithDelay")
+        field(FVST, "RebootWithDelay")
+        field(ZRVL, "2")
+        field(ONVL, "1")
+        field(TWVL, "3")
+        field(THVL, "5")
+        field(FRVL, "6")
+        field(FVVL, "7")
+}
+
+record(longin,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime13-RB")
+{
+	field(DESC, "Raw Outlet13 Power On Delay Time")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.13")	
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime13-Sts")
+}
+
+record(longout,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime13-SP")
+{
+        field(DESC, "Raw Outlet13 Power On Delay Time")
+        field(DTYP, "Snmp")
+        field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.13")
+        field(SCAN, "2 second")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime13-Sel.RVAL")
+        field(OMSL, "closed_loop")
+        field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime13-RB")
+}
+
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime13-Sel")
+{
+        field(DESC, "Set Outlet13 On Time")
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+	field(SXST, "120 Seconds")
+	field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+	field(SXVL, "120")
+	field(SVVL, "300")
+        field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime13-SP")
+	info(autosaveFields, "VAL")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime13-Sts")
+{
+        field(DESC, "Set Outlet13 On Time")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime13-RB")
+	field(DTYP, "Raw Soft Channel")	
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+        field(SXST, "120 Seconds")
+        field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+        field(SXVL, "120")
+        field(SVVL, "300")
+}    
+# Database for APC PDU
+
+# Set/Get the outlet name
+record(stringout, "$(SYS,undefined)$(DEV,undefined)Sw:Name14-SP")
+{
+	field(DESC, "Set Outlet14 Name")
+	field(DTYP, "Snmp")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.14")
+	field(SCAN, "Passive")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:Name14-RB")
+	field(VAL,  "Outlet 14")
+	info(autosaveFields, "VAL")
+	field(PINI, "1")
+}
+
+record(stringin, "$(SYS,undefined)$(DEV,undefined)Sw:Name14-RB")
+{
+	field(DESC, "Outlet14 Name")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.14")
+	field(SCAN, "10 second")
+}
+
+# Operate the outlet
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:14-Sel")
+{
+	field(DESC, "Set Outlet14 Mode")
+	field(ZRST, "Off")
+	field(ONST, "On")
+	field(TWST, "Reboot")
+	field(THST, "OnWithDelay")
+	field(FRST, "OffWithDelay")
+	field(FVST, "RebootWithDelay")
+	field(ZRVL, "2")
+	field(ONVL, "1")
+	field(TWVL, "3")
+	field(THVL, "5")
+	field(FRVL, "6")
+	field(FVVL, "7")
+	field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:14-SP")
+}
+
+record (longout,"$(SYS,undefined)$(DEV,undefined)Sw:14-SP")
+{
+	field(DESC, "Setting Outlet14 State")
+	field(DTYP, "Snmp")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:14-Sel.RVAL")
+	field(OMSL, "closed_loop")
+	field(SCAN, "Passive")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.14")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:14-RB")
+}
+
+# Get outlet status
+record (longin,"$(SYS,undefined)$(DEV,undefined)Sw:14-RB")
+{
+	field(DESC, "Raw Outlet14 Sts")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.14")
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:14-Sts")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:14-Sts")
+{
+	field(DTYP, "Raw Soft Channel")
+	field(DESC, "Outlet14 Sts")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:14-RB")
+	field(ZRST, "Off")
+        field(ONST, "On")
+        field(TWST, "Reboot")
+        field(THST, "OnWithDelay")
+        field(FRST, "OffWithDelay")
+        field(FVST, "RebootWithDelay")
+        field(ZRVL, "2")
+        field(ONVL, "1")
+        field(TWVL, "3")
+        field(THVL, "5")
+        field(FRVL, "6")
+        field(FVVL, "7")
+}
+
+record(longin,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime14-RB")
+{
+	field(DESC, "Raw Outlet14 Power On Delay Time")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.14")	
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime14-Sts")
+}
+
+record(longout,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime14-SP")
+{
+        field(DESC, "Raw Outlet14 Power On Delay Time")
+        field(DTYP, "Snmp")
+        field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.14")
+        field(SCAN, "2 second")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime14-Sel.RVAL")
+        field(OMSL, "closed_loop")
+        field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime14-RB")
+}
+
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime14-Sel")
+{
+        field(DESC, "Set Outlet14 On Time")
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+	field(SXST, "120 Seconds")
+	field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+	field(SXVL, "120")
+	field(SVVL, "300")
+        field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime14-SP")
+	info(autosaveFields, "VAL")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime14-Sts")
+{
+        field(DESC, "Set Outlet14 On Time")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime14-RB")
+	field(DTYP, "Raw Soft Channel")	
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+        field(SXST, "120 Seconds")
+        field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+        field(SXVL, "120")
+        field(SVVL, "300")
+}    
+# Database for APC PDU
+
+# Set/Get the outlet name
+record(stringout, "$(SYS,undefined)$(DEV,undefined)Sw:Name15-SP")
+{
+	field(DESC, "Set Outlet15 Name")
+	field(DTYP, "Snmp")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.15")
+	field(SCAN, "Passive")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:Name15-RB")
+	field(VAL,  "Outlet 15")
+	info(autosaveFields, "VAL")
+	field(PINI, "1")
+}
+
+record(stringin, "$(SYS,undefined)$(DEV,undefined)Sw:Name15-RB")
+{
+	field(DESC, "Outlet15 Name")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.15")
+	field(SCAN, "10 second")
+}
+
+# Operate the outlet
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:15-Sel")
+{
+	field(DESC, "Set Outlet15 Mode")
+	field(ZRST, "Off")
+	field(ONST, "On")
+	field(TWST, "Reboot")
+	field(THST, "OnWithDelay")
+	field(FRST, "OffWithDelay")
+	field(FVST, "RebootWithDelay")
+	field(ZRVL, "2")
+	field(ONVL, "1")
+	field(TWVL, "3")
+	field(THVL, "5")
+	field(FRVL, "6")
+	field(FVVL, "7")
+	field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:15-SP")
+}
+
+record (longout,"$(SYS,undefined)$(DEV,undefined)Sw:15-SP")
+{
+	field(DESC, "Setting Outlet15 State")
+	field(DTYP, "Snmp")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:15-Sel.RVAL")
+	field(OMSL, "closed_loop")
+	field(SCAN, "Passive")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.15")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:15-RB")
+}
+
+# Get outlet status
+record (longin,"$(SYS,undefined)$(DEV,undefined)Sw:15-RB")
+{
+	field(DESC, "Raw Outlet15 Sts")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.15")
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:15-Sts")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:15-Sts")
+{
+	field(DTYP, "Raw Soft Channel")
+	field(DESC, "Outlet15 Sts")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:15-RB")
+	field(ZRST, "Off")
+        field(ONST, "On")
+        field(TWST, "Reboot")
+        field(THST, "OnWithDelay")
+        field(FRST, "OffWithDelay")
+        field(FVST, "RebootWithDelay")
+        field(ZRVL, "2")
+        field(ONVL, "1")
+        field(TWVL, "3")
+        field(THVL, "5")
+        field(FRVL, "6")
+        field(FVVL, "7")
+}
+
+record(longin,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime15-RB")
+{
+	field(DESC, "Raw Outlet15 Power On Delay Time")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.15")	
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime15-Sts")
+}
+
+record(longout,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime15-SP")
+{
+        field(DESC, "Raw Outlet15 Power On Delay Time")
+        field(DTYP, "Snmp")
+        field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.15")
+        field(SCAN, "2 second")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime15-Sel.RVAL")
+        field(OMSL, "closed_loop")
+        field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime15-RB")
+}
+
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime15-Sel")
+{
+        field(DESC, "Set Outlet15 On Time")
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+	field(SXST, "120 Seconds")
+	field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+	field(SXVL, "120")
+	field(SVVL, "300")
+        field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime15-SP")
+	info(autosaveFields, "VAL")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime15-Sts")
+{
+        field(DESC, "Set Outlet15 On Time")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime15-RB")
+	field(DTYP, "Raw Soft Channel")	
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+        field(SXST, "120 Seconds")
+        field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+        field(SXVL, "120")
+        field(SVVL, "300")
+}    
+# Database for APC PDU
+
+# Set/Get the outlet name
+record(stringout, "$(SYS,undefined)$(DEV,undefined)Sw:Name16-SP")
+{
+	field(DESC, "Set Outlet16 Name")
+	field(DTYP, "Snmp")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.16")
+	field(SCAN, "Passive")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:Name16-RB")
+	field(VAL,  "Outlet 16")
+	info(autosaveFields, "VAL")
+	field(PINI, "1")
+}
+
+record(stringin, "$(SYS,undefined)$(DEV,undefined)Sw:Name16-RB")
+{
+	field(DESC, "Outlet16 Name")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.16")
+	field(SCAN, "10 second")
+}
+
+# Operate the outlet
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:16-Sel")
+{
+	field(DESC, "Set Outlet16 Mode")
+	field(ZRST, "Off")
+	field(ONST, "On")
+	field(TWST, "Reboot")
+	field(THST, "OnWithDelay")
+	field(FRST, "OffWithDelay")
+	field(FVST, "RebootWithDelay")
+	field(ZRVL, "2")
+	field(ONVL, "1")
+	field(TWVL, "3")
+	field(THVL, "5")
+	field(FRVL, "6")
+	field(FVVL, "7")
+	field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:16-SP")
+}
+
+record (longout,"$(SYS,undefined)$(DEV,undefined)Sw:16-SP")
+{
+	field(DESC, "Setting Outlet16 State")
+	field(DTYP, "Snmp")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:16-Sel.RVAL")
+	field(OMSL, "closed_loop")
+	field(SCAN, "Passive")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.16")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:16-RB")
+}
+
+# Get outlet status
+record (longin,"$(SYS,undefined)$(DEV,undefined)Sw:16-RB")
+{
+	field(DESC, "Raw Outlet16 Sts")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.16")
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:16-Sts")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:16-Sts")
+{
+	field(DTYP, "Raw Soft Channel")
+	field(DESC, "Outlet16 Sts")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:16-RB")
+	field(ZRST, "Off")
+        field(ONST, "On")
+        field(TWST, "Reboot")
+        field(THST, "OnWithDelay")
+        field(FRST, "OffWithDelay")
+        field(FVST, "RebootWithDelay")
+        field(ZRVL, "2")
+        field(ONVL, "1")
+        field(TWVL, "3")
+        field(THVL, "5")
+        field(FRVL, "6")
+        field(FVVL, "7")
+}
+
+record(longin,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime16-RB")
+{
+	field(DESC, "Raw Outlet16 Power On Delay Time")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.16")	
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime16-Sts")
+}
+
+record(longout,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime16-SP")
+{
+        field(DESC, "Raw Outlet16 Power On Delay Time")
+        field(DTYP, "Snmp")
+        field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.16")
+        field(SCAN, "2 second")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime16-Sel.RVAL")
+        field(OMSL, "closed_loop")
+        field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime16-RB")
+}
+
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime16-Sel")
+{
+        field(DESC, "Set Outlet16 On Time")
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+	field(SXST, "120 Seconds")
+	field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+	field(SXVL, "120")
+	field(SVVL, "300")
+        field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime16-SP")
+	info(autosaveFields, "VAL")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime16-Sts")
+{
+        field(DESC, "Set Outlet16 On Time")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime16-RB")
+	field(DTYP, "Raw Soft Channel")	
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+        field(SXST, "120 Seconds")
+        field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+        field(SXVL, "120")
+        field(SVVL, "300")
+}    
+# Database for APC PDU
+
+# Set/Get the outlet name
+record(stringout, "$(SYS,undefined)$(DEV,undefined)Sw:Name17-SP")
+{
+	field(DESC, "Set Outlet17 Name")
+	field(DTYP, "Snmp")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.17")
+	field(SCAN, "Passive")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:Name17-RB")
+	field(VAL,  "Outlet 17")
+	info(autosaveFields, "VAL")
+	field(PINI, "1")
+}
+
+record(stringin, "$(SYS,undefined)$(DEV,undefined)Sw:Name17-RB")
+{
+	field(DESC, "Outlet17 Name")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.17")
+	field(SCAN, "10 second")
+}
+
+# Operate the outlet
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:17-Sel")
+{
+	field(DESC, "Set Outlet17 Mode")
+	field(ZRST, "Off")
+	field(ONST, "On")
+	field(TWST, "Reboot")
+	field(THST, "OnWithDelay")
+	field(FRST, "OffWithDelay")
+	field(FVST, "RebootWithDelay")
+	field(ZRVL, "2")
+	field(ONVL, "1")
+	field(TWVL, "3")
+	field(THVL, "5")
+	field(FRVL, "6")
+	field(FVVL, "7")
+	field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:17-SP")
+}
+
+record (longout,"$(SYS,undefined)$(DEV,undefined)Sw:17-SP")
+{
+	field(DESC, "Setting Outlet17 State")
+	field(DTYP, "Snmp")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:17-Sel.RVAL")
+	field(OMSL, "closed_loop")
+	field(SCAN, "Passive")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.17")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:17-RB")
+}
+
+# Get outlet status
+record (longin,"$(SYS,undefined)$(DEV,undefined)Sw:17-RB")
+{
+	field(DESC, "Raw Outlet17 Sts")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.17")
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:17-Sts")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:17-Sts")
+{
+	field(DTYP, "Raw Soft Channel")
+	field(DESC, "Outlet17 Sts")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:17-RB")
+	field(ZRST, "Off")
+        field(ONST, "On")
+        field(TWST, "Reboot")
+        field(THST, "OnWithDelay")
+        field(FRST, "OffWithDelay")
+        field(FVST, "RebootWithDelay")
+        field(ZRVL, "2")
+        field(ONVL, "1")
+        field(TWVL, "3")
+        field(THVL, "5")
+        field(FRVL, "6")
+        field(FVVL, "7")
+}
+
+record(longin,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime17-RB")
+{
+	field(DESC, "Raw Outlet17 Power On Delay Time")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.17")	
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime17-Sts")
+}
+
+record(longout,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime17-SP")
+{
+        field(DESC, "Raw Outlet17 Power On Delay Time")
+        field(DTYP, "Snmp")
+        field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.17")
+        field(SCAN, "2 second")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime17-Sel.RVAL")
+        field(OMSL, "closed_loop")
+        field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime17-RB")
+}
+
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime17-Sel")
+{
+        field(DESC, "Set Outlet17 On Time")
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+	field(SXST, "120 Seconds")
+	field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+	field(SXVL, "120")
+	field(SVVL, "300")
+        field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime17-SP")
+	info(autosaveFields, "VAL")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime17-Sts")
+{
+        field(DESC, "Set Outlet17 On Time")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime17-RB")
+	field(DTYP, "Raw Soft Channel")	
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+        field(SXST, "120 Seconds")
+        field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+        field(SXVL, "120")
+        field(SVVL, "300")
+}    
+# Database for APC PDU
+
+# Set/Get the outlet name
+record(stringout, "$(SYS,undefined)$(DEV,undefined)Sw:Name18-SP")
+{
+	field(DESC, "Set Outlet18 Name")
+	field(DTYP, "Snmp")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.18")
+	field(SCAN, "Passive")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:Name18-RB")
+	field(VAL,  "Outlet 18")
+	info(autosaveFields, "VAL")
+	field(PINI, "1")
+}
+
+record(stringin, "$(SYS,undefined)$(DEV,undefined)Sw:Name18-RB")
+{
+	field(DESC, "Outlet18 Name")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.18")
+	field(SCAN, "10 second")
+}
+
+# Operate the outlet
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:18-Sel")
+{
+	field(DESC, "Set Outlet18 Mode")
+	field(ZRST, "Off")
+	field(ONST, "On")
+	field(TWST, "Reboot")
+	field(THST, "OnWithDelay")
+	field(FRST, "OffWithDelay")
+	field(FVST, "RebootWithDelay")
+	field(ZRVL, "2")
+	field(ONVL, "1")
+	field(TWVL, "3")
+	field(THVL, "5")
+	field(FRVL, "6")
+	field(FVVL, "7")
+	field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:18-SP")
+}
+
+record (longout,"$(SYS,undefined)$(DEV,undefined)Sw:18-SP")
+{
+	field(DESC, "Setting Outlet18 State")
+	field(DTYP, "Snmp")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:18-Sel.RVAL")
+	field(OMSL, "closed_loop")
+	field(SCAN, "Passive")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.18")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:18-RB")
+}
+
+# Get outlet status
+record (longin,"$(SYS,undefined)$(DEV,undefined)Sw:18-RB")
+{
+	field(DESC, "Raw Outlet18 Sts")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.18")
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:18-Sts")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:18-Sts")
+{
+	field(DTYP, "Raw Soft Channel")
+	field(DESC, "Outlet18 Sts")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:18-RB")
+	field(ZRST, "Off")
+        field(ONST, "On")
+        field(TWST, "Reboot")
+        field(THST, "OnWithDelay")
+        field(FRST, "OffWithDelay")
+        field(FVST, "RebootWithDelay")
+        field(ZRVL, "2")
+        field(ONVL, "1")
+        field(TWVL, "3")
+        field(THVL, "5")
+        field(FRVL, "6")
+        field(FVVL, "7")
+}
+
+record(longin,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime18-RB")
+{
+	field(DESC, "Raw Outlet18 Power On Delay Time")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.18")	
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime18-Sts")
+}
+
+record(longout,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime18-SP")
+{
+        field(DESC, "Raw Outlet18 Power On Delay Time")
+        field(DTYP, "Snmp")
+        field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.18")
+        field(SCAN, "2 second")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime18-Sel.RVAL")
+        field(OMSL, "closed_loop")
+        field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime18-RB")
+}
+
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime18-Sel")
+{
+        field(DESC, "Set Outlet18 On Time")
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+	field(SXST, "120 Seconds")
+	field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+	field(SXVL, "120")
+	field(SVVL, "300")
+        field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime18-SP")
+	info(autosaveFields, "VAL")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime18-Sts")
+{
+        field(DESC, "Set Outlet18 On Time")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime18-RB")
+	field(DTYP, "Raw Soft Channel")	
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+        field(SXST, "120 Seconds")
+        field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+        field(SXVL, "120")
+        field(SVVL, "300")
+}    
+# Database for APC PDU
+
+# Set/Get the outlet name
+record(stringout, "$(SYS,undefined)$(DEV,undefined)Sw:Name19-SP")
+{
+	field(DESC, "Set Outlet19 Name")
+	field(DTYP, "Snmp")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.19")
+	field(SCAN, "Passive")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:Name19-RB")
+	field(VAL,  "Outlet 19")
+	info(autosaveFields, "VAL")
+	field(PINI, "1")
+}
+
+record(stringin, "$(SYS,undefined)$(DEV,undefined)Sw:Name19-RB")
+{
+	field(DESC, "Outlet19 Name")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.19")
+	field(SCAN, "10 second")
+}
+
+# Operate the outlet
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:19-Sel")
+{
+	field(DESC, "Set Outlet19 Mode")
+	field(ZRST, "Off")
+	field(ONST, "On")
+	field(TWST, "Reboot")
+	field(THST, "OnWithDelay")
+	field(FRST, "OffWithDelay")
+	field(FVST, "RebootWithDelay")
+	field(ZRVL, "2")
+	field(ONVL, "1")
+	field(TWVL, "3")
+	field(THVL, "5")
+	field(FRVL, "6")
+	field(FVVL, "7")
+	field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:19-SP")
+}
+
+record (longout,"$(SYS,undefined)$(DEV,undefined)Sw:19-SP")
+{
+	field(DESC, "Setting Outlet19 State")
+	field(DTYP, "Snmp")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:19-Sel.RVAL")
+	field(OMSL, "closed_loop")
+	field(SCAN, "Passive")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.19")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:19-RB")
+}
+
+# Get outlet status
+record (longin,"$(SYS,undefined)$(DEV,undefined)Sw:19-RB")
+{
+	field(DESC, "Raw Outlet19 Sts")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.19")
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:19-Sts")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:19-Sts")
+{
+	field(DTYP, "Raw Soft Channel")
+	field(DESC, "Outlet19 Sts")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:19-RB")
+	field(ZRST, "Off")
+        field(ONST, "On")
+        field(TWST, "Reboot")
+        field(THST, "OnWithDelay")
+        field(FRST, "OffWithDelay")
+        field(FVST, "RebootWithDelay")
+        field(ZRVL, "2")
+        field(ONVL, "1")
+        field(TWVL, "3")
+        field(THVL, "5")
+        field(FRVL, "6")
+        field(FVVL, "7")
+}
+
+record(longin,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime19-RB")
+{
+	field(DESC, "Raw Outlet19 Power On Delay Time")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.19")	
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime19-Sts")
+}
+
+record(longout,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime19-SP")
+{
+        field(DESC, "Raw Outlet19 Power On Delay Time")
+        field(DTYP, "Snmp")
+        field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.19")
+        field(SCAN, "2 second")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime19-Sel.RVAL")
+        field(OMSL, "closed_loop")
+        field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime19-RB")
+}
+
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime19-Sel")
+{
+        field(DESC, "Set Outlet19 On Time")
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+	field(SXST, "120 Seconds")
+	field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+	field(SXVL, "120")
+	field(SVVL, "300")
+        field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime19-SP")
+	info(autosaveFields, "VAL")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime19-Sts")
+{
+        field(DESC, "Set Outlet19 On Time")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime19-RB")
+	field(DTYP, "Raw Soft Channel")	
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+        field(SXST, "120 Seconds")
+        field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+        field(SXVL, "120")
+        field(SVVL, "300")
+}    
+# Database for APC PDU
+
+# Set/Get the outlet name
+record(stringout, "$(SYS,undefined)$(DEV,undefined)Sw:Name20-SP")
+{
+	field(DESC, "Set Outlet20 Name")
+	field(DTYP, "Snmp")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.20")
+	field(SCAN, "Passive")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:Name20-RB")
+	field(VAL,  "Outlet 20")
+	info(autosaveFields, "VAL")
+	field(PINI, "1")
+}
+
+record(stringin, "$(SYS,undefined)$(DEV,undefined)Sw:Name20-RB")
+{
+	field(DESC, "Outlet20 Name")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.20")
+	field(SCAN, "10 second")
+}
+
+# Operate the outlet
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:20-Sel")
+{
+	field(DESC, "Set Outlet20 Mode")
+	field(ZRST, "Off")
+	field(ONST, "On")
+	field(TWST, "Reboot")
+	field(THST, "OnWithDelay")
+	field(FRST, "OffWithDelay")
+	field(FVST, "RebootWithDelay")
+	field(ZRVL, "2")
+	field(ONVL, "1")
+	field(TWVL, "3")
+	field(THVL, "5")
+	field(FRVL, "6")
+	field(FVVL, "7")
+	field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:20-SP")
+}
+
+record (longout,"$(SYS,undefined)$(DEV,undefined)Sw:20-SP")
+{
+	field(DESC, "Setting Outlet20 State")
+	field(DTYP, "Snmp")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:20-Sel.RVAL")
+	field(OMSL, "closed_loop")
+	field(SCAN, "Passive")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.20")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:20-RB")
+}
+
+# Get outlet status
+record (longin,"$(SYS,undefined)$(DEV,undefined)Sw:20-RB")
+{
+	field(DESC, "Raw Outlet20 Sts")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.20")
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:20-Sts")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:20-Sts")
+{
+	field(DTYP, "Raw Soft Channel")
+	field(DESC, "Outlet20 Sts")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:20-RB")
+	field(ZRST, "Off")
+        field(ONST, "On")
+        field(TWST, "Reboot")
+        field(THST, "OnWithDelay")
+        field(FRST, "OffWithDelay")
+        field(FVST, "RebootWithDelay")
+        field(ZRVL, "2")
+        field(ONVL, "1")
+        field(TWVL, "3")
+        field(THVL, "5")
+        field(FRVL, "6")
+        field(FVVL, "7")
+}
+
+record(longin,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime20-RB")
+{
+	field(DESC, "Raw Outlet20 Power On Delay Time")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.20")	
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime20-Sts")
+}
+
+record(longout,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime20-SP")
+{
+        field(DESC, "Raw Outlet20 Power On Delay Time")
+        field(DTYP, "Snmp")
+        field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.20")
+        field(SCAN, "2 second")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime20-Sel.RVAL")
+        field(OMSL, "closed_loop")
+        field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime20-RB")
+}
+
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime20-Sel")
+{
+        field(DESC, "Set Outlet20 On Time")
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+	field(SXST, "120 Seconds")
+	field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+	field(SXVL, "120")
+	field(SVVL, "300")
+        field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime20-SP")
+	info(autosaveFields, "VAL")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime20-Sts")
+{
+        field(DESC, "Set Outlet20 On Time")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime20-RB")
+	field(DTYP, "Raw Soft Channel")	
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+        field(SXST, "120 Seconds")
+        field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+        field(SXVL, "120")
+        field(SVVL, "300")
+}    
+# Database for APC PDU
+
+# Set/Get the outlet name
+record(stringout, "$(SYS,undefined)$(DEV,undefined)Sw:Name21-SP")
+{
+	field(DESC, "Set Outlet21 Name")
+	field(DTYP, "Snmp")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.21")
+	field(SCAN, "Passive")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:Name21-RB")
+	field(VAL,  "Outlet 21")
+	info(autosaveFields, "VAL")
+	field(PINI, "1")
+}
+
+record(stringin, "$(SYS,undefined)$(DEV,undefined)Sw:Name21-RB")
+{
+	field(DESC, "Outlet21 Name")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.21")
+	field(SCAN, "10 second")
+}
+
+# Operate the outlet
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:21-Sel")
+{
+	field(DESC, "Set Outlet21 Mode")
+	field(ZRST, "Off")
+	field(ONST, "On")
+	field(TWST, "Reboot")
+	field(THST, "OnWithDelay")
+	field(FRST, "OffWithDelay")
+	field(FVST, "RebootWithDelay")
+	field(ZRVL, "2")
+	field(ONVL, "1")
+	field(TWVL, "3")
+	field(THVL, "5")
+	field(FRVL, "6")
+	field(FVVL, "7")
+	field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:21-SP")
+}
+
+record (longout,"$(SYS,undefined)$(DEV,undefined)Sw:21-SP")
+{
+	field(DESC, "Setting Outlet21 State")
+	field(DTYP, "Snmp")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:21-Sel.RVAL")
+	field(OMSL, "closed_loop")
+	field(SCAN, "Passive")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.21")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:21-RB")
+}
+
+# Get outlet status
+record (longin,"$(SYS,undefined)$(DEV,undefined)Sw:21-RB")
+{
+	field(DESC, "Raw Outlet21 Sts")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.21")
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:21-Sts")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:21-Sts")
+{
+	field(DTYP, "Raw Soft Channel")
+	field(DESC, "Outlet21 Sts")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:21-RB")
+	field(ZRST, "Off")
+        field(ONST, "On")
+        field(TWST, "Reboot")
+        field(THST, "OnWithDelay")
+        field(FRST, "OffWithDelay")
+        field(FVST, "RebootWithDelay")
+        field(ZRVL, "2")
+        field(ONVL, "1")
+        field(TWVL, "3")
+        field(THVL, "5")
+        field(FRVL, "6")
+        field(FVVL, "7")
+}
+
+record(longin,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime21-RB")
+{
+	field(DESC, "Raw Outlet21 Power On Delay Time")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.21")	
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime21-Sts")
+}
+
+record(longout,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime21-SP")
+{
+        field(DESC, "Raw Outlet21 Power On Delay Time")
+        field(DTYP, "Snmp")
+        field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.21")
+        field(SCAN, "2 second")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime21-Sel.RVAL")
+        field(OMSL, "closed_loop")
+        field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime21-RB")
+}
+
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime21-Sel")
+{
+        field(DESC, "Set Outlet21 On Time")
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+	field(SXST, "120 Seconds")
+	field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+	field(SXVL, "120")
+	field(SVVL, "300")
+        field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime21-SP")
+	info(autosaveFields, "VAL")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime21-Sts")
+{
+        field(DESC, "Set Outlet21 On Time")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime21-RB")
+	field(DTYP, "Raw Soft Channel")	
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+        field(SXST, "120 Seconds")
+        field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+        field(SXVL, "120")
+        field(SVVL, "300")
+}    
+# Database for APC PDU
+
+# Set/Get the outlet name
+record(stringout, "$(SYS,undefined)$(DEV,undefined)Sw:Name22-SP")
+{
+	field(DESC, "Set Outlet22 Name")
+	field(DTYP, "Snmp")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.22")
+	field(SCAN, "Passive")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:Name22-RB")
+	field(VAL,  "Outlet 22")
+	info(autosaveFields, "VAL")
+	field(PINI, "1")
+}
+
+record(stringin, "$(SYS,undefined)$(DEV,undefined)Sw:Name22-RB")
+{
+	field(DESC, "Outlet22 Name")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.22")
+	field(SCAN, "10 second")
+}
+
+# Operate the outlet
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:22-Sel")
+{
+	field(DESC, "Set Outlet22 Mode")
+	field(ZRST, "Off")
+	field(ONST, "On")
+	field(TWST, "Reboot")
+	field(THST, "OnWithDelay")
+	field(FRST, "OffWithDelay")
+	field(FVST, "RebootWithDelay")
+	field(ZRVL, "2")
+	field(ONVL, "1")
+	field(TWVL, "3")
+	field(THVL, "5")
+	field(FRVL, "6")
+	field(FVVL, "7")
+	field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:22-SP")
+}
+
+record (longout,"$(SYS,undefined)$(DEV,undefined)Sw:22-SP")
+{
+	field(DESC, "Setting Outlet22 State")
+	field(DTYP, "Snmp")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:22-Sel.RVAL")
+	field(OMSL, "closed_loop")
+	field(SCAN, "Passive")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.22")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:22-RB")
+}
+
+# Get outlet status
+record (longin,"$(SYS,undefined)$(DEV,undefined)Sw:22-RB")
+{
+	field(DESC, "Raw Outlet22 Sts")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.22")
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:22-Sts")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:22-Sts")
+{
+	field(DTYP, "Raw Soft Channel")
+	field(DESC, "Outlet22 Sts")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:22-RB")
+	field(ZRST, "Off")
+        field(ONST, "On")
+        field(TWST, "Reboot")
+        field(THST, "OnWithDelay")
+        field(FRST, "OffWithDelay")
+        field(FVST, "RebootWithDelay")
+        field(ZRVL, "2")
+        field(ONVL, "1")
+        field(TWVL, "3")
+        field(THVL, "5")
+        field(FRVL, "6")
+        field(FVVL, "7")
+}
+
+record(longin,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime22-RB")
+{
+	field(DESC, "Raw Outlet22 Power On Delay Time")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.22")	
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime22-Sts")
+}
+
+record(longout,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime22-SP")
+{
+        field(DESC, "Raw Outlet22 Power On Delay Time")
+        field(DTYP, "Snmp")
+        field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.22")
+        field(SCAN, "2 second")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime22-Sel.RVAL")
+        field(OMSL, "closed_loop")
+        field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime22-RB")
+}
+
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime22-Sel")
+{
+        field(DESC, "Set Outlet22 On Time")
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+	field(SXST, "120 Seconds")
+	field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+	field(SXVL, "120")
+	field(SVVL, "300")
+        field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime22-SP")
+	info(autosaveFields, "VAL")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime22-Sts")
+{
+        field(DESC, "Set Outlet22 On Time")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime22-RB")
+	field(DTYP, "Raw Soft Channel")	
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+        field(SXST, "120 Seconds")
+        field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+        field(SXVL, "120")
+        field(SVVL, "300")
+}    
+# Database for APC PDU
+
+# Set/Get the outlet name
+record(stringout, "$(SYS,undefined)$(DEV,undefined)Sw:Name23-SP")
+{
+	field(DESC, "Set Outlet23 Name")
+	field(DTYP, "Snmp")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.23")
+	field(SCAN, "Passive")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:Name23-RB")
+	field(VAL,  "Outlet 23")
+	info(autosaveFields, "VAL")
+	field(PINI, "1")
+}
+
+record(stringin, "$(SYS,undefined)$(DEV,undefined)Sw:Name23-RB")
+{
+	field(DESC, "Outlet23 Name")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.23")
+	field(SCAN, "10 second")
+}
+
+# Operate the outlet
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:23-Sel")
+{
+	field(DESC, "Set Outlet23 Mode")
+	field(ZRST, "Off")
+	field(ONST, "On")
+	field(TWST, "Reboot")
+	field(THST, "OnWithDelay")
+	field(FRST, "OffWithDelay")
+	field(FVST, "RebootWithDelay")
+	field(ZRVL, "2")
+	field(ONVL, "1")
+	field(TWVL, "3")
+	field(THVL, "5")
+	field(FRVL, "6")
+	field(FVVL, "7")
+	field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:23-SP")
+}
+
+record (longout,"$(SYS,undefined)$(DEV,undefined)Sw:23-SP")
+{
+	field(DESC, "Setting Outlet23 State")
+	field(DTYP, "Snmp")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:23-Sel.RVAL")
+	field(OMSL, "closed_loop")
+	field(SCAN, "Passive")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.23")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:23-RB")
+}
+
+# Get outlet status
+record (longin,"$(SYS,undefined)$(DEV,undefined)Sw:23-RB")
+{
+	field(DESC, "Raw Outlet23 Sts")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.23")
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:23-Sts")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:23-Sts")
+{
+	field(DTYP, "Raw Soft Channel")
+	field(DESC, "Outlet23 Sts")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:23-RB")
+	field(ZRST, "Off")
+        field(ONST, "On")
+        field(TWST, "Reboot")
+        field(THST, "OnWithDelay")
+        field(FRST, "OffWithDelay")
+        field(FVST, "RebootWithDelay")
+        field(ZRVL, "2")
+        field(ONVL, "1")
+        field(TWVL, "3")
+        field(THVL, "5")
+        field(FRVL, "6")
+        field(FVVL, "7")
+}
+
+record(longin,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime23-RB")
+{
+	field(DESC, "Raw Outlet23 Power On Delay Time")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.23")	
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime23-Sts")
+}
+
+record(longout,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime23-SP")
+{
+        field(DESC, "Raw Outlet23 Power On Delay Time")
+        field(DTYP, "Snmp")
+        field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.23")
+        field(SCAN, "2 second")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime23-Sel.RVAL")
+        field(OMSL, "closed_loop")
+        field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime23-RB")
+}
+
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime23-Sel")
+{
+        field(DESC, "Set Outlet23 On Time")
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+	field(SXST, "120 Seconds")
+	field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+	field(SXVL, "120")
+	field(SVVL, "300")
+        field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime23-SP")
+	info(autosaveFields, "VAL")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime23-Sts")
+{
+        field(DESC, "Set Outlet23 On Time")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime23-RB")
+	field(DTYP, "Raw Soft Channel")	
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+        field(SXST, "120 Seconds")
+        field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+        field(SXVL, "120")
+        field(SVVL, "300")
+}    
+# Database for APC PDU
+
+# Set/Get the outlet name
+record(stringout, "$(SYS,undefined)$(DEV,undefined)Sw:Name24-SP")
+{
+	field(DESC, "Set Outlet24 Name")
+	field(DTYP, "Snmp")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.24")
+	field(SCAN, "Passive")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:Name24-RB")
+	field(VAL,  "Outlet 24")
+	info(autosaveFields, "VAL")
+	field(PINI, "1")
+}
+
+record(stringin, "$(SYS,undefined)$(DEV,undefined)Sw:Name24-RB")
+{
+	field(DESC, "Outlet24 Name")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletName.24")
+	field(SCAN, "10 second")
+}
+
+# Operate the outlet
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:24-Sel")
+{
+	field(DESC, "Set Outlet24 Mode")
+	field(ZRST, "Off")
+	field(ONST, "On")
+	field(TWST, "Reboot")
+	field(THST, "OnWithDelay")
+	field(FRST, "OffWithDelay")
+	field(FVST, "RebootWithDelay")
+	field(ZRVL, "2")
+	field(ONVL, "1")
+	field(TWVL, "3")
+	field(THVL, "5")
+	field(FRVL, "6")
+	field(FVVL, "7")
+	field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:24-SP")
+}
+
+record (longout,"$(SYS,undefined)$(DEV,undefined)Sw:24-SP")
+{
+	field(DESC, "Setting Outlet24 State")
+	field(DTYP, "Snmp")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:24-Sel.RVAL")
+	field(OMSL, "closed_loop")
+	field(SCAN, "Passive")
+	field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.24")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:24-RB")
+}
+
+# Get outlet status
+record (longin,"$(SYS,undefined)$(DEV,undefined)Sw:24-RB")
+{
+	field(DESC, "Raw Outlet24 Sts")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletCtl.24")
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:24-Sts")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:24-Sts")
+{
+	field(DTYP, "Raw Soft Channel")
+	field(DESC, "Outlet24 Sts")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:24-RB")
+	field(ZRST, "Off")
+        field(ONST, "On")
+        field(TWST, "Reboot")
+        field(THST, "OnWithDelay")
+        field(FRST, "OffWithDelay")
+        field(FVST, "RebootWithDelay")
+        field(ZRVL, "2")
+        field(ONVL, "1")
+        field(TWVL, "3")
+        field(THVL, "5")
+        field(FRVL, "6")
+        field(FVVL, "7")
+}
+
+record(longin,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime24-RB")
+{
+	field(DESC, "Raw Outlet24 Power On Delay Time")
+	field(DTYP, "Snmp")
+	field(INP,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.24")	
+	field(SCAN, "2 second")
+	field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime24-Sts")
+}
+
+record(longout,"$(SYS,undefined)$(DEV,undefined)Sw:OnTime24-SP")
+{
+        field(DESC, "Raw Outlet24 Power On Delay Time")
+        field(DTYP, "Snmp")
+        field(OUT,  "@$(IP,undefined) private PowerNet-MIB::sPDUOutletPowerOnTime.24")
+        field(SCAN, "2 second")
+	field(DOL,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime24-Sel.RVAL")
+        field(OMSL, "closed_loop")
+        field(FLNK, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime24-RB")
+}
+
+record(mbbo, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime24-Sel")
+{
+        field(DESC, "Set Outlet24 On Time")
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+	field(SXST, "120 Seconds")
+	field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+	field(SXVL, "120")
+	field(SVVL, "300")
+        field(FLNK,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime24-SP")
+	info(autosaveFields, "VAL")
+}
+
+record(mbbi, "$(SYS,undefined)$(DEV,undefined)Sw:OnTime24-Sts")
+{
+        field(DESC, "Set Outlet24 On Time")
+	field(INP,  "$(SYS,undefined)$(DEV,undefined)Sw:OnTime24-RB")
+	field(DTYP, "Raw Soft Channel")	
+        field(ZRST, "NeverOn")
+        field(ONST, "Immediate")
+        field(TWST, "15 Seconds")
+        field(THST, "30 Seconds")
+        field(FRST, "45 Seconds")
+        field(FVST, "60 Seconds")
+        field(SXST, "120 Seconds")
+        field(SVST, "300 Seconds")
+        field(ZRVL, "1")
+        field(ONVL, "0")
+        field(TWVL, "15")
+        field(THVL, "30")
+        field(FRVL, "45")
+        field(FVVL, "60")
+        field(SXVL, "120")
+        field(SVVL, "300")
+}    

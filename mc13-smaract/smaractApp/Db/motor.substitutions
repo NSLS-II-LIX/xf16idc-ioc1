@@ -1,0 +1,19 @@
+file "db/motor.db"
+{
+
+# ADDR ---> axis #
+# NOTE ---> 2 asyn ports: 1) lowel comms ("P0"), and 2) Motor Record ("motor")
+pattern
+{ P,             M,               MOTOR,   PORT, ADDR, DESC,     DTYP, EGU, MRES, PREC }
+{ "XF:16IDB-BI", "{BPM:1-Ax:X}Mtr", "motor", "P0", 0, "BPM:1 X", asynMotor, "mm", "1e-6", 6}
+{ "XF:16IDB-BI", "{BPM:1-Ax:Y}Mtr", "motor", "P0", 2, "BPM:1 Y", asynMotor, "mm", "1e-6", 6}
+#{ "XF:16IDC-BI", "{BPM:2-Ax:Y}Mtr", "motor", "P0", 2, "BPM:2 Y", asynMotor, "mm", "1e-6", 6}
+#{ "LIX","{Ax:1}Mtr", "motor", "P0", 0, "Motor 1", asynMotor, "deg", "1e-6", 6}
+#{ "LIX","{Ax:2}Mtr", "motor", "P0", 1, "Motor 2", asynMotor, "mm", "1e-6", 6}
+#{ "XF:11IDA-OP", "{Slt:MB-Ax:I}Mtr", "motor", "PO",   2,  "Inboard", asynMotor, "mm", "1e-6", 6 }
+#{ "XF:11IDA-OP", "{Slt:MB-Ax:T}Mtr", "motor", "PO",   0,  "Top", asynMotor, "mm", "1e-6", 6 }
+#{ "XF:11IDA-OP", "{Slt:MB-Ax:O}Mtr", "motor", "PO",   1,  "Outboard", asynMotor, "mm", "1e-6", 6 }
+#{ "XF:11IDA-OP", "{Slt:MB-Ax:B}Mtr", "motor", "PO",   5,  "Bottom", asynMotor, "mm", "1e-6", 6 }
+#{ "XF:11IDA-BI", "{Bpm:1-Ax:Y}Mtr", "motor", "PO",   3,  "Y", asynMotor, "mm", "1e-6", 6 }
+#{ "XF:11IDA-BI", "{Bpm:1-Ax:X}Mtr", "motor", "PO",   4,  "X", asynMotor, "mm", "1e-6", 6 }
+}

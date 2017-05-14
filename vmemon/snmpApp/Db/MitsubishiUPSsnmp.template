@@ -1,0 +1,413 @@
+
+record (longin,"$(Pri)$(Sec)$(Dev)Sts:Raw_$(Assembly)_Sts")
+{
+    field(DESC, "UPS Battery Status")
+    field(DTYP, "Snmp")
+    field(INP,  "@$(IP) $(C) INTEGER: 128")
+#    field(SCAN, "10 second")
+    field(SCAN, "$(Scan)")
+    field(FLNK, "$(Pri)$(Sec)$(Dev)Sts:$(Assembly)_Sts")
+    info (OID,  "1.3.6.1.4.1.13891.101.2.1.0")
+}
+
+record(mbbi, "$(Pri)$(Sec)$(Dev)Sts:$(Assembly)_Sts")
+{
+    field(INP, "$(Pri)$(Sec)$(Dev)Sts:Raw_$(Assembly)_Sts")
+    field(ZRST, "Undefined")
+    field(ONST, "Unknown")
+    field(TWST, "Normal")
+    field(THST, "Low")
+    field(FRST, "Depleted")
+    field(ZRSV, "MAJOR")
+    field(ONSV, "MAJOR")
+    field(TWSV, "NO_ALARM")
+    field(THSV, "MAJOR")
+    field(FRSV, "MAJOR")
+    field(FLNK, "$(Pri)$(Sec)$(Dev)M:Raw_$(Assembly)_I")
+}
+
+record (longin,"$(Pri)$(Sec)$(Dev)M:Raw_$(Assembly)_I")
+{
+    field(DESC, "Output Source")
+    field(DTYP, "Snmp")
+    field(INP,  "@$(IP) $(C) INTEGER: 128")
+    field(FLNK, "$(Pri)$(Sec)$(Dev)M:$(Assembly)_I")
+    info (OID,  "1.3.6.1.4.1.13891.101.4.1.0")
+}
+
+record(mbbi, "$(Pri)$(Sec)$(Dev)M:$(Assembly)_I")
+{
+    field(INP, "$(Pri)$(Sec)$(Dev)M:Raw_$(Assembly)_I")
+    field(ZRST, "Undefined")
+    field(ONST, "Other")
+    field(TWST, "None")
+    field(THST, "Normal")
+    field(FRST, "Bypass")
+    field(FVST, "Battery")
+    field(SXST, "Booster")
+    field(SVST, "Reducer")
+    field(ONSV, "NO_ALARM")
+    field(TWSV, "NO_ALARM")
+    field(THSV, "NO_ALARM")
+    field(FRSV, "MAJOR")
+    field(FVSV, "MAJOR")
+    field(SXSV, "MAJOR")
+    field(SVSV, "MAJOR")
+    field(FLNK, "$(Pri)$(Sec)$(Dev)Val:%Load_$(Assembly)_I")
+}
+
+record (ai,"$(Pri)$(Sec)$(Dev)Val:%Load_$(Assembly)_I")
+{
+    field(DESC, "% Output Load")
+    field(DTYP, "Snmp")
+    field(INP,  "@$(IP) $(C) INTEGER: 128")
+#    field(ASLO, ".01")
+   info (OID,  "1.3.6.1.4.1.13891.101.4.4.1.5.1")
+    field(FLNK, "$(Pri)$(Sec)$(Dev)Val:%Load_$(Assembly)_Calc")
+}
+
+#Scaling calculation
+record(calc, "$(Pri)$(Sec)$(Dev)Val:%Load_$(Assembly)_Calc")
+{
+    field(INPA, "$(Pri)$(Sec)$(Dev)Val:%Load_$(Assembly)_I MS")
+    field(CALC, "A*.01")
+	field(FLNK, "$(Pri)$(Sec)$(Dev)V:Input_$(Assembly)_I")
+    field(HIHI, 80)
+    field(HHSV, "MAJOR")
+#        field(TPRO, "1")
+}
+
+record (longin,"$(Pri)$(Sec)$(Dev)V:Input_$(Assembly)_I")
+{
+    field(DESC, "Input Voltage")
+    field(DTYP, "Snmp")
+    field(INP,  "@$(IP) $(C) INTEGER: 128")
+	field(HIHI, 528)
+	field(HHSV, "MAJOR")
+	field(LOLO, 432)
+	field(LLSV, MAJOR)
+    info (OID,  "1.3.6.1.4.1.13891.101.3.3.1.3.1")
+    field(FLNK, "$(Pri)$(Sec)$(Dev)I:Input_$(Assembly)_I")
+}
+record (ai,"$(Pri)$(Sec)$(Dev)I:Input_$(Assembly)_I")
+{
+    field(DESC, "Input Current")
+    field(DTYP, "Snmp")
+    field(INP,  "@$(IP) $(C) INTEGER: 128")
+    field(ASLO, ".01")
+#	field(HIHI, 239)
+#	field(HHSV, "MAJOR")
+#	field(LOLO, 176)
+#	field(LLSV,"MAJOR")
+    info (OID,  "1.3.6.1.4.1.13891.101.3.3.1.4")
+    field(FLNK, "$(Pri)$(Sec)$(Dev)I:Input_$(Assembly)_Calc")
+}
+
+#Scaling calculation
+record(calc, "$(Pri)$(Sec)$(Dev)I:Input_$(Assembly)_Calc")
+{
+        field(INPA, "$(Pri)$(Sec)$(Dev)I:Input_$(Assembly)_I MS")
+		field(CALC, "A*.1")
+    field(FLNK, "$(Pri)$(Sec)$(Dev)Freq:Input_$(Assembly)_I")
+    field(HIHI, 36.1)
+    field(HHSV, "MAJOR")
+#        field(TPRO, "1")
+}
+#record (longin,"$(Pri)$(Sec)$(Dev)Freq:Input_$(Assembly)_I")
+#{
+#    field(DESC, "Input Frequency")
+#    field(DTYP, "Snmp")
+#    field(INP,  "@$(IP) $(C) INTEGER: 128")
+#    info (OID,  "1.3.6.1.4.1.13891.101.3.3.1.2.0")
+#    field(FLNK, "$(Pri)$(Sec)$(Dev)UPS:$(Assembly)_OutV")   
+#}
+
+record (ai,"$(Pri)$(Sec)$(Dev)Freq:Input_$(Assembly)_I")
+{
+    field(DESC, "Input Frequency")
+    field(LINR, "LINEAR")
+    field(ESLO, .1)
+    field(DTYP, "Snmp")
+    field(INP,  "@$(IP) $(C) INTEGER: 128")
+    info (OID,  "1.3.6.1.4.1.13891.101.3.3.1.2.1")
+#    field(FLNK, "$(Pri)$(Sec)$(Dev)V:Output_$(Assembly)_I")   
+    field(FLNK, "$(Pri)$(Sec)$(Dev)Freq:Input_$(Assembly)_Calc")   
+}
+
+#Scaling calculation
+record(calc, "$(Pri)$(Sec)$(Dev)Freq:Input_$(Assembly)_Calc")
+{
+    field(INPA, "$(Pri)$(Sec)$(Dev)Freq:Input_$(Assembly)_I MS")
+	field(CALC, "A*.1")
+	field(FLNK, "$(Pri)$(Sec)$(Dev)V:Output_$(Assembly)_I")
+	field(HIHI, 63.0)
+	field(HHSV, "MAJOR")
+	field(LOLO, 57.0)
+	field(LLSV, "MAJOR")
+#        field(TPRO, "1")
+}
+
+record (longin,"$(Pri)$(Sec)$(Dev)V:Output_$(Assembly)_I")
+{
+    field(DESC, "Output Voltage")
+    field(DTYP, "Snmp")
+    field(INP,  "@$(IP) $(C) INTEGER: 128")
+	field(HIHI, 495)
+	field(HHSV, "MAJOR")
+	field(LOLO, 466)
+	field(LLSV, "MAJOR")
+    info (OID,  "1.3.6.1.4.1.13891.101.4.4.1.2.1")
+    field(FLNK, "$(Pri)$(Sec)$(Dev)I:OutputPa_$(Assembly)_I")
+}
+
+
+record (ai,"$(Pri)$(Sec)$(Dev)I:OutputPa_$(Assembly)_I")
+{
+    field(DESC, "Output Current")
+    field(DTYP, "Snmp")
+    field(INP,  "@$(IP) $(C) INTEGER: 128")
+    field(ASLO, ".01")
+#	field(HIHI, 239)
+#	field(HHSV, "MAJOR")
+#	field(LOLO, 176)
+#	field(LLSV, "MAJOR")
+    info (OID,  "1.3.6.1.4.1.13891.101.4.4.1.3.1")
+    field(FLNK, "$(Pri)$(Sec)$(Dev)I:OutputPb_$(Assembly)_I")
+}
+record (ai,"$(Pri)$(Sec)$(Dev)I:OutputPb_$(Assembly)_I")
+{
+    field(DESC, "Output Current")
+    field(DTYP, "Snmp")
+    field(INP,  "@$(IP) $(C) INTEGER: 128")
+    field(ASLO, ".01")
+#	field(HIHI, 239)
+#	field(HHSV, "MAJOR")
+#	field(LOLO, 176)
+#	field(LLSV, "MAJOR")
+    info (OID,  "1.3.6.1.4.1.13891.101.4.4.1.3.2")
+    field(FLNK, "$(Pri)$(Sec)$(Dev)I:OutputPc_$(Assembly)_I")
+}
+record (ai,"$(Pri)$(Sec)$(Dev)I:OutputPc_$(Assembly)_I")
+{
+    field(DESC, "Output Current")
+    field(DTYP, "Snmp")
+    field(INP,  "@$(IP) $(C) INTEGER: 128")
+    field(ASLO, ".01")
+#	field(HIHI, 239)
+#	field(HHSV, "MAJOR")
+#	field(LOLO, 176)
+#	field(LLSV, "MAJOR")
+    info (OID,  "1.3.6.1.4.1.13891.101.4.4.1.3.3")
+    field(FLNK, "$(Pri)$(Sec)$(Dev)I:Output_$(Assembly)_Calc")
+}
+#Scaling calculation
+record(calc, "$(Pri)$(Sec)$(Dev)I:Output_$(Assembly)_Calc")
+{
+        field(INPA, "$(Pri)$(Sec)$(Dev)I:OutputPa_$(Assembly)_I MS")
+        field(INPB, "$(Pri)$(Sec)$(Dev)I:OutputPb_$(Assembly)_I MS")
+        field(INPC, "$(Pri)$(Sec)$(Dev)I:OutputPc_$(Assembly)_I MS")
+	field(CALC, "(MAX(A,MAX(B,C)))*.1")
+    field(FLNK, "$(Pri)$(Sec)$(Dev)Freq:Output_$(Assembly)_I")
+    field(HIHI, 36.1)
+    field(HHSV, "MAJOR")
+#        field(TPRO, "1")
+}
+
+
+record (longin,"$(Pri)$(Sec)$(Dev)Freq:Output_$(Assembly)_I")
+{
+    field(DESC, "Output Frequency")
+    field(DTYP, "Snmp")
+    field(INP,  "@$(IP) $(C) INTEGER: 128")
+    info (OID,  "1.3.6.1.4.1.13891.101.4.2.0")
+    field(FLNK, "$(Pri)$(Sec)$(Dev)Freq:Output_$(Assembly)_Calc")
+}
+
+#Scaling calculation
+record(calc, "$(Pri)$(Sec)$(Dev)Freq:Output_$(Assembly)_Calc")
+{
+    field(INPA, "$(Pri)$(Sec)$(Dev)Freq:Output_$(Assembly)_I MS")
+	field(CALC, "A*.1")
+	field(HIHI, 63.0)
+	field(HHSV, "MAJOR")
+	field(LOLO, 57.0)
+	field(LLSV, "MAJOR")
+    field(FLNK, "$(Pri)$(Sec)$(Dev)Val:%Battery_$(Assembly)_I")
+#   field(TPRO, "1")
+}
+
+record (longin,"$(Pri)$(Sec)$(Dev)Val:%Battery_$(Assembly)_I")
+{
+    field(DESC, "% Battery Remaining")
+    field(DTYP, "Snmp")
+    field(INP,  "@$(IP) $(C) INTEGER: 128")
+	field(LOLO, 800)
+	field(LLSV, "MAJOR")
+    info (OID,  "1.3.6.1.4.1.13891.101.2.4.0")
+    field(FLNK, "$(Pri)$(Sec)$(Dev)V:Battery_$(Assembly)_Iread")
+}
+
+record (longin,"$(Pri)$(Sec)$(Dev)V:Battery_$(Assembly)_Iread")
+{
+    field(DESC, "Battery Voltage")
+    field(DTYP, "Snmp")
+    field(INP,  "@$(IP) $(C) INTEGER: 128")
+	field(LOLO, 800)
+	field(LLSV, "MAJOR")
+    info (OID,  "1.3.6.1.4.1.13891.101.2.5.0")
+    field(FLNK, "$(Pri)$(Sec)$(Dev)V:Battery_$(Assembly)_I")
+}
+#Scaling calculation
+record(calc, "$(Pri)$(Sec)$(Dev)V:Battery_$(Assembly)_I")
+{
+    field(INPA, "$(Pri)$(Sec)$(Dev)V:Battery_$(Assembly)_Iread MS")
+	field(CALC, "A*.1")
+	field(HIHI, 551)
+	field(HHSV, "MAJOR")
+	field(LOLO, 529)
+	field(LLSV, "MAJOR")
+    field(FLNK, "$(Pri)$(Sec)$(Dev)T:UPSAir_$(Assembly)_I")
+#   field(TPRO, "1")
+}
+
+
+record (longin,"$(Pri)$(Sec)$(Dev)T:UPSAir_$(Assembly)_I")
+{
+    field(DESC, "Battery Temperature")
+    field(DTYP, "Snmp")
+    field(INP,  "@$(IP) $(C) INTEGER: 128")
+	field(HIHI, 350)
+	field(HHSV, "MAJOR")
+    info (OID,  "1.3.6.1.4.1.13891.101.2.7.0")
+    field(FLNK, "$(Pri)$(Sec)$(Dev)T:UPSAir_$(Assembly)_Calc")
+}
+
+#Scaling calculation
+record(calc, "$(Pri)$(Sec)$(Dev)T:UPSAir_$(Assembly)_Calc")
+{
+        field(INPA, "$(Pri)$(Sec)$(Dev)T:UPSAir_$(Assembly)_I")
+	field(CALC, "A*.1")
+	field(HIHI, 35.0)
+	field(HHSV, "MAJOR")
+        field(FLNK, "$(Pri)$(Sec)$(Dev)Cnt:UPSAlarm_$(Assembly)_I")
+#        field(TPRO, "1")
+}
+record (calc,"$(Pri)$(Sec)$(Dev)Cnt:UPSAlarm_$(Assembly)_I")
+{    
+# This was an ai but was not available on the mitsubishi 
+#    field(DESC, "Alarm Count")
+#    field(DTYP, "Snmp")
+#    field(INP,  "@$(IP) $(C) Gauge32: 128")
+#    info (OID,  "1.3.6.1.2.1.33.1.6.1.0")
+    field(CALC, "0")
+    field(FLNK, "$(Pri)$(Sec)$(Dev)Time:BatteryLeft_$(Assembly)_I")
+}
+
+record (longin,"$(Pri)$(Sec)$(Dev)Time:BatteryLeft_$(Assembly)_I")
+{
+    field(DESC, "Battery Time Remaining")
+    field(DTYP, "Snmp")
+    field(INP,  "@$(IP) $(C) INTEGER: 128")
+	field(LOLO, 8)
+	field(LLSV,"MAJOR")
+    info (OID,  "1.3.6.1.4.1.13891.101.2.3.0")
+    field(FLNK, "$(Pri)$(Sec)$(Dev)RH:UPSAir_$(Assembly)_Calc")
+}
+record(calc, "$(Pri)$(Sec)$(Dev)RH:UPSAir_$(Assembly)_Calc")
+{
+#        field(INPA, "$(Pri)$(Sec)$(Dev)RH:UPSAir_$(Assembly)_I")
+		field(CALC, "0")
+#	field(HIHI, 63.0)
+#	field(HHSV, "MAJOR")
+#	field(LOLO, 57.0)
+#	field(LLSV, "MAJOR")
+    field(FLNK, "$(Flnk)")
+#        field(TPRO, "1")
+}
+
+record(mbbo, "$(Pri)$(Sec)$(Dev)Cmd:$(Assembly)_Sel")
+{
+    field(ZRST, "On")
+    field(ONST, "Off")
+    field(ZRVL, "1")
+    field(ONVL, "2")
+    field(FLNK, "$(Pri)$(Sec)$(Dev)Cmd:Raw_$(Assembly)_Sel")
+}
+record (longout,"$(Pri)$(Sec)$(Dev)Cmd:Raw_$(Assembly)_Sel")
+{
+    field(DESC, "Setting the outlet state")
+    field(DTYP, "Snmp")
+    field(DOL, "$(Pri)$(Sec)$(Dev)UPS:$(Assembly)_CMD")
+    field(OUT,  "@$(IP) $(C) INTEGER: 128 i")
+    info (OID,  "1.3.6.1.4.1.13891.101.8.2.0")
+}
+
+
+#UPS Alarm calculation combine all fields
+record(calc, "$(Pri)$(Sec)$(Dev)UPS:AlarmCalcP1")
+{
+        field(SCAN, "2 second")
+        field(INPA, "$(Pri)$(Sec)$(Dev)Sts:$(Assembly)_Sts.SEVR")
+
+        field(INPB, "$(Pri)$(Sec)$(Dev)V:Input_$(Assembly)_I.SEVR")
+        field(INPC, "$(Pri)$(Sec)$(Dev)I:Input_$(Assembly)_Calc.SEVR")
+        field(INPD, "$(Pri)$(Sec)$(Dev)Freq:Input_$(Assembly)_Calc.SEVR")
+
+	field(CALC, "(((A=2)||(B=2)||(C=2)||(D=2))?1:0)")
+	field(HIHI, 1.0)
+	field(HHSV, "MAJOR")
+#       field(TPRO, "1")
+
+}
+
+#UPS Alarm calculation combine all fields
+record(calc, "$(Pri)$(Sec)$(Dev)UPS:AlarmCalcP2")
+{
+        field(SCAN, "2 second")
+        field(INPA, "$(Pri)$(Sec)$(Dev)V:Output_$(Assembly)_I.SEVR")
+        field(INPB, "$(Pri)$(Sec)$(Dev)I:Output_$(Assembly)_Calc.SEVR")
+        field(INPC, "$(Pri)$(Sec)$(Dev)Freq:Output_$(Assembly)_Calc.SEVR")
+
+	field(CALC, "(((A=2)||(B=2)||(C=2))?1:0)")
+	field(HIHI, 1.0)
+	field(HHSV, "MAJOR")
+#       field(TPRO, "1")
+
+}
+
+
+#UPS Alarm calculation combine all fields
+record(calc, "$(Pri)$(Sec)$(Dev)UPS:AlarmCalcP3")
+{
+        field(SCAN, "2 second")
+        field(INPA, "$(Pri)$(Sec)$(Dev)V:Battery_$(Assembly)_I.SEVR")
+        field(INPB, "$(Pri)$(Sec)$(Dev)T:UPSAir_$(Assembly)_Calc.SEVR")
+        field(INPC, "$(Pri)$(Sec)$(Dev)RH:UPSAir_$(Assembly)_I.SEVR")
+
+	field(CALC, "(((A=2)||(B=2)||(C=2))?1:0)")
+	field(HIHI, 1.0)
+	field(HHSV, "MAJOR")
+#       field(TPRO, "1")
+
+}
+
+
+#UPS Alarm calculation combine all fields
+record(calc, "$(Pri)$(Sec)$(Dev)UPS:AlarmCalcP4")
+{
+        field(SCAN, "2 second")
+        field(INPA, "$(Pri)$(Sec)$(Dev)UPS:AlarmCalcP1.SEVR")
+        field(INPB, "$(Pri)$(Sec)$(Dev)UPS:AlarmCalcP2.SEVR")
+        field(INPC, "$(Pri)$(Sec)$(Dev)UPS:AlarmCalcP3.SEVR")
+
+	field(CALC, "(((A=2)||(B=2)||(C=2))?1:0)")
+	field(HIHI, 1.0)
+	field(HHSV, "MAJOR")
+#       field(TPRO, "1")
+
+}
+
+
+
+
+

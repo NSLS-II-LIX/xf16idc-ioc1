@@ -1,0 +1,2915 @@
+record(stringout, "INJ-CS{ApcPdu:Q4}DB:Outlet1Name-SP")
+{
+	field(DESC, "Set Outlet1 Name")
+	field(PINI, "YES")
+	field(VAL,  "Outlet 1")
+	field(UDF, "0")
+	field(FLNK, "INJ-CS{ApcPdu:Q4}DB:Outlet1Name-RB")
+	info(autosaveFields, "VAL")
+}
+
+record(stringin, "INJ-CS{ApcPdu:Q4}DB:Outlet1Name-RB")
+{
+	field(DESC, "Outlet1 Name")
+	field(INP, "INJ-CS{ApcPdu:Q4}DB:Outlet1Name-SP")    
+}
+
+
+record(mbbo, "INJ-CS{ApcPdu:Q4}DB:OutletCmd-Sel")
+{
+	field(DESC, "Outlet Sel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+	field(PINI, "YES")
+	field(VAL,  "1")
+}
+
+record(dfanout, "INJ-CS{ApcPdu:Q4}DB:OutletCmd-DFOut_")
+{
+	field(DESC, "Outlet Cmd DFOut")
+	field(OMSL, "closed_loop")
+	field(DOL,  "INJ-CS{ApcPdu:Q4}DB:OutletCmd-Sel.RVAL")
+	field(OUTA, "INJ-CS{ApcPdu:Q4}Cmd:Outlet1-SP PP")
+	field(OUTB, "INJ-CS{ApcPdu:Q4}Cmd:Outlet2-SP PP")
+	field(OUTC, "INJ-CS{ApcPdu:Q4}Cmd:Outlet3-SP PP")
+	field(OUTD, "INJ-CS{ApcPdu:Q4}Cmd:Outlet4-SP PP")
+	field(OUTE, "INJ-CS{ApcPdu:Q4}Cmd:Outlet5-SP PP")
+	field(OUTF, "INJ-CS{ApcPdu:Q4}Cmd:Outlet6-SP PP")
+	field(OUTG, "INJ-CS{ApcPdu:Q4}Cmd:Outlet7-SP PP")
+	field(OUTH, "INJ-CS{ApcPdu:Q4}Cmd:Outlet8-SP PP")
+}
+
+record(mbbo, "INJ-CS{ApcPdu:Q4}Cmd:Outlet1-Sel")
+{
+	field(DESC, "Outlet1 Sel")
+	field(OUT,  "INJ-CS{ApcPdu:Q4}Cmd:Outlet1-SP PP")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+
+record (longout,"INJ-CS{ApcPdu:Q4}Cmd:Outlet1-SP")
+{
+	field(DESC, "Raw Outlet1 Sel")
+	field(DESC, "Setting the outlet state")
+	field(DTYP, "Snmp")
+	field(OUT,  "@10.0.144.14 private INTEGER: 128 i")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.1")
+}
+
+record (longin,"INJ-CS{ApcPdu:Q4}Sts:Outlet1-RB")
+{
+	field(DESC, "Raw Outlet1 Stat")
+	field(DTYP, "Snmp")
+	field(INP,  "@10.0.144.14 private INTEGER: 128")
+	field(SCAN, "1 second")
+	field(FLNK, "INJ-CS{ApcPdu:Q4}Sts:Outlet1-Sts")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.1")
+}
+
+record(mbbi, "INJ-CS{ApcPdu:Q4}Sts:Outlet1-Sts")
+{
+	field(DESC, "Outlet1 Stat")
+	field(INP, "INJ-CS{ApcPdu:Q4}Sts:Outlet1-RB")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+record(stringout, "INJ-CS{ApcPdu:Q4}DB:Outlet2Name-SP")
+{
+	field(DESC, "Set Outlet2 Name")
+	field(PINI, "YES")
+	field(VAL,  "Outlet 2")
+	field(UDF, "0")
+	field(FLNK, "INJ-CS{ApcPdu:Q4}DB:Outlet2Name-RB")
+	info(autosaveFields, "VAL")
+}
+
+record(stringin, "INJ-CS{ApcPdu:Q4}DB:Outlet2Name-RB")
+{
+	field(DESC, "Outlet2 Name")
+	field(INP, "INJ-CS{ApcPdu:Q4}DB:Outlet2Name-SP")    
+}
+
+
+record(mbbo, "INJ-CS{ApcPdu:Q4}DB:OutletCmd-Sel")
+{
+	field(DESC, "Outlet Sel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+	field(PINI, "YES")
+	field(VAL,  "1")
+}
+
+record(dfanout, "INJ-CS{ApcPdu:Q4}DB:OutletCmd-DFOut_")
+{
+	field(DESC, "Outlet Cmd DFOut")
+	field(OMSL, "closed_loop")
+	field(DOL,  "INJ-CS{ApcPdu:Q4}DB:OutletCmd-Sel.RVAL")
+	field(OUTA, "INJ-CS{ApcPdu:Q4}Cmd:Outlet1-SP PP")
+	field(OUTB, "INJ-CS{ApcPdu:Q4}Cmd:Outlet2-SP PP")
+	field(OUTC, "INJ-CS{ApcPdu:Q4}Cmd:Outlet3-SP PP")
+	field(OUTD, "INJ-CS{ApcPdu:Q4}Cmd:Outlet4-SP PP")
+	field(OUTE, "INJ-CS{ApcPdu:Q4}Cmd:Outlet5-SP PP")
+	field(OUTF, "INJ-CS{ApcPdu:Q4}Cmd:Outlet6-SP PP")
+	field(OUTG, "INJ-CS{ApcPdu:Q4}Cmd:Outlet7-SP PP")
+	field(OUTH, "INJ-CS{ApcPdu:Q4}Cmd:Outlet8-SP PP")
+}
+
+record(mbbo, "INJ-CS{ApcPdu:Q4}Cmd:Outlet2-Sel")
+{
+	field(DESC, "Outlet2 Sel")
+	field(OUT,  "INJ-CS{ApcPdu:Q4}Cmd:Outlet2-SP PP")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+
+record (longout,"INJ-CS{ApcPdu:Q4}Cmd:Outlet2-SP")
+{
+	field(DESC, "Raw Outlet2 Sel")
+	field(DESC, "Setting the outlet state")
+	field(DTYP, "Snmp")
+	field(OUT,  "@10.0.144.14 private INTEGER: 128 i")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.2")
+}
+
+record (longin,"INJ-CS{ApcPdu:Q4}Sts:Outlet2-RB")
+{
+	field(DESC, "Raw Outlet2 Stat")
+	field(DTYP, "Snmp")
+	field(INP,  "@10.0.144.14 private INTEGER: 128")
+	field(SCAN, "1 second")
+	field(FLNK, "INJ-CS{ApcPdu:Q4}Sts:Outlet2-Sts")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.2")
+}
+
+record(mbbi, "INJ-CS{ApcPdu:Q4}Sts:Outlet2-Sts")
+{
+	field(DESC, "Outlet2 Stat")
+	field(INP, "INJ-CS{ApcPdu:Q4}Sts:Outlet2-RB")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+record(stringout, "INJ-CS{ApcPdu:Q4}DB:Outlet3Name-SP")
+{
+	field(DESC, "Set Outlet3 Name")
+	field(PINI, "YES")
+	field(VAL,  "Outlet 3")
+	field(UDF, "0")
+	field(FLNK, "INJ-CS{ApcPdu:Q4}DB:Outlet3Name-RB")
+	info(autosaveFields, "VAL")
+}
+
+record(stringin, "INJ-CS{ApcPdu:Q4}DB:Outlet3Name-RB")
+{
+	field(DESC, "Outlet3 Name")
+	field(INP, "INJ-CS{ApcPdu:Q4}DB:Outlet3Name-SP")    
+}
+
+
+record(mbbo, "INJ-CS{ApcPdu:Q4}DB:OutletCmd-Sel")
+{
+	field(DESC, "Outlet Sel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+	field(PINI, "YES")
+	field(VAL,  "1")
+}
+
+record(dfanout, "INJ-CS{ApcPdu:Q4}DB:OutletCmd-DFOut_")
+{
+	field(DESC, "Outlet Cmd DFOut")
+	field(OMSL, "closed_loop")
+	field(DOL,  "INJ-CS{ApcPdu:Q4}DB:OutletCmd-Sel.RVAL")
+	field(OUTA, "INJ-CS{ApcPdu:Q4}Cmd:Outlet1-SP PP")
+	field(OUTB, "INJ-CS{ApcPdu:Q4}Cmd:Outlet2-SP PP")
+	field(OUTC, "INJ-CS{ApcPdu:Q4}Cmd:Outlet3-SP PP")
+	field(OUTD, "INJ-CS{ApcPdu:Q4}Cmd:Outlet4-SP PP")
+	field(OUTE, "INJ-CS{ApcPdu:Q4}Cmd:Outlet5-SP PP")
+	field(OUTF, "INJ-CS{ApcPdu:Q4}Cmd:Outlet6-SP PP")
+	field(OUTG, "INJ-CS{ApcPdu:Q4}Cmd:Outlet7-SP PP")
+	field(OUTH, "INJ-CS{ApcPdu:Q4}Cmd:Outlet8-SP PP")
+}
+
+record(mbbo, "INJ-CS{ApcPdu:Q4}Cmd:Outlet3-Sel")
+{
+	field(DESC, "Outlet3 Sel")
+	field(OUT,  "INJ-CS{ApcPdu:Q4}Cmd:Outlet3-SP PP")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+
+record (longout,"INJ-CS{ApcPdu:Q4}Cmd:Outlet3-SP")
+{
+	field(DESC, "Raw Outlet3 Sel")
+	field(DESC, "Setting the outlet state")
+	field(DTYP, "Snmp")
+	field(OUT,  "@10.0.144.14 private INTEGER: 128 i")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.3")
+}
+
+record (longin,"INJ-CS{ApcPdu:Q4}Sts:Outlet3-RB")
+{
+	field(DESC, "Raw Outlet3 Stat")
+	field(DTYP, "Snmp")
+	field(INP,  "@10.0.144.14 private INTEGER: 128")
+	field(SCAN, "1 second")
+	field(FLNK, "INJ-CS{ApcPdu:Q4}Sts:Outlet3-Sts")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.3")
+}
+
+record(mbbi, "INJ-CS{ApcPdu:Q4}Sts:Outlet3-Sts")
+{
+	field(DESC, "Outlet3 Stat")
+	field(INP, "INJ-CS{ApcPdu:Q4}Sts:Outlet3-RB")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+record(stringout, "INJ-CS{ApcPdu:Q4}DB:Outlet4Name-SP")
+{
+	field(DESC, "Set Outlet4 Name")
+	field(PINI, "YES")
+	field(VAL,  "Outlet 4")
+	field(UDF, "0")
+	field(FLNK, "INJ-CS{ApcPdu:Q4}DB:Outlet4Name-RB")
+	info(autosaveFields, "VAL")
+}
+
+record(stringin, "INJ-CS{ApcPdu:Q4}DB:Outlet4Name-RB")
+{
+	field(DESC, "Outlet4 Name")
+	field(INP, "INJ-CS{ApcPdu:Q4}DB:Outlet4Name-SP")    
+}
+
+
+record(mbbo, "INJ-CS{ApcPdu:Q4}DB:OutletCmd-Sel")
+{
+	field(DESC, "Outlet Sel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+	field(PINI, "YES")
+	field(VAL,  "1")
+}
+
+record(dfanout, "INJ-CS{ApcPdu:Q4}DB:OutletCmd-DFOut_")
+{
+	field(DESC, "Outlet Cmd DFOut")
+	field(OMSL, "closed_loop")
+	field(DOL,  "INJ-CS{ApcPdu:Q4}DB:OutletCmd-Sel.RVAL")
+	field(OUTA, "INJ-CS{ApcPdu:Q4}Cmd:Outlet1-SP PP")
+	field(OUTB, "INJ-CS{ApcPdu:Q4}Cmd:Outlet2-SP PP")
+	field(OUTC, "INJ-CS{ApcPdu:Q4}Cmd:Outlet3-SP PP")
+	field(OUTD, "INJ-CS{ApcPdu:Q4}Cmd:Outlet4-SP PP")
+	field(OUTE, "INJ-CS{ApcPdu:Q4}Cmd:Outlet5-SP PP")
+	field(OUTF, "INJ-CS{ApcPdu:Q4}Cmd:Outlet6-SP PP")
+	field(OUTG, "INJ-CS{ApcPdu:Q4}Cmd:Outlet7-SP PP")
+	field(OUTH, "INJ-CS{ApcPdu:Q4}Cmd:Outlet8-SP PP")
+}
+
+record(mbbo, "INJ-CS{ApcPdu:Q4}Cmd:Outlet4-Sel")
+{
+	field(DESC, "Outlet4 Sel")
+	field(OUT,  "INJ-CS{ApcPdu:Q4}Cmd:Outlet4-SP PP")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+
+record (longout,"INJ-CS{ApcPdu:Q4}Cmd:Outlet4-SP")
+{
+	field(DESC, "Raw Outlet4 Sel")
+	field(DESC, "Setting the outlet state")
+	field(DTYP, "Snmp")
+	field(OUT,  "@10.0.144.14 private INTEGER: 128 i")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.4")
+}
+
+record (longin,"INJ-CS{ApcPdu:Q4}Sts:Outlet4-RB")
+{
+	field(DESC, "Raw Outlet4 Stat")
+	field(DTYP, "Snmp")
+	field(INP,  "@10.0.144.14 private INTEGER: 128")
+	field(SCAN, "1 second")
+	field(FLNK, "INJ-CS{ApcPdu:Q4}Sts:Outlet4-Sts")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.4")
+}
+
+record(mbbi, "INJ-CS{ApcPdu:Q4}Sts:Outlet4-Sts")
+{
+	field(DESC, "Outlet4 Stat")
+	field(INP, "INJ-CS{ApcPdu:Q4}Sts:Outlet4-RB")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+record(stringout, "INJ-CS{ApcPdu:Q4}DB:Outlet5Name-SP")
+{
+	field(DESC, "Set Outlet5 Name")
+	field(PINI, "YES")
+	field(VAL,  "Outlet 5")
+	field(UDF, "0")
+	field(FLNK, "INJ-CS{ApcPdu:Q4}DB:Outlet5Name-RB")
+	info(autosaveFields, "VAL")
+}
+
+record(stringin, "INJ-CS{ApcPdu:Q4}DB:Outlet5Name-RB")
+{
+	field(DESC, "Outlet5 Name")
+	field(INP, "INJ-CS{ApcPdu:Q4}DB:Outlet5Name-SP")    
+}
+
+
+record(mbbo, "INJ-CS{ApcPdu:Q4}DB:OutletCmd-Sel")
+{
+	field(DESC, "Outlet Sel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+	field(PINI, "YES")
+	field(VAL,  "1")
+}
+
+record(dfanout, "INJ-CS{ApcPdu:Q4}DB:OutletCmd-DFOut_")
+{
+	field(DESC, "Outlet Cmd DFOut")
+	field(OMSL, "closed_loop")
+	field(DOL,  "INJ-CS{ApcPdu:Q4}DB:OutletCmd-Sel.RVAL")
+	field(OUTA, "INJ-CS{ApcPdu:Q4}Cmd:Outlet1-SP PP")
+	field(OUTB, "INJ-CS{ApcPdu:Q4}Cmd:Outlet2-SP PP")
+	field(OUTC, "INJ-CS{ApcPdu:Q4}Cmd:Outlet3-SP PP")
+	field(OUTD, "INJ-CS{ApcPdu:Q4}Cmd:Outlet4-SP PP")
+	field(OUTE, "INJ-CS{ApcPdu:Q4}Cmd:Outlet5-SP PP")
+	field(OUTF, "INJ-CS{ApcPdu:Q4}Cmd:Outlet6-SP PP")
+	field(OUTG, "INJ-CS{ApcPdu:Q4}Cmd:Outlet7-SP PP")
+	field(OUTH, "INJ-CS{ApcPdu:Q4}Cmd:Outlet8-SP PP")
+}
+
+record(mbbo, "INJ-CS{ApcPdu:Q4}Cmd:Outlet5-Sel")
+{
+	field(DESC, "Outlet5 Sel")
+	field(OUT,  "INJ-CS{ApcPdu:Q4}Cmd:Outlet5-SP PP")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+
+record (longout,"INJ-CS{ApcPdu:Q4}Cmd:Outlet5-SP")
+{
+	field(DESC, "Raw Outlet5 Sel")
+	field(DESC, "Setting the outlet state")
+	field(DTYP, "Snmp")
+	field(OUT,  "@10.0.144.14 private INTEGER: 128 i")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.5")
+}
+
+record (longin,"INJ-CS{ApcPdu:Q4}Sts:Outlet5-RB")
+{
+	field(DESC, "Raw Outlet5 Stat")
+	field(DTYP, "Snmp")
+	field(INP,  "@10.0.144.14 private INTEGER: 128")
+	field(SCAN, "1 second")
+	field(FLNK, "INJ-CS{ApcPdu:Q4}Sts:Outlet5-Sts")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.5")
+}
+
+record(mbbi, "INJ-CS{ApcPdu:Q4}Sts:Outlet5-Sts")
+{
+	field(DESC, "Outlet5 Stat")
+	field(INP, "INJ-CS{ApcPdu:Q4}Sts:Outlet5-RB")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+record(stringout, "INJ-CS{ApcPdu:Q4}DB:Outlet6Name-SP")
+{
+	field(DESC, "Set Outlet6 Name")
+	field(PINI, "YES")
+	field(VAL,  "Outlet 6")
+	field(UDF, "0")
+	field(FLNK, "INJ-CS{ApcPdu:Q4}DB:Outlet6Name-RB")
+	info(autosaveFields, "VAL")
+}
+
+record(stringin, "INJ-CS{ApcPdu:Q4}DB:Outlet6Name-RB")
+{
+	field(DESC, "Outlet6 Name")
+	field(INP, "INJ-CS{ApcPdu:Q4}DB:Outlet6Name-SP")    
+}
+
+
+record(mbbo, "INJ-CS{ApcPdu:Q4}DB:OutletCmd-Sel")
+{
+	field(DESC, "Outlet Sel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+	field(PINI, "YES")
+	field(VAL,  "1")
+}
+
+record(dfanout, "INJ-CS{ApcPdu:Q4}DB:OutletCmd-DFOut_")
+{
+	field(DESC, "Outlet Cmd DFOut")
+	field(OMSL, "closed_loop")
+	field(DOL,  "INJ-CS{ApcPdu:Q4}DB:OutletCmd-Sel.RVAL")
+	field(OUTA, "INJ-CS{ApcPdu:Q4}Cmd:Outlet1-SP PP")
+	field(OUTB, "INJ-CS{ApcPdu:Q4}Cmd:Outlet2-SP PP")
+	field(OUTC, "INJ-CS{ApcPdu:Q4}Cmd:Outlet3-SP PP")
+	field(OUTD, "INJ-CS{ApcPdu:Q4}Cmd:Outlet4-SP PP")
+	field(OUTE, "INJ-CS{ApcPdu:Q4}Cmd:Outlet5-SP PP")
+	field(OUTF, "INJ-CS{ApcPdu:Q4}Cmd:Outlet6-SP PP")
+	field(OUTG, "INJ-CS{ApcPdu:Q4}Cmd:Outlet7-SP PP")
+	field(OUTH, "INJ-CS{ApcPdu:Q4}Cmd:Outlet8-SP PP")
+}
+
+record(mbbo, "INJ-CS{ApcPdu:Q4}Cmd:Outlet6-Sel")
+{
+	field(DESC, "Outlet6 Sel")
+	field(OUT,  "INJ-CS{ApcPdu:Q4}Cmd:Outlet6-SP PP")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+
+record (longout,"INJ-CS{ApcPdu:Q4}Cmd:Outlet6-SP")
+{
+	field(DESC, "Raw Outlet6 Sel")
+	field(DESC, "Setting the outlet state")
+	field(DTYP, "Snmp")
+	field(OUT,  "@10.0.144.14 private INTEGER: 128 i")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.6")
+}
+
+record (longin,"INJ-CS{ApcPdu:Q4}Sts:Outlet6-RB")
+{
+	field(DESC, "Raw Outlet6 Stat")
+	field(DTYP, "Snmp")
+	field(INP,  "@10.0.144.14 private INTEGER: 128")
+	field(SCAN, "1 second")
+	field(FLNK, "INJ-CS{ApcPdu:Q4}Sts:Outlet6-Sts")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.6")
+}
+
+record(mbbi, "INJ-CS{ApcPdu:Q4}Sts:Outlet6-Sts")
+{
+	field(DESC, "Outlet6 Stat")
+	field(INP, "INJ-CS{ApcPdu:Q4}Sts:Outlet6-RB")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+record(stringout, "INJ-CS{ApcPdu:Q4}DB:Outlet7Name-SP")
+{
+	field(DESC, "Set Outlet7 Name")
+	field(PINI, "YES")
+	field(VAL,  "Outlet 7")
+	field(UDF, "0")
+	field(FLNK, "INJ-CS{ApcPdu:Q4}DB:Outlet7Name-RB")
+	info(autosaveFields, "VAL")
+}
+
+record(stringin, "INJ-CS{ApcPdu:Q4}DB:Outlet7Name-RB")
+{
+	field(DESC, "Outlet7 Name")
+	field(INP, "INJ-CS{ApcPdu:Q4}DB:Outlet7Name-SP")    
+}
+
+
+record(mbbo, "INJ-CS{ApcPdu:Q4}DB:OutletCmd-Sel")
+{
+	field(DESC, "Outlet Sel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+	field(PINI, "YES")
+	field(VAL,  "1")
+}
+
+record(dfanout, "INJ-CS{ApcPdu:Q4}DB:OutletCmd-DFOut_")
+{
+	field(DESC, "Outlet Cmd DFOut")
+	field(OMSL, "closed_loop")
+	field(DOL,  "INJ-CS{ApcPdu:Q4}DB:OutletCmd-Sel.RVAL")
+	field(OUTA, "INJ-CS{ApcPdu:Q4}Cmd:Outlet1-SP PP")
+	field(OUTB, "INJ-CS{ApcPdu:Q4}Cmd:Outlet2-SP PP")
+	field(OUTC, "INJ-CS{ApcPdu:Q4}Cmd:Outlet3-SP PP")
+	field(OUTD, "INJ-CS{ApcPdu:Q4}Cmd:Outlet4-SP PP")
+	field(OUTE, "INJ-CS{ApcPdu:Q4}Cmd:Outlet5-SP PP")
+	field(OUTF, "INJ-CS{ApcPdu:Q4}Cmd:Outlet6-SP PP")
+	field(OUTG, "INJ-CS{ApcPdu:Q4}Cmd:Outlet7-SP PP")
+	field(OUTH, "INJ-CS{ApcPdu:Q4}Cmd:Outlet8-SP PP")
+}
+
+record(mbbo, "INJ-CS{ApcPdu:Q4}Cmd:Outlet7-Sel")
+{
+	field(DESC, "Outlet7 Sel")
+	field(OUT,  "INJ-CS{ApcPdu:Q4}Cmd:Outlet7-SP PP")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+
+record (longout,"INJ-CS{ApcPdu:Q4}Cmd:Outlet7-SP")
+{
+	field(DESC, "Raw Outlet7 Sel")
+	field(DESC, "Setting the outlet state")
+	field(DTYP, "Snmp")
+	field(OUT,  "@10.0.144.14 private INTEGER: 128 i")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.7")
+}
+
+record (longin,"INJ-CS{ApcPdu:Q4}Sts:Outlet7-RB")
+{
+	field(DESC, "Raw Outlet7 Stat")
+	field(DTYP, "Snmp")
+	field(INP,  "@10.0.144.14 private INTEGER: 128")
+	field(SCAN, "1 second")
+	field(FLNK, "INJ-CS{ApcPdu:Q4}Sts:Outlet7-Sts")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.7")
+}
+
+record(mbbi, "INJ-CS{ApcPdu:Q4}Sts:Outlet7-Sts")
+{
+	field(DESC, "Outlet7 Stat")
+	field(INP, "INJ-CS{ApcPdu:Q4}Sts:Outlet7-RB")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+record(stringout, "INJ-CS{ApcPdu:Q4}DB:Outlet8Name-SP")
+{
+	field(DESC, "Set Outlet8 Name")
+	field(PINI, "YES")
+	field(VAL,  "Outlet 8")
+	field(UDF, "0")
+	field(FLNK, "INJ-CS{ApcPdu:Q4}DB:Outlet8Name-RB")
+	info(autosaveFields, "VAL")
+}
+
+record(stringin, "INJ-CS{ApcPdu:Q4}DB:Outlet8Name-RB")
+{
+	field(DESC, "Outlet8 Name")
+	field(INP, "INJ-CS{ApcPdu:Q4}DB:Outlet8Name-SP")    
+}
+
+
+record(mbbo, "INJ-CS{ApcPdu:Q4}DB:OutletCmd-Sel")
+{
+	field(DESC, "Outlet Sel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+	field(PINI, "YES")
+	field(VAL,  "1")
+}
+
+record(dfanout, "INJ-CS{ApcPdu:Q4}DB:OutletCmd-DFOut_")
+{
+	field(DESC, "Outlet Cmd DFOut")
+	field(OMSL, "closed_loop")
+	field(DOL,  "INJ-CS{ApcPdu:Q4}DB:OutletCmd-Sel.RVAL")
+	field(OUTA, "INJ-CS{ApcPdu:Q4}Cmd:Outlet1-SP PP")
+	field(OUTB, "INJ-CS{ApcPdu:Q4}Cmd:Outlet2-SP PP")
+	field(OUTC, "INJ-CS{ApcPdu:Q4}Cmd:Outlet3-SP PP")
+	field(OUTD, "INJ-CS{ApcPdu:Q4}Cmd:Outlet4-SP PP")
+	field(OUTE, "INJ-CS{ApcPdu:Q4}Cmd:Outlet5-SP PP")
+	field(OUTF, "INJ-CS{ApcPdu:Q4}Cmd:Outlet6-SP PP")
+	field(OUTG, "INJ-CS{ApcPdu:Q4}Cmd:Outlet7-SP PP")
+	field(OUTH, "INJ-CS{ApcPdu:Q4}Cmd:Outlet8-SP PP")
+}
+
+record(mbbo, "INJ-CS{ApcPdu:Q4}Cmd:Outlet8-Sel")
+{
+	field(DESC, "Outlet8 Sel")
+	field(OUT,  "INJ-CS{ApcPdu:Q4}Cmd:Outlet8-SP PP")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+
+record (longout,"INJ-CS{ApcPdu:Q4}Cmd:Outlet8-SP")
+{
+	field(DESC, "Raw Outlet8 Sel")
+	field(DESC, "Setting the outlet state")
+	field(DTYP, "Snmp")
+	field(OUT,  "@10.0.144.14 private INTEGER: 128 i")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.8")
+}
+
+record (longin,"INJ-CS{ApcPdu:Q4}Sts:Outlet8-RB")
+{
+	field(DESC, "Raw Outlet8 Stat")
+	field(DTYP, "Snmp")
+	field(INP,  "@10.0.144.14 private INTEGER: 128")
+	field(SCAN, "1 second")
+	field(FLNK, "INJ-CS{ApcPdu:Q4}Sts:Outlet8-Sts")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.8")
+}
+
+record(mbbi, "INJ-CS{ApcPdu:Q4}Sts:Outlet8-Sts")
+{
+	field(DESC, "Outlet8 Stat")
+	field(INP, "INJ-CS{ApcPdu:Q4}Sts:Outlet8-RB")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+record(sub, "INJ-CS{ApcPdu:Q4}DB:Alrm-Sub_")
+{
+	field(DESC, "Alarm Calc")
+	field(INPA, "LN-BI{BPM:1}Temp:AfeSense0-I.SEVR")
+	field(INPB, "LN-BI{BPM:2}Temp:AfeSense0-I.SEVR")
+	field(INPC, "LN-BI{BPM:3}Temp:AfeSense0-I.SEVR")
+	field(INPD, "LN-BI{BPM:4}Temp:AfeSense0-I.SEVR")
+	field(INPE, "LN-BI{BPM:5}Temp:AfeSense0-I.SEVR")
+	field(INPF, "LTB-BI{BPM:1}Temp:AfeSense0-I.SEVR")
+	field(INPG, "LTB-BI{BPM:2}Temp:AfeSense0-I.SEVR")
+	field(INPH, "LTB-BI{BPM:3}Temp:AfeSense0-I.SEVR")
+	field(SNAM, "CalcAlarm")
+}
+
+record(mbbi, "INJ-CS{ApcPdu:Q4}DB:Alrm-Sts")
+{
+	field(DESC, "Severity")
+	field(SCAN, "1 second")
+	field(INP,  "INJ-CS{ApcPdu:Q4}DB:Alrm-Sub_ PP MSS")
+	field(ZRST, "No Alarm")
+	field(ONST, "Minor Alarm")
+	field(TWST, "Major Alarm")
+	field(THST, "Invalid Alarm")
+	field(FLNK, "INJ-CS{ApcPdu:Q4}DB:Trig-Calc_")
+	field(ZRSV, "NO_ALARM")
+	field(ONSV, "MINOR")
+	field(TWSV, "MAJOR")
+	field(THSV, "INVALID")
+}
+
+record(calcout, "INJ-CS{ApcPdu:Q4}DB:Trig-Calc_")
+{
+	field(DESC, "Alarm Trig")
+	field(INPA, "INJ-CS{ApcPdu:Q4}DB:Alrm-Sts")
+	field(CALC, "A=2")
+	field(OOPT, "When Non-zero")
+	field(DOPT, "Use CALC")
+	field(OUT,  "INJ-CS{ApcPdu:Q4}DB:OutletCmd-DFOut_.PROC")
+}
+
+record(dfanout, "INJ-CS{ApcPdu:Q4}DB:T_Warn-DFOut_")
+{
+	field(DESC, "T Warn DFOut")
+	field(OMSL, "supervisory")
+	field(OUTA, "LN-BI{BPM:1}Temp:AfeSense0-I.HIGH")
+	field(OUTB, "LN-BI{BPM:2}Temp:AfeSense0-I.HIGH")
+	field(OUTC, "LN-BI{BPM:3}Temp:AfeSense0-I.HIGH")
+	field(OUTD, "LN-BI{BPM:4}Temp:AfeSense0-I.HIGH")
+	field(OUTE, "LN-BI{BPM:5}Temp:AfeSense0-I.HIGH")
+	field(OUTF, "LTB-BI{BPM:1}Temp:AfeSense0-I.HIGH")
+	field(OUTG, "LTB-BI{BPM:2}Temp:AfeSense0-I.HIGH")
+	field(OUTH, "LTB-BI{BPM:3}Temp:AfeSense0-I.HIGH")
+}
+
+record(dfanout, "INJ-CS{ApcPdu:Q4}DB:T_Alrm-DFOut_")
+{
+        field(DESC, "T Alarm DFOut")
+        field(OMSL, "supervisory")
+        field(OUTA, "LN-BI{BPM:1}Temp:AfeSense0-I.HIHI")
+        field(OUTB, "LN-BI{BPM:2}Temp:AfeSense0-I.HIHI")
+        field(OUTC, "LN-BI{BPM:3}Temp:AfeSense0-I.HIHI")
+        field(OUTD, "LN-BI{BPM:4}Temp:AfeSense0-I.HIHI")
+        field(OUTE, "LN-BI{BPM:5}Temp:AfeSense0-I.HIHI")
+        field(OUTF, "LTB-BI{BPM:1}Temp:AfeSense0-I.HIHI")
+        field(OUTG, "LTB-BI{BPM:2}Temp:AfeSense0-I.HIHI")
+        field(OUTH, "LTB-BI{BPM:3}Temp:AfeSense0-I.HIHI")
+}
+record(stringout, "INJ-CS{ApcPdu:N}DB:Outlet1Name-SP")
+{
+	field(DESC, "Set Outlet1 Name")
+	field(PINI, "YES")
+	field(VAL,  "Outlet 1")
+	field(UDF, "0")
+	field(FLNK, "INJ-CS{ApcPdu:N}DB:Outlet1Name-RB")
+	info(autosaveFields, "VAL")
+}
+
+record(stringin, "INJ-CS{ApcPdu:N}DB:Outlet1Name-RB")
+{
+	field(DESC, "Outlet1 Name")
+	field(INP, "INJ-CS{ApcPdu:N}DB:Outlet1Name-SP")    
+}
+
+
+record(mbbo, "INJ-CS{ApcPdu:N}DB:OutletCmd-Sel")
+{
+	field(DESC, "Outlet Sel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+	field(PINI, "YES")
+	field(VAL,  "1")
+}
+
+record(dfanout, "INJ-CS{ApcPdu:N}DB:OutletCmd-DFOut_")
+{
+	field(DESC, "Outlet Cmd DFOut")
+	field(OMSL, "closed_loop")
+	field(DOL,  "INJ-CS{ApcPdu:N}DB:OutletCmd-Sel.RVAL")
+	field(OUTA, "INJ-CS{ApcPdu:N}Cmd:Outlet1-SP PP")
+	field(OUTB, "INJ-CS{ApcPdu:N}Cmd:Outlet2-SP PP")
+	field(OUTC, "INJ-CS{ApcPdu:N}Cmd:Outlet3-SP PP")
+	field(OUTD, "INJ-CS{ApcPdu:N}Cmd:Outlet4-SP PP")
+	field(OUTE, "INJ-CS{ApcPdu:N}Cmd:Outlet5-SP PP")
+	field(OUTF, "INJ-CS{ApcPdu:N}Cmd:Outlet6-SP PP")
+	field(OUTG, "INJ-CS{ApcPdu:N}Cmd:Outlet7-SP PP")
+	field(OUTH, "INJ-CS{ApcPdu:N}Cmd:Outlet8-SP PP")
+}
+
+record(mbbo, "INJ-CS{ApcPdu:N}Cmd:Outlet1-Sel")
+{
+	field(DESC, "Outlet1 Sel")
+	field(OUT,  "INJ-CS{ApcPdu:N}Cmd:Outlet1-SP PP")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+
+record (longout,"INJ-CS{ApcPdu:N}Cmd:Outlet1-SP")
+{
+	field(DESC, "Raw Outlet1 Sel")
+	field(DESC, "Setting the outlet state")
+	field(DTYP, "Snmp")
+	field(OUT,  "@10.0.144.15 private INTEGER: 128 i")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.1")
+}
+
+record (longin,"INJ-CS{ApcPdu:N}Sts:Outlet1-RB")
+{
+	field(DESC, "Raw Outlet1 Stat")
+	field(DTYP, "Snmp")
+	field(INP,  "@10.0.144.15 private INTEGER: 128")
+	field(SCAN, "1 second")
+	field(FLNK, "INJ-CS{ApcPdu:N}Sts:Outlet1-Sts")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.1")
+}
+
+record(mbbi, "INJ-CS{ApcPdu:N}Sts:Outlet1-Sts")
+{
+	field(DESC, "Outlet1 Stat")
+	field(INP, "INJ-CS{ApcPdu:N}Sts:Outlet1-RB")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+record(stringout, "INJ-CS{ApcPdu:N}DB:Outlet2Name-SP")
+{
+	field(DESC, "Set Outlet2 Name")
+	field(PINI, "YES")
+	field(VAL,  "Outlet 2")
+	field(UDF, "0")
+	field(FLNK, "INJ-CS{ApcPdu:N}DB:Outlet2Name-RB")
+	info(autosaveFields, "VAL")
+}
+
+record(stringin, "INJ-CS{ApcPdu:N}DB:Outlet2Name-RB")
+{
+	field(DESC, "Outlet2 Name")
+	field(INP, "INJ-CS{ApcPdu:N}DB:Outlet2Name-SP")    
+}
+
+
+record(mbbo, "INJ-CS{ApcPdu:N}DB:OutletCmd-Sel")
+{
+	field(DESC, "Outlet Sel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+	field(PINI, "YES")
+	field(VAL,  "1")
+}
+
+record(dfanout, "INJ-CS{ApcPdu:N}DB:OutletCmd-DFOut_")
+{
+	field(DESC, "Outlet Cmd DFOut")
+	field(OMSL, "closed_loop")
+	field(DOL,  "INJ-CS{ApcPdu:N}DB:OutletCmd-Sel.RVAL")
+	field(OUTA, "INJ-CS{ApcPdu:N}Cmd:Outlet1-SP PP")
+	field(OUTB, "INJ-CS{ApcPdu:N}Cmd:Outlet2-SP PP")
+	field(OUTC, "INJ-CS{ApcPdu:N}Cmd:Outlet3-SP PP")
+	field(OUTD, "INJ-CS{ApcPdu:N}Cmd:Outlet4-SP PP")
+	field(OUTE, "INJ-CS{ApcPdu:N}Cmd:Outlet5-SP PP")
+	field(OUTF, "INJ-CS{ApcPdu:N}Cmd:Outlet6-SP PP")
+	field(OUTG, "INJ-CS{ApcPdu:N}Cmd:Outlet7-SP PP")
+	field(OUTH, "INJ-CS{ApcPdu:N}Cmd:Outlet8-SP PP")
+}
+
+record(mbbo, "INJ-CS{ApcPdu:N}Cmd:Outlet2-Sel")
+{
+	field(DESC, "Outlet2 Sel")
+	field(OUT,  "INJ-CS{ApcPdu:N}Cmd:Outlet2-SP PP")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+
+record (longout,"INJ-CS{ApcPdu:N}Cmd:Outlet2-SP")
+{
+	field(DESC, "Raw Outlet2 Sel")
+	field(DESC, "Setting the outlet state")
+	field(DTYP, "Snmp")
+	field(OUT,  "@10.0.144.15 private INTEGER: 128 i")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.2")
+}
+
+record (longin,"INJ-CS{ApcPdu:N}Sts:Outlet2-RB")
+{
+	field(DESC, "Raw Outlet2 Stat")
+	field(DTYP, "Snmp")
+	field(INP,  "@10.0.144.15 private INTEGER: 128")
+	field(SCAN, "1 second")
+	field(FLNK, "INJ-CS{ApcPdu:N}Sts:Outlet2-Sts")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.2")
+}
+
+record(mbbi, "INJ-CS{ApcPdu:N}Sts:Outlet2-Sts")
+{
+	field(DESC, "Outlet2 Stat")
+	field(INP, "INJ-CS{ApcPdu:N}Sts:Outlet2-RB")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+record(stringout, "INJ-CS{ApcPdu:N}DB:Outlet3Name-SP")
+{
+	field(DESC, "Set Outlet3 Name")
+	field(PINI, "YES")
+	field(VAL,  "Outlet 3")
+	field(UDF, "0")
+	field(FLNK, "INJ-CS{ApcPdu:N}DB:Outlet3Name-RB")
+	info(autosaveFields, "VAL")
+}
+
+record(stringin, "INJ-CS{ApcPdu:N}DB:Outlet3Name-RB")
+{
+	field(DESC, "Outlet3 Name")
+	field(INP, "INJ-CS{ApcPdu:N}DB:Outlet3Name-SP")    
+}
+
+
+record(mbbo, "INJ-CS{ApcPdu:N}DB:OutletCmd-Sel")
+{
+	field(DESC, "Outlet Sel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+	field(PINI, "YES")
+	field(VAL,  "1")
+}
+
+record(dfanout, "INJ-CS{ApcPdu:N}DB:OutletCmd-DFOut_")
+{
+	field(DESC, "Outlet Cmd DFOut")
+	field(OMSL, "closed_loop")
+	field(DOL,  "INJ-CS{ApcPdu:N}DB:OutletCmd-Sel.RVAL")
+	field(OUTA, "INJ-CS{ApcPdu:N}Cmd:Outlet1-SP PP")
+	field(OUTB, "INJ-CS{ApcPdu:N}Cmd:Outlet2-SP PP")
+	field(OUTC, "INJ-CS{ApcPdu:N}Cmd:Outlet3-SP PP")
+	field(OUTD, "INJ-CS{ApcPdu:N}Cmd:Outlet4-SP PP")
+	field(OUTE, "INJ-CS{ApcPdu:N}Cmd:Outlet5-SP PP")
+	field(OUTF, "INJ-CS{ApcPdu:N}Cmd:Outlet6-SP PP")
+	field(OUTG, "INJ-CS{ApcPdu:N}Cmd:Outlet7-SP PP")
+	field(OUTH, "INJ-CS{ApcPdu:N}Cmd:Outlet8-SP PP")
+}
+
+record(mbbo, "INJ-CS{ApcPdu:N}Cmd:Outlet3-Sel")
+{
+	field(DESC, "Outlet3 Sel")
+	field(OUT,  "INJ-CS{ApcPdu:N}Cmd:Outlet3-SP PP")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+
+record (longout,"INJ-CS{ApcPdu:N}Cmd:Outlet3-SP")
+{
+	field(DESC, "Raw Outlet3 Sel")
+	field(DESC, "Setting the outlet state")
+	field(DTYP, "Snmp")
+	field(OUT,  "@10.0.144.15 private INTEGER: 128 i")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.3")
+}
+
+record (longin,"INJ-CS{ApcPdu:N}Sts:Outlet3-RB")
+{
+	field(DESC, "Raw Outlet3 Stat")
+	field(DTYP, "Snmp")
+	field(INP,  "@10.0.144.15 private INTEGER: 128")
+	field(SCAN, "1 second")
+	field(FLNK, "INJ-CS{ApcPdu:N}Sts:Outlet3-Sts")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.3")
+}
+
+record(mbbi, "INJ-CS{ApcPdu:N}Sts:Outlet3-Sts")
+{
+	field(DESC, "Outlet3 Stat")
+	field(INP, "INJ-CS{ApcPdu:N}Sts:Outlet3-RB")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+record(stringout, "INJ-CS{ApcPdu:N}DB:Outlet4Name-SP")
+{
+	field(DESC, "Set Outlet4 Name")
+	field(PINI, "YES")
+	field(VAL,  "Outlet 4")
+	field(UDF, "0")
+	field(FLNK, "INJ-CS{ApcPdu:N}DB:Outlet4Name-RB")
+	info(autosaveFields, "VAL")
+}
+
+record(stringin, "INJ-CS{ApcPdu:N}DB:Outlet4Name-RB")
+{
+	field(DESC, "Outlet4 Name")
+	field(INP, "INJ-CS{ApcPdu:N}DB:Outlet4Name-SP")    
+}
+
+
+record(mbbo, "INJ-CS{ApcPdu:N}DB:OutletCmd-Sel")
+{
+	field(DESC, "Outlet Sel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+	field(PINI, "YES")
+	field(VAL,  "1")
+}
+
+record(dfanout, "INJ-CS{ApcPdu:N}DB:OutletCmd-DFOut_")
+{
+	field(DESC, "Outlet Cmd DFOut")
+	field(OMSL, "closed_loop")
+	field(DOL,  "INJ-CS{ApcPdu:N}DB:OutletCmd-Sel.RVAL")
+	field(OUTA, "INJ-CS{ApcPdu:N}Cmd:Outlet1-SP PP")
+	field(OUTB, "INJ-CS{ApcPdu:N}Cmd:Outlet2-SP PP")
+	field(OUTC, "INJ-CS{ApcPdu:N}Cmd:Outlet3-SP PP")
+	field(OUTD, "INJ-CS{ApcPdu:N}Cmd:Outlet4-SP PP")
+	field(OUTE, "INJ-CS{ApcPdu:N}Cmd:Outlet5-SP PP")
+	field(OUTF, "INJ-CS{ApcPdu:N}Cmd:Outlet6-SP PP")
+	field(OUTG, "INJ-CS{ApcPdu:N}Cmd:Outlet7-SP PP")
+	field(OUTH, "INJ-CS{ApcPdu:N}Cmd:Outlet8-SP PP")
+}
+
+record(mbbo, "INJ-CS{ApcPdu:N}Cmd:Outlet4-Sel")
+{
+	field(DESC, "Outlet4 Sel")
+	field(OUT,  "INJ-CS{ApcPdu:N}Cmd:Outlet4-SP PP")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+
+record (longout,"INJ-CS{ApcPdu:N}Cmd:Outlet4-SP")
+{
+	field(DESC, "Raw Outlet4 Sel")
+	field(DESC, "Setting the outlet state")
+	field(DTYP, "Snmp")
+	field(OUT,  "@10.0.144.15 private INTEGER: 128 i")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.4")
+}
+
+record (longin,"INJ-CS{ApcPdu:N}Sts:Outlet4-RB")
+{
+	field(DESC, "Raw Outlet4 Stat")
+	field(DTYP, "Snmp")
+	field(INP,  "@10.0.144.15 private INTEGER: 128")
+	field(SCAN, "1 second")
+	field(FLNK, "INJ-CS{ApcPdu:N}Sts:Outlet4-Sts")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.4")
+}
+
+record(mbbi, "INJ-CS{ApcPdu:N}Sts:Outlet4-Sts")
+{
+	field(DESC, "Outlet4 Stat")
+	field(INP, "INJ-CS{ApcPdu:N}Sts:Outlet4-RB")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+record(stringout, "INJ-CS{ApcPdu:N}DB:Outlet5Name-SP")
+{
+	field(DESC, "Set Outlet5 Name")
+	field(PINI, "YES")
+	field(VAL,  "Outlet 5")
+	field(UDF, "0")
+	field(FLNK, "INJ-CS{ApcPdu:N}DB:Outlet5Name-RB")
+	info(autosaveFields, "VAL")
+}
+
+record(stringin, "INJ-CS{ApcPdu:N}DB:Outlet5Name-RB")
+{
+	field(DESC, "Outlet5 Name")
+	field(INP, "INJ-CS{ApcPdu:N}DB:Outlet5Name-SP")    
+}
+
+
+record(mbbo, "INJ-CS{ApcPdu:N}DB:OutletCmd-Sel")
+{
+	field(DESC, "Outlet Sel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+	field(PINI, "YES")
+	field(VAL,  "1")
+}
+
+record(dfanout, "INJ-CS{ApcPdu:N}DB:OutletCmd-DFOut_")
+{
+	field(DESC, "Outlet Cmd DFOut")
+	field(OMSL, "closed_loop")
+	field(DOL,  "INJ-CS{ApcPdu:N}DB:OutletCmd-Sel.RVAL")
+	field(OUTA, "INJ-CS{ApcPdu:N}Cmd:Outlet1-SP PP")
+	field(OUTB, "INJ-CS{ApcPdu:N}Cmd:Outlet2-SP PP")
+	field(OUTC, "INJ-CS{ApcPdu:N}Cmd:Outlet3-SP PP")
+	field(OUTD, "INJ-CS{ApcPdu:N}Cmd:Outlet4-SP PP")
+	field(OUTE, "INJ-CS{ApcPdu:N}Cmd:Outlet5-SP PP")
+	field(OUTF, "INJ-CS{ApcPdu:N}Cmd:Outlet6-SP PP")
+	field(OUTG, "INJ-CS{ApcPdu:N}Cmd:Outlet7-SP PP")
+	field(OUTH, "INJ-CS{ApcPdu:N}Cmd:Outlet8-SP PP")
+}
+
+record(mbbo, "INJ-CS{ApcPdu:N}Cmd:Outlet5-Sel")
+{
+	field(DESC, "Outlet5 Sel")
+	field(OUT,  "INJ-CS{ApcPdu:N}Cmd:Outlet5-SP PP")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+
+record (longout,"INJ-CS{ApcPdu:N}Cmd:Outlet5-SP")
+{
+	field(DESC, "Raw Outlet5 Sel")
+	field(DESC, "Setting the outlet state")
+	field(DTYP, "Snmp")
+	field(OUT,  "@10.0.144.15 private INTEGER: 128 i")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.5")
+}
+
+record (longin,"INJ-CS{ApcPdu:N}Sts:Outlet5-RB")
+{
+	field(DESC, "Raw Outlet5 Stat")
+	field(DTYP, "Snmp")
+	field(INP,  "@10.0.144.15 private INTEGER: 128")
+	field(SCAN, "1 second")
+	field(FLNK, "INJ-CS{ApcPdu:N}Sts:Outlet5-Sts")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.5")
+}
+
+record(mbbi, "INJ-CS{ApcPdu:N}Sts:Outlet5-Sts")
+{
+	field(DESC, "Outlet5 Stat")
+	field(INP, "INJ-CS{ApcPdu:N}Sts:Outlet5-RB")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+record(stringout, "INJ-CS{ApcPdu:N}DB:Outlet6Name-SP")
+{
+	field(DESC, "Set Outlet6 Name")
+	field(PINI, "YES")
+	field(VAL,  "Outlet 6")
+	field(UDF, "0")
+	field(FLNK, "INJ-CS{ApcPdu:N}DB:Outlet6Name-RB")
+	info(autosaveFields, "VAL")
+}
+
+record(stringin, "INJ-CS{ApcPdu:N}DB:Outlet6Name-RB")
+{
+	field(DESC, "Outlet6 Name")
+	field(INP, "INJ-CS{ApcPdu:N}DB:Outlet6Name-SP")    
+}
+
+
+record(mbbo, "INJ-CS{ApcPdu:N}DB:OutletCmd-Sel")
+{
+	field(DESC, "Outlet Sel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+	field(PINI, "YES")
+	field(VAL,  "1")
+}
+
+record(dfanout, "INJ-CS{ApcPdu:N}DB:OutletCmd-DFOut_")
+{
+	field(DESC, "Outlet Cmd DFOut")
+	field(OMSL, "closed_loop")
+	field(DOL,  "INJ-CS{ApcPdu:N}DB:OutletCmd-Sel.RVAL")
+	field(OUTA, "INJ-CS{ApcPdu:N}Cmd:Outlet1-SP PP")
+	field(OUTB, "INJ-CS{ApcPdu:N}Cmd:Outlet2-SP PP")
+	field(OUTC, "INJ-CS{ApcPdu:N}Cmd:Outlet3-SP PP")
+	field(OUTD, "INJ-CS{ApcPdu:N}Cmd:Outlet4-SP PP")
+	field(OUTE, "INJ-CS{ApcPdu:N}Cmd:Outlet5-SP PP")
+	field(OUTF, "INJ-CS{ApcPdu:N}Cmd:Outlet6-SP PP")
+	field(OUTG, "INJ-CS{ApcPdu:N}Cmd:Outlet7-SP PP")
+	field(OUTH, "INJ-CS{ApcPdu:N}Cmd:Outlet8-SP PP")
+}
+
+record(mbbo, "INJ-CS{ApcPdu:N}Cmd:Outlet6-Sel")
+{
+	field(DESC, "Outlet6 Sel")
+	field(OUT,  "INJ-CS{ApcPdu:N}Cmd:Outlet6-SP PP")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+
+record (longout,"INJ-CS{ApcPdu:N}Cmd:Outlet6-SP")
+{
+	field(DESC, "Raw Outlet6 Sel")
+	field(DESC, "Setting the outlet state")
+	field(DTYP, "Snmp")
+	field(OUT,  "@10.0.144.15 private INTEGER: 128 i")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.6")
+}
+
+record (longin,"INJ-CS{ApcPdu:N}Sts:Outlet6-RB")
+{
+	field(DESC, "Raw Outlet6 Stat")
+	field(DTYP, "Snmp")
+	field(INP,  "@10.0.144.15 private INTEGER: 128")
+	field(SCAN, "1 second")
+	field(FLNK, "INJ-CS{ApcPdu:N}Sts:Outlet6-Sts")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.6")
+}
+
+record(mbbi, "INJ-CS{ApcPdu:N}Sts:Outlet6-Sts")
+{
+	field(DESC, "Outlet6 Stat")
+	field(INP, "INJ-CS{ApcPdu:N}Sts:Outlet6-RB")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+record(stringout, "INJ-CS{ApcPdu:N}DB:Outlet7Name-SP")
+{
+	field(DESC, "Set Outlet7 Name")
+	field(PINI, "YES")
+	field(VAL,  "Outlet 7")
+	field(UDF, "0")
+	field(FLNK, "INJ-CS{ApcPdu:N}DB:Outlet7Name-RB")
+	info(autosaveFields, "VAL")
+}
+
+record(stringin, "INJ-CS{ApcPdu:N}DB:Outlet7Name-RB")
+{
+	field(DESC, "Outlet7 Name")
+	field(INP, "INJ-CS{ApcPdu:N}DB:Outlet7Name-SP")    
+}
+
+
+record(mbbo, "INJ-CS{ApcPdu:N}DB:OutletCmd-Sel")
+{
+	field(DESC, "Outlet Sel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+	field(PINI, "YES")
+	field(VAL,  "1")
+}
+
+record(dfanout, "INJ-CS{ApcPdu:N}DB:OutletCmd-DFOut_")
+{
+	field(DESC, "Outlet Cmd DFOut")
+	field(OMSL, "closed_loop")
+	field(DOL,  "INJ-CS{ApcPdu:N}DB:OutletCmd-Sel.RVAL")
+	field(OUTA, "INJ-CS{ApcPdu:N}Cmd:Outlet1-SP PP")
+	field(OUTB, "INJ-CS{ApcPdu:N}Cmd:Outlet2-SP PP")
+	field(OUTC, "INJ-CS{ApcPdu:N}Cmd:Outlet3-SP PP")
+	field(OUTD, "INJ-CS{ApcPdu:N}Cmd:Outlet4-SP PP")
+	field(OUTE, "INJ-CS{ApcPdu:N}Cmd:Outlet5-SP PP")
+	field(OUTF, "INJ-CS{ApcPdu:N}Cmd:Outlet6-SP PP")
+	field(OUTG, "INJ-CS{ApcPdu:N}Cmd:Outlet7-SP PP")
+	field(OUTH, "INJ-CS{ApcPdu:N}Cmd:Outlet8-SP PP")
+}
+
+record(mbbo, "INJ-CS{ApcPdu:N}Cmd:Outlet7-Sel")
+{
+	field(DESC, "Outlet7 Sel")
+	field(OUT,  "INJ-CS{ApcPdu:N}Cmd:Outlet7-SP PP")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+
+record (longout,"INJ-CS{ApcPdu:N}Cmd:Outlet7-SP")
+{
+	field(DESC, "Raw Outlet7 Sel")
+	field(DESC, "Setting the outlet state")
+	field(DTYP, "Snmp")
+	field(OUT,  "@10.0.144.15 private INTEGER: 128 i")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.7")
+}
+
+record (longin,"INJ-CS{ApcPdu:N}Sts:Outlet7-RB")
+{
+	field(DESC, "Raw Outlet7 Stat")
+	field(DTYP, "Snmp")
+	field(INP,  "@10.0.144.15 private INTEGER: 128")
+	field(SCAN, "1 second")
+	field(FLNK, "INJ-CS{ApcPdu:N}Sts:Outlet7-Sts")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.7")
+}
+
+record(mbbi, "INJ-CS{ApcPdu:N}Sts:Outlet7-Sts")
+{
+	field(DESC, "Outlet7 Stat")
+	field(INP, "INJ-CS{ApcPdu:N}Sts:Outlet7-RB")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+record(stringout, "INJ-CS{ApcPdu:N}DB:Outlet8Name-SP")
+{
+	field(DESC, "Set Outlet8 Name")
+	field(PINI, "YES")
+	field(VAL,  "Outlet 8")
+	field(UDF, "0")
+	field(FLNK, "INJ-CS{ApcPdu:N}DB:Outlet8Name-RB")
+	info(autosaveFields, "VAL")
+}
+
+record(stringin, "INJ-CS{ApcPdu:N}DB:Outlet8Name-RB")
+{
+	field(DESC, "Outlet8 Name")
+	field(INP, "INJ-CS{ApcPdu:N}DB:Outlet8Name-SP")    
+}
+
+
+record(mbbo, "INJ-CS{ApcPdu:N}DB:OutletCmd-Sel")
+{
+	field(DESC, "Outlet Sel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+	field(PINI, "YES")
+	field(VAL,  "1")
+}
+
+record(dfanout, "INJ-CS{ApcPdu:N}DB:OutletCmd-DFOut_")
+{
+	field(DESC, "Outlet Cmd DFOut")
+	field(OMSL, "closed_loop")
+	field(DOL,  "INJ-CS{ApcPdu:N}DB:OutletCmd-Sel.RVAL")
+	field(OUTA, "INJ-CS{ApcPdu:N}Cmd:Outlet1-SP PP")
+	field(OUTB, "INJ-CS{ApcPdu:N}Cmd:Outlet2-SP PP")
+	field(OUTC, "INJ-CS{ApcPdu:N}Cmd:Outlet3-SP PP")
+	field(OUTD, "INJ-CS{ApcPdu:N}Cmd:Outlet4-SP PP")
+	field(OUTE, "INJ-CS{ApcPdu:N}Cmd:Outlet5-SP PP")
+	field(OUTF, "INJ-CS{ApcPdu:N}Cmd:Outlet6-SP PP")
+	field(OUTG, "INJ-CS{ApcPdu:N}Cmd:Outlet7-SP PP")
+	field(OUTH, "INJ-CS{ApcPdu:N}Cmd:Outlet8-SP PP")
+}
+
+record(mbbo, "INJ-CS{ApcPdu:N}Cmd:Outlet8-Sel")
+{
+	field(DESC, "Outlet8 Sel")
+	field(OUT,  "INJ-CS{ApcPdu:N}Cmd:Outlet8-SP PP")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+
+record (longout,"INJ-CS{ApcPdu:N}Cmd:Outlet8-SP")
+{
+	field(DESC, "Raw Outlet8 Sel")
+	field(DESC, "Setting the outlet state")
+	field(DTYP, "Snmp")
+	field(OUT,  "@10.0.144.15 private INTEGER: 128 i")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.8")
+}
+
+record (longin,"INJ-CS{ApcPdu:N}Sts:Outlet8-RB")
+{
+	field(DESC, "Raw Outlet8 Stat")
+	field(DTYP, "Snmp")
+	field(INP,  "@10.0.144.15 private INTEGER: 128")
+	field(SCAN, "1 second")
+	field(FLNK, "INJ-CS{ApcPdu:N}Sts:Outlet8-Sts")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.8")
+}
+
+record(mbbi, "INJ-CS{ApcPdu:N}Sts:Outlet8-Sts")
+{
+	field(DESC, "Outlet8 Stat")
+	field(INP, "INJ-CS{ApcPdu:N}Sts:Outlet8-RB")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+record(stringout, "INJ-CS{ApcPdu:RGQ2}DB:Outlet1Name-SP")
+{
+	field(DESC, "Set Outlet1 Name")
+	field(PINI, "YES")
+	field(VAL,  "Outlet 1")
+	field(UDF, "0")
+	field(FLNK, "INJ-CS{ApcPdu:RGQ2}DB:Outlet1Name-RB")
+	info(autosaveFields, "VAL")
+}
+
+record(stringin, "INJ-CS{ApcPdu:RGQ2}DB:Outlet1Name-RB")
+{
+	field(DESC, "Outlet1 Name")
+	field(INP, "INJ-CS{ApcPdu:RGQ2}DB:Outlet1Name-SP")    
+}
+
+
+record(mbbo, "INJ-CS{ApcPdu:RGQ2}DB:OutletCmd-Sel")
+{
+	field(DESC, "Outlet Sel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+	field(PINI, "YES")
+	field(VAL,  "1")
+}
+
+record(dfanout, "INJ-CS{ApcPdu:RGQ2}DB:OutletCmd-DFOut_")
+{
+	field(DESC, "Outlet Cmd DFOut")
+	field(OMSL, "closed_loop")
+	field(DOL,  "INJ-CS{ApcPdu:RGQ2}DB:OutletCmd-Sel.RVAL")
+	field(OUTA, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet1-SP PP")
+	field(OUTB, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet2-SP PP")
+	field(OUTC, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet3-SP PP")
+	field(OUTD, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet4-SP PP")
+	field(OUTE, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet5-SP PP")
+	field(OUTF, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet6-SP PP")
+	field(OUTG, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet7-SP PP")
+	field(OUTH, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet8-SP PP")
+}
+
+record(mbbo, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet1-Sel")
+{
+	field(DESC, "Outlet1 Sel")
+	field(OUT,  "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet1-SP PP")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+
+record (longout,"INJ-CS{ApcPdu:RGQ2}Cmd:Outlet1-SP")
+{
+	field(DESC, "Raw Outlet1 Sel")
+	field(DESC, "Setting the outlet state")
+	field(DTYP, "Snmp")
+	field(OUT,  "@10.0.144.16 private INTEGER: 128 i")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.1")
+}
+
+record (longin,"INJ-CS{ApcPdu:RGQ2}Sts:Outlet1-RB")
+{
+	field(DESC, "Raw Outlet1 Stat")
+	field(DTYP, "Snmp")
+	field(INP,  "@10.0.144.16 private INTEGER: 128")
+	field(SCAN, "1 second")
+	field(FLNK, "INJ-CS{ApcPdu:RGQ2}Sts:Outlet1-Sts")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.1")
+}
+
+record(mbbi, "INJ-CS{ApcPdu:RGQ2}Sts:Outlet1-Sts")
+{
+	field(DESC, "Outlet1 Stat")
+	field(INP, "INJ-CS{ApcPdu:RGQ2}Sts:Outlet1-RB")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+record(stringout, "INJ-CS{ApcPdu:RGQ2}DB:Outlet2Name-SP")
+{
+	field(DESC, "Set Outlet2 Name")
+	field(PINI, "YES")
+	field(VAL,  "Outlet 2")
+	field(UDF, "0")
+	field(FLNK, "INJ-CS{ApcPdu:RGQ2}DB:Outlet2Name-RB")
+	info(autosaveFields, "VAL")
+}
+
+record(stringin, "INJ-CS{ApcPdu:RGQ2}DB:Outlet2Name-RB")
+{
+	field(DESC, "Outlet2 Name")
+	field(INP, "INJ-CS{ApcPdu:RGQ2}DB:Outlet2Name-SP")    
+}
+
+
+record(mbbo, "INJ-CS{ApcPdu:RGQ2}DB:OutletCmd-Sel")
+{
+	field(DESC, "Outlet Sel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+	field(PINI, "YES")
+	field(VAL,  "1")
+}
+
+record(dfanout, "INJ-CS{ApcPdu:RGQ2}DB:OutletCmd-DFOut_")
+{
+	field(DESC, "Outlet Cmd DFOut")
+	field(OMSL, "closed_loop")
+	field(DOL,  "INJ-CS{ApcPdu:RGQ2}DB:OutletCmd-Sel.RVAL")
+	field(OUTA, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet1-SP PP")
+	field(OUTB, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet2-SP PP")
+	field(OUTC, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet3-SP PP")
+	field(OUTD, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet4-SP PP")
+	field(OUTE, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet5-SP PP")
+	field(OUTF, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet6-SP PP")
+	field(OUTG, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet7-SP PP")
+	field(OUTH, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet8-SP PP")
+}
+
+record(mbbo, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet2-Sel")
+{
+	field(DESC, "Outlet2 Sel")
+	field(OUT,  "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet2-SP PP")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+
+record (longout,"INJ-CS{ApcPdu:RGQ2}Cmd:Outlet2-SP")
+{
+	field(DESC, "Raw Outlet2 Sel")
+	field(DESC, "Setting the outlet state")
+	field(DTYP, "Snmp")
+	field(OUT,  "@10.0.144.16 private INTEGER: 128 i")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.2")
+}
+
+record (longin,"INJ-CS{ApcPdu:RGQ2}Sts:Outlet2-RB")
+{
+	field(DESC, "Raw Outlet2 Stat")
+	field(DTYP, "Snmp")
+	field(INP,  "@10.0.144.16 private INTEGER: 128")
+	field(SCAN, "1 second")
+	field(FLNK, "INJ-CS{ApcPdu:RGQ2}Sts:Outlet2-Sts")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.2")
+}
+
+record(mbbi, "INJ-CS{ApcPdu:RGQ2}Sts:Outlet2-Sts")
+{
+	field(DESC, "Outlet2 Stat")
+	field(INP, "INJ-CS{ApcPdu:RGQ2}Sts:Outlet2-RB")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+record(stringout, "INJ-CS{ApcPdu:RGQ2}DB:Outlet3Name-SP")
+{
+	field(DESC, "Set Outlet3 Name")
+	field(PINI, "YES")
+	field(VAL,  "Outlet 3")
+	field(UDF, "0")
+	field(FLNK, "INJ-CS{ApcPdu:RGQ2}DB:Outlet3Name-RB")
+	info(autosaveFields, "VAL")
+}
+
+record(stringin, "INJ-CS{ApcPdu:RGQ2}DB:Outlet3Name-RB")
+{
+	field(DESC, "Outlet3 Name")
+	field(INP, "INJ-CS{ApcPdu:RGQ2}DB:Outlet3Name-SP")    
+}
+
+
+record(mbbo, "INJ-CS{ApcPdu:RGQ2}DB:OutletCmd-Sel")
+{
+	field(DESC, "Outlet Sel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+	field(PINI, "YES")
+	field(VAL,  "1")
+}
+
+record(dfanout, "INJ-CS{ApcPdu:RGQ2}DB:OutletCmd-DFOut_")
+{
+	field(DESC, "Outlet Cmd DFOut")
+	field(OMSL, "closed_loop")
+	field(DOL,  "INJ-CS{ApcPdu:RGQ2}DB:OutletCmd-Sel.RVAL")
+	field(OUTA, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet1-SP PP")
+	field(OUTB, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet2-SP PP")
+	field(OUTC, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet3-SP PP")
+	field(OUTD, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet4-SP PP")
+	field(OUTE, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet5-SP PP")
+	field(OUTF, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet6-SP PP")
+	field(OUTG, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet7-SP PP")
+	field(OUTH, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet8-SP PP")
+}
+
+record(mbbo, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet3-Sel")
+{
+	field(DESC, "Outlet3 Sel")
+	field(OUT,  "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet3-SP PP")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+
+record (longout,"INJ-CS{ApcPdu:RGQ2}Cmd:Outlet3-SP")
+{
+	field(DESC, "Raw Outlet3 Sel")
+	field(DESC, "Setting the outlet state")
+	field(DTYP, "Snmp")
+	field(OUT,  "@10.0.144.16 private INTEGER: 128 i")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.3")
+}
+
+record (longin,"INJ-CS{ApcPdu:RGQ2}Sts:Outlet3-RB")
+{
+	field(DESC, "Raw Outlet3 Stat")
+	field(DTYP, "Snmp")
+	field(INP,  "@10.0.144.16 private INTEGER: 128")
+	field(SCAN, "1 second")
+	field(FLNK, "INJ-CS{ApcPdu:RGQ2}Sts:Outlet3-Sts")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.3")
+}
+
+record(mbbi, "INJ-CS{ApcPdu:RGQ2}Sts:Outlet3-Sts")
+{
+	field(DESC, "Outlet3 Stat")
+	field(INP, "INJ-CS{ApcPdu:RGQ2}Sts:Outlet3-RB")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+record(stringout, "INJ-CS{ApcPdu:RGQ2}DB:Outlet4Name-SP")
+{
+	field(DESC, "Set Outlet4 Name")
+	field(PINI, "YES")
+	field(VAL,  "Outlet 4")
+	field(UDF, "0")
+	field(FLNK, "INJ-CS{ApcPdu:RGQ2}DB:Outlet4Name-RB")
+	info(autosaveFields, "VAL")
+}
+
+record(stringin, "INJ-CS{ApcPdu:RGQ2}DB:Outlet4Name-RB")
+{
+	field(DESC, "Outlet4 Name")
+	field(INP, "INJ-CS{ApcPdu:RGQ2}DB:Outlet4Name-SP")    
+}
+
+
+record(mbbo, "INJ-CS{ApcPdu:RGQ2}DB:OutletCmd-Sel")
+{
+	field(DESC, "Outlet Sel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+	field(PINI, "YES")
+	field(VAL,  "1")
+}
+
+record(dfanout, "INJ-CS{ApcPdu:RGQ2}DB:OutletCmd-DFOut_")
+{
+	field(DESC, "Outlet Cmd DFOut")
+	field(OMSL, "closed_loop")
+	field(DOL,  "INJ-CS{ApcPdu:RGQ2}DB:OutletCmd-Sel.RVAL")
+	field(OUTA, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet1-SP PP")
+	field(OUTB, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet2-SP PP")
+	field(OUTC, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet3-SP PP")
+	field(OUTD, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet4-SP PP")
+	field(OUTE, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet5-SP PP")
+	field(OUTF, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet6-SP PP")
+	field(OUTG, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet7-SP PP")
+	field(OUTH, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet8-SP PP")
+}
+
+record(mbbo, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet4-Sel")
+{
+	field(DESC, "Outlet4 Sel")
+	field(OUT,  "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet4-SP PP")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+
+record (longout,"INJ-CS{ApcPdu:RGQ2}Cmd:Outlet4-SP")
+{
+	field(DESC, "Raw Outlet4 Sel")
+	field(DESC, "Setting the outlet state")
+	field(DTYP, "Snmp")
+	field(OUT,  "@10.0.144.16 private INTEGER: 128 i")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.4")
+}
+
+record (longin,"INJ-CS{ApcPdu:RGQ2}Sts:Outlet4-RB")
+{
+	field(DESC, "Raw Outlet4 Stat")
+	field(DTYP, "Snmp")
+	field(INP,  "@10.0.144.16 private INTEGER: 128")
+	field(SCAN, "1 second")
+	field(FLNK, "INJ-CS{ApcPdu:RGQ2}Sts:Outlet4-Sts")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.4")
+}
+
+record(mbbi, "INJ-CS{ApcPdu:RGQ2}Sts:Outlet4-Sts")
+{
+	field(DESC, "Outlet4 Stat")
+	field(INP, "INJ-CS{ApcPdu:RGQ2}Sts:Outlet4-RB")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+record(stringout, "INJ-CS{ApcPdu:RGQ2}DB:Outlet5Name-SP")
+{
+	field(DESC, "Set Outlet5 Name")
+	field(PINI, "YES")
+	field(VAL,  "Outlet 5")
+	field(UDF, "0")
+	field(FLNK, "INJ-CS{ApcPdu:RGQ2}DB:Outlet5Name-RB")
+	info(autosaveFields, "VAL")
+}
+
+record(stringin, "INJ-CS{ApcPdu:RGQ2}DB:Outlet5Name-RB")
+{
+	field(DESC, "Outlet5 Name")
+	field(INP, "INJ-CS{ApcPdu:RGQ2}DB:Outlet5Name-SP")    
+}
+
+
+record(mbbo, "INJ-CS{ApcPdu:RGQ2}DB:OutletCmd-Sel")
+{
+	field(DESC, "Outlet Sel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+	field(PINI, "YES")
+	field(VAL,  "1")
+}
+
+record(dfanout, "INJ-CS{ApcPdu:RGQ2}DB:OutletCmd-DFOut_")
+{
+	field(DESC, "Outlet Cmd DFOut")
+	field(OMSL, "closed_loop")
+	field(DOL,  "INJ-CS{ApcPdu:RGQ2}DB:OutletCmd-Sel.RVAL")
+	field(OUTA, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet1-SP PP")
+	field(OUTB, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet2-SP PP")
+	field(OUTC, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet3-SP PP")
+	field(OUTD, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet4-SP PP")
+	field(OUTE, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet5-SP PP")
+	field(OUTF, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet6-SP PP")
+	field(OUTG, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet7-SP PP")
+	field(OUTH, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet8-SP PP")
+}
+
+record(mbbo, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet5-Sel")
+{
+	field(DESC, "Outlet5 Sel")
+	field(OUT,  "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet5-SP PP")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+
+record (longout,"INJ-CS{ApcPdu:RGQ2}Cmd:Outlet5-SP")
+{
+	field(DESC, "Raw Outlet5 Sel")
+	field(DESC, "Setting the outlet state")
+	field(DTYP, "Snmp")
+	field(OUT,  "@10.0.144.16 private INTEGER: 128 i")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.5")
+}
+
+record (longin,"INJ-CS{ApcPdu:RGQ2}Sts:Outlet5-RB")
+{
+	field(DESC, "Raw Outlet5 Stat")
+	field(DTYP, "Snmp")
+	field(INP,  "@10.0.144.16 private INTEGER: 128")
+	field(SCAN, "1 second")
+	field(FLNK, "INJ-CS{ApcPdu:RGQ2}Sts:Outlet5-Sts")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.5")
+}
+
+record(mbbi, "INJ-CS{ApcPdu:RGQ2}Sts:Outlet5-Sts")
+{
+	field(DESC, "Outlet5 Stat")
+	field(INP, "INJ-CS{ApcPdu:RGQ2}Sts:Outlet5-RB")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+record(stringout, "INJ-CS{ApcPdu:RGQ2}DB:Outlet6Name-SP")
+{
+	field(DESC, "Set Outlet6 Name")
+	field(PINI, "YES")
+	field(VAL,  "Outlet 6")
+	field(UDF, "0")
+	field(FLNK, "INJ-CS{ApcPdu:RGQ2}DB:Outlet6Name-RB")
+	info(autosaveFields, "VAL")
+}
+
+record(stringin, "INJ-CS{ApcPdu:RGQ2}DB:Outlet6Name-RB")
+{
+	field(DESC, "Outlet6 Name")
+	field(INP, "INJ-CS{ApcPdu:RGQ2}DB:Outlet6Name-SP")    
+}
+
+
+record(mbbo, "INJ-CS{ApcPdu:RGQ2}DB:OutletCmd-Sel")
+{
+	field(DESC, "Outlet Sel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+	field(PINI, "YES")
+	field(VAL,  "1")
+}
+
+record(dfanout, "INJ-CS{ApcPdu:RGQ2}DB:OutletCmd-DFOut_")
+{
+	field(DESC, "Outlet Cmd DFOut")
+	field(OMSL, "closed_loop")
+	field(DOL,  "INJ-CS{ApcPdu:RGQ2}DB:OutletCmd-Sel.RVAL")
+	field(OUTA, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet1-SP PP")
+	field(OUTB, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet2-SP PP")
+	field(OUTC, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet3-SP PP")
+	field(OUTD, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet4-SP PP")
+	field(OUTE, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet5-SP PP")
+	field(OUTF, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet6-SP PP")
+	field(OUTG, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet7-SP PP")
+	field(OUTH, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet8-SP PP")
+}
+
+record(mbbo, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet6-Sel")
+{
+	field(DESC, "Outlet6 Sel")
+	field(OUT,  "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet6-SP PP")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+
+record (longout,"INJ-CS{ApcPdu:RGQ2}Cmd:Outlet6-SP")
+{
+	field(DESC, "Raw Outlet6 Sel")
+	field(DESC, "Setting the outlet state")
+	field(DTYP, "Snmp")
+	field(OUT,  "@10.0.144.16 private INTEGER: 128 i")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.6")
+}
+
+record (longin,"INJ-CS{ApcPdu:RGQ2}Sts:Outlet6-RB")
+{
+	field(DESC, "Raw Outlet6 Stat")
+	field(DTYP, "Snmp")
+	field(INP,  "@10.0.144.16 private INTEGER: 128")
+	field(SCAN, "1 second")
+	field(FLNK, "INJ-CS{ApcPdu:RGQ2}Sts:Outlet6-Sts")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.6")
+}
+
+record(mbbi, "INJ-CS{ApcPdu:RGQ2}Sts:Outlet6-Sts")
+{
+	field(DESC, "Outlet6 Stat")
+	field(INP, "INJ-CS{ApcPdu:RGQ2}Sts:Outlet6-RB")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+record(stringout, "INJ-CS{ApcPdu:RGQ2}DB:Outlet7Name-SP")
+{
+	field(DESC, "Set Outlet7 Name")
+	field(PINI, "YES")
+	field(VAL,  "Outlet 7")
+	field(UDF, "0")
+	field(FLNK, "INJ-CS{ApcPdu:RGQ2}DB:Outlet7Name-RB")
+	info(autosaveFields, "VAL")
+}
+
+record(stringin, "INJ-CS{ApcPdu:RGQ2}DB:Outlet7Name-RB")
+{
+	field(DESC, "Outlet7 Name")
+	field(INP, "INJ-CS{ApcPdu:RGQ2}DB:Outlet7Name-SP")    
+}
+
+
+record(mbbo, "INJ-CS{ApcPdu:RGQ2}DB:OutletCmd-Sel")
+{
+	field(DESC, "Outlet Sel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+	field(PINI, "YES")
+	field(VAL,  "1")
+}
+
+record(dfanout, "INJ-CS{ApcPdu:RGQ2}DB:OutletCmd-DFOut_")
+{
+	field(DESC, "Outlet Cmd DFOut")
+	field(OMSL, "closed_loop")
+	field(DOL,  "INJ-CS{ApcPdu:RGQ2}DB:OutletCmd-Sel.RVAL")
+	field(OUTA, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet1-SP PP")
+	field(OUTB, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet2-SP PP")
+	field(OUTC, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet3-SP PP")
+	field(OUTD, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet4-SP PP")
+	field(OUTE, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet5-SP PP")
+	field(OUTF, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet6-SP PP")
+	field(OUTG, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet7-SP PP")
+	field(OUTH, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet8-SP PP")
+}
+
+record(mbbo, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet7-Sel")
+{
+	field(DESC, "Outlet7 Sel")
+	field(OUT,  "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet7-SP PP")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+
+record (longout,"INJ-CS{ApcPdu:RGQ2}Cmd:Outlet7-SP")
+{
+	field(DESC, "Raw Outlet7 Sel")
+	field(DESC, "Setting the outlet state")
+	field(DTYP, "Snmp")
+	field(OUT,  "@10.0.144.16 private INTEGER: 128 i")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.7")
+}
+
+record (longin,"INJ-CS{ApcPdu:RGQ2}Sts:Outlet7-RB")
+{
+	field(DESC, "Raw Outlet7 Stat")
+	field(DTYP, "Snmp")
+	field(INP,  "@10.0.144.16 private INTEGER: 128")
+	field(SCAN, "1 second")
+	field(FLNK, "INJ-CS{ApcPdu:RGQ2}Sts:Outlet7-Sts")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.7")
+}
+
+record(mbbi, "INJ-CS{ApcPdu:RGQ2}Sts:Outlet7-Sts")
+{
+	field(DESC, "Outlet7 Stat")
+	field(INP, "INJ-CS{ApcPdu:RGQ2}Sts:Outlet7-RB")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+record(stringout, "INJ-CS{ApcPdu:RGQ2}DB:Outlet8Name-SP")
+{
+	field(DESC, "Set Outlet8 Name")
+	field(PINI, "YES")
+	field(VAL,  "Outlet 8")
+	field(UDF, "0")
+	field(FLNK, "INJ-CS{ApcPdu:RGQ2}DB:Outlet8Name-RB")
+	info(autosaveFields, "VAL")
+}
+
+record(stringin, "INJ-CS{ApcPdu:RGQ2}DB:Outlet8Name-RB")
+{
+	field(DESC, "Outlet8 Name")
+	field(INP, "INJ-CS{ApcPdu:RGQ2}DB:Outlet8Name-SP")    
+}
+
+
+record(mbbo, "INJ-CS{ApcPdu:RGQ2}DB:OutletCmd-Sel")
+{
+	field(DESC, "Outlet Sel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+	field(PINI, "YES")
+	field(VAL,  "1")
+}
+
+record(dfanout, "INJ-CS{ApcPdu:RGQ2}DB:OutletCmd-DFOut_")
+{
+	field(DESC, "Outlet Cmd DFOut")
+	field(OMSL, "closed_loop")
+	field(DOL,  "INJ-CS{ApcPdu:RGQ2}DB:OutletCmd-Sel.RVAL")
+	field(OUTA, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet1-SP PP")
+	field(OUTB, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet2-SP PP")
+	field(OUTC, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet3-SP PP")
+	field(OUTD, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet4-SP PP")
+	field(OUTE, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet5-SP PP")
+	field(OUTF, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet6-SP PP")
+	field(OUTG, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet7-SP PP")
+	field(OUTH, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet8-SP PP")
+}
+
+record(mbbo, "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet8-Sel")
+{
+	field(DESC, "Outlet8 Sel")
+	field(OUT,  "INJ-CS{ApcPdu:RGQ2}Cmd:Outlet8-SP PP")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+
+record (longout,"INJ-CS{ApcPdu:RGQ2}Cmd:Outlet8-SP")
+{
+	field(DESC, "Raw Outlet8 Sel")
+	field(DESC, "Setting the outlet state")
+	field(DTYP, "Snmp")
+	field(OUT,  "@10.0.144.16 private INTEGER: 128 i")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.8")
+}
+
+record (longin,"INJ-CS{ApcPdu:RGQ2}Sts:Outlet8-RB")
+{
+	field(DESC, "Raw Outlet8 Stat")
+	field(DTYP, "Snmp")
+	field(INP,  "@10.0.144.16 private INTEGER: 128")
+	field(SCAN, "1 second")
+	field(FLNK, "INJ-CS{ApcPdu:RGQ2}Sts:Outlet8-Sts")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.8")
+}
+
+record(mbbi, "INJ-CS{ApcPdu:RGQ2}Sts:Outlet8-Sts")
+{
+	field(DESC, "Outlet8 Stat")
+	field(INP, "INJ-CS{ApcPdu:RGQ2}Sts:Outlet8-RB")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+record(stringout, "INJ-CS{ApcPdu:RGA2}DB:Outlet1Name-SP")
+{
+	field(DESC, "Set Outlet1 Name")
+	field(PINI, "YES")
+	field(VAL,  "Outlet 1")
+	field(UDF, "0")
+	field(FLNK, "INJ-CS{ApcPdu:RGA2}DB:Outlet1Name-RB")
+	info(autosaveFields, "VAL")
+}
+
+record(stringin, "INJ-CS{ApcPdu:RGA2}DB:Outlet1Name-RB")
+{
+	field(DESC, "Outlet1 Name")
+	field(INP, "INJ-CS{ApcPdu:RGA2}DB:Outlet1Name-SP")    
+}
+
+
+record(mbbo, "INJ-CS{ApcPdu:RGA2}DB:OutletCmd-Sel")
+{
+	field(DESC, "Outlet Sel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+	field(PINI, "YES")
+	field(VAL,  "1")
+}
+
+record(dfanout, "INJ-CS{ApcPdu:RGA2}DB:OutletCmd-DFOut_")
+{
+	field(DESC, "Outlet Cmd DFOut")
+	field(OMSL, "closed_loop")
+	field(DOL,  "INJ-CS{ApcPdu:RGA2}DB:OutletCmd-Sel.RVAL")
+	field(OUTA, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet1-SP PP")
+	field(OUTB, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet2-SP PP")
+	field(OUTC, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet3-SP PP")
+	field(OUTD, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet4-SP PP")
+	field(OUTE, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet5-SP PP")
+	field(OUTF, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet6-SP PP")
+	field(OUTG, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet7-SP PP")
+	field(OUTH, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet8-SP PP")
+}
+
+record(mbbo, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet1-Sel")
+{
+	field(DESC, "Outlet1 Sel")
+	field(OUT,  "INJ-CS{ApcPdu:RGA2}Cmd:Outlet1-SP PP")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+
+record (longout,"INJ-CS{ApcPdu:RGA2}Cmd:Outlet1-SP")
+{
+	field(DESC, "Raw Outlet1 Sel")
+	field(DESC, "Setting the outlet state")
+	field(DTYP, "Snmp")
+	field(OUT,  "@10.0.144.22 private INTEGER: 128 i")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.1")
+}
+
+record (longin,"INJ-CS{ApcPdu:RGA2}Sts:Outlet1-RB")
+{
+	field(DESC, "Raw Outlet1 Stat")
+	field(DTYP, "Snmp")
+	field(INP,  "@10.0.144.22 private INTEGER: 128")
+	field(SCAN, "1 second")
+	field(FLNK, "INJ-CS{ApcPdu:RGA2}Sts:Outlet1-Sts")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.1")
+}
+
+record(mbbi, "INJ-CS{ApcPdu:RGA2}Sts:Outlet1-Sts")
+{
+	field(DESC, "Outlet1 Stat")
+	field(INP, "INJ-CS{ApcPdu:RGA2}Sts:Outlet1-RB")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+record(stringout, "INJ-CS{ApcPdu:RGA2}DB:Outlet2Name-SP")
+{
+	field(DESC, "Set Outlet2 Name")
+	field(PINI, "YES")
+	field(VAL,  "Outlet 2")
+	field(UDF, "0")
+	field(FLNK, "INJ-CS{ApcPdu:RGA2}DB:Outlet2Name-RB")
+	info(autosaveFields, "VAL")
+}
+
+record(stringin, "INJ-CS{ApcPdu:RGA2}DB:Outlet2Name-RB")
+{
+	field(DESC, "Outlet2 Name")
+	field(INP, "INJ-CS{ApcPdu:RGA2}DB:Outlet2Name-SP")    
+}
+
+
+record(mbbo, "INJ-CS{ApcPdu:RGA2}DB:OutletCmd-Sel")
+{
+	field(DESC, "Outlet Sel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+	field(PINI, "YES")
+	field(VAL,  "1")
+}
+
+record(dfanout, "INJ-CS{ApcPdu:RGA2}DB:OutletCmd-DFOut_")
+{
+	field(DESC, "Outlet Cmd DFOut")
+	field(OMSL, "closed_loop")
+	field(DOL,  "INJ-CS{ApcPdu:RGA2}DB:OutletCmd-Sel.RVAL")
+	field(OUTA, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet1-SP PP")
+	field(OUTB, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet2-SP PP")
+	field(OUTC, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet3-SP PP")
+	field(OUTD, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet4-SP PP")
+	field(OUTE, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet5-SP PP")
+	field(OUTF, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet6-SP PP")
+	field(OUTG, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet7-SP PP")
+	field(OUTH, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet8-SP PP")
+}
+
+record(mbbo, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet2-Sel")
+{
+	field(DESC, "Outlet2 Sel")
+	field(OUT,  "INJ-CS{ApcPdu:RGA2}Cmd:Outlet2-SP PP")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+
+record (longout,"INJ-CS{ApcPdu:RGA2}Cmd:Outlet2-SP")
+{
+	field(DESC, "Raw Outlet2 Sel")
+	field(DESC, "Setting the outlet state")
+	field(DTYP, "Snmp")
+	field(OUT,  "@10.0.144.22 private INTEGER: 128 i")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.2")
+}
+
+record (longin,"INJ-CS{ApcPdu:RGA2}Sts:Outlet2-RB")
+{
+	field(DESC, "Raw Outlet2 Stat")
+	field(DTYP, "Snmp")
+	field(INP,  "@10.0.144.22 private INTEGER: 128")
+	field(SCAN, "1 second")
+	field(FLNK, "INJ-CS{ApcPdu:RGA2}Sts:Outlet2-Sts")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.2")
+}
+
+record(mbbi, "INJ-CS{ApcPdu:RGA2}Sts:Outlet2-Sts")
+{
+	field(DESC, "Outlet2 Stat")
+	field(INP, "INJ-CS{ApcPdu:RGA2}Sts:Outlet2-RB")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+record(stringout, "INJ-CS{ApcPdu:RGA2}DB:Outlet3Name-SP")
+{
+	field(DESC, "Set Outlet3 Name")
+	field(PINI, "YES")
+	field(VAL,  "Outlet 3")
+	field(UDF, "0")
+	field(FLNK, "INJ-CS{ApcPdu:RGA2}DB:Outlet3Name-RB")
+	info(autosaveFields, "VAL")
+}
+
+record(stringin, "INJ-CS{ApcPdu:RGA2}DB:Outlet3Name-RB")
+{
+	field(DESC, "Outlet3 Name")
+	field(INP, "INJ-CS{ApcPdu:RGA2}DB:Outlet3Name-SP")    
+}
+
+
+record(mbbo, "INJ-CS{ApcPdu:RGA2}DB:OutletCmd-Sel")
+{
+	field(DESC, "Outlet Sel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+	field(PINI, "YES")
+	field(VAL,  "1")
+}
+
+record(dfanout, "INJ-CS{ApcPdu:RGA2}DB:OutletCmd-DFOut_")
+{
+	field(DESC, "Outlet Cmd DFOut")
+	field(OMSL, "closed_loop")
+	field(DOL,  "INJ-CS{ApcPdu:RGA2}DB:OutletCmd-Sel.RVAL")
+	field(OUTA, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet1-SP PP")
+	field(OUTB, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet2-SP PP")
+	field(OUTC, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet3-SP PP")
+	field(OUTD, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet4-SP PP")
+	field(OUTE, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet5-SP PP")
+	field(OUTF, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet6-SP PP")
+	field(OUTG, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet7-SP PP")
+	field(OUTH, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet8-SP PP")
+}
+
+record(mbbo, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet3-Sel")
+{
+	field(DESC, "Outlet3 Sel")
+	field(OUT,  "INJ-CS{ApcPdu:RGA2}Cmd:Outlet3-SP PP")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+
+record (longout,"INJ-CS{ApcPdu:RGA2}Cmd:Outlet3-SP")
+{
+	field(DESC, "Raw Outlet3 Sel")
+	field(DESC, "Setting the outlet state")
+	field(DTYP, "Snmp")
+	field(OUT,  "@10.0.144.22 private INTEGER: 128 i")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.3")
+}
+
+record (longin,"INJ-CS{ApcPdu:RGA2}Sts:Outlet3-RB")
+{
+	field(DESC, "Raw Outlet3 Stat")
+	field(DTYP, "Snmp")
+	field(INP,  "@10.0.144.22 private INTEGER: 128")
+	field(SCAN, "1 second")
+	field(FLNK, "INJ-CS{ApcPdu:RGA2}Sts:Outlet3-Sts")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.3")
+}
+
+record(mbbi, "INJ-CS{ApcPdu:RGA2}Sts:Outlet3-Sts")
+{
+	field(DESC, "Outlet3 Stat")
+	field(INP, "INJ-CS{ApcPdu:RGA2}Sts:Outlet3-RB")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+record(stringout, "INJ-CS{ApcPdu:RGA2}DB:Outlet4Name-SP")
+{
+	field(DESC, "Set Outlet4 Name")
+	field(PINI, "YES")
+	field(VAL,  "Outlet 4")
+	field(UDF, "0")
+	field(FLNK, "INJ-CS{ApcPdu:RGA2}DB:Outlet4Name-RB")
+	info(autosaveFields, "VAL")
+}
+
+record(stringin, "INJ-CS{ApcPdu:RGA2}DB:Outlet4Name-RB")
+{
+	field(DESC, "Outlet4 Name")
+	field(INP, "INJ-CS{ApcPdu:RGA2}DB:Outlet4Name-SP")    
+}
+
+
+record(mbbo, "INJ-CS{ApcPdu:RGA2}DB:OutletCmd-Sel")
+{
+	field(DESC, "Outlet Sel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+	field(PINI, "YES")
+	field(VAL,  "1")
+}
+
+record(dfanout, "INJ-CS{ApcPdu:RGA2}DB:OutletCmd-DFOut_")
+{
+	field(DESC, "Outlet Cmd DFOut")
+	field(OMSL, "closed_loop")
+	field(DOL,  "INJ-CS{ApcPdu:RGA2}DB:OutletCmd-Sel.RVAL")
+	field(OUTA, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet1-SP PP")
+	field(OUTB, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet2-SP PP")
+	field(OUTC, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet3-SP PP")
+	field(OUTD, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet4-SP PP")
+	field(OUTE, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet5-SP PP")
+	field(OUTF, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet6-SP PP")
+	field(OUTG, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet7-SP PP")
+	field(OUTH, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet8-SP PP")
+}
+
+record(mbbo, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet4-Sel")
+{
+	field(DESC, "Outlet4 Sel")
+	field(OUT,  "INJ-CS{ApcPdu:RGA2}Cmd:Outlet4-SP PP")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+
+record (longout,"INJ-CS{ApcPdu:RGA2}Cmd:Outlet4-SP")
+{
+	field(DESC, "Raw Outlet4 Sel")
+	field(DESC, "Setting the outlet state")
+	field(DTYP, "Snmp")
+	field(OUT,  "@10.0.144.22 private INTEGER: 128 i")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.4")
+}
+
+record (longin,"INJ-CS{ApcPdu:RGA2}Sts:Outlet4-RB")
+{
+	field(DESC, "Raw Outlet4 Stat")
+	field(DTYP, "Snmp")
+	field(INP,  "@10.0.144.22 private INTEGER: 128")
+	field(SCAN, "1 second")
+	field(FLNK, "INJ-CS{ApcPdu:RGA2}Sts:Outlet4-Sts")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.4")
+}
+
+record(mbbi, "INJ-CS{ApcPdu:RGA2}Sts:Outlet4-Sts")
+{
+	field(DESC, "Outlet4 Stat")
+	field(INP, "INJ-CS{ApcPdu:RGA2}Sts:Outlet4-RB")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+record(stringout, "INJ-CS{ApcPdu:RGA2}DB:Outlet5Name-SP")
+{
+	field(DESC, "Set Outlet5 Name")
+	field(PINI, "YES")
+	field(VAL,  "Outlet 5")
+	field(UDF, "0")
+	field(FLNK, "INJ-CS{ApcPdu:RGA2}DB:Outlet5Name-RB")
+	info(autosaveFields, "VAL")
+}
+
+record(stringin, "INJ-CS{ApcPdu:RGA2}DB:Outlet5Name-RB")
+{
+	field(DESC, "Outlet5 Name")
+	field(INP, "INJ-CS{ApcPdu:RGA2}DB:Outlet5Name-SP")    
+}
+
+
+record(mbbo, "INJ-CS{ApcPdu:RGA2}DB:OutletCmd-Sel")
+{
+	field(DESC, "Outlet Sel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+	field(PINI, "YES")
+	field(VAL,  "1")
+}
+
+record(dfanout, "INJ-CS{ApcPdu:RGA2}DB:OutletCmd-DFOut_")
+{
+	field(DESC, "Outlet Cmd DFOut")
+	field(OMSL, "closed_loop")
+	field(DOL,  "INJ-CS{ApcPdu:RGA2}DB:OutletCmd-Sel.RVAL")
+	field(OUTA, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet1-SP PP")
+	field(OUTB, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet2-SP PP")
+	field(OUTC, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet3-SP PP")
+	field(OUTD, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet4-SP PP")
+	field(OUTE, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet5-SP PP")
+	field(OUTF, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet6-SP PP")
+	field(OUTG, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet7-SP PP")
+	field(OUTH, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet8-SP PP")
+}
+
+record(mbbo, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet5-Sel")
+{
+	field(DESC, "Outlet5 Sel")
+	field(OUT,  "INJ-CS{ApcPdu:RGA2}Cmd:Outlet5-SP PP")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+
+record (longout,"INJ-CS{ApcPdu:RGA2}Cmd:Outlet5-SP")
+{
+	field(DESC, "Raw Outlet5 Sel")
+	field(DESC, "Setting the outlet state")
+	field(DTYP, "Snmp")
+	field(OUT,  "@10.0.144.22 private INTEGER: 128 i")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.5")
+}
+
+record (longin,"INJ-CS{ApcPdu:RGA2}Sts:Outlet5-RB")
+{
+	field(DESC, "Raw Outlet5 Stat")
+	field(DTYP, "Snmp")
+	field(INP,  "@10.0.144.22 private INTEGER: 128")
+	field(SCAN, "1 second")
+	field(FLNK, "INJ-CS{ApcPdu:RGA2}Sts:Outlet5-Sts")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.5")
+}
+
+record(mbbi, "INJ-CS{ApcPdu:RGA2}Sts:Outlet5-Sts")
+{
+	field(DESC, "Outlet5 Stat")
+	field(INP, "INJ-CS{ApcPdu:RGA2}Sts:Outlet5-RB")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+record(stringout, "INJ-CS{ApcPdu:RGA2}DB:Outlet6Name-SP")
+{
+	field(DESC, "Set Outlet6 Name")
+	field(PINI, "YES")
+	field(VAL,  "Outlet 6")
+	field(UDF, "0")
+	field(FLNK, "INJ-CS{ApcPdu:RGA2}DB:Outlet6Name-RB")
+	info(autosaveFields, "VAL")
+}
+
+record(stringin, "INJ-CS{ApcPdu:RGA2}DB:Outlet6Name-RB")
+{
+	field(DESC, "Outlet6 Name")
+	field(INP, "INJ-CS{ApcPdu:RGA2}DB:Outlet6Name-SP")    
+}
+
+
+record(mbbo, "INJ-CS{ApcPdu:RGA2}DB:OutletCmd-Sel")
+{
+	field(DESC, "Outlet Sel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+	field(PINI, "YES")
+	field(VAL,  "1")
+}
+
+record(dfanout, "INJ-CS{ApcPdu:RGA2}DB:OutletCmd-DFOut_")
+{
+	field(DESC, "Outlet Cmd DFOut")
+	field(OMSL, "closed_loop")
+	field(DOL,  "INJ-CS{ApcPdu:RGA2}DB:OutletCmd-Sel.RVAL")
+	field(OUTA, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet1-SP PP")
+	field(OUTB, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet2-SP PP")
+	field(OUTC, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet3-SP PP")
+	field(OUTD, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet4-SP PP")
+	field(OUTE, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet5-SP PP")
+	field(OUTF, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet6-SP PP")
+	field(OUTG, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet7-SP PP")
+	field(OUTH, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet8-SP PP")
+}
+
+record(mbbo, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet6-Sel")
+{
+	field(DESC, "Outlet6 Sel")
+	field(OUT,  "INJ-CS{ApcPdu:RGA2}Cmd:Outlet6-SP PP")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+
+record (longout,"INJ-CS{ApcPdu:RGA2}Cmd:Outlet6-SP")
+{
+	field(DESC, "Raw Outlet6 Sel")
+	field(DESC, "Setting the outlet state")
+	field(DTYP, "Snmp")
+	field(OUT,  "@10.0.144.22 private INTEGER: 128 i")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.6")
+}
+
+record (longin,"INJ-CS{ApcPdu:RGA2}Sts:Outlet6-RB")
+{
+	field(DESC, "Raw Outlet6 Stat")
+	field(DTYP, "Snmp")
+	field(INP,  "@10.0.144.22 private INTEGER: 128")
+	field(SCAN, "1 second")
+	field(FLNK, "INJ-CS{ApcPdu:RGA2}Sts:Outlet6-Sts")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.6")
+}
+
+record(mbbi, "INJ-CS{ApcPdu:RGA2}Sts:Outlet6-Sts")
+{
+	field(DESC, "Outlet6 Stat")
+	field(INP, "INJ-CS{ApcPdu:RGA2}Sts:Outlet6-RB")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+record(stringout, "INJ-CS{ApcPdu:RGA2}DB:Outlet7Name-SP")
+{
+	field(DESC, "Set Outlet7 Name")
+	field(PINI, "YES")
+	field(VAL,  "Outlet 7")
+	field(UDF, "0")
+	field(FLNK, "INJ-CS{ApcPdu:RGA2}DB:Outlet7Name-RB")
+	info(autosaveFields, "VAL")
+}
+
+record(stringin, "INJ-CS{ApcPdu:RGA2}DB:Outlet7Name-RB")
+{
+	field(DESC, "Outlet7 Name")
+	field(INP, "INJ-CS{ApcPdu:RGA2}DB:Outlet7Name-SP")    
+}
+
+
+record(mbbo, "INJ-CS{ApcPdu:RGA2}DB:OutletCmd-Sel")
+{
+	field(DESC, "Outlet Sel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+	field(PINI, "YES")
+	field(VAL,  "1")
+}
+
+record(dfanout, "INJ-CS{ApcPdu:RGA2}DB:OutletCmd-DFOut_")
+{
+	field(DESC, "Outlet Cmd DFOut")
+	field(OMSL, "closed_loop")
+	field(DOL,  "INJ-CS{ApcPdu:RGA2}DB:OutletCmd-Sel.RVAL")
+	field(OUTA, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet1-SP PP")
+	field(OUTB, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet2-SP PP")
+	field(OUTC, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet3-SP PP")
+	field(OUTD, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet4-SP PP")
+	field(OUTE, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet5-SP PP")
+	field(OUTF, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet6-SP PP")
+	field(OUTG, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet7-SP PP")
+	field(OUTH, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet8-SP PP")
+}
+
+record(mbbo, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet7-Sel")
+{
+	field(DESC, "Outlet7 Sel")
+	field(OUT,  "INJ-CS{ApcPdu:RGA2}Cmd:Outlet7-SP PP")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+
+record (longout,"INJ-CS{ApcPdu:RGA2}Cmd:Outlet7-SP")
+{
+	field(DESC, "Raw Outlet7 Sel")
+	field(DESC, "Setting the outlet state")
+	field(DTYP, "Snmp")
+	field(OUT,  "@10.0.144.22 private INTEGER: 128 i")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.7")
+}
+
+record (longin,"INJ-CS{ApcPdu:RGA2}Sts:Outlet7-RB")
+{
+	field(DESC, "Raw Outlet7 Stat")
+	field(DTYP, "Snmp")
+	field(INP,  "@10.0.144.22 private INTEGER: 128")
+	field(SCAN, "1 second")
+	field(FLNK, "INJ-CS{ApcPdu:RGA2}Sts:Outlet7-Sts")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.7")
+}
+
+record(mbbi, "INJ-CS{ApcPdu:RGA2}Sts:Outlet7-Sts")
+{
+	field(DESC, "Outlet7 Stat")
+	field(INP, "INJ-CS{ApcPdu:RGA2}Sts:Outlet7-RB")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+record(stringout, "INJ-CS{ApcPdu:RGA2}DB:Outlet8Name-SP")
+{
+	field(DESC, "Set Outlet8 Name")
+	field(PINI, "YES")
+	field(VAL,  "Outlet 8")
+	field(UDF, "0")
+	field(FLNK, "INJ-CS{ApcPdu:RGA2}DB:Outlet8Name-RB")
+	info(autosaveFields, "VAL")
+}
+
+record(stringin, "INJ-CS{ApcPdu:RGA2}DB:Outlet8Name-RB")
+{
+	field(DESC, "Outlet8 Name")
+	field(INP, "INJ-CS{ApcPdu:RGA2}DB:Outlet8Name-SP")    
+}
+
+
+record(mbbo, "INJ-CS{ApcPdu:RGA2}DB:OutletCmd-Sel")
+{
+	field(DESC, "Outlet Sel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+	field(PINI, "YES")
+	field(VAL,  "1")
+}
+
+record(dfanout, "INJ-CS{ApcPdu:RGA2}DB:OutletCmd-DFOut_")
+{
+	field(DESC, "Outlet Cmd DFOut")
+	field(OMSL, "closed_loop")
+	field(DOL,  "INJ-CS{ApcPdu:RGA2}DB:OutletCmd-Sel.RVAL")
+	field(OUTA, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet1-SP PP")
+	field(OUTB, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet2-SP PP")
+	field(OUTC, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet3-SP PP")
+	field(OUTD, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet4-SP PP")
+	field(OUTE, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet5-SP PP")
+	field(OUTF, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet6-SP PP")
+	field(OUTG, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet7-SP PP")
+	field(OUTH, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet8-SP PP")
+}
+
+record(mbbo, "INJ-CS{ApcPdu:RGA2}Cmd:Outlet8-Sel")
+{
+	field(DESC, "Outlet8 Sel")
+	field(OUT,  "INJ-CS{ApcPdu:RGA2}Cmd:Outlet8-SP PP")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}
+
+record (longout,"INJ-CS{ApcPdu:RGA2}Cmd:Outlet8-SP")
+{
+	field(DESC, "Raw Outlet8 Sel")
+	field(DESC, "Setting the outlet state")
+	field(DTYP, "Snmp")
+	field(OUT,  "@10.0.144.22 private INTEGER: 128 i")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.8")
+}
+
+record (longin,"INJ-CS{ApcPdu:RGA2}Sts:Outlet8-RB")
+{
+	field(DESC, "Raw Outlet8 Stat")
+	field(DTYP, "Snmp")
+	field(INP,  "@10.0.144.22 private INTEGER: 128")
+	field(SCAN, "1 second")
+	field(FLNK, "INJ-CS{ApcPdu:RGA2}Sts:Outlet8-Sts")
+	info (OID,  "1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.8")
+}
+
+record(mbbi, "INJ-CS{ApcPdu:RGA2}Sts:Outlet8-Sts")
+{
+	field(DESC, "Outlet8 Stat")
+	field(INP, "INJ-CS{ApcPdu:RGA2}Sts:Outlet8-RB")
+	field(DTYP, "Raw Soft Channel")
+	field(ZRST, "On")
+	field(ONST, "Off")
+	field(TWST, "Reboot")
+	field(ZRVL, "1")
+	field(ONVL, "2")
+	field(TWVL, "3")
+}

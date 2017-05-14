@@ -1,0 +1,4 @@
+NAME=saturn
+USER=softioc
+PORT=4083
+HOST=xf16idc-ioc1

@@ -1,0 +1,11 @@
+#
+# Environment variables must be set from DHCP
+# CELL - cell number (eg. CELL="25")
+# RACK - Rack group letter and rack number (eg. RACK="D1")
+
+cd("mrfioc2")
+
+ld("bin/RTEMS-mvme3100/mrf.obj")
+osdTimeRegister()
+
+iocshCmd("< ../st.cmd")

@@ -1,0 +1,13 @@
+file "db/pmac_asyn_motor.db"
+{
+pattern
+{SYS,            DEV,                   MOTOR,  SPORT,  ADDR,             DESC,               DTYP        PREC,  EGU}
+{"XF:16IDB-OP",  "{Slt:aSSA-Ax:X}",     "M0",   "P0",   1,                "X",                asynMotor,  3,     "um"}
+{"XF:16IDB-OP",  "{Slt:aSSA-Ax:dX}",    "M0",   "P0",   2,                "dX",               asynMotor,  3,     "um"}
+{"XF:16IDB-OP",  "{Slt:aSSA-Ax:Y}",     "M0",   "P0",   3,                "Y",                asynMotor,  3,     "um"}
+{"XF:16IDB-OP",  "{Slt:aSSA-Ax:dY}",    "M0",   "P0",   4,                "dY",               asynMotor,  3,     "um"}
+{"XF:16IDB-OP",  "{Fltr:Atn-Ax:X1}",    "M0",   "P0",   5,                "absorber set #1",  asynMotor,  3,     "um"}
+{"XF:16IDB-OP",  "{Fltr:Atn-Ax:X2}",    "M0",   "P0",   6,                "absorber set #2",  asynMotor,  3,     "um"}
+{"XF:16IDB-OP",  "{Fltr:Atn-Ax:X3}",    "M0",   "P0",   7,                "absorber set #3",  asynMotor,  3,     "um"}
+{"XF:16IDC-OP",  "{Mir:HRM2-Ax:Th}",    "M0",   "P0",   8,                "theta, tilt",      asynMotor,  3,     "rad"}
+}

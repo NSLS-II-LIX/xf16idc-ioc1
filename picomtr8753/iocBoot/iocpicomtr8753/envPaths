@@ -1,0 +1,4 @@
+epicsEnvSet("ARCH","linux-x86_64")
+epicsEnvSet("IOC","iocpicomtr8753")
+epicsEnvSet("TOP","/epics/iocs/picomtr8753")
+epicsEnvSet("EPICS_BASE","/usr/lib/epics")

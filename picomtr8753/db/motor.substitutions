@@ -1,0 +1,12 @@
+#file db/NewFocusMotor.db
+file db/motor.db
+{
+pattern
+{P, N, M, CH, C, S, DESC, DTYP,EGU, DIR,VELO,VBAS,ACCL,BDST,BVEL,BACC, MRES, PREC, DHLM, DLLM, INIT}
+{"XF:16IDC-OP{Mir:HRM2-Ax:BU}",1,1,A,0,0,"Upstream Bend",PMNC87xx,ct,Pos,500,500,1,1,500,1,1,1,1,1,""}
+{"XF:16IDC-OP{Mir:HRM2-Ax:BD}",1,1,B,0,1,"Downstream Bend",PMNC87xx,ct,Pos,500,500,1,1,500,1,1,1,1,1,""}
+#{lsx16a:,1,1,C,0,2,"ctlr$(N) mod$(M) ch$(CH)",PMNC87xx,mm,Pos,500,500,1,1,500,1,1,1,1,1,""}
+{"XF:16IDC-ES{BS:SAXS-Ax:T1}",1,2,A,0,3,"SAXS BS T1",PMNC87xx,ct,Pos,500,500,1,1,500,1,1,1,0,0,""}
+{"XF:16IDC-ES{BS:SAXS-Ax:T2}",1,2,B,0,4,"SAXS BS T2",PMNC87xx,ct,Pos,500,500,1,1,500,1,1,1,0,0,""}
+#{lsx16a:,1,2,C,0,5,"ctlr$(N) mod$(M) ch$(CH)",PMNC87xx,mm,Pos,500,500,1,1,500,1,1,1,1,1,""}
+}

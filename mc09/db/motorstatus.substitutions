@@ -1,0 +1,27 @@
+file "db/motorstatus.db"
+{
+pattern
+{SYS,            DEV,                   PORT,  AXIS }
+{"XF:16IDC-OP",  "{CRL-Ax:Z}",          "P0",  1    }
+{"XF:16IDC-OP",  "{CRL-Ax:Z1}",         "P0",  2    }
+{"XF:16IDC-ES",  "{Stg:WAXS1-Ax:X}",    "P0",  3    }
+{"XF:16IDC-ES",  "{Stg:WAXS1-Ax:Y}",    "P0",  4    }
+{"XF:16IDC-ES",  "{Stg:WAXS1-Ax:Z}",    "P0",  5    }
+{"XF:16IDC-ES",  "{Stg:WAXS2-Ax:X}",    "P0",  6    }
+{"XF:16IDC-ES",  "{Stg:WAXS2-Ax:Y}",    "P0",  7    }
+{"XF:16IDC-ES",  "{Stg:WAXS2-Ax:Z}",    "P0",  8    }
+}
+
+file "db/pmacStatusAxis.db"
+{
+pattern
+{SYS,             DEV,            PORT,  AXIS }
+{"XF:16IDC-CT",   "{MC:09-Ax:1}", "P0",  1    }
+{"XF:16IDC-CT",   "{MC:09-Ax:2}", "P0",  2    }
+{"XF:16IDC-CT",   "{MC:09-Ax:3}", "P0",  3    }
+{"XF:16IDC-CT",   "{MC:09-Ax:4}", "P0",  4    }
+{"XF:16IDC-CT",   "{MC:09-Ax:5}", "P0",  5    }
+{"XF:16IDC-CT",   "{MC:09-Ax:6}", "P0",  6    }
+{"XF:16IDC-CT",   "{MC:09-Ax:7}", "P0",  7    }
+{"XF:16IDC-CT",   "{MC:09-Ax:8}", "P0",  8    }
+}

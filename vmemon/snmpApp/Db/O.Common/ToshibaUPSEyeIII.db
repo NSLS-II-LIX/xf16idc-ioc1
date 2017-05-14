@@ -1,0 +1,302 @@
+
+record (longin,"BL:C04{UPS}Sts:Raw__Sts")
+{
+    field(DESC, "UPS Battery Status")
+    field(DTYP, "Snmp")
+    field(INP,  "@10.0.145.60 public INTEGER: 128")
+#    field(SCAN, "10 second")
+    field(SCAN, "10 second")
+    field(FLNK, "BL:C04{UPS}Sts:_Sts")
+#    info (OID,  "1.3.6.1.4.1.186.1.19.2.1.2.1.0")
+     info (OID,  "1.3.6.1.4.1.186.1.19.2.3.6.1.0")
+}
+
+record(mbbi, "BL:C04{UPS}Sts:_Sts")
+{
+    field(INP, "BL:C04{UPS}Sts:Raw__Sts")
+    field(ZRST, "Undefined")
+    field(ONST, "Unknown")
+    field(TWST, "Normal")
+    field(THST, "Depleted")
+    field(FRST, "Discharging")
+    field(FVST, "Failure")
+    field(ZRSV, "NO_ALARM")
+    field(ONSV, "NO_ALARM")
+    field(TWSV, "NO_ALARM")
+    field(THSV, "MAJOR")
+    field(FRSV, "MAJOR")
+    field(FVSV, "MAJOR")
+    field(FLNK, "BL:C04{UPS}V:Input__I")
+}
+
+record (longin,"BL:C04{UPS}V:Input__I")
+{
+    field(DESC, "Input Voltage")
+    field(DTYP, "Snmp")
+    field(INP,  "@10.0.145.60 public INTEGER: 128")
+	field(HIHI, 239)
+	field(HHSV, "MAJOR")
+	field(LOLO, 176)
+	field(LLSV,"MAJOR")
+#    info (OID,  "1.3.6.1.4.1.186.1.19.2.1.3.3.1.3.0")
+     info (OID,  "1.3.6.1.4.1.186.1.19.2.3.2.3.1.3")
+    field(FLNK, "BL:C04{UPS}I:Input__I")
+}
+
+record (ai,"BL:C04{UPS}I:Input__I")
+{
+    field(DESC, "Input Current")
+    field(DTYP, "Snmp")
+    field(INP,  "@10.0.145.60 public INTEGER: 128")
+    field(ASLO, ".01")
+#	field(HIHI, 239)
+#	field(HHSV, "MAJOR")
+#	field(LOLO, 176)
+#	field(LLSV,"MAJOR")
+#    info (OID,  "1.3.6.1.4.1.186.1.19.2.1.3.3.1.4.0")
+     info (OID,  "1.3.6.1.4.1.186.1.19.2.3.2.3.1.4")
+    field(FLNK, "BL:C04{UPS}I:Input__Calc")
+}
+
+#Scaling calculation
+record(calc, "BL:C04{UPS}I:Input__Calc")
+{
+        field(INPA, "BL:C04{UPS}I:Input__I MS")
+		field(CALC, "A*.1")
+    field(FLNK, "BL:C04{UPS}Freq:Input__I")
+    field(HIHI, 80)
+    field(HHSV, "MAJOR")
+#        field(TPRO, "1")
+}
+
+record (ai,"BL:C04{UPS}Freq:Input__I")
+{
+    field(DESC, "Input Frequency")
+    field(LINR, "LINEAR")
+    field(ESLO, .1)
+    field(DTYP, "Snmp")
+    field(INP,  "@10.0.145.60 public INTEGER: 128")
+#    info (OID,  "1.3.6.1.4.1.186.1.19.2.1.3.3.1.2.0")
+     info (OID,  "1.3.6.1.4.1.186.1.19.2.3.3.3.1.2")
+    field(FLNK, "BL:C04{UPS}Freq:Input__Calc")   
+}
+
+#Scaling calculation
+record(calc, "BL:C04{UPS}Freq:Input__Calc")
+{
+        field(INPA, "BL:C04{UPS}Freq:Input__I MS")
+		field(CALC, "A*.1")
+		field(FLNK, "BL:C04{UPS}V:Output__I")
+	field(HIHI, 63.0)
+	field(HHSV, "MAJOR")
+	field(LOLO, 57.0)
+	field(LLSV, "MAJOR")
+#        field(TPRO, "1")
+}
+
+record (longin,"BL:C04{UPS}V:Output__I")
+{
+    field(DESC, "Output Voltage")
+    field(DTYP, "Snmp")
+    field(INP,  "@10.0.145.60 public INTEGER: 128")
+	field(HIHI, 239)
+	field(HHSV, "MAJOR")
+	field(LOLO, 176)
+	field(LLSV, "MAJOR")
+#    info (OID,  "1.3.6.1.4.1.186.1.19.2.1.4.4.1.2.0")
+     info (OID,  "1.3.6.1.4.1.186.1.19.2.3.3.3.1.4")
+    field(FLNK, "BL:C04{UPS}I:Output__I")
+}
+
+record (ai,"BL:C04{UPS}I:Output__I")
+{
+    field(DESC, "Output Current")
+    field(DTYP, "Snmp")
+    field(INP,  "@10.0.145.60 public INTEGER: 128")
+    field(ASLO, ".01")
+#	field(HIHI, 239)
+#	field(HHSV, "MAJOR")
+#	field(LOLO, 176)
+#	field(LLSV, "MAJOR")
+#    info (OID,  "1.3.6.1.4.1.186.1.19.2.1.4.4.1.3.0")
+     info (OID,  "1.3.6.1.4.1.186.1.19.2.3.3.3.1.4")
+    field(FLNK, "BL:C04{UPS}I:Output__Calc")
+}
+#Scaling calculation
+record(calc, "BL:C04{UPS}I:Output__Calc")
+{
+        field(INPA, "BL:C04{UPS}I:Output__I MS")
+		field(CALC, "A*.1")
+    field(FLNK, "BL:C04{UPS}Freq:Output__I")
+    field(HIHI, 80)
+    field(HHSV, "MAJOR")
+#        field(TPRO, "1")
+}
+record (longin,"BL:C04{UPS}Freq:Output__I")
+{
+    field(DESC, "Output Frequency")
+    field(DTYP, "Snmp")
+    field(INP,  "@10.0.145.60 public INTEGER: 128")
+#    info (OID,  "1.3.6.1.4.1.186.1.19.2.1.4.2.0")
+    info (OID,  "1.3.6.1.4.1.186.1.19.2.3.3.3.1.2")
+    field(FLNK, "BL:C04{UPS}Freq:Output__Calc")
+}
+
+#Scaling calculation
+record(calc, "BL:C04{UPS}Freq:Output__Calc")
+{
+        field(INPA, "BL:C04{UPS}Freq:Output__I MS")
+		field(CALC, "A*.1")
+	field(HIHI, 63.0)
+	field(HHSV, "MAJOR")
+	field(LOLO, 57.0)
+	field(LLSV, "MAJOR")
+                field(FLNK, "BL:C04{UPS}V:Battery__I")
+#        field(TPRO, "1")
+}
+
+
+record (longin,"BL:C04{UPS}V:Battery__I")
+{
+    field(DESC, "Battery Voltage")
+    field(DTYP, "Snmp")
+    field(INP,  "@10.0.145.60 public INTEGER: 128")
+	field(LOLO, 311)
+	field(LLSV, "MAJOR")
+	field(HIHI, 344)
+	field(HHSV, "MAJOR")
+#    info (OID,  "1.3.6.1.4.1.186.1.19.2.1.2.5.0")
+    info (OID,  "1.3.6.1.4.1.186.1.19.2.3.6.3.0")
+    field(FLNK, "BL:C04{UPS}T:UPSAir__I")
+}
+
+
+record (longin,"BL:C04{UPS}T:UPSAir__I")
+{
+    field(DESC, "Battery Temperature")
+    field(DTYP, "Snmp")
+    field(INP,  "@10.0.145.60 public INTEGER: 128")
+	field(HIHI, 350)
+	field(HHSV, "MAJOR")
+#    info (OID,  "1.3.6.1.4.1.186.1.19.2.1.15.2.0")
+     info (OID,  "1.3.6.1.4.1.186.1.19.2.3.16.2.0")
+    field(FLNK, "BL:C04{UPS}T:UPSAir__Calc")
+}
+
+#Scaling calculation
+record(calc, "BL:C04{UPS}T:UPSAir__Calc")
+{
+        field(INPA, "BL:C04{UPS}T:UPSAir__I")
+		field(CALC, "A*.1")
+	field(HIHI, 35.0)
+	field(HHSV, "MAJOR")
+                field(FLNK, "BL:C04{UPS}RH:UPSAir__I")
+#        field(TPRO, "1")
+}
+
+record (longin,"BL:C04{UPS}RH:UPSAir__I")
+{
+    field(DESC, "Battery Temperature")
+    field(DTYP, "Snmp")
+    field(INP,  "@10.0.145.60 public INTEGER: 128")
+	field(HIHI, 350)
+	field(HHSV, "MAJOR")
+#    info (OID,  "1.3.6.1.4.1.186.1.19.2.1.15.9.0")
+     info (OID,  "1.3.6.1.4.1.186.1.19.2.3.16.9.0")
+    field(FLNK, "BL:C04{UPS}RH:UPSAir__Calc")
+}
+
+#Scaling calculation
+record(calc, "BL:C04{UPS}RH:UPSAir__Calc")
+{
+        field(INPA, "BL:C04{UPS}RH:UPSAir__I")
+	field(CALC, "A*.1")
+#	field(HIHI, 63.0)
+#	field(HHSV, "MAJOR")
+#	field(LOLO, 57.0)
+#	field(LLSV, "MAJOR")
+        field(FLNK, "BL:C04{UPS}Cnt:UPSAlarm__I")
+#        field(TPRO, "1")
+}
+
+record (ai,"BL:C04{UPS}Cnt:UPSAlarm__I")
+{
+    field(DESC, "Alarm Count")
+    field(DTYP, "Snmp")
+    field(INP,  "@10.0.145.60 public Gauge32: 128")
+#    info (OID,  "1.3.6.1.4.1.186.1.19.2.1.6.1.0")
+    info (OID,  "1.3.6.1.4.1.186.1.19.2.3.10.1.0")
+    field(FLNK, "")
+}
+
+
+
+
+
+#UPS Alarm calculation combine all fields
+record(calc, "BL:C04{UPS}UPS:AlarmCalcP1")
+{
+        field(SCAN, "2 second")
+        field(INPA, "BL:C04{UPS}Sts:_Sts.SEVR")
+
+        field(INPB, "BL:C04{UPS}V:Input__I.SEVR")
+        field(INPC, "BL:C04{UPS}I:Input__Calc.SEVR")
+        field(INPD, "BL:C04{UPS}Freq:Input__Calc.SEVR")
+
+	field(CALC, "(((A=2)||(B=2)||(C=2)||(D=2))?1:0)")
+	field(HIHI, 1.0)
+	field(HHSV, "MAJOR")
+#       field(TPRO, "1")
+
+}
+
+#UPS Alarm calculation combine all fields
+record(calc, "BL:C04{UPS}UPS:AlarmCalcP2")
+{
+        field(SCAN, "2 second")
+        field(INPA, "BL:C04{UPS}V:Output__I.SEVR")
+        field(INPB, "BL:C04{UPS}I:Output__Calc.SEVR")
+        field(INPC, "BL:C04{UPS}Freq:Output__Calc.SEVR")
+
+	field(CALC, "(((A=2)||(B=2)||(C=2))?1:0)")
+	field(HIHI, 1.0)
+	field(HHSV, "MAJOR")
+#       field(TPRO, "1")
+
+}
+
+
+#UPS Alarm calculation combine all fields
+record(calc, "BL:C04{UPS}UPS:AlarmCalcP3")
+{
+        field(SCAN, "2 second")
+        field(INPA, "BL:C04{UPS}V:Battery__I.SEVR")
+        field(INPB, "BL:C04{UPS}T:UPSAir__Calc.SEVR")
+        field(INPC, "BL:C04{UPS}RH:UPSAir__Calc.SEVR")
+
+	field(CALC, "(((A=2)||(B=2)||(C=2))?1:0)")
+	field(HIHI, 1.0)
+	field(HHSV, "MAJOR")
+#       field(TPRO, "1")
+
+}
+
+
+#UPS Alarm calculation combine all fields
+record(calc, "BL:C04{UPS}UPS:AlarmCalcP4")
+{
+        field(SCAN, "2 second")
+        field(INPA, "BL:C04{UPS}UPS:AlarmCalcP1.SEVR")
+        field(INPB, "BL:C04{UPS}UPS:AlarmCalcP2.SEVR")
+        field(INPC, "BL:C04{UPS}UPS:AlarmCalcP3.SEVR")
+
+	field(CALC, "(((A=2)||(B=2)||(C=2))?1:0)")
+	field(HIHI, 1.0)
+	field(HHSV, "MAJOR")
+#       field(TPRO, "1")
+
+}
+
+
+
+

@@ -1,0 +1,8 @@
+include "base.dbd"
+include "asyn.dbd"
+include "motorSupport.dbd"
+include "drvAsynIPPort.dbd"
+include "drvAsynSerialPort.dbd"
+include "devSmarActMCSMotor.dbd"
+include "asSupport.dbd"
+include "calcSupport.dbd"

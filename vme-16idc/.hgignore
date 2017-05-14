@@ -1,0 +1,10 @@
+syntax: glob
+**_DEPRECATED/**
+**bin/**
+**db/**
+**dbd/**
+^include$
+**lib/**
+**include/**
+**envPaths**
+O.*

@@ -1,0 +1,4 @@
+NAME=mc09
+USER=softioc
+PORT=4057
+HOST=xf16idc-ioc1

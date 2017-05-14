@@ -1,0 +1,7 @@
+NAME=vmemon
+PORT=4070
+USER=softioc
+HOST=xf16idc-ioc1
+#EXEC="/epics/iocs/vmemon/iocBoot/iocvmemon/st.cmd"
+EXEC="/epics/iocs/vmemon/st.cmd"
+CHDIR="/epics/iocs/vmemon"

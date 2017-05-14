@@ -1,0 +1,4 @@
+NAME=es-quadem02
+PORT=4079
+USER=softioc
+HOST=xf16idc-ioc1

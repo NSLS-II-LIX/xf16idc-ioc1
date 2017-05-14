@@ -1,0 +1,12 @@
+file "db/pmac_asyn_motor.db"
+{
+pattern
+{SYS,                  DEV,                   MOTOR,  SPORT,  ADDR,             DESC,              DTYP        PREC,  EGU}
+{"XF:16IDC-ES:InAir",  "{Stg:ScanC-Ax:X}",    "M0",   "P0",   1,                "coarse scan X ",  asynMotor,  3,     "um"}
+{"XF:16IDC-ES:InAir",  "{Stg:ScanC-Ax:Y}",    "M0",   "P0",   2,                "coarse scan Y",   asynMotor,  3,     "um"}
+{"XF:16IDC-ES:InAir",  "{Mscp:1-Ax:X}",       "M0",   "P0",   4,                "X",               asynMotor,  3,     "um"}
+{"XF:16IDC-ES:InAir",  "{Mscp:1-Ax:Y}",       "M0",   "P0",   5,                "Y",               asynMotor,  3,     "um"}
+{"XF:16IDC-ES",        "{Stg:SAXS-Ax:X}",     "M0",   "P0",   6,                "X",               asynMotor,  3,     "um"}
+{"XF:16IDC-ES",        "{Stg:SAXS-Ax:Y}",     "M0",   "P0",   7,                "Y",               asynMotor,  3,     "um"}
+{"XF:16IDC-ES",        "{Stg:SAXS-Ax:Z}",     "M0",   "P0",   8,                "Z",               asynMotor,  3,     "um"}
+}

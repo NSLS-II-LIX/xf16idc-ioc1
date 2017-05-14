@@ -1,0 +1,25 @@
+file "db/motorstatus.db"
+{
+pattern
+{SYS,                  DEV,                   PORT,  AXIS }
+{"XF:16IDC-ES:InAir",  "{Stg:ScanC-Ax:X}",    "P0",  1    }
+{"XF:16IDC-ES:InAir",  "{Stg:ScanC-Ax:Y}",    "P0",  2    }
+{"XF:16IDC-ES:InAir",  "{Mscp:1-Ax:X}",       "P0",  4    }
+{"XF:16IDC-ES:InAir",  "{Mscp:1-Ax:Y}",       "P0",  5    }
+{"XF:16IDC-ES",        "{Stg:SAXS-Ax:X}",     "P0",  6    }
+{"XF:16IDC-ES",        "{Stg:SAXS-Ax:Y}",     "P0",  7    }
+{"XF:16IDC-ES",        "{Stg:SAXS-Ax:Z}",     "P0",  8    }
+}
+
+file "db/pmacStatusAxis.db"
+{
+pattern
+{SYS,                   DEV,            PORT,  AXIS }
+{"XF:16IDC-CT",         "{MC:08-Ax:1}", "P0",  1    }
+{"XF:16IDC-CT",         "{MC:08-Ax:2}", "P0",  2    }
+{"XF:16IDC-CT",         "{MC:08-Ax:4}", "P0",  4    }
+{"XF:16IDC-CT",         "{MC:08-Ax:5}", "P0",  5    }
+{"XF:16IDC-CT",         "{MC:08-Ax:6}", "P0",  6    }
+{"XF:16IDC-CT",         "{MC:08-Ax:7}", "P0",  7    }
+{"XF:16IDC-CT",         "{MC:08-Ax:8}", "P0",  8    }
+}

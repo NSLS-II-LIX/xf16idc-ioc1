@@ -1,0 +1,12 @@
+file "db/autohome.db"
+{
+pattern
+{SYS,            DEV,                   PLC,  PORT  }
+{"XF:16IDC-OP",  "{Mir:HRM1-Ax:Th}",    8,    P0    }
+{"XF:16IDC-OP",  "{Mir:HRM1-Ax:Y}",     9,    P0    }
+{"XF:16IDC-OP",  "{Mir:HRM2-Ax:Y}",     10,   P0    }
+{"XF:16IDC-OP",  "{CRL-Ax:UX}",         12,   P0    }
+{"XF:16IDC-OP",  "{CRL-Ax:UY}",         13,   P0    }
+{"XF:16IDC-OP",  "{CRL-Ax:DX}",         14,   P0    }
+{"XF:16IDC-OP",  "{CRL-Ax:DY}",         15,   P0    }
+}

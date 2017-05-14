@@ -1,0 +1,11 @@
+For documentation see
+
+snmpApp/README
+
+and
+
+for devSnmpApp see document/Readme.pdf
+
+
+The newer devSnmp driver (executable snmp2) is backwards compatible
+with the older snmp driver (executable snmp).

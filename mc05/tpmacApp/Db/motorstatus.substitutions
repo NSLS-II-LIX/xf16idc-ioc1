@@ -1,0 +1,27 @@
+file "db/motorstatus.db"
+{
+pattern
+{SYS,            DEV,                   PORT,  AXIS }
+{"XF:16IDB-OP",  "{Slt:aSSA-Ax:X}",     "P0",  1    }
+{"XF:16IDB-OP",  "{Slt:aSSA-Ax:dX}",    "P0",  2    }
+{"XF:16IDB-OP",  "{Slt:aSSA-Ax:Y}",     "P0",  3    }
+{"XF:16IDB-OP",  "{Slt:aSSA-Ax:dY}",    "P0",  4    }
+{"XF:16IDB-OP",  "{Fltr:Atn-Ax:X1}",    "P0",  5    }
+{"XF:16IDB-OP",  "{Fltr:Atn-Ax:X2}",    "P0",  6    }
+{"XF:16IDB-OP",  "{Fltr:Atn-Ax:X3}",    "P0",  7    }
+{"XF:16IDC-OP",  "{Mir:HRM2-Ax:Th}",    "P0",  8    }
+}
+
+file "db/pmacStatusAxis.db"
+{
+pattern
+{SYS,             DEV,            PORT,  AXIS }
+{"XF:16IDB-CT",   "{MC:05-Ax:1}", "P0",  1    }
+{"XF:16IDB-CT",   "{MC:05-Ax:2}", "P0",  2    }
+{"XF:16IDB-CT",   "{MC:05-Ax:3}", "P0",  3    }
+{"XF:16IDB-CT",   "{MC:05-Ax:4}", "P0",  4    }
+{"XF:16IDB-CT",   "{MC:05-Ax:5}", "P0",  5    }
+{"XF:16IDB-CT",   "{MC:05-Ax:6}", "P0",  6    }
+{"XF:16IDB-CT",   "{MC:05-Ax:7}", "P0",  7    }
+{"XF:16IDC-CT",   "{MC:05-Ax:8}", "P0",  8    }
+}

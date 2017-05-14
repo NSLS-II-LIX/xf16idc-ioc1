@@ -1,0 +1,2001 @@
+# autosave R5.3	Automatically generated - DO NOT MODIFY - 160609-152312
+quadEMTest:TetrAMM:Acquire 0
+quadEMTest:TetrAMM:AcquireMode 0
+quadEMTest:TetrAMM:Range 0
+quadEMTest:TetrAMM:PingPong 0
+quadEMTest:TetrAMM:IntegrationTime 0
+quadEMTest:TetrAMM:AveragingTime 0.1
+quadEMTest:TetrAMM:TriggerMode 0
+quadEMTest:TetrAMM:TriggerPolarity 0
+quadEMTest:TetrAMM:NumChannels 2
+quadEMTest:TetrAMM:Resolution 0
+quadEMTest:TetrAMM:BiasState 0
+quadEMTest:TetrAMM:BiasVoltage 0
+quadEMTest:TetrAMM:BiasInterlock 0
+quadEMTest:TetrAMM:ValuesPerRead 5
+quadEMTest:TetrAMM:NumAcquire 1
+quadEMTest:TetrAMM:ReadFormat 0
+quadEMTest:TetrAMM:Geometry 0
+quadEMTest:TetrAMM:CurrentName1 1
+quadEMTest:TetrAMM:CurrentName2 2
+quadEMTest:TetrAMM:CurrentName3 3
+quadEMTest:TetrAMM:CurrentName4 4
+quadEMTest:TetrAMM:CurrentOffset1 0
+quadEMTest:TetrAMM:CurrentOffset2 0
+quadEMTest:TetrAMM:CurrentOffset3 0
+quadEMTest:TetrAMM:CurrentOffset4 0
+quadEMTest:TetrAMM:CurrentScale1 1
+quadEMTest:TetrAMM:CurrentScale2 1
+quadEMTest:TetrAMM:CurrentScale3 1
+quadEMTest:TetrAMM:CurrentScale4 1
+quadEMTest:TetrAMM:PositionOffsetX 0
+quadEMTest:TetrAMM:PositionOffsetY 0
+quadEMTest:TetrAMM:PositionScaleX 1000000
+quadEMTest:TetrAMM:PositionScaleY 1000000
+quadEMTest:TetrAMM:NDAttributesFile 
+quadEMTest:TetrAMM:ReadStatus.SCAN 0
+quadEMTest:TetrAMM:Current1:BgdWidth 1
+quadEMTest:TetrAMM:Current1:ComputeStatistics 1
+quadEMTest:TetrAMM:Current1:ComputeCentroid 0
+quadEMTest:TetrAMM:Current1:CentroidThreshold 1
+quadEMTest:TetrAMM:Current1:ComputeProfiles 0
+quadEMTest:TetrAMM:Current1:CursorX 256
+quadEMTest:TetrAMM:Current1:CursorY 256
+quadEMTest:TetrAMM:Current1:ComputeHistogram 0
+quadEMTest:TetrAMM:Current1:HistSize 256
+quadEMTest:TetrAMM:Current1:HistMin 0
+quadEMTest:TetrAMM:Current1:HistMax 255
+quadEMTest:TetrAMM:Current1:TSNumPoints 2048
+quadEMTest:TetrAMM:Current1:TSRead.SCAN 6
+quadEMTest:TetrAMM:Current1:NDArrayPort TetrAMM
+quadEMTest:TetrAMM:Current1:NDArrayAddress 0
+quadEMTest:TetrAMM:Current1:EnableCallbacks 1
+quadEMTest:TetrAMM:Current1:MinCallbackTime 0
+quadEMTest:TetrAMM:Current1:BlockingCallbacks 0
+quadEMTest:TetrAMM:Current1:QueueSize 20
+quadEMTest:TetrAMM:Current1:DataType 1
+quadEMTest:TetrAMM:Current1:ColorMode 0
+quadEMTest:TetrAMM:Current1:ArrayCallbacks 1
+quadEMTest:TetrAMM:Current1:NDAttributesFile 
+quadEMTest:TetrAMM:Current1:PoolUsedMem.SCAN 6
+quadEMTest:TetrAMM:Current1:Reset.SCAN 0
+quadEMTest:TetrAMM:Current1:Reset.DESC 
+quadEMTest:TetrAMM:Current1:Reset.PREC 0
+quadEMTest:TetrAMM:Current1:Reset.DLY1 0
+quadEMTest:TetrAMM:Current1:Reset.DOL1 0
+quadEMTest:TetrAMM:Current1:Reset.STR1 0
+quadEMTest:TetrAMM:Current1:Reset.DO1 0
+quadEMTest:TetrAMM:Current1:Reset.LNK1 quadEMTest:TetrAMM:Current1:MinValue PP
+quadEMTest:TetrAMM:Current1:Reset.WAIT1 0
+quadEMTest:TetrAMM:Current1:Reset.DLY2 0
+quadEMTest:TetrAMM:Current1:Reset.DOL2 0
+quadEMTest:TetrAMM:Current1:Reset.STR2 0
+quadEMTest:TetrAMM:Current1:Reset.DO2 0
+quadEMTest:TetrAMM:Current1:Reset.LNK2 quadEMTest:TetrAMM:Current1:MaxValue PP
+quadEMTest:TetrAMM:Current1:Reset.WAIT2 0
+quadEMTest:TetrAMM:Current1:Reset.DLY3 0
+quadEMTest:TetrAMM:Current1:Reset.DOL3 0
+quadEMTest:TetrAMM:Current1:Reset.STR3 0
+quadEMTest:TetrAMM:Current1:Reset.DO3 0
+quadEMTest:TetrAMM:Current1:Reset.LNK3 quadEMTest:TetrAMM:Current1:MaxValue PP
+quadEMTest:TetrAMM:Current1:Reset.WAIT3 0
+quadEMTest:TetrAMM:Current1:Reset.DLY4 0
+quadEMTest:TetrAMM:Current1:Reset.DOL4 0
+quadEMTest:TetrAMM:Current1:Reset.STR4 0
+quadEMTest:TetrAMM:Current1:Reset.DO4 0
+quadEMTest:TetrAMM:Current1:Reset.LNK4 quadEMTest:TetrAMM:Current1:MeanValue P
+quadEMTest:TetrAMM:Current1:Reset.WAIT4 0
+quadEMTest:TetrAMM:Current1:Reset.DLY5 0
+quadEMTest:TetrAMM:Current1:Reset.DOL5 0
+quadEMTest:TetrAMM:Current1:Reset.STR5 0
+quadEMTest:TetrAMM:Current1:Reset.DO5 0
+quadEMTest:TetrAMM:Current1:Reset.LNK5 quadEMTest:TetrAMM:Current1:SigmaValue 
+quadEMTest:TetrAMM:Current1:Reset.WAIT5 0
+quadEMTest:TetrAMM:Current1:Reset.DLY6 0
+quadEMTest:TetrAMM:Current1:Reset.DOL6 0
+quadEMTest:TetrAMM:Current1:Reset.STR6 0
+quadEMTest:TetrAMM:Current1:Reset.DO6 0
+quadEMTest:TetrAMM:Current1:Reset.LNK6 quadEMTest:TetrAMM:Current1:Total PP MS
+quadEMTest:TetrAMM:Current1:Reset.WAIT6 0
+quadEMTest:TetrAMM:Current1:Reset.DLY7 0
+quadEMTest:TetrAMM:Current1:Reset.DOL7 0
+quadEMTest:TetrAMM:Current1:Reset.STR7 0
+quadEMTest:TetrAMM:Current1:Reset.DO7 0
+quadEMTest:TetrAMM:Current1:Reset.LNK7 quadEMTest:TetrAMM:Current1:Net PP MS
+quadEMTest:TetrAMM:Current1:Reset.WAIT7 0
+quadEMTest:TetrAMM:Current1:Reset.DLY8 0
+quadEMTest:TetrAMM:Current1:Reset.DOL8 0
+quadEMTest:TetrAMM:Current1:Reset.STR8 0
+quadEMTest:TetrAMM:Current1:Reset.DO8 0
+quadEMTest:TetrAMM:Current1:Reset.LNK8 quadEMTest:TetrAMM:Current1:MinX PP MS
+quadEMTest:TetrAMM:Current1:Reset.WAIT8 0
+quadEMTest:TetrAMM:Current1:Reset.DLY9 0
+quadEMTest:TetrAMM:Current1:Reset.DOL9 0
+quadEMTest:TetrAMM:Current1:Reset.STR9 0
+quadEMTest:TetrAMM:Current1:Reset.DO9 0
+quadEMTest:TetrAMM:Current1:Reset.LNK9 quadEMTest:TetrAMM:Current1:MinY PP MS
+quadEMTest:TetrAMM:Current1:Reset.WAIT9 0
+quadEMTest:TetrAMM:Current1:Reset.DLYA 0
+quadEMTest:TetrAMM:Current1:Reset.DOLA 0
+quadEMTest:TetrAMM:Current1:Reset.STRA 0
+quadEMTest:TetrAMM:Current1:Reset.DOA 0
+quadEMTest:TetrAMM:Current1:Reset.LNKA quadEMTest:TetrAMM:Current1:MaxX PP MS
+quadEMTest:TetrAMM:Current1:Reset.WAITA 0
+quadEMTest:TetrAMM:Current1:Reset.FLNK quadEMTest:TetrAMM:Current1:Reset1
+quadEMTest:TetrAMM:Current1:Reset.SELL 
+quadEMTest:TetrAMM:Current1:Reset.SELN 1
+quadEMTest:TetrAMM:Current1:Reset.SELM 0
+quadEMTest:TetrAMM:Current1:Reset1.SCAN 0
+quadEMTest:TetrAMM:Current1:Reset1.DESC 
+quadEMTest:TetrAMM:Current1:Reset1.PREC 0
+quadEMTest:TetrAMM:Current1:Reset1.DLY1 0
+quadEMTest:TetrAMM:Current1:Reset1.DOL1 0
+quadEMTest:TetrAMM:Current1:Reset1.STR1 0
+quadEMTest:TetrAMM:Current1:Reset1.DO1 0
+quadEMTest:TetrAMM:Current1:Reset1.LNK1 quadEMTest:TetrAMM:Current1:MaxY PP MS
+quadEMTest:TetrAMM:Current1:Reset1.WAIT1 0
+quadEMTest:TetrAMM:Current1:Reset1.DLY2 0
+quadEMTest:TetrAMM:Current1:Reset1.DOL2 0
+quadEMTest:TetrAMM:Current1:Reset1.STR2 0
+quadEMTest:TetrAMM:Current1:Reset1.DO2 0
+quadEMTest:TetrAMM:Current1:Reset1.LNK2 quadEMTest:TetrAMM:Current1:CentroidX P
+quadEMTest:TetrAMM:Current1:Reset1.WAIT2 0
+quadEMTest:TetrAMM:Current1:Reset1.DLY3 0
+quadEMTest:TetrAMM:Current1:Reset1.DOL3 0
+quadEMTest:TetrAMM:Current1:Reset1.STR3 0
+quadEMTest:TetrAMM:Current1:Reset1.DO3 0
+quadEMTest:TetrAMM:Current1:Reset1.LNK3 quadEMTest:TetrAMM:Current1:CentroidY P
+quadEMTest:TetrAMM:Current1:Reset1.WAIT3 0
+quadEMTest:TetrAMM:Current1:Reset1.DLY4 0
+quadEMTest:TetrAMM:Current1:Reset1.DOL4 0
+quadEMTest:TetrAMM:Current1:Reset1.STR4 0
+quadEMTest:TetrAMM:Current1:Reset1.DO4 0
+quadEMTest:TetrAMM:Current1:Reset1.LNK4 quadEMTest:TetrAMM:Current1:SigmaX PP M
+quadEMTest:TetrAMM:Current1:Reset1.WAIT4 0
+quadEMTest:TetrAMM:Current1:Reset1.DLY5 0
+quadEMTest:TetrAMM:Current1:Reset1.DOL5 0
+quadEMTest:TetrAMM:Current1:Reset1.STR5 0
+quadEMTest:TetrAMM:Current1:Reset1.DO5 0
+quadEMTest:TetrAMM:Current1:Reset1.LNK5 quadEMTest:TetrAMM:Current1:SigmaY PP M
+quadEMTest:TetrAMM:Current1:Reset1.WAIT5 0
+quadEMTest:TetrAMM:Current1:Reset1.DLY6 0
+quadEMTest:TetrAMM:Current1:Reset1.DOL6 0
+quadEMTest:TetrAMM:Current1:Reset1.STR6 0
+quadEMTest:TetrAMM:Current1:Reset1.DO6 0
+quadEMTest:TetrAMM:Current1:Reset1.LNK6 quadEMTest:TetrAMM:Current1:SigmaXY PP 
+quadEMTest:TetrAMM:Current1:Reset1.WAIT6 0
+quadEMTest:TetrAMM:Current1:Reset1.DLY7 0
+quadEMTest:TetrAMM:Current1:Reset1.DOL7 0
+quadEMTest:TetrAMM:Current1:Reset1.STR7 0
+quadEMTest:TetrAMM:Current1:Reset1.DO7 0
+quadEMTest:TetrAMM:Current1:Reset1.LNK7 quadEMTest:TetrAMM:Current1:HistEntropy
+quadEMTest:TetrAMM:Current1:Reset1.WAIT7 0
+quadEMTest:TetrAMM:Current1:Reset1.DLY8 0
+quadEMTest:TetrAMM:Current1:Reset1.DOL8 
+quadEMTest:TetrAMM:Current1:Reset1.STR8 0
+quadEMTest:TetrAMM:Current1:Reset1.DO8 0
+quadEMTest:TetrAMM:Current1:Reset1.LNK8 
+quadEMTest:TetrAMM:Current1:Reset1.WAIT8 0
+quadEMTest:TetrAMM:Current1:Reset1.DLY9 0
+quadEMTest:TetrAMM:Current1:Reset1.DOL9 
+quadEMTest:TetrAMM:Current1:Reset1.STR9 0
+quadEMTest:TetrAMM:Current1:Reset1.DO9 0
+quadEMTest:TetrAMM:Current1:Reset1.LNK9 
+quadEMTest:TetrAMM:Current1:Reset1.WAIT9 0
+quadEMTest:TetrAMM:Current1:Reset1.DLYA 0
+quadEMTest:TetrAMM:Current1:Reset1.DOLA 
+quadEMTest:TetrAMM:Current1:Reset1.STRA 0
+quadEMTest:TetrAMM:Current1:Reset1.DOA 0
+quadEMTest:TetrAMM:Current1:Reset1.LNKA 
+quadEMTest:TetrAMM:Current1:Reset1.WAITA 0
+quadEMTest:TetrAMM:Current1:Reset1.FLNK 0
+quadEMTest:TetrAMM:Current1:Reset1.SELL 
+quadEMTest:TetrAMM:Current1:Reset1.SELN 1
+quadEMTest:TetrAMM:Current1:Reset1.SELM 0
+quadEMTest:TetrAMM:Current2:BgdWidth 1
+quadEMTest:TetrAMM:Current2:ComputeStatistics 1
+quadEMTest:TetrAMM:Current2:ComputeCentroid 0
+quadEMTest:TetrAMM:Current2:CentroidThreshold 1
+quadEMTest:TetrAMM:Current2:ComputeProfiles 0
+quadEMTest:TetrAMM:Current2:CursorX 256
+quadEMTest:TetrAMM:Current2:CursorY 256
+quadEMTest:TetrAMM:Current2:ComputeHistogram 0
+quadEMTest:TetrAMM:Current2:HistSize 256
+quadEMTest:TetrAMM:Current2:HistMin 0
+quadEMTest:TetrAMM:Current2:HistMax 255
+quadEMTest:TetrAMM:Current2:TSNumPoints 2048
+quadEMTest:TetrAMM:Current2:TSRead.SCAN 6
+quadEMTest:TetrAMM:Current2:NDArrayPort TetrAMM
+quadEMTest:TetrAMM:Current2:NDArrayAddress 1
+quadEMTest:TetrAMM:Current2:EnableCallbacks 1
+quadEMTest:TetrAMM:Current2:MinCallbackTime 0
+quadEMTest:TetrAMM:Current2:BlockingCallbacks 0
+quadEMTest:TetrAMM:Current2:QueueSize 20
+quadEMTest:TetrAMM:Current2:DataType 1
+quadEMTest:TetrAMM:Current2:ColorMode 0
+quadEMTest:TetrAMM:Current2:ArrayCallbacks 1
+quadEMTest:TetrAMM:Current2:NDAttributesFile 
+quadEMTest:TetrAMM:Current2:PoolUsedMem.SCAN 6
+quadEMTest:TetrAMM:Current2:Reset.SCAN 0
+quadEMTest:TetrAMM:Current2:Reset.DESC 
+quadEMTest:TetrAMM:Current2:Reset.PREC 0
+quadEMTest:TetrAMM:Current2:Reset.DLY1 0
+quadEMTest:TetrAMM:Current2:Reset.DOL1 0
+quadEMTest:TetrAMM:Current2:Reset.STR1 0
+quadEMTest:TetrAMM:Current2:Reset.DO1 0
+quadEMTest:TetrAMM:Current2:Reset.LNK1 quadEMTest:TetrAMM:Current2:MinValue PP
+quadEMTest:TetrAMM:Current2:Reset.WAIT1 0
+quadEMTest:TetrAMM:Current2:Reset.DLY2 0
+quadEMTest:TetrAMM:Current2:Reset.DOL2 0
+quadEMTest:TetrAMM:Current2:Reset.STR2 0
+quadEMTest:TetrAMM:Current2:Reset.DO2 0
+quadEMTest:TetrAMM:Current2:Reset.LNK2 quadEMTest:TetrAMM:Current2:MaxValue PP
+quadEMTest:TetrAMM:Current2:Reset.WAIT2 0
+quadEMTest:TetrAMM:Current2:Reset.DLY3 0
+quadEMTest:TetrAMM:Current2:Reset.DOL3 0
+quadEMTest:TetrAMM:Current2:Reset.STR3 0
+quadEMTest:TetrAMM:Current2:Reset.DO3 0
+quadEMTest:TetrAMM:Current2:Reset.LNK3 quadEMTest:TetrAMM:Current2:MaxValue PP
+quadEMTest:TetrAMM:Current2:Reset.WAIT3 0
+quadEMTest:TetrAMM:Current2:Reset.DLY4 0
+quadEMTest:TetrAMM:Current2:Reset.DOL4 0
+quadEMTest:TetrAMM:Current2:Reset.STR4 0
+quadEMTest:TetrAMM:Current2:Reset.DO4 0
+quadEMTest:TetrAMM:Current2:Reset.LNK4 quadEMTest:TetrAMM:Current2:MeanValue P
+quadEMTest:TetrAMM:Current2:Reset.WAIT4 0
+quadEMTest:TetrAMM:Current2:Reset.DLY5 0
+quadEMTest:TetrAMM:Current2:Reset.DOL5 0
+quadEMTest:TetrAMM:Current2:Reset.STR5 0
+quadEMTest:TetrAMM:Current2:Reset.DO5 0
+quadEMTest:TetrAMM:Current2:Reset.LNK5 quadEMTest:TetrAMM:Current2:SigmaValue 
+quadEMTest:TetrAMM:Current2:Reset.WAIT5 0
+quadEMTest:TetrAMM:Current2:Reset.DLY6 0
+quadEMTest:TetrAMM:Current2:Reset.DOL6 0
+quadEMTest:TetrAMM:Current2:Reset.STR6 0
+quadEMTest:TetrAMM:Current2:Reset.DO6 0
+quadEMTest:TetrAMM:Current2:Reset.LNK6 quadEMTest:TetrAMM:Current2:Total PP MS
+quadEMTest:TetrAMM:Current2:Reset.WAIT6 0
+quadEMTest:TetrAMM:Current2:Reset.DLY7 0
+quadEMTest:TetrAMM:Current2:Reset.DOL7 0
+quadEMTest:TetrAMM:Current2:Reset.STR7 0
+quadEMTest:TetrAMM:Current2:Reset.DO7 0
+quadEMTest:TetrAMM:Current2:Reset.LNK7 quadEMTest:TetrAMM:Current2:Net PP MS
+quadEMTest:TetrAMM:Current2:Reset.WAIT7 0
+quadEMTest:TetrAMM:Current2:Reset.DLY8 0
+quadEMTest:TetrAMM:Current2:Reset.DOL8 0
+quadEMTest:TetrAMM:Current2:Reset.STR8 0
+quadEMTest:TetrAMM:Current2:Reset.DO8 0
+quadEMTest:TetrAMM:Current2:Reset.LNK8 quadEMTest:TetrAMM:Current2:MinX PP MS
+quadEMTest:TetrAMM:Current2:Reset.WAIT8 0
+quadEMTest:TetrAMM:Current2:Reset.DLY9 0
+quadEMTest:TetrAMM:Current2:Reset.DOL9 0
+quadEMTest:TetrAMM:Current2:Reset.STR9 0
+quadEMTest:TetrAMM:Current2:Reset.DO9 0
+quadEMTest:TetrAMM:Current2:Reset.LNK9 quadEMTest:TetrAMM:Current2:MinY PP MS
+quadEMTest:TetrAMM:Current2:Reset.WAIT9 0
+quadEMTest:TetrAMM:Current2:Reset.DLYA 0
+quadEMTest:TetrAMM:Current2:Reset.DOLA 0
+quadEMTest:TetrAMM:Current2:Reset.STRA 0
+quadEMTest:TetrAMM:Current2:Reset.DOA 0
+quadEMTest:TetrAMM:Current2:Reset.LNKA quadEMTest:TetrAMM:Current2:MaxX PP MS
+quadEMTest:TetrAMM:Current2:Reset.WAITA 0
+quadEMTest:TetrAMM:Current2:Reset.FLNK quadEMTest:TetrAMM:Current2:Reset1
+quadEMTest:TetrAMM:Current2:Reset.SELL 
+quadEMTest:TetrAMM:Current2:Reset.SELN 1
+quadEMTest:TetrAMM:Current2:Reset.SELM 0
+quadEMTest:TetrAMM:Current2:Reset1.SCAN 0
+quadEMTest:TetrAMM:Current2:Reset1.DESC 
+quadEMTest:TetrAMM:Current2:Reset1.PREC 0
+quadEMTest:TetrAMM:Current2:Reset1.DLY1 0
+quadEMTest:TetrAMM:Current2:Reset1.DOL1 0
+quadEMTest:TetrAMM:Current2:Reset1.STR1 0
+quadEMTest:TetrAMM:Current2:Reset1.DO1 0
+quadEMTest:TetrAMM:Current2:Reset1.LNK1 quadEMTest:TetrAMM:Current2:MaxY PP MS
+quadEMTest:TetrAMM:Current2:Reset1.WAIT1 0
+quadEMTest:TetrAMM:Current2:Reset1.DLY2 0
+quadEMTest:TetrAMM:Current2:Reset1.DOL2 0
+quadEMTest:TetrAMM:Current2:Reset1.STR2 0
+quadEMTest:TetrAMM:Current2:Reset1.DO2 0
+quadEMTest:TetrAMM:Current2:Reset1.LNK2 quadEMTest:TetrAMM:Current2:CentroidX P
+quadEMTest:TetrAMM:Current2:Reset1.WAIT2 0
+quadEMTest:TetrAMM:Current2:Reset1.DLY3 0
+quadEMTest:TetrAMM:Current2:Reset1.DOL3 0
+quadEMTest:TetrAMM:Current2:Reset1.STR3 0
+quadEMTest:TetrAMM:Current2:Reset1.DO3 0
+quadEMTest:TetrAMM:Current2:Reset1.LNK3 quadEMTest:TetrAMM:Current2:CentroidY P
+quadEMTest:TetrAMM:Current2:Reset1.WAIT3 0
+quadEMTest:TetrAMM:Current2:Reset1.DLY4 0
+quadEMTest:TetrAMM:Current2:Reset1.DOL4 0
+quadEMTest:TetrAMM:Current2:Reset1.STR4 0
+quadEMTest:TetrAMM:Current2:Reset1.DO4 0
+quadEMTest:TetrAMM:Current2:Reset1.LNK4 quadEMTest:TetrAMM:Current2:SigmaX PP M
+quadEMTest:TetrAMM:Current2:Reset1.WAIT4 0
+quadEMTest:TetrAMM:Current2:Reset1.DLY5 0
+quadEMTest:TetrAMM:Current2:Reset1.DOL5 0
+quadEMTest:TetrAMM:Current2:Reset1.STR5 0
+quadEMTest:TetrAMM:Current2:Reset1.DO5 0
+quadEMTest:TetrAMM:Current2:Reset1.LNK5 quadEMTest:TetrAMM:Current2:SigmaY PP M
+quadEMTest:TetrAMM:Current2:Reset1.WAIT5 0
+quadEMTest:TetrAMM:Current2:Reset1.DLY6 0
+quadEMTest:TetrAMM:Current2:Reset1.DOL6 0
+quadEMTest:TetrAMM:Current2:Reset1.STR6 0
+quadEMTest:TetrAMM:Current2:Reset1.DO6 0
+quadEMTest:TetrAMM:Current2:Reset1.LNK6 quadEMTest:TetrAMM:Current2:SigmaXY PP 
+quadEMTest:TetrAMM:Current2:Reset1.WAIT6 0
+quadEMTest:TetrAMM:Current2:Reset1.DLY7 0
+quadEMTest:TetrAMM:Current2:Reset1.DOL7 0
+quadEMTest:TetrAMM:Current2:Reset1.STR7 0
+quadEMTest:TetrAMM:Current2:Reset1.DO7 0
+quadEMTest:TetrAMM:Current2:Reset1.LNK7 quadEMTest:TetrAMM:Current2:HistEntropy
+quadEMTest:TetrAMM:Current2:Reset1.WAIT7 0
+quadEMTest:TetrAMM:Current2:Reset1.DLY8 0
+quadEMTest:TetrAMM:Current2:Reset1.DOL8 
+quadEMTest:TetrAMM:Current2:Reset1.STR8 0
+quadEMTest:TetrAMM:Current2:Reset1.DO8 0
+quadEMTest:TetrAMM:Current2:Reset1.LNK8 
+quadEMTest:TetrAMM:Current2:Reset1.WAIT8 0
+quadEMTest:TetrAMM:Current2:Reset1.DLY9 0
+quadEMTest:TetrAMM:Current2:Reset1.DOL9 
+quadEMTest:TetrAMM:Current2:Reset1.STR9 0
+quadEMTest:TetrAMM:Current2:Reset1.DO9 0
+quadEMTest:TetrAMM:Current2:Reset1.LNK9 
+quadEMTest:TetrAMM:Current2:Reset1.WAIT9 0
+quadEMTest:TetrAMM:Current2:Reset1.DLYA 0
+quadEMTest:TetrAMM:Current2:Reset1.DOLA 
+quadEMTest:TetrAMM:Current2:Reset1.STRA 0
+quadEMTest:TetrAMM:Current2:Reset1.DOA 0
+quadEMTest:TetrAMM:Current2:Reset1.LNKA 
+quadEMTest:TetrAMM:Current2:Reset1.WAITA 0
+quadEMTest:TetrAMM:Current2:Reset1.FLNK 0
+quadEMTest:TetrAMM:Current2:Reset1.SELL 
+quadEMTest:TetrAMM:Current2:Reset1.SELN 1
+quadEMTest:TetrAMM:Current2:Reset1.SELM 0
+quadEMTest:TetrAMM:Current3:BgdWidth 1
+quadEMTest:TetrAMM:Current3:ComputeStatistics 1
+quadEMTest:TetrAMM:Current3:ComputeCentroid 0
+quadEMTest:TetrAMM:Current3:CentroidThreshold 1
+quadEMTest:TetrAMM:Current3:ComputeProfiles 0
+quadEMTest:TetrAMM:Current3:CursorX 256
+quadEMTest:TetrAMM:Current3:CursorY 256
+quadEMTest:TetrAMM:Current3:ComputeHistogram 0
+quadEMTest:TetrAMM:Current3:HistSize 256
+quadEMTest:TetrAMM:Current3:HistMin 0
+quadEMTest:TetrAMM:Current3:HistMax 255
+quadEMTest:TetrAMM:Current3:TSNumPoints 2048
+quadEMTest:TetrAMM:Current3:TSRead.SCAN 6
+quadEMTest:TetrAMM:Current3:NDArrayPort TetrAMM
+quadEMTest:TetrAMM:Current3:NDArrayAddress 2
+quadEMTest:TetrAMM:Current3:EnableCallbacks 1
+quadEMTest:TetrAMM:Current3:MinCallbackTime 0
+quadEMTest:TetrAMM:Current3:BlockingCallbacks 0
+quadEMTest:TetrAMM:Current3:QueueSize 20
+quadEMTest:TetrAMM:Current3:DataType 1
+quadEMTest:TetrAMM:Current3:ColorMode 0
+quadEMTest:TetrAMM:Current3:ArrayCallbacks 1
+quadEMTest:TetrAMM:Current3:NDAttributesFile 
+quadEMTest:TetrAMM:Current3:PoolUsedMem.SCAN 6
+quadEMTest:TetrAMM:Current3:Reset.SCAN 0
+quadEMTest:TetrAMM:Current3:Reset.DESC 
+quadEMTest:TetrAMM:Current3:Reset.PREC 0
+quadEMTest:TetrAMM:Current3:Reset.DLY1 0
+quadEMTest:TetrAMM:Current3:Reset.DOL1 0
+quadEMTest:TetrAMM:Current3:Reset.STR1 0
+quadEMTest:TetrAMM:Current3:Reset.DO1 0
+quadEMTest:TetrAMM:Current3:Reset.LNK1 quadEMTest:TetrAMM:Current3:MinValue PP
+quadEMTest:TetrAMM:Current3:Reset.WAIT1 0
+quadEMTest:TetrAMM:Current3:Reset.DLY2 0
+quadEMTest:TetrAMM:Current3:Reset.DOL2 0
+quadEMTest:TetrAMM:Current3:Reset.STR2 0
+quadEMTest:TetrAMM:Current3:Reset.DO2 0
+quadEMTest:TetrAMM:Current3:Reset.LNK2 quadEMTest:TetrAMM:Current3:MaxValue PP
+quadEMTest:TetrAMM:Current3:Reset.WAIT2 0
+quadEMTest:TetrAMM:Current3:Reset.DLY3 0
+quadEMTest:TetrAMM:Current3:Reset.DOL3 0
+quadEMTest:TetrAMM:Current3:Reset.STR3 0
+quadEMTest:TetrAMM:Current3:Reset.DO3 0
+quadEMTest:TetrAMM:Current3:Reset.LNK3 quadEMTest:TetrAMM:Current3:MaxValue PP
+quadEMTest:TetrAMM:Current3:Reset.WAIT3 0
+quadEMTest:TetrAMM:Current3:Reset.DLY4 0
+quadEMTest:TetrAMM:Current3:Reset.DOL4 0
+quadEMTest:TetrAMM:Current3:Reset.STR4 0
+quadEMTest:TetrAMM:Current3:Reset.DO4 0
+quadEMTest:TetrAMM:Current3:Reset.LNK4 quadEMTest:TetrAMM:Current3:MeanValue P
+quadEMTest:TetrAMM:Current3:Reset.WAIT4 0
+quadEMTest:TetrAMM:Current3:Reset.DLY5 0
+quadEMTest:TetrAMM:Current3:Reset.DOL5 0
+quadEMTest:TetrAMM:Current3:Reset.STR5 0
+quadEMTest:TetrAMM:Current3:Reset.DO5 0
+quadEMTest:TetrAMM:Current3:Reset.LNK5 quadEMTest:TetrAMM:Current3:SigmaValue 
+quadEMTest:TetrAMM:Current3:Reset.WAIT5 0
+quadEMTest:TetrAMM:Current3:Reset.DLY6 0
+quadEMTest:TetrAMM:Current3:Reset.DOL6 0
+quadEMTest:TetrAMM:Current3:Reset.STR6 0
+quadEMTest:TetrAMM:Current3:Reset.DO6 0
+quadEMTest:TetrAMM:Current3:Reset.LNK6 quadEMTest:TetrAMM:Current3:Total PP MS
+quadEMTest:TetrAMM:Current3:Reset.WAIT6 0
+quadEMTest:TetrAMM:Current3:Reset.DLY7 0
+quadEMTest:TetrAMM:Current3:Reset.DOL7 0
+quadEMTest:TetrAMM:Current3:Reset.STR7 0
+quadEMTest:TetrAMM:Current3:Reset.DO7 0
+quadEMTest:TetrAMM:Current3:Reset.LNK7 quadEMTest:TetrAMM:Current3:Net PP MS
+quadEMTest:TetrAMM:Current3:Reset.WAIT7 0
+quadEMTest:TetrAMM:Current3:Reset.DLY8 0
+quadEMTest:TetrAMM:Current3:Reset.DOL8 0
+quadEMTest:TetrAMM:Current3:Reset.STR8 0
+quadEMTest:TetrAMM:Current3:Reset.DO8 0
+quadEMTest:TetrAMM:Current3:Reset.LNK8 quadEMTest:TetrAMM:Current3:MinX PP MS
+quadEMTest:TetrAMM:Current3:Reset.WAIT8 0
+quadEMTest:TetrAMM:Current3:Reset.DLY9 0
+quadEMTest:TetrAMM:Current3:Reset.DOL9 0
+quadEMTest:TetrAMM:Current3:Reset.STR9 0
+quadEMTest:TetrAMM:Current3:Reset.DO9 0
+quadEMTest:TetrAMM:Current3:Reset.LNK9 quadEMTest:TetrAMM:Current3:MinY PP MS
+quadEMTest:TetrAMM:Current3:Reset.WAIT9 0
+quadEMTest:TetrAMM:Current3:Reset.DLYA 0
+quadEMTest:TetrAMM:Current3:Reset.DOLA 0
+quadEMTest:TetrAMM:Current3:Reset.STRA 0
+quadEMTest:TetrAMM:Current3:Reset.DOA 0
+quadEMTest:TetrAMM:Current3:Reset.LNKA quadEMTest:TetrAMM:Current3:MaxX PP MS
+quadEMTest:TetrAMM:Current3:Reset.WAITA 0
+quadEMTest:TetrAMM:Current3:Reset.FLNK quadEMTest:TetrAMM:Current3:Reset1
+quadEMTest:TetrAMM:Current3:Reset.SELL 
+quadEMTest:TetrAMM:Current3:Reset.SELN 1
+quadEMTest:TetrAMM:Current3:Reset.SELM 0
+quadEMTest:TetrAMM:Current3:Reset1.SCAN 0
+quadEMTest:TetrAMM:Current3:Reset1.DESC 
+quadEMTest:TetrAMM:Current3:Reset1.PREC 0
+quadEMTest:TetrAMM:Current3:Reset1.DLY1 0
+quadEMTest:TetrAMM:Current3:Reset1.DOL1 0
+quadEMTest:TetrAMM:Current3:Reset1.STR1 0
+quadEMTest:TetrAMM:Current3:Reset1.DO1 0
+quadEMTest:TetrAMM:Current3:Reset1.LNK1 quadEMTest:TetrAMM:Current3:MaxY PP MS
+quadEMTest:TetrAMM:Current3:Reset1.WAIT1 0
+quadEMTest:TetrAMM:Current3:Reset1.DLY2 0
+quadEMTest:TetrAMM:Current3:Reset1.DOL2 0
+quadEMTest:TetrAMM:Current3:Reset1.STR2 0
+quadEMTest:TetrAMM:Current3:Reset1.DO2 0
+quadEMTest:TetrAMM:Current3:Reset1.LNK2 quadEMTest:TetrAMM:Current3:CentroidX P
+quadEMTest:TetrAMM:Current3:Reset1.WAIT2 0
+quadEMTest:TetrAMM:Current3:Reset1.DLY3 0
+quadEMTest:TetrAMM:Current3:Reset1.DOL3 0
+quadEMTest:TetrAMM:Current3:Reset1.STR3 0
+quadEMTest:TetrAMM:Current3:Reset1.DO3 0
+quadEMTest:TetrAMM:Current3:Reset1.LNK3 quadEMTest:TetrAMM:Current3:CentroidY P
+quadEMTest:TetrAMM:Current3:Reset1.WAIT3 0
+quadEMTest:TetrAMM:Current3:Reset1.DLY4 0
+quadEMTest:TetrAMM:Current3:Reset1.DOL4 0
+quadEMTest:TetrAMM:Current3:Reset1.STR4 0
+quadEMTest:TetrAMM:Current3:Reset1.DO4 0
+quadEMTest:TetrAMM:Current3:Reset1.LNK4 quadEMTest:TetrAMM:Current3:SigmaX PP M
+quadEMTest:TetrAMM:Current3:Reset1.WAIT4 0
+quadEMTest:TetrAMM:Current3:Reset1.DLY5 0
+quadEMTest:TetrAMM:Current3:Reset1.DOL5 0
+quadEMTest:TetrAMM:Current3:Reset1.STR5 0
+quadEMTest:TetrAMM:Current3:Reset1.DO5 0
+quadEMTest:TetrAMM:Current3:Reset1.LNK5 quadEMTest:TetrAMM:Current3:SigmaY PP M
+quadEMTest:TetrAMM:Current3:Reset1.WAIT5 0
+quadEMTest:TetrAMM:Current3:Reset1.DLY6 0
+quadEMTest:TetrAMM:Current3:Reset1.DOL6 0
+quadEMTest:TetrAMM:Current3:Reset1.STR6 0
+quadEMTest:TetrAMM:Current3:Reset1.DO6 0
+quadEMTest:TetrAMM:Current3:Reset1.LNK6 quadEMTest:TetrAMM:Current3:SigmaXY PP 
+quadEMTest:TetrAMM:Current3:Reset1.WAIT6 0
+quadEMTest:TetrAMM:Current3:Reset1.DLY7 0
+quadEMTest:TetrAMM:Current3:Reset1.DOL7 0
+quadEMTest:TetrAMM:Current3:Reset1.STR7 0
+quadEMTest:TetrAMM:Current3:Reset1.DO7 0
+quadEMTest:TetrAMM:Current3:Reset1.LNK7 quadEMTest:TetrAMM:Current3:HistEntropy
+quadEMTest:TetrAMM:Current3:Reset1.WAIT7 0
+quadEMTest:TetrAMM:Current3:Reset1.DLY8 0
+quadEMTest:TetrAMM:Current3:Reset1.DOL8 
+quadEMTest:TetrAMM:Current3:Reset1.STR8 0
+quadEMTest:TetrAMM:Current3:Reset1.DO8 0
+quadEMTest:TetrAMM:Current3:Reset1.LNK8 
+quadEMTest:TetrAMM:Current3:Reset1.WAIT8 0
+quadEMTest:TetrAMM:Current3:Reset1.DLY9 0
+quadEMTest:TetrAMM:Current3:Reset1.DOL9 
+quadEMTest:TetrAMM:Current3:Reset1.STR9 0
+quadEMTest:TetrAMM:Current3:Reset1.DO9 0
+quadEMTest:TetrAMM:Current3:Reset1.LNK9 
+quadEMTest:TetrAMM:Current3:Reset1.WAIT9 0
+quadEMTest:TetrAMM:Current3:Reset1.DLYA 0
+quadEMTest:TetrAMM:Current3:Reset1.DOLA 
+quadEMTest:TetrAMM:Current3:Reset1.STRA 0
+quadEMTest:TetrAMM:Current3:Reset1.DOA 0
+quadEMTest:TetrAMM:Current3:Reset1.LNKA 
+quadEMTest:TetrAMM:Current3:Reset1.WAITA 0
+quadEMTest:TetrAMM:Current3:Reset1.FLNK 0
+quadEMTest:TetrAMM:Current3:Reset1.SELL 
+quadEMTest:TetrAMM:Current3:Reset1.SELN 1
+quadEMTest:TetrAMM:Current3:Reset1.SELM 0
+quadEMTest:TetrAMM:Current4:BgdWidth 1
+quadEMTest:TetrAMM:Current4:ComputeStatistics 1
+quadEMTest:TetrAMM:Current4:ComputeCentroid 0
+quadEMTest:TetrAMM:Current4:CentroidThreshold 1
+quadEMTest:TetrAMM:Current4:ComputeProfiles 0
+quadEMTest:TetrAMM:Current4:CursorX 256
+quadEMTest:TetrAMM:Current4:CursorY 256
+quadEMTest:TetrAMM:Current4:ComputeHistogram 0
+quadEMTest:TetrAMM:Current4:HistSize 256
+quadEMTest:TetrAMM:Current4:HistMin 0
+quadEMTest:TetrAMM:Current4:HistMax 255
+quadEMTest:TetrAMM:Current4:TSNumPoints 2048
+quadEMTest:TetrAMM:Current4:TSRead.SCAN 6
+quadEMTest:TetrAMM:Current4:NDArrayPort TetrAMM
+quadEMTest:TetrAMM:Current4:NDArrayAddress 3
+quadEMTest:TetrAMM:Current4:EnableCallbacks 1
+quadEMTest:TetrAMM:Current4:MinCallbackTime 0
+quadEMTest:TetrAMM:Current4:BlockingCallbacks 0
+quadEMTest:TetrAMM:Current4:QueueSize 20
+quadEMTest:TetrAMM:Current4:DataType 1
+quadEMTest:TetrAMM:Current4:ColorMode 0
+quadEMTest:TetrAMM:Current4:ArrayCallbacks 1
+quadEMTest:TetrAMM:Current4:NDAttributesFile 
+quadEMTest:TetrAMM:Current4:PoolUsedMem.SCAN 6
+quadEMTest:TetrAMM:Current4:Reset.SCAN 0
+quadEMTest:TetrAMM:Current4:Reset.DESC 
+quadEMTest:TetrAMM:Current4:Reset.PREC 0
+quadEMTest:TetrAMM:Current4:Reset.DLY1 0
+quadEMTest:TetrAMM:Current4:Reset.DOL1 0
+quadEMTest:TetrAMM:Current4:Reset.STR1 0
+quadEMTest:TetrAMM:Current4:Reset.DO1 0
+quadEMTest:TetrAMM:Current4:Reset.LNK1 quadEMTest:TetrAMM:Current4:MinValue PP
+quadEMTest:TetrAMM:Current4:Reset.WAIT1 0
+quadEMTest:TetrAMM:Current4:Reset.DLY2 0
+quadEMTest:TetrAMM:Current4:Reset.DOL2 0
+quadEMTest:TetrAMM:Current4:Reset.STR2 0
+quadEMTest:TetrAMM:Current4:Reset.DO2 0
+quadEMTest:TetrAMM:Current4:Reset.LNK2 quadEMTest:TetrAMM:Current4:MaxValue PP
+quadEMTest:TetrAMM:Current4:Reset.WAIT2 0
+quadEMTest:TetrAMM:Current4:Reset.DLY3 0
+quadEMTest:TetrAMM:Current4:Reset.DOL3 0
+quadEMTest:TetrAMM:Current4:Reset.STR3 0
+quadEMTest:TetrAMM:Current4:Reset.DO3 0
+quadEMTest:TetrAMM:Current4:Reset.LNK3 quadEMTest:TetrAMM:Current4:MaxValue PP
+quadEMTest:TetrAMM:Current4:Reset.WAIT3 0
+quadEMTest:TetrAMM:Current4:Reset.DLY4 0
+quadEMTest:TetrAMM:Current4:Reset.DOL4 0
+quadEMTest:TetrAMM:Current4:Reset.STR4 0
+quadEMTest:TetrAMM:Current4:Reset.DO4 0
+quadEMTest:TetrAMM:Current4:Reset.LNK4 quadEMTest:TetrAMM:Current4:MeanValue P
+quadEMTest:TetrAMM:Current4:Reset.WAIT4 0
+quadEMTest:TetrAMM:Current4:Reset.DLY5 0
+quadEMTest:TetrAMM:Current4:Reset.DOL5 0
+quadEMTest:TetrAMM:Current4:Reset.STR5 0
+quadEMTest:TetrAMM:Current4:Reset.DO5 0
+quadEMTest:TetrAMM:Current4:Reset.LNK5 quadEMTest:TetrAMM:Current4:SigmaValue 
+quadEMTest:TetrAMM:Current4:Reset.WAIT5 0
+quadEMTest:TetrAMM:Current4:Reset.DLY6 0
+quadEMTest:TetrAMM:Current4:Reset.DOL6 0
+quadEMTest:TetrAMM:Current4:Reset.STR6 0
+quadEMTest:TetrAMM:Current4:Reset.DO6 0
+quadEMTest:TetrAMM:Current4:Reset.LNK6 quadEMTest:TetrAMM:Current4:Total PP MS
+quadEMTest:TetrAMM:Current4:Reset.WAIT6 0
+quadEMTest:TetrAMM:Current4:Reset.DLY7 0
+quadEMTest:TetrAMM:Current4:Reset.DOL7 0
+quadEMTest:TetrAMM:Current4:Reset.STR7 0
+quadEMTest:TetrAMM:Current4:Reset.DO7 0
+quadEMTest:TetrAMM:Current4:Reset.LNK7 quadEMTest:TetrAMM:Current4:Net PP MS
+quadEMTest:TetrAMM:Current4:Reset.WAIT7 0
+quadEMTest:TetrAMM:Current4:Reset.DLY8 0
+quadEMTest:TetrAMM:Current4:Reset.DOL8 0
+quadEMTest:TetrAMM:Current4:Reset.STR8 0
+quadEMTest:TetrAMM:Current4:Reset.DO8 0
+quadEMTest:TetrAMM:Current4:Reset.LNK8 quadEMTest:TetrAMM:Current4:MinX PP MS
+quadEMTest:TetrAMM:Current4:Reset.WAIT8 0
+quadEMTest:TetrAMM:Current4:Reset.DLY9 0
+quadEMTest:TetrAMM:Current4:Reset.DOL9 0
+quadEMTest:TetrAMM:Current4:Reset.STR9 0
+quadEMTest:TetrAMM:Current4:Reset.DO9 0
+quadEMTest:TetrAMM:Current4:Reset.LNK9 quadEMTest:TetrAMM:Current4:MinY PP MS
+quadEMTest:TetrAMM:Current4:Reset.WAIT9 0
+quadEMTest:TetrAMM:Current4:Reset.DLYA 0
+quadEMTest:TetrAMM:Current4:Reset.DOLA 0
+quadEMTest:TetrAMM:Current4:Reset.STRA 0
+quadEMTest:TetrAMM:Current4:Reset.DOA 0
+quadEMTest:TetrAMM:Current4:Reset.LNKA quadEMTest:TetrAMM:Current4:MaxX PP MS
+quadEMTest:TetrAMM:Current4:Reset.WAITA 0
+quadEMTest:TetrAMM:Current4:Reset.FLNK quadEMTest:TetrAMM:Current4:Reset1
+quadEMTest:TetrAMM:Current4:Reset.SELL 
+quadEMTest:TetrAMM:Current4:Reset.SELN 1
+quadEMTest:TetrAMM:Current4:Reset.SELM 0
+quadEMTest:TetrAMM:Current4:Reset1.SCAN 0
+quadEMTest:TetrAMM:Current4:Reset1.DESC 
+quadEMTest:TetrAMM:Current4:Reset1.PREC 0
+quadEMTest:TetrAMM:Current4:Reset1.DLY1 0
+quadEMTest:TetrAMM:Current4:Reset1.DOL1 0
+quadEMTest:TetrAMM:Current4:Reset1.STR1 0
+quadEMTest:TetrAMM:Current4:Reset1.DO1 0
+quadEMTest:TetrAMM:Current4:Reset1.LNK1 quadEMTest:TetrAMM:Current4:MaxY PP MS
+quadEMTest:TetrAMM:Current4:Reset1.WAIT1 0
+quadEMTest:TetrAMM:Current4:Reset1.DLY2 0
+quadEMTest:TetrAMM:Current4:Reset1.DOL2 0
+quadEMTest:TetrAMM:Current4:Reset1.STR2 0
+quadEMTest:TetrAMM:Current4:Reset1.DO2 0
+quadEMTest:TetrAMM:Current4:Reset1.LNK2 quadEMTest:TetrAMM:Current4:CentroidX P
+quadEMTest:TetrAMM:Current4:Reset1.WAIT2 0
+quadEMTest:TetrAMM:Current4:Reset1.DLY3 0
+quadEMTest:TetrAMM:Current4:Reset1.DOL3 0
+quadEMTest:TetrAMM:Current4:Reset1.STR3 0
+quadEMTest:TetrAMM:Current4:Reset1.DO3 0
+quadEMTest:TetrAMM:Current4:Reset1.LNK3 quadEMTest:TetrAMM:Current4:CentroidY P
+quadEMTest:TetrAMM:Current4:Reset1.WAIT3 0
+quadEMTest:TetrAMM:Current4:Reset1.DLY4 0
+quadEMTest:TetrAMM:Current4:Reset1.DOL4 0
+quadEMTest:TetrAMM:Current4:Reset1.STR4 0
+quadEMTest:TetrAMM:Current4:Reset1.DO4 0
+quadEMTest:TetrAMM:Current4:Reset1.LNK4 quadEMTest:TetrAMM:Current4:SigmaX PP M
+quadEMTest:TetrAMM:Current4:Reset1.WAIT4 0
+quadEMTest:TetrAMM:Current4:Reset1.DLY5 0
+quadEMTest:TetrAMM:Current4:Reset1.DOL5 0
+quadEMTest:TetrAMM:Current4:Reset1.STR5 0
+quadEMTest:TetrAMM:Current4:Reset1.DO5 0
+quadEMTest:TetrAMM:Current4:Reset1.LNK5 quadEMTest:TetrAMM:Current4:SigmaY PP M
+quadEMTest:TetrAMM:Current4:Reset1.WAIT5 0
+quadEMTest:TetrAMM:Current4:Reset1.DLY6 0
+quadEMTest:TetrAMM:Current4:Reset1.DOL6 0
+quadEMTest:TetrAMM:Current4:Reset1.STR6 0
+quadEMTest:TetrAMM:Current4:Reset1.DO6 0
+quadEMTest:TetrAMM:Current4:Reset1.LNK6 quadEMTest:TetrAMM:Current4:SigmaXY PP 
+quadEMTest:TetrAMM:Current4:Reset1.WAIT6 0
+quadEMTest:TetrAMM:Current4:Reset1.DLY7 0
+quadEMTest:TetrAMM:Current4:Reset1.DOL7 0
+quadEMTest:TetrAMM:Current4:Reset1.STR7 0
+quadEMTest:TetrAMM:Current4:Reset1.DO7 0
+quadEMTest:TetrAMM:Current4:Reset1.LNK7 quadEMTest:TetrAMM:Current4:HistEntropy
+quadEMTest:TetrAMM:Current4:Reset1.WAIT7 0
+quadEMTest:TetrAMM:Current4:Reset1.DLY8 0
+quadEMTest:TetrAMM:Current4:Reset1.DOL8 
+quadEMTest:TetrAMM:Current4:Reset1.STR8 0
+quadEMTest:TetrAMM:Current4:Reset1.DO8 0
+quadEMTest:TetrAMM:Current4:Reset1.LNK8 
+quadEMTest:TetrAMM:Current4:Reset1.WAIT8 0
+quadEMTest:TetrAMM:Current4:Reset1.DLY9 0
+quadEMTest:TetrAMM:Current4:Reset1.DOL9 
+quadEMTest:TetrAMM:Current4:Reset1.STR9 0
+quadEMTest:TetrAMM:Current4:Reset1.DO9 0
+quadEMTest:TetrAMM:Current4:Reset1.LNK9 
+quadEMTest:TetrAMM:Current4:Reset1.WAIT9 0
+quadEMTest:TetrAMM:Current4:Reset1.DLYA 0
+quadEMTest:TetrAMM:Current4:Reset1.DOLA 
+quadEMTest:TetrAMM:Current4:Reset1.STRA 0
+quadEMTest:TetrAMM:Current4:Reset1.DOA 0
+quadEMTest:TetrAMM:Current4:Reset1.LNKA 
+quadEMTest:TetrAMM:Current4:Reset1.WAITA 0
+quadEMTest:TetrAMM:Current4:Reset1.FLNK 0
+quadEMTest:TetrAMM:Current4:Reset1.SELL 
+quadEMTest:TetrAMM:Current4:Reset1.SELN 1
+quadEMTest:TetrAMM:Current4:Reset1.SELM 0
+quadEMTest:TetrAMM:SumX:BgdWidth 1
+quadEMTest:TetrAMM:SumX:ComputeStatistics 1
+quadEMTest:TetrAMM:SumX:ComputeCentroid 0
+quadEMTest:TetrAMM:SumX:CentroidThreshold 1
+quadEMTest:TetrAMM:SumX:ComputeProfiles 0
+quadEMTest:TetrAMM:SumX:CursorX 256
+quadEMTest:TetrAMM:SumX:CursorY 256
+quadEMTest:TetrAMM:SumX:ComputeHistogram 0
+quadEMTest:TetrAMM:SumX:HistSize 256
+quadEMTest:TetrAMM:SumX:HistMin 0
+quadEMTest:TetrAMM:SumX:HistMax 255
+quadEMTest:TetrAMM:SumX:TSNumPoints 2048
+quadEMTest:TetrAMM:SumX:TSRead.SCAN 6
+quadEMTest:TetrAMM:SumX:NDArrayPort TetrAMM
+quadEMTest:TetrAMM:SumX:NDArrayAddress 4
+quadEMTest:TetrAMM:SumX:EnableCallbacks 1
+quadEMTest:TetrAMM:SumX:MinCallbackTime 0
+quadEMTest:TetrAMM:SumX:BlockingCallbacks 0
+quadEMTest:TetrAMM:SumX:QueueSize 20
+quadEMTest:TetrAMM:SumX:DataType 1
+quadEMTest:TetrAMM:SumX:ColorMode 0
+quadEMTest:TetrAMM:SumX:ArrayCallbacks 1
+quadEMTest:TetrAMM:SumX:NDAttributesFile 
+quadEMTest:TetrAMM:SumX:PoolUsedMem.SCAN 6
+quadEMTest:TetrAMM:SumX:Reset.SCAN 0
+quadEMTest:TetrAMM:SumX:Reset.DESC 
+quadEMTest:TetrAMM:SumX:Reset.PREC 0
+quadEMTest:TetrAMM:SumX:Reset.DLY1 0
+quadEMTest:TetrAMM:SumX:Reset.DOL1 0
+quadEMTest:TetrAMM:SumX:Reset.STR1 0
+quadEMTest:TetrAMM:SumX:Reset.DO1 0
+quadEMTest:TetrAMM:SumX:Reset.LNK1 quadEMTest:TetrAMM:SumX:MinValue PP MS
+quadEMTest:TetrAMM:SumX:Reset.WAIT1 0
+quadEMTest:TetrAMM:SumX:Reset.DLY2 0
+quadEMTest:TetrAMM:SumX:Reset.DOL2 0
+quadEMTest:TetrAMM:SumX:Reset.STR2 0
+quadEMTest:TetrAMM:SumX:Reset.DO2 0
+quadEMTest:TetrAMM:SumX:Reset.LNK2 quadEMTest:TetrAMM:SumX:MaxValue PP MS
+quadEMTest:TetrAMM:SumX:Reset.WAIT2 0
+quadEMTest:TetrAMM:SumX:Reset.DLY3 0
+quadEMTest:TetrAMM:SumX:Reset.DOL3 0
+quadEMTest:TetrAMM:SumX:Reset.STR3 0
+quadEMTest:TetrAMM:SumX:Reset.DO3 0
+quadEMTest:TetrAMM:SumX:Reset.LNK3 quadEMTest:TetrAMM:SumX:MaxValue PP MS
+quadEMTest:TetrAMM:SumX:Reset.WAIT3 0
+quadEMTest:TetrAMM:SumX:Reset.DLY4 0
+quadEMTest:TetrAMM:SumX:Reset.DOL4 0
+quadEMTest:TetrAMM:SumX:Reset.STR4 0
+quadEMTest:TetrAMM:SumX:Reset.DO4 0
+quadEMTest:TetrAMM:SumX:Reset.LNK4 quadEMTest:TetrAMM:SumX:MeanValue PP MS
+quadEMTest:TetrAMM:SumX:Reset.WAIT4 0
+quadEMTest:TetrAMM:SumX:Reset.DLY5 0
+quadEMTest:TetrAMM:SumX:Reset.DOL5 0
+quadEMTest:TetrAMM:SumX:Reset.STR5 0
+quadEMTest:TetrAMM:SumX:Reset.DO5 0
+quadEMTest:TetrAMM:SumX:Reset.LNK5 quadEMTest:TetrAMM:SumX:SigmaValue PP M
+quadEMTest:TetrAMM:SumX:Reset.WAIT5 0
+quadEMTest:TetrAMM:SumX:Reset.DLY6 0
+quadEMTest:TetrAMM:SumX:Reset.DOL6 0
+quadEMTest:TetrAMM:SumX:Reset.STR6 0
+quadEMTest:TetrAMM:SumX:Reset.DO6 0
+quadEMTest:TetrAMM:SumX:Reset.LNK6 quadEMTest:TetrAMM:SumX:Total PP MS
+quadEMTest:TetrAMM:SumX:Reset.WAIT6 0
+quadEMTest:TetrAMM:SumX:Reset.DLY7 0
+quadEMTest:TetrAMM:SumX:Reset.DOL7 0
+quadEMTest:TetrAMM:SumX:Reset.STR7 0
+quadEMTest:TetrAMM:SumX:Reset.DO7 0
+quadEMTest:TetrAMM:SumX:Reset.LNK7 quadEMTest:TetrAMM:SumX:Net PP MS
+quadEMTest:TetrAMM:SumX:Reset.WAIT7 0
+quadEMTest:TetrAMM:SumX:Reset.DLY8 0
+quadEMTest:TetrAMM:SumX:Reset.DOL8 0
+quadEMTest:TetrAMM:SumX:Reset.STR8 0
+quadEMTest:TetrAMM:SumX:Reset.DO8 0
+quadEMTest:TetrAMM:SumX:Reset.LNK8 quadEMTest:TetrAMM:SumX:MinX PP MS
+quadEMTest:TetrAMM:SumX:Reset.WAIT8 0
+quadEMTest:TetrAMM:SumX:Reset.DLY9 0
+quadEMTest:TetrAMM:SumX:Reset.DOL9 0
+quadEMTest:TetrAMM:SumX:Reset.STR9 0
+quadEMTest:TetrAMM:SumX:Reset.DO9 0
+quadEMTest:TetrAMM:SumX:Reset.LNK9 quadEMTest:TetrAMM:SumX:MinY PP MS
+quadEMTest:TetrAMM:SumX:Reset.WAIT9 0
+quadEMTest:TetrAMM:SumX:Reset.DLYA 0
+quadEMTest:TetrAMM:SumX:Reset.DOLA 0
+quadEMTest:TetrAMM:SumX:Reset.STRA 0
+quadEMTest:TetrAMM:SumX:Reset.DOA 0
+quadEMTest:TetrAMM:SumX:Reset.LNKA quadEMTest:TetrAMM:SumX:MaxX PP MS
+quadEMTest:TetrAMM:SumX:Reset.WAITA 0
+quadEMTest:TetrAMM:SumX:Reset.FLNK quadEMTest:TetrAMM:SumX:Reset1
+quadEMTest:TetrAMM:SumX:Reset.SELL 
+quadEMTest:TetrAMM:SumX:Reset.SELN 1
+quadEMTest:TetrAMM:SumX:Reset.SELM 0
+quadEMTest:TetrAMM:SumX:Reset1.SCAN 0
+quadEMTest:TetrAMM:SumX:Reset1.DESC 
+quadEMTest:TetrAMM:SumX:Reset1.PREC 0
+quadEMTest:TetrAMM:SumX:Reset1.DLY1 0
+quadEMTest:TetrAMM:SumX:Reset1.DOL1 0
+quadEMTest:TetrAMM:SumX:Reset1.STR1 0
+quadEMTest:TetrAMM:SumX:Reset1.DO1 0
+quadEMTest:TetrAMM:SumX:Reset1.LNK1 quadEMTest:TetrAMM:SumX:MaxY PP MS
+quadEMTest:TetrAMM:SumX:Reset1.WAIT1 0
+quadEMTest:TetrAMM:SumX:Reset1.DLY2 0
+quadEMTest:TetrAMM:SumX:Reset1.DOL2 0
+quadEMTest:TetrAMM:SumX:Reset1.STR2 0
+quadEMTest:TetrAMM:SumX:Reset1.DO2 0
+quadEMTest:TetrAMM:SumX:Reset1.LNK2 quadEMTest:TetrAMM:SumX:CentroidX PP MS
+quadEMTest:TetrAMM:SumX:Reset1.WAIT2 0
+quadEMTest:TetrAMM:SumX:Reset1.DLY3 0
+quadEMTest:TetrAMM:SumX:Reset1.DOL3 0
+quadEMTest:TetrAMM:SumX:Reset1.STR3 0
+quadEMTest:TetrAMM:SumX:Reset1.DO3 0
+quadEMTest:TetrAMM:SumX:Reset1.LNK3 quadEMTest:TetrAMM:SumX:CentroidY PP MS
+quadEMTest:TetrAMM:SumX:Reset1.WAIT3 0
+quadEMTest:TetrAMM:SumX:Reset1.DLY4 0
+quadEMTest:TetrAMM:SumX:Reset1.DOL4 0
+quadEMTest:TetrAMM:SumX:Reset1.STR4 0
+quadEMTest:TetrAMM:SumX:Reset1.DO4 0
+quadEMTest:TetrAMM:SumX:Reset1.LNK4 quadEMTest:TetrAMM:SumX:SigmaX PP MS
+quadEMTest:TetrAMM:SumX:Reset1.WAIT4 0
+quadEMTest:TetrAMM:SumX:Reset1.DLY5 0
+quadEMTest:TetrAMM:SumX:Reset1.DOL5 0
+quadEMTest:TetrAMM:SumX:Reset1.STR5 0
+quadEMTest:TetrAMM:SumX:Reset1.DO5 0
+quadEMTest:TetrAMM:SumX:Reset1.LNK5 quadEMTest:TetrAMM:SumX:SigmaY PP MS
+quadEMTest:TetrAMM:SumX:Reset1.WAIT5 0
+quadEMTest:TetrAMM:SumX:Reset1.DLY6 0
+quadEMTest:TetrAMM:SumX:Reset1.DOL6 0
+quadEMTest:TetrAMM:SumX:Reset1.STR6 0
+quadEMTest:TetrAMM:SumX:Reset1.DO6 0
+quadEMTest:TetrAMM:SumX:Reset1.LNK6 quadEMTest:TetrAMM:SumX:SigmaXY PP MS
+quadEMTest:TetrAMM:SumX:Reset1.WAIT6 0
+quadEMTest:TetrAMM:SumX:Reset1.DLY7 0
+quadEMTest:TetrAMM:SumX:Reset1.DOL7 0
+quadEMTest:TetrAMM:SumX:Reset1.STR7 0
+quadEMTest:TetrAMM:SumX:Reset1.DO7 0
+quadEMTest:TetrAMM:SumX:Reset1.LNK7 quadEMTest:TetrAMM:SumX:HistEntropy PP 
+quadEMTest:TetrAMM:SumX:Reset1.WAIT7 0
+quadEMTest:TetrAMM:SumX:Reset1.DLY8 0
+quadEMTest:TetrAMM:SumX:Reset1.DOL8 
+quadEMTest:TetrAMM:SumX:Reset1.STR8 0
+quadEMTest:TetrAMM:SumX:Reset1.DO8 0
+quadEMTest:TetrAMM:SumX:Reset1.LNK8 
+quadEMTest:TetrAMM:SumX:Reset1.WAIT8 0
+quadEMTest:TetrAMM:SumX:Reset1.DLY9 0
+quadEMTest:TetrAMM:SumX:Reset1.DOL9 
+quadEMTest:TetrAMM:SumX:Reset1.STR9 0
+quadEMTest:TetrAMM:SumX:Reset1.DO9 0
+quadEMTest:TetrAMM:SumX:Reset1.LNK9 
+quadEMTest:TetrAMM:SumX:Reset1.WAIT9 0
+quadEMTest:TetrAMM:SumX:Reset1.DLYA 0
+quadEMTest:TetrAMM:SumX:Reset1.DOLA 
+quadEMTest:TetrAMM:SumX:Reset1.STRA 0
+quadEMTest:TetrAMM:SumX:Reset1.DOA 0
+quadEMTest:TetrAMM:SumX:Reset1.LNKA 
+quadEMTest:TetrAMM:SumX:Reset1.WAITA 0
+quadEMTest:TetrAMM:SumX:Reset1.FLNK 0
+quadEMTest:TetrAMM:SumX:Reset1.SELL 
+quadEMTest:TetrAMM:SumX:Reset1.SELN 1
+quadEMTest:TetrAMM:SumX:Reset1.SELM 0
+quadEMTest:TetrAMM:SumY:BgdWidth 1
+quadEMTest:TetrAMM:SumY:ComputeStatistics 1
+quadEMTest:TetrAMM:SumY:ComputeCentroid 0
+quadEMTest:TetrAMM:SumY:CentroidThreshold 1
+quadEMTest:TetrAMM:SumY:ComputeProfiles 0
+quadEMTest:TetrAMM:SumY:CursorX 256
+quadEMTest:TetrAMM:SumY:CursorY 256
+quadEMTest:TetrAMM:SumY:ComputeHistogram 0
+quadEMTest:TetrAMM:SumY:HistSize 256
+quadEMTest:TetrAMM:SumY:HistMin 0
+quadEMTest:TetrAMM:SumY:HistMax 255
+quadEMTest:TetrAMM:SumY:TSNumPoints 2048
+quadEMTest:TetrAMM:SumY:TSRead.SCAN 6
+quadEMTest:TetrAMM:SumY:NDArrayPort TetrAMM
+quadEMTest:TetrAMM:SumY:NDArrayAddress 5
+quadEMTest:TetrAMM:SumY:EnableCallbacks 1
+quadEMTest:TetrAMM:SumY:MinCallbackTime 0
+quadEMTest:TetrAMM:SumY:BlockingCallbacks 0
+quadEMTest:TetrAMM:SumY:QueueSize 20
+quadEMTest:TetrAMM:SumY:DataType 1
+quadEMTest:TetrAMM:SumY:ColorMode 0
+quadEMTest:TetrAMM:SumY:ArrayCallbacks 1
+quadEMTest:TetrAMM:SumY:NDAttributesFile 
+quadEMTest:TetrAMM:SumY:PoolUsedMem.SCAN 6
+quadEMTest:TetrAMM:SumY:Reset.SCAN 0
+quadEMTest:TetrAMM:SumY:Reset.DESC 
+quadEMTest:TetrAMM:SumY:Reset.PREC 0
+quadEMTest:TetrAMM:SumY:Reset.DLY1 0
+quadEMTest:TetrAMM:SumY:Reset.DOL1 0
+quadEMTest:TetrAMM:SumY:Reset.STR1 0
+quadEMTest:TetrAMM:SumY:Reset.DO1 0
+quadEMTest:TetrAMM:SumY:Reset.LNK1 quadEMTest:TetrAMM:SumY:MinValue PP MS
+quadEMTest:TetrAMM:SumY:Reset.WAIT1 0
+quadEMTest:TetrAMM:SumY:Reset.DLY2 0
+quadEMTest:TetrAMM:SumY:Reset.DOL2 0
+quadEMTest:TetrAMM:SumY:Reset.STR2 0
+quadEMTest:TetrAMM:SumY:Reset.DO2 0
+quadEMTest:TetrAMM:SumY:Reset.LNK2 quadEMTest:TetrAMM:SumY:MaxValue PP MS
+quadEMTest:TetrAMM:SumY:Reset.WAIT2 0
+quadEMTest:TetrAMM:SumY:Reset.DLY3 0
+quadEMTest:TetrAMM:SumY:Reset.DOL3 0
+quadEMTest:TetrAMM:SumY:Reset.STR3 0
+quadEMTest:TetrAMM:SumY:Reset.DO3 0
+quadEMTest:TetrAMM:SumY:Reset.LNK3 quadEMTest:TetrAMM:SumY:MaxValue PP MS
+quadEMTest:TetrAMM:SumY:Reset.WAIT3 0
+quadEMTest:TetrAMM:SumY:Reset.DLY4 0
+quadEMTest:TetrAMM:SumY:Reset.DOL4 0
+quadEMTest:TetrAMM:SumY:Reset.STR4 0
+quadEMTest:TetrAMM:SumY:Reset.DO4 0
+quadEMTest:TetrAMM:SumY:Reset.LNK4 quadEMTest:TetrAMM:SumY:MeanValue PP MS
+quadEMTest:TetrAMM:SumY:Reset.WAIT4 0
+quadEMTest:TetrAMM:SumY:Reset.DLY5 0
+quadEMTest:TetrAMM:SumY:Reset.DOL5 0
+quadEMTest:TetrAMM:SumY:Reset.STR5 0
+quadEMTest:TetrAMM:SumY:Reset.DO5 0
+quadEMTest:TetrAMM:SumY:Reset.LNK5 quadEMTest:TetrAMM:SumY:SigmaValue PP M
+quadEMTest:TetrAMM:SumY:Reset.WAIT5 0
+quadEMTest:TetrAMM:SumY:Reset.DLY6 0
+quadEMTest:TetrAMM:SumY:Reset.DOL6 0
+quadEMTest:TetrAMM:SumY:Reset.STR6 0
+quadEMTest:TetrAMM:SumY:Reset.DO6 0
+quadEMTest:TetrAMM:SumY:Reset.LNK6 quadEMTest:TetrAMM:SumY:Total PP MS
+quadEMTest:TetrAMM:SumY:Reset.WAIT6 0
+quadEMTest:TetrAMM:SumY:Reset.DLY7 0
+quadEMTest:TetrAMM:SumY:Reset.DOL7 0
+quadEMTest:TetrAMM:SumY:Reset.STR7 0
+quadEMTest:TetrAMM:SumY:Reset.DO7 0
+quadEMTest:TetrAMM:SumY:Reset.LNK7 quadEMTest:TetrAMM:SumY:Net PP MS
+quadEMTest:TetrAMM:SumY:Reset.WAIT7 0
+quadEMTest:TetrAMM:SumY:Reset.DLY8 0
+quadEMTest:TetrAMM:SumY:Reset.DOL8 0
+quadEMTest:TetrAMM:SumY:Reset.STR8 0
+quadEMTest:TetrAMM:SumY:Reset.DO8 0
+quadEMTest:TetrAMM:SumY:Reset.LNK8 quadEMTest:TetrAMM:SumY:MinX PP MS
+quadEMTest:TetrAMM:SumY:Reset.WAIT8 0
+quadEMTest:TetrAMM:SumY:Reset.DLY9 0
+quadEMTest:TetrAMM:SumY:Reset.DOL9 0
+quadEMTest:TetrAMM:SumY:Reset.STR9 0
+quadEMTest:TetrAMM:SumY:Reset.DO9 0
+quadEMTest:TetrAMM:SumY:Reset.LNK9 quadEMTest:TetrAMM:SumY:MinY PP MS
+quadEMTest:TetrAMM:SumY:Reset.WAIT9 0
+quadEMTest:TetrAMM:SumY:Reset.DLYA 0
+quadEMTest:TetrAMM:SumY:Reset.DOLA 0
+quadEMTest:TetrAMM:SumY:Reset.STRA 0
+quadEMTest:TetrAMM:SumY:Reset.DOA 0
+quadEMTest:TetrAMM:SumY:Reset.LNKA quadEMTest:TetrAMM:SumY:MaxX PP MS
+quadEMTest:TetrAMM:SumY:Reset.WAITA 0
+quadEMTest:TetrAMM:SumY:Reset.FLNK quadEMTest:TetrAMM:SumY:Reset1
+quadEMTest:TetrAMM:SumY:Reset.SELL 
+quadEMTest:TetrAMM:SumY:Reset.SELN 1
+quadEMTest:TetrAMM:SumY:Reset.SELM 0
+quadEMTest:TetrAMM:SumY:Reset1.SCAN 0
+quadEMTest:TetrAMM:SumY:Reset1.DESC 
+quadEMTest:TetrAMM:SumY:Reset1.PREC 0
+quadEMTest:TetrAMM:SumY:Reset1.DLY1 0
+quadEMTest:TetrAMM:SumY:Reset1.DOL1 0
+quadEMTest:TetrAMM:SumY:Reset1.STR1 0
+quadEMTest:TetrAMM:SumY:Reset1.DO1 0
+quadEMTest:TetrAMM:SumY:Reset1.LNK1 quadEMTest:TetrAMM:SumY:MaxY PP MS
+quadEMTest:TetrAMM:SumY:Reset1.WAIT1 0
+quadEMTest:TetrAMM:SumY:Reset1.DLY2 0
+quadEMTest:TetrAMM:SumY:Reset1.DOL2 0
+quadEMTest:TetrAMM:SumY:Reset1.STR2 0
+quadEMTest:TetrAMM:SumY:Reset1.DO2 0
+quadEMTest:TetrAMM:SumY:Reset1.LNK2 quadEMTest:TetrAMM:SumY:CentroidX PP MS
+quadEMTest:TetrAMM:SumY:Reset1.WAIT2 0
+quadEMTest:TetrAMM:SumY:Reset1.DLY3 0
+quadEMTest:TetrAMM:SumY:Reset1.DOL3 0
+quadEMTest:TetrAMM:SumY:Reset1.STR3 0
+quadEMTest:TetrAMM:SumY:Reset1.DO3 0
+quadEMTest:TetrAMM:SumY:Reset1.LNK3 quadEMTest:TetrAMM:SumY:CentroidY PP MS
+quadEMTest:TetrAMM:SumY:Reset1.WAIT3 0
+quadEMTest:TetrAMM:SumY:Reset1.DLY4 0
+quadEMTest:TetrAMM:SumY:Reset1.DOL4 0
+quadEMTest:TetrAMM:SumY:Reset1.STR4 0
+quadEMTest:TetrAMM:SumY:Reset1.DO4 0
+quadEMTest:TetrAMM:SumY:Reset1.LNK4 quadEMTest:TetrAMM:SumY:SigmaX PP MS
+quadEMTest:TetrAMM:SumY:Reset1.WAIT4 0
+quadEMTest:TetrAMM:SumY:Reset1.DLY5 0
+quadEMTest:TetrAMM:SumY:Reset1.DOL5 0
+quadEMTest:TetrAMM:SumY:Reset1.STR5 0
+quadEMTest:TetrAMM:SumY:Reset1.DO5 0
+quadEMTest:TetrAMM:SumY:Reset1.LNK5 quadEMTest:TetrAMM:SumY:SigmaY PP MS
+quadEMTest:TetrAMM:SumY:Reset1.WAIT5 0
+quadEMTest:TetrAMM:SumY:Reset1.DLY6 0
+quadEMTest:TetrAMM:SumY:Reset1.DOL6 0
+quadEMTest:TetrAMM:SumY:Reset1.STR6 0
+quadEMTest:TetrAMM:SumY:Reset1.DO6 0
+quadEMTest:TetrAMM:SumY:Reset1.LNK6 quadEMTest:TetrAMM:SumY:SigmaXY PP MS
+quadEMTest:TetrAMM:SumY:Reset1.WAIT6 0
+quadEMTest:TetrAMM:SumY:Reset1.DLY7 0
+quadEMTest:TetrAMM:SumY:Reset1.DOL7 0
+quadEMTest:TetrAMM:SumY:Reset1.STR7 0
+quadEMTest:TetrAMM:SumY:Reset1.DO7 0
+quadEMTest:TetrAMM:SumY:Reset1.LNK7 quadEMTest:TetrAMM:SumY:HistEntropy PP 
+quadEMTest:TetrAMM:SumY:Reset1.WAIT7 0
+quadEMTest:TetrAMM:SumY:Reset1.DLY8 0
+quadEMTest:TetrAMM:SumY:Reset1.DOL8 
+quadEMTest:TetrAMM:SumY:Reset1.STR8 0
+quadEMTest:TetrAMM:SumY:Reset1.DO8 0
+quadEMTest:TetrAMM:SumY:Reset1.LNK8 
+quadEMTest:TetrAMM:SumY:Reset1.WAIT8 0
+quadEMTest:TetrAMM:SumY:Reset1.DLY9 0
+quadEMTest:TetrAMM:SumY:Reset1.DOL9 
+quadEMTest:TetrAMM:SumY:Reset1.STR9 0
+quadEMTest:TetrAMM:SumY:Reset1.DO9 0
+quadEMTest:TetrAMM:SumY:Reset1.LNK9 
+quadEMTest:TetrAMM:SumY:Reset1.WAIT9 0
+quadEMTest:TetrAMM:SumY:Reset1.DLYA 0
+quadEMTest:TetrAMM:SumY:Reset1.DOLA 
+quadEMTest:TetrAMM:SumY:Reset1.STRA 0
+quadEMTest:TetrAMM:SumY:Reset1.DOA 0
+quadEMTest:TetrAMM:SumY:Reset1.LNKA 
+quadEMTest:TetrAMM:SumY:Reset1.WAITA 0
+quadEMTest:TetrAMM:SumY:Reset1.FLNK 0
+quadEMTest:TetrAMM:SumY:Reset1.SELL 
+quadEMTest:TetrAMM:SumY:Reset1.SELN 1
+quadEMTest:TetrAMM:SumY:Reset1.SELM 0
+quadEMTest:TetrAMM:SumAll:BgdWidth 1
+quadEMTest:TetrAMM:SumAll:ComputeStatistics 1
+quadEMTest:TetrAMM:SumAll:ComputeCentroid 0
+quadEMTest:TetrAMM:SumAll:CentroidThreshold 1
+quadEMTest:TetrAMM:SumAll:ComputeProfiles 0
+quadEMTest:TetrAMM:SumAll:CursorX 256
+quadEMTest:TetrAMM:SumAll:CursorY 256
+quadEMTest:TetrAMM:SumAll:ComputeHistogram 0
+quadEMTest:TetrAMM:SumAll:HistSize 256
+quadEMTest:TetrAMM:SumAll:HistMin 0
+quadEMTest:TetrAMM:SumAll:HistMax 255
+quadEMTest:TetrAMM:SumAll:TSNumPoints 2048
+quadEMTest:TetrAMM:SumAll:TSRead.SCAN 6
+quadEMTest:TetrAMM:SumAll:NDArrayPort TetrAMM
+quadEMTest:TetrAMM:SumAll:NDArrayAddress 6
+quadEMTest:TetrAMM:SumAll:EnableCallbacks 1
+quadEMTest:TetrAMM:SumAll:MinCallbackTime 0
+quadEMTest:TetrAMM:SumAll:BlockingCallbacks 0
+quadEMTest:TetrAMM:SumAll:QueueSize 20
+quadEMTest:TetrAMM:SumAll:DataType 1
+quadEMTest:TetrAMM:SumAll:ColorMode 0
+quadEMTest:TetrAMM:SumAll:ArrayCallbacks 1
+quadEMTest:TetrAMM:SumAll:NDAttributesFile 
+quadEMTest:TetrAMM:SumAll:PoolUsedMem.SCAN 6
+quadEMTest:TetrAMM:SumAll:Reset.SCAN 0
+quadEMTest:TetrAMM:SumAll:Reset.DESC 
+quadEMTest:TetrAMM:SumAll:Reset.PREC 0
+quadEMTest:TetrAMM:SumAll:Reset.DLY1 0
+quadEMTest:TetrAMM:SumAll:Reset.DOL1 0
+quadEMTest:TetrAMM:SumAll:Reset.STR1 0
+quadEMTest:TetrAMM:SumAll:Reset.DO1 0
+quadEMTest:TetrAMM:SumAll:Reset.LNK1 quadEMTest:TetrAMM:SumAll:MinValue PP M
+quadEMTest:TetrAMM:SumAll:Reset.WAIT1 0
+quadEMTest:TetrAMM:SumAll:Reset.DLY2 0
+quadEMTest:TetrAMM:SumAll:Reset.DOL2 0
+quadEMTest:TetrAMM:SumAll:Reset.STR2 0
+quadEMTest:TetrAMM:SumAll:Reset.DO2 0
+quadEMTest:TetrAMM:SumAll:Reset.LNK2 quadEMTest:TetrAMM:SumAll:MaxValue PP M
+quadEMTest:TetrAMM:SumAll:Reset.WAIT2 0
+quadEMTest:TetrAMM:SumAll:Reset.DLY3 0
+quadEMTest:TetrAMM:SumAll:Reset.DOL3 0
+quadEMTest:TetrAMM:SumAll:Reset.STR3 0
+quadEMTest:TetrAMM:SumAll:Reset.DO3 0
+quadEMTest:TetrAMM:SumAll:Reset.LNK3 quadEMTest:TetrAMM:SumAll:MaxValue PP M
+quadEMTest:TetrAMM:SumAll:Reset.WAIT3 0
+quadEMTest:TetrAMM:SumAll:Reset.DLY4 0
+quadEMTest:TetrAMM:SumAll:Reset.DOL4 0
+quadEMTest:TetrAMM:SumAll:Reset.STR4 0
+quadEMTest:TetrAMM:SumAll:Reset.DO4 0
+quadEMTest:TetrAMM:SumAll:Reset.LNK4 quadEMTest:TetrAMM:SumAll:MeanValue PP 
+quadEMTest:TetrAMM:SumAll:Reset.WAIT4 0
+quadEMTest:TetrAMM:SumAll:Reset.DLY5 0
+quadEMTest:TetrAMM:SumAll:Reset.DOL5 0
+quadEMTest:TetrAMM:SumAll:Reset.STR5 0
+quadEMTest:TetrAMM:SumAll:Reset.DO5 0
+quadEMTest:TetrAMM:SumAll:Reset.LNK5 quadEMTest:TetrAMM:SumAll:SigmaValue PP
+quadEMTest:TetrAMM:SumAll:Reset.WAIT5 0
+quadEMTest:TetrAMM:SumAll:Reset.DLY6 0
+quadEMTest:TetrAMM:SumAll:Reset.DOL6 0
+quadEMTest:TetrAMM:SumAll:Reset.STR6 0
+quadEMTest:TetrAMM:SumAll:Reset.DO6 0
+quadEMTest:TetrAMM:SumAll:Reset.LNK6 quadEMTest:TetrAMM:SumAll:Total PP MS
+quadEMTest:TetrAMM:SumAll:Reset.WAIT6 0
+quadEMTest:TetrAMM:SumAll:Reset.DLY7 0
+quadEMTest:TetrAMM:SumAll:Reset.DOL7 0
+quadEMTest:TetrAMM:SumAll:Reset.STR7 0
+quadEMTest:TetrAMM:SumAll:Reset.DO7 0
+quadEMTest:TetrAMM:SumAll:Reset.LNK7 quadEMTest:TetrAMM:SumAll:Net PP MS
+quadEMTest:TetrAMM:SumAll:Reset.WAIT7 0
+quadEMTest:TetrAMM:SumAll:Reset.DLY8 0
+quadEMTest:TetrAMM:SumAll:Reset.DOL8 0
+quadEMTest:TetrAMM:SumAll:Reset.STR8 0
+quadEMTest:TetrAMM:SumAll:Reset.DO8 0
+quadEMTest:TetrAMM:SumAll:Reset.LNK8 quadEMTest:TetrAMM:SumAll:MinX PP MS
+quadEMTest:TetrAMM:SumAll:Reset.WAIT8 0
+quadEMTest:TetrAMM:SumAll:Reset.DLY9 0
+quadEMTest:TetrAMM:SumAll:Reset.DOL9 0
+quadEMTest:TetrAMM:SumAll:Reset.STR9 0
+quadEMTest:TetrAMM:SumAll:Reset.DO9 0
+quadEMTest:TetrAMM:SumAll:Reset.LNK9 quadEMTest:TetrAMM:SumAll:MinY PP MS
+quadEMTest:TetrAMM:SumAll:Reset.WAIT9 0
+quadEMTest:TetrAMM:SumAll:Reset.DLYA 0
+quadEMTest:TetrAMM:SumAll:Reset.DOLA 0
+quadEMTest:TetrAMM:SumAll:Reset.STRA 0
+quadEMTest:TetrAMM:SumAll:Reset.DOA 0
+quadEMTest:TetrAMM:SumAll:Reset.LNKA quadEMTest:TetrAMM:SumAll:MaxX PP MS
+quadEMTest:TetrAMM:SumAll:Reset.WAITA 0
+quadEMTest:TetrAMM:SumAll:Reset.FLNK quadEMTest:TetrAMM:SumAll:Reset1
+quadEMTest:TetrAMM:SumAll:Reset.SELL 
+quadEMTest:TetrAMM:SumAll:Reset.SELN 1
+quadEMTest:TetrAMM:SumAll:Reset.SELM 0
+quadEMTest:TetrAMM:SumAll:Reset1.SCAN 0
+quadEMTest:TetrAMM:SumAll:Reset1.DESC 
+quadEMTest:TetrAMM:SumAll:Reset1.PREC 0
+quadEMTest:TetrAMM:SumAll:Reset1.DLY1 0
+quadEMTest:TetrAMM:SumAll:Reset1.DOL1 0
+quadEMTest:TetrAMM:SumAll:Reset1.STR1 0
+quadEMTest:TetrAMM:SumAll:Reset1.DO1 0
+quadEMTest:TetrAMM:SumAll:Reset1.LNK1 quadEMTest:TetrAMM:SumAll:MaxY PP MS
+quadEMTest:TetrAMM:SumAll:Reset1.WAIT1 0
+quadEMTest:TetrAMM:SumAll:Reset1.DLY2 0
+quadEMTest:TetrAMM:SumAll:Reset1.DOL2 0
+quadEMTest:TetrAMM:SumAll:Reset1.STR2 0
+quadEMTest:TetrAMM:SumAll:Reset1.DO2 0
+quadEMTest:TetrAMM:SumAll:Reset1.LNK2 quadEMTest:TetrAMM:SumAll:CentroidX PP 
+quadEMTest:TetrAMM:SumAll:Reset1.WAIT2 0
+quadEMTest:TetrAMM:SumAll:Reset1.DLY3 0
+quadEMTest:TetrAMM:SumAll:Reset1.DOL3 0
+quadEMTest:TetrAMM:SumAll:Reset1.STR3 0
+quadEMTest:TetrAMM:SumAll:Reset1.DO3 0
+quadEMTest:TetrAMM:SumAll:Reset1.LNK3 quadEMTest:TetrAMM:SumAll:CentroidY PP 
+quadEMTest:TetrAMM:SumAll:Reset1.WAIT3 0
+quadEMTest:TetrAMM:SumAll:Reset1.DLY4 0
+quadEMTest:TetrAMM:SumAll:Reset1.DOL4 0
+quadEMTest:TetrAMM:SumAll:Reset1.STR4 0
+quadEMTest:TetrAMM:SumAll:Reset1.DO4 0
+quadEMTest:TetrAMM:SumAll:Reset1.LNK4 quadEMTest:TetrAMM:SumAll:SigmaX PP MS
+quadEMTest:TetrAMM:SumAll:Reset1.WAIT4 0
+quadEMTest:TetrAMM:SumAll:Reset1.DLY5 0
+quadEMTest:TetrAMM:SumAll:Reset1.DOL5 0
+quadEMTest:TetrAMM:SumAll:Reset1.STR5 0
+quadEMTest:TetrAMM:SumAll:Reset1.DO5 0
+quadEMTest:TetrAMM:SumAll:Reset1.LNK5 quadEMTest:TetrAMM:SumAll:SigmaY PP MS
+quadEMTest:TetrAMM:SumAll:Reset1.WAIT5 0
+quadEMTest:TetrAMM:SumAll:Reset1.DLY6 0
+quadEMTest:TetrAMM:SumAll:Reset1.DOL6 0
+quadEMTest:TetrAMM:SumAll:Reset1.STR6 0
+quadEMTest:TetrAMM:SumAll:Reset1.DO6 0
+quadEMTest:TetrAMM:SumAll:Reset1.LNK6 quadEMTest:TetrAMM:SumAll:SigmaXY PP MS
+quadEMTest:TetrAMM:SumAll:Reset1.WAIT6 0
+quadEMTest:TetrAMM:SumAll:Reset1.DLY7 0
+quadEMTest:TetrAMM:SumAll:Reset1.DOL7 0
+quadEMTest:TetrAMM:SumAll:Reset1.STR7 0
+quadEMTest:TetrAMM:SumAll:Reset1.DO7 0
+quadEMTest:TetrAMM:SumAll:Reset1.LNK7 quadEMTest:TetrAMM:SumAll:HistEntropy P
+quadEMTest:TetrAMM:SumAll:Reset1.WAIT7 0
+quadEMTest:TetrAMM:SumAll:Reset1.DLY8 0
+quadEMTest:TetrAMM:SumAll:Reset1.DOL8 
+quadEMTest:TetrAMM:SumAll:Reset1.STR8 0
+quadEMTest:TetrAMM:SumAll:Reset1.DO8 0
+quadEMTest:TetrAMM:SumAll:Reset1.LNK8 
+quadEMTest:TetrAMM:SumAll:Reset1.WAIT8 0
+quadEMTest:TetrAMM:SumAll:Reset1.DLY9 0
+quadEMTest:TetrAMM:SumAll:Reset1.DOL9 
+quadEMTest:TetrAMM:SumAll:Reset1.STR9 0
+quadEMTest:TetrAMM:SumAll:Reset1.DO9 0
+quadEMTest:TetrAMM:SumAll:Reset1.LNK9 
+quadEMTest:TetrAMM:SumAll:Reset1.WAIT9 0
+quadEMTest:TetrAMM:SumAll:Reset1.DLYA 0
+quadEMTest:TetrAMM:SumAll:Reset1.DOLA 
+quadEMTest:TetrAMM:SumAll:Reset1.STRA 0
+quadEMTest:TetrAMM:SumAll:Reset1.DOA 0
+quadEMTest:TetrAMM:SumAll:Reset1.LNKA 
+quadEMTest:TetrAMM:SumAll:Reset1.WAITA 0
+quadEMTest:TetrAMM:SumAll:Reset1.FLNK 0
+quadEMTest:TetrAMM:SumAll:Reset1.SELL 
+quadEMTest:TetrAMM:SumAll:Reset1.SELN 1
+quadEMTest:TetrAMM:SumAll:Reset1.SELM 0
+quadEMTest:TetrAMM:DiffX:BgdWidth 1
+quadEMTest:TetrAMM:DiffX:ComputeStatistics 1
+quadEMTest:TetrAMM:DiffX:ComputeCentroid 0
+quadEMTest:TetrAMM:DiffX:CentroidThreshold 1
+quadEMTest:TetrAMM:DiffX:ComputeProfiles 0
+quadEMTest:TetrAMM:DiffX:CursorX 256
+quadEMTest:TetrAMM:DiffX:CursorY 256
+quadEMTest:TetrAMM:DiffX:ComputeHistogram 0
+quadEMTest:TetrAMM:DiffX:HistSize 256
+quadEMTest:TetrAMM:DiffX:HistMin 0
+quadEMTest:TetrAMM:DiffX:HistMax 255
+quadEMTest:TetrAMM:DiffX:TSNumPoints 2048
+quadEMTest:TetrAMM:DiffX:TSRead.SCAN 6
+quadEMTest:TetrAMM:DiffX:NDArrayPort TetrAMM
+quadEMTest:TetrAMM:DiffX:NDArrayAddress 7
+quadEMTest:TetrAMM:DiffX:EnableCallbacks 1
+quadEMTest:TetrAMM:DiffX:MinCallbackTime 0
+quadEMTest:TetrAMM:DiffX:BlockingCallbacks 0
+quadEMTest:TetrAMM:DiffX:QueueSize 20
+quadEMTest:TetrAMM:DiffX:DataType 1
+quadEMTest:TetrAMM:DiffX:ColorMode 0
+quadEMTest:TetrAMM:DiffX:ArrayCallbacks 1
+quadEMTest:TetrAMM:DiffX:NDAttributesFile 
+quadEMTest:TetrAMM:DiffX:PoolUsedMem.SCAN 6
+quadEMTest:TetrAMM:DiffX:Reset.SCAN 0
+quadEMTest:TetrAMM:DiffX:Reset.DESC 
+quadEMTest:TetrAMM:DiffX:Reset.PREC 0
+quadEMTest:TetrAMM:DiffX:Reset.DLY1 0
+quadEMTest:TetrAMM:DiffX:Reset.DOL1 0
+quadEMTest:TetrAMM:DiffX:Reset.STR1 0
+quadEMTest:TetrAMM:DiffX:Reset.DO1 0
+quadEMTest:TetrAMM:DiffX:Reset.LNK1 quadEMTest:TetrAMM:DiffX:MinValue PP MS
+quadEMTest:TetrAMM:DiffX:Reset.WAIT1 0
+quadEMTest:TetrAMM:DiffX:Reset.DLY2 0
+quadEMTest:TetrAMM:DiffX:Reset.DOL2 0
+quadEMTest:TetrAMM:DiffX:Reset.STR2 0
+quadEMTest:TetrAMM:DiffX:Reset.DO2 0
+quadEMTest:TetrAMM:DiffX:Reset.LNK2 quadEMTest:TetrAMM:DiffX:MaxValue PP MS
+quadEMTest:TetrAMM:DiffX:Reset.WAIT2 0
+quadEMTest:TetrAMM:DiffX:Reset.DLY3 0
+quadEMTest:TetrAMM:DiffX:Reset.DOL3 0
+quadEMTest:TetrAMM:DiffX:Reset.STR3 0
+quadEMTest:TetrAMM:DiffX:Reset.DO3 0
+quadEMTest:TetrAMM:DiffX:Reset.LNK3 quadEMTest:TetrAMM:DiffX:MaxValue PP MS
+quadEMTest:TetrAMM:DiffX:Reset.WAIT3 0
+quadEMTest:TetrAMM:DiffX:Reset.DLY4 0
+quadEMTest:TetrAMM:DiffX:Reset.DOL4 0
+quadEMTest:TetrAMM:DiffX:Reset.STR4 0
+quadEMTest:TetrAMM:DiffX:Reset.DO4 0
+quadEMTest:TetrAMM:DiffX:Reset.LNK4 quadEMTest:TetrAMM:DiffX:MeanValue PP M
+quadEMTest:TetrAMM:DiffX:Reset.WAIT4 0
+quadEMTest:TetrAMM:DiffX:Reset.DLY5 0
+quadEMTest:TetrAMM:DiffX:Reset.DOL5 0
+quadEMTest:TetrAMM:DiffX:Reset.STR5 0
+quadEMTest:TetrAMM:DiffX:Reset.DO5 0
+quadEMTest:TetrAMM:DiffX:Reset.LNK5 quadEMTest:TetrAMM:DiffX:SigmaValue PP 
+quadEMTest:TetrAMM:DiffX:Reset.WAIT5 0
+quadEMTest:TetrAMM:DiffX:Reset.DLY6 0
+quadEMTest:TetrAMM:DiffX:Reset.DOL6 0
+quadEMTest:TetrAMM:DiffX:Reset.STR6 0
+quadEMTest:TetrAMM:DiffX:Reset.DO6 0
+quadEMTest:TetrAMM:DiffX:Reset.LNK6 quadEMTest:TetrAMM:DiffX:Total PP MS
+quadEMTest:TetrAMM:DiffX:Reset.WAIT6 0
+quadEMTest:TetrAMM:DiffX:Reset.DLY7 0
+quadEMTest:TetrAMM:DiffX:Reset.DOL7 0
+quadEMTest:TetrAMM:DiffX:Reset.STR7 0
+quadEMTest:TetrAMM:DiffX:Reset.DO7 0
+quadEMTest:TetrAMM:DiffX:Reset.LNK7 quadEMTest:TetrAMM:DiffX:Net PP MS
+quadEMTest:TetrAMM:DiffX:Reset.WAIT7 0
+quadEMTest:TetrAMM:DiffX:Reset.DLY8 0
+quadEMTest:TetrAMM:DiffX:Reset.DOL8 0
+quadEMTest:TetrAMM:DiffX:Reset.STR8 0
+quadEMTest:TetrAMM:DiffX:Reset.DO8 0
+quadEMTest:TetrAMM:DiffX:Reset.LNK8 quadEMTest:TetrAMM:DiffX:MinX PP MS
+quadEMTest:TetrAMM:DiffX:Reset.WAIT8 0
+quadEMTest:TetrAMM:DiffX:Reset.DLY9 0
+quadEMTest:TetrAMM:DiffX:Reset.DOL9 0
+quadEMTest:TetrAMM:DiffX:Reset.STR9 0
+quadEMTest:TetrAMM:DiffX:Reset.DO9 0
+quadEMTest:TetrAMM:DiffX:Reset.LNK9 quadEMTest:TetrAMM:DiffX:MinY PP MS
+quadEMTest:TetrAMM:DiffX:Reset.WAIT9 0
+quadEMTest:TetrAMM:DiffX:Reset.DLYA 0
+quadEMTest:TetrAMM:DiffX:Reset.DOLA 0
+quadEMTest:TetrAMM:DiffX:Reset.STRA 0
+quadEMTest:TetrAMM:DiffX:Reset.DOA 0
+quadEMTest:TetrAMM:DiffX:Reset.LNKA quadEMTest:TetrAMM:DiffX:MaxX PP MS
+quadEMTest:TetrAMM:DiffX:Reset.WAITA 0
+quadEMTest:TetrAMM:DiffX:Reset.FLNK quadEMTest:TetrAMM:DiffX:Reset1
+quadEMTest:TetrAMM:DiffX:Reset.SELL 
+quadEMTest:TetrAMM:DiffX:Reset.SELN 1
+quadEMTest:TetrAMM:DiffX:Reset.SELM 0
+quadEMTest:TetrAMM:DiffX:Reset1.SCAN 0
+quadEMTest:TetrAMM:DiffX:Reset1.DESC 
+quadEMTest:TetrAMM:DiffX:Reset1.PREC 0
+quadEMTest:TetrAMM:DiffX:Reset1.DLY1 0
+quadEMTest:TetrAMM:DiffX:Reset1.DOL1 0
+quadEMTest:TetrAMM:DiffX:Reset1.STR1 0
+quadEMTest:TetrAMM:DiffX:Reset1.DO1 0
+quadEMTest:TetrAMM:DiffX:Reset1.LNK1 quadEMTest:TetrAMM:DiffX:MaxY PP MS
+quadEMTest:TetrAMM:DiffX:Reset1.WAIT1 0
+quadEMTest:TetrAMM:DiffX:Reset1.DLY2 0
+quadEMTest:TetrAMM:DiffX:Reset1.DOL2 0
+quadEMTest:TetrAMM:DiffX:Reset1.STR2 0
+quadEMTest:TetrAMM:DiffX:Reset1.DO2 0
+quadEMTest:TetrAMM:DiffX:Reset1.LNK2 quadEMTest:TetrAMM:DiffX:CentroidX PP M
+quadEMTest:TetrAMM:DiffX:Reset1.WAIT2 0
+quadEMTest:TetrAMM:DiffX:Reset1.DLY3 0
+quadEMTest:TetrAMM:DiffX:Reset1.DOL3 0
+quadEMTest:TetrAMM:DiffX:Reset1.STR3 0
+quadEMTest:TetrAMM:DiffX:Reset1.DO3 0
+quadEMTest:TetrAMM:DiffX:Reset1.LNK3 quadEMTest:TetrAMM:DiffX:CentroidY PP M
+quadEMTest:TetrAMM:DiffX:Reset1.WAIT3 0
+quadEMTest:TetrAMM:DiffX:Reset1.DLY4 0
+quadEMTest:TetrAMM:DiffX:Reset1.DOL4 0
+quadEMTest:TetrAMM:DiffX:Reset1.STR4 0
+quadEMTest:TetrAMM:DiffX:Reset1.DO4 0
+quadEMTest:TetrAMM:DiffX:Reset1.LNK4 quadEMTest:TetrAMM:DiffX:SigmaX PP MS
+quadEMTest:TetrAMM:DiffX:Reset1.WAIT4 0
+quadEMTest:TetrAMM:DiffX:Reset1.DLY5 0
+quadEMTest:TetrAMM:DiffX:Reset1.DOL5 0
+quadEMTest:TetrAMM:DiffX:Reset1.STR5 0
+quadEMTest:TetrAMM:DiffX:Reset1.DO5 0
+quadEMTest:TetrAMM:DiffX:Reset1.LNK5 quadEMTest:TetrAMM:DiffX:SigmaY PP MS
+quadEMTest:TetrAMM:DiffX:Reset1.WAIT5 0
+quadEMTest:TetrAMM:DiffX:Reset1.DLY6 0
+quadEMTest:TetrAMM:DiffX:Reset1.DOL6 0
+quadEMTest:TetrAMM:DiffX:Reset1.STR6 0
+quadEMTest:TetrAMM:DiffX:Reset1.DO6 0
+quadEMTest:TetrAMM:DiffX:Reset1.LNK6 quadEMTest:TetrAMM:DiffX:SigmaXY PP MS
+quadEMTest:TetrAMM:DiffX:Reset1.WAIT6 0
+quadEMTest:TetrAMM:DiffX:Reset1.DLY7 0
+quadEMTest:TetrAMM:DiffX:Reset1.DOL7 0
+quadEMTest:TetrAMM:DiffX:Reset1.STR7 0
+quadEMTest:TetrAMM:DiffX:Reset1.DO7 0
+quadEMTest:TetrAMM:DiffX:Reset1.LNK7 quadEMTest:TetrAMM:DiffX:HistEntropy PP
+quadEMTest:TetrAMM:DiffX:Reset1.WAIT7 0
+quadEMTest:TetrAMM:DiffX:Reset1.DLY8 0
+quadEMTest:TetrAMM:DiffX:Reset1.DOL8 
+quadEMTest:TetrAMM:DiffX:Reset1.STR8 0
+quadEMTest:TetrAMM:DiffX:Reset1.DO8 0
+quadEMTest:TetrAMM:DiffX:Reset1.LNK8 
+quadEMTest:TetrAMM:DiffX:Reset1.WAIT8 0
+quadEMTest:TetrAMM:DiffX:Reset1.DLY9 0
+quadEMTest:TetrAMM:DiffX:Reset1.DOL9 
+quadEMTest:TetrAMM:DiffX:Reset1.STR9 0
+quadEMTest:TetrAMM:DiffX:Reset1.DO9 0
+quadEMTest:TetrAMM:DiffX:Reset1.LNK9 
+quadEMTest:TetrAMM:DiffX:Reset1.WAIT9 0
+quadEMTest:TetrAMM:DiffX:Reset1.DLYA 0
+quadEMTest:TetrAMM:DiffX:Reset1.DOLA 
+quadEMTest:TetrAMM:DiffX:Reset1.STRA 0
+quadEMTest:TetrAMM:DiffX:Reset1.DOA 0
+quadEMTest:TetrAMM:DiffX:Reset1.LNKA 
+quadEMTest:TetrAMM:DiffX:Reset1.WAITA 0
+quadEMTest:TetrAMM:DiffX:Reset1.FLNK 0
+quadEMTest:TetrAMM:DiffX:Reset1.SELL 
+quadEMTest:TetrAMM:DiffX:Reset1.SELN 1
+quadEMTest:TetrAMM:DiffX:Reset1.SELM 0
+quadEMTest:TetrAMM:DiffY:BgdWidth 1
+quadEMTest:TetrAMM:DiffY:ComputeStatistics 1
+quadEMTest:TetrAMM:DiffY:ComputeCentroid 0
+quadEMTest:TetrAMM:DiffY:CentroidThreshold 1
+quadEMTest:TetrAMM:DiffY:ComputeProfiles 0
+quadEMTest:TetrAMM:DiffY:CursorX 256
+quadEMTest:TetrAMM:DiffY:CursorY 256
+quadEMTest:TetrAMM:DiffY:ComputeHistogram 0
+quadEMTest:TetrAMM:DiffY:HistSize 256
+quadEMTest:TetrAMM:DiffY:HistMin 0
+quadEMTest:TetrAMM:DiffY:HistMax 255
+quadEMTest:TetrAMM:DiffY:TSNumPoints 2048
+quadEMTest:TetrAMM:DiffY:TSRead.SCAN 6
+quadEMTest:TetrAMM:DiffY:NDArrayPort TetrAMM
+quadEMTest:TetrAMM:DiffY:NDArrayAddress 8
+quadEMTest:TetrAMM:DiffY:EnableCallbacks 1
+quadEMTest:TetrAMM:DiffY:MinCallbackTime 0
+quadEMTest:TetrAMM:DiffY:BlockingCallbacks 0
+quadEMTest:TetrAMM:DiffY:QueueSize 20
+quadEMTest:TetrAMM:DiffY:DataType 1
+quadEMTest:TetrAMM:DiffY:ColorMode 0
+quadEMTest:TetrAMM:DiffY:ArrayCallbacks 1
+quadEMTest:TetrAMM:DiffY:NDAttributesFile 
+quadEMTest:TetrAMM:DiffY:PoolUsedMem.SCAN 6
+quadEMTest:TetrAMM:DiffY:Reset.SCAN 0
+quadEMTest:TetrAMM:DiffY:Reset.DESC 
+quadEMTest:TetrAMM:DiffY:Reset.PREC 0
+quadEMTest:TetrAMM:DiffY:Reset.DLY1 0
+quadEMTest:TetrAMM:DiffY:Reset.DOL1 0
+quadEMTest:TetrAMM:DiffY:Reset.STR1 0
+quadEMTest:TetrAMM:DiffY:Reset.DO1 0
+quadEMTest:TetrAMM:DiffY:Reset.LNK1 quadEMTest:TetrAMM:DiffY:MinValue PP MS
+quadEMTest:TetrAMM:DiffY:Reset.WAIT1 0
+quadEMTest:TetrAMM:DiffY:Reset.DLY2 0
+quadEMTest:TetrAMM:DiffY:Reset.DOL2 0
+quadEMTest:TetrAMM:DiffY:Reset.STR2 0
+quadEMTest:TetrAMM:DiffY:Reset.DO2 0
+quadEMTest:TetrAMM:DiffY:Reset.LNK2 quadEMTest:TetrAMM:DiffY:MaxValue PP MS
+quadEMTest:TetrAMM:DiffY:Reset.WAIT2 0
+quadEMTest:TetrAMM:DiffY:Reset.DLY3 0
+quadEMTest:TetrAMM:DiffY:Reset.DOL3 0
+quadEMTest:TetrAMM:DiffY:Reset.STR3 0
+quadEMTest:TetrAMM:DiffY:Reset.DO3 0
+quadEMTest:TetrAMM:DiffY:Reset.LNK3 quadEMTest:TetrAMM:DiffY:MaxValue PP MS
+quadEMTest:TetrAMM:DiffY:Reset.WAIT3 0
+quadEMTest:TetrAMM:DiffY:Reset.DLY4 0
+quadEMTest:TetrAMM:DiffY:Reset.DOL4 0
+quadEMTest:TetrAMM:DiffY:Reset.STR4 0
+quadEMTest:TetrAMM:DiffY:Reset.DO4 0
+quadEMTest:TetrAMM:DiffY:Reset.LNK4 quadEMTest:TetrAMM:DiffY:MeanValue PP M
+quadEMTest:TetrAMM:DiffY:Reset.WAIT4 0
+quadEMTest:TetrAMM:DiffY:Reset.DLY5 0
+quadEMTest:TetrAMM:DiffY:Reset.DOL5 0
+quadEMTest:TetrAMM:DiffY:Reset.STR5 0
+quadEMTest:TetrAMM:DiffY:Reset.DO5 0
+quadEMTest:TetrAMM:DiffY:Reset.LNK5 quadEMTest:TetrAMM:DiffY:SigmaValue PP 
+quadEMTest:TetrAMM:DiffY:Reset.WAIT5 0
+quadEMTest:TetrAMM:DiffY:Reset.DLY6 0
+quadEMTest:TetrAMM:DiffY:Reset.DOL6 0
+quadEMTest:TetrAMM:DiffY:Reset.STR6 0
+quadEMTest:TetrAMM:DiffY:Reset.DO6 0
+quadEMTest:TetrAMM:DiffY:Reset.LNK6 quadEMTest:TetrAMM:DiffY:Total PP MS
+quadEMTest:TetrAMM:DiffY:Reset.WAIT6 0
+quadEMTest:TetrAMM:DiffY:Reset.DLY7 0
+quadEMTest:TetrAMM:DiffY:Reset.DOL7 0
+quadEMTest:TetrAMM:DiffY:Reset.STR7 0
+quadEMTest:TetrAMM:DiffY:Reset.DO7 0
+quadEMTest:TetrAMM:DiffY:Reset.LNK7 quadEMTest:TetrAMM:DiffY:Net PP MS
+quadEMTest:TetrAMM:DiffY:Reset.WAIT7 0
+quadEMTest:TetrAMM:DiffY:Reset.DLY8 0
+quadEMTest:TetrAMM:DiffY:Reset.DOL8 0
+quadEMTest:TetrAMM:DiffY:Reset.STR8 0
+quadEMTest:TetrAMM:DiffY:Reset.DO8 0
+quadEMTest:TetrAMM:DiffY:Reset.LNK8 quadEMTest:TetrAMM:DiffY:MinX PP MS
+quadEMTest:TetrAMM:DiffY:Reset.WAIT8 0
+quadEMTest:TetrAMM:DiffY:Reset.DLY9 0
+quadEMTest:TetrAMM:DiffY:Reset.DOL9 0
+quadEMTest:TetrAMM:DiffY:Reset.STR9 0
+quadEMTest:TetrAMM:DiffY:Reset.DO9 0
+quadEMTest:TetrAMM:DiffY:Reset.LNK9 quadEMTest:TetrAMM:DiffY:MinY PP MS
+quadEMTest:TetrAMM:DiffY:Reset.WAIT9 0
+quadEMTest:TetrAMM:DiffY:Reset.DLYA 0
+quadEMTest:TetrAMM:DiffY:Reset.DOLA 0
+quadEMTest:TetrAMM:DiffY:Reset.STRA 0
+quadEMTest:TetrAMM:DiffY:Reset.DOA 0
+quadEMTest:TetrAMM:DiffY:Reset.LNKA quadEMTest:TetrAMM:DiffY:MaxX PP MS
+quadEMTest:TetrAMM:DiffY:Reset.WAITA 0
+quadEMTest:TetrAMM:DiffY:Reset.FLNK quadEMTest:TetrAMM:DiffY:Reset1
+quadEMTest:TetrAMM:DiffY:Reset.SELL 
+quadEMTest:TetrAMM:DiffY:Reset.SELN 1
+quadEMTest:TetrAMM:DiffY:Reset.SELM 0
+quadEMTest:TetrAMM:DiffY:Reset1.SCAN 0
+quadEMTest:TetrAMM:DiffY:Reset1.DESC 
+quadEMTest:TetrAMM:DiffY:Reset1.PREC 0
+quadEMTest:TetrAMM:DiffY:Reset1.DLY1 0
+quadEMTest:TetrAMM:DiffY:Reset1.DOL1 0
+quadEMTest:TetrAMM:DiffY:Reset1.STR1 0
+quadEMTest:TetrAMM:DiffY:Reset1.DO1 0
+quadEMTest:TetrAMM:DiffY:Reset1.LNK1 quadEMTest:TetrAMM:DiffY:MaxY PP MS
+quadEMTest:TetrAMM:DiffY:Reset1.WAIT1 0
+quadEMTest:TetrAMM:DiffY:Reset1.DLY2 0
+quadEMTest:TetrAMM:DiffY:Reset1.DOL2 0
+quadEMTest:TetrAMM:DiffY:Reset1.STR2 0
+quadEMTest:TetrAMM:DiffY:Reset1.DO2 0
+quadEMTest:TetrAMM:DiffY:Reset1.LNK2 quadEMTest:TetrAMM:DiffY:CentroidX PP M
+quadEMTest:TetrAMM:DiffY:Reset1.WAIT2 0
+quadEMTest:TetrAMM:DiffY:Reset1.DLY3 0
+quadEMTest:TetrAMM:DiffY:Reset1.DOL3 0
+quadEMTest:TetrAMM:DiffY:Reset1.STR3 0
+quadEMTest:TetrAMM:DiffY:Reset1.DO3 0
+quadEMTest:TetrAMM:DiffY:Reset1.LNK3 quadEMTest:TetrAMM:DiffY:CentroidY PP M
+quadEMTest:TetrAMM:DiffY:Reset1.WAIT3 0
+quadEMTest:TetrAMM:DiffY:Reset1.DLY4 0
+quadEMTest:TetrAMM:DiffY:Reset1.DOL4 0
+quadEMTest:TetrAMM:DiffY:Reset1.STR4 0
+quadEMTest:TetrAMM:DiffY:Reset1.DO4 0
+quadEMTest:TetrAMM:DiffY:Reset1.LNK4 quadEMTest:TetrAMM:DiffY:SigmaX PP MS
+quadEMTest:TetrAMM:DiffY:Reset1.WAIT4 0
+quadEMTest:TetrAMM:DiffY:Reset1.DLY5 0
+quadEMTest:TetrAMM:DiffY:Reset1.DOL5 0
+quadEMTest:TetrAMM:DiffY:Reset1.STR5 0
+quadEMTest:TetrAMM:DiffY:Reset1.DO5 0
+quadEMTest:TetrAMM:DiffY:Reset1.LNK5 quadEMTest:TetrAMM:DiffY:SigmaY PP MS
+quadEMTest:TetrAMM:DiffY:Reset1.WAIT5 0
+quadEMTest:TetrAMM:DiffY:Reset1.DLY6 0
+quadEMTest:TetrAMM:DiffY:Reset1.DOL6 0
+quadEMTest:TetrAMM:DiffY:Reset1.STR6 0
+quadEMTest:TetrAMM:DiffY:Reset1.DO6 0
+quadEMTest:TetrAMM:DiffY:Reset1.LNK6 quadEMTest:TetrAMM:DiffY:SigmaXY PP MS
+quadEMTest:TetrAMM:DiffY:Reset1.WAIT6 0
+quadEMTest:TetrAMM:DiffY:Reset1.DLY7 0
+quadEMTest:TetrAMM:DiffY:Reset1.DOL7 0
+quadEMTest:TetrAMM:DiffY:Reset1.STR7 0
+quadEMTest:TetrAMM:DiffY:Reset1.DO7 0
+quadEMTest:TetrAMM:DiffY:Reset1.LNK7 quadEMTest:TetrAMM:DiffY:HistEntropy PP
+quadEMTest:TetrAMM:DiffY:Reset1.WAIT7 0
+quadEMTest:TetrAMM:DiffY:Reset1.DLY8 0
+quadEMTest:TetrAMM:DiffY:Reset1.DOL8 
+quadEMTest:TetrAMM:DiffY:Reset1.STR8 0
+quadEMTest:TetrAMM:DiffY:Reset1.DO8 0
+quadEMTest:TetrAMM:DiffY:Reset1.LNK8 
+quadEMTest:TetrAMM:DiffY:Reset1.WAIT8 0
+quadEMTest:TetrAMM:DiffY:Reset1.DLY9 0
+quadEMTest:TetrAMM:DiffY:Reset1.DOL9 
+quadEMTest:TetrAMM:DiffY:Reset1.STR9 0
+quadEMTest:TetrAMM:DiffY:Reset1.DO9 0
+quadEMTest:TetrAMM:DiffY:Reset1.LNK9 
+quadEMTest:TetrAMM:DiffY:Reset1.WAIT9 0
+quadEMTest:TetrAMM:DiffY:Reset1.DLYA 0
+quadEMTest:TetrAMM:DiffY:Reset1.DOLA 
+quadEMTest:TetrAMM:DiffY:Reset1.STRA 0
+quadEMTest:TetrAMM:DiffY:Reset1.DOA 0
+quadEMTest:TetrAMM:DiffY:Reset1.LNKA 
+quadEMTest:TetrAMM:DiffY:Reset1.WAITA 0
+quadEMTest:TetrAMM:DiffY:Reset1.FLNK 0
+quadEMTest:TetrAMM:DiffY:Reset1.SELL 
+quadEMTest:TetrAMM:DiffY:Reset1.SELN 1
+quadEMTest:TetrAMM:DiffY:Reset1.SELM 0
+quadEMTest:TetrAMM:PosX:BgdWidth 1
+quadEMTest:TetrAMM:PosX:ComputeStatistics 1
+quadEMTest:TetrAMM:PosX:ComputeCentroid 0
+quadEMTest:TetrAMM:PosX:CentroidThreshold 1
+quadEMTest:TetrAMM:PosX:ComputeProfiles 0
+quadEMTest:TetrAMM:PosX:CursorX 256
+quadEMTest:TetrAMM:PosX:CursorY 256
+quadEMTest:TetrAMM:PosX:ComputeHistogram 0
+quadEMTest:TetrAMM:PosX:HistSize 256
+quadEMTest:TetrAMM:PosX:HistMin 0
+quadEMTest:TetrAMM:PosX:HistMax 255
+quadEMTest:TetrAMM:PosX:TSNumPoints 2048
+quadEMTest:TetrAMM:PosX:TSRead.SCAN 6
+quadEMTest:TetrAMM:PosX:NDArrayPort TetrAMM
+quadEMTest:TetrAMM:PosX:NDArrayAddress 9
+quadEMTest:TetrAMM:PosX:EnableCallbacks 1
+quadEMTest:TetrAMM:PosX:MinCallbackTime 0
+quadEMTest:TetrAMM:PosX:BlockingCallbacks 0
+quadEMTest:TetrAMM:PosX:QueueSize 20
+quadEMTest:TetrAMM:PosX:DataType 1
+quadEMTest:TetrAMM:PosX:ColorMode 0
+quadEMTest:TetrAMM:PosX:ArrayCallbacks 1
+quadEMTest:TetrAMM:PosX:NDAttributesFile 
+quadEMTest:TetrAMM:PosX:PoolUsedMem.SCAN 6
+quadEMTest:TetrAMM:PosX:Reset.SCAN 0
+quadEMTest:TetrAMM:PosX:Reset.DESC 
+quadEMTest:TetrAMM:PosX:Reset.PREC 0
+quadEMTest:TetrAMM:PosX:Reset.DLY1 0
+quadEMTest:TetrAMM:PosX:Reset.DOL1 0
+quadEMTest:TetrAMM:PosX:Reset.STR1 0
+quadEMTest:TetrAMM:PosX:Reset.DO1 0
+quadEMTest:TetrAMM:PosX:Reset.LNK1 quadEMTest:TetrAMM:PosX:MinValue PP MS
+quadEMTest:TetrAMM:PosX:Reset.WAIT1 0
+quadEMTest:TetrAMM:PosX:Reset.DLY2 0
+quadEMTest:TetrAMM:PosX:Reset.DOL2 0
+quadEMTest:TetrAMM:PosX:Reset.STR2 0
+quadEMTest:TetrAMM:PosX:Reset.DO2 0
+quadEMTest:TetrAMM:PosX:Reset.LNK2 quadEMTest:TetrAMM:PosX:MaxValue PP MS
+quadEMTest:TetrAMM:PosX:Reset.WAIT2 0
+quadEMTest:TetrAMM:PosX:Reset.DLY3 0
+quadEMTest:TetrAMM:PosX:Reset.DOL3 0
+quadEMTest:TetrAMM:PosX:Reset.STR3 0
+quadEMTest:TetrAMM:PosX:Reset.DO3 0
+quadEMTest:TetrAMM:PosX:Reset.LNK3 quadEMTest:TetrAMM:PosX:MaxValue PP MS
+quadEMTest:TetrAMM:PosX:Reset.WAIT3 0
+quadEMTest:TetrAMM:PosX:Reset.DLY4 0
+quadEMTest:TetrAMM:PosX:Reset.DOL4 0
+quadEMTest:TetrAMM:PosX:Reset.STR4 0
+quadEMTest:TetrAMM:PosX:Reset.DO4 0
+quadEMTest:TetrAMM:PosX:Reset.LNK4 quadEMTest:TetrAMM:PosX:MeanValue PP MS
+quadEMTest:TetrAMM:PosX:Reset.WAIT4 0
+quadEMTest:TetrAMM:PosX:Reset.DLY5 0
+quadEMTest:TetrAMM:PosX:Reset.DOL5 0
+quadEMTest:TetrAMM:PosX:Reset.STR5 0
+quadEMTest:TetrAMM:PosX:Reset.DO5 0
+quadEMTest:TetrAMM:PosX:Reset.LNK5 quadEMTest:TetrAMM:PosX:SigmaValue PP M
+quadEMTest:TetrAMM:PosX:Reset.WAIT5 0
+quadEMTest:TetrAMM:PosX:Reset.DLY6 0
+quadEMTest:TetrAMM:PosX:Reset.DOL6 0
+quadEMTest:TetrAMM:PosX:Reset.STR6 0
+quadEMTest:TetrAMM:PosX:Reset.DO6 0
+quadEMTest:TetrAMM:PosX:Reset.LNK6 quadEMTest:TetrAMM:PosX:Total PP MS
+quadEMTest:TetrAMM:PosX:Reset.WAIT6 0
+quadEMTest:TetrAMM:PosX:Reset.DLY7 0
+quadEMTest:TetrAMM:PosX:Reset.DOL7 0
+quadEMTest:TetrAMM:PosX:Reset.STR7 0
+quadEMTest:TetrAMM:PosX:Reset.DO7 0
+quadEMTest:TetrAMM:PosX:Reset.LNK7 quadEMTest:TetrAMM:PosX:Net PP MS
+quadEMTest:TetrAMM:PosX:Reset.WAIT7 0
+quadEMTest:TetrAMM:PosX:Reset.DLY8 0
+quadEMTest:TetrAMM:PosX:Reset.DOL8 0
+quadEMTest:TetrAMM:PosX:Reset.STR8 0
+quadEMTest:TetrAMM:PosX:Reset.DO8 0
+quadEMTest:TetrAMM:PosX:Reset.LNK8 quadEMTest:TetrAMM:PosX:MinX PP MS
+quadEMTest:TetrAMM:PosX:Reset.WAIT8 0
+quadEMTest:TetrAMM:PosX:Reset.DLY9 0
+quadEMTest:TetrAMM:PosX:Reset.DOL9 0
+quadEMTest:TetrAMM:PosX:Reset.STR9 0
+quadEMTest:TetrAMM:PosX:Reset.DO9 0
+quadEMTest:TetrAMM:PosX:Reset.LNK9 quadEMTest:TetrAMM:PosX:MinY PP MS
+quadEMTest:TetrAMM:PosX:Reset.WAIT9 0
+quadEMTest:TetrAMM:PosX:Reset.DLYA 0
+quadEMTest:TetrAMM:PosX:Reset.DOLA 0
+quadEMTest:TetrAMM:PosX:Reset.STRA 0
+quadEMTest:TetrAMM:PosX:Reset.DOA 0
+quadEMTest:TetrAMM:PosX:Reset.LNKA quadEMTest:TetrAMM:PosX:MaxX PP MS
+quadEMTest:TetrAMM:PosX:Reset.WAITA 0
+quadEMTest:TetrAMM:PosX:Reset.FLNK quadEMTest:TetrAMM:PosX:Reset1
+quadEMTest:TetrAMM:PosX:Reset.SELL 
+quadEMTest:TetrAMM:PosX:Reset.SELN 1
+quadEMTest:TetrAMM:PosX:Reset.SELM 0
+quadEMTest:TetrAMM:PosX:Reset1.SCAN 0
+quadEMTest:TetrAMM:PosX:Reset1.DESC 
+quadEMTest:TetrAMM:PosX:Reset1.PREC 0
+quadEMTest:TetrAMM:PosX:Reset1.DLY1 0
+quadEMTest:TetrAMM:PosX:Reset1.DOL1 0
+quadEMTest:TetrAMM:PosX:Reset1.STR1 0
+quadEMTest:TetrAMM:PosX:Reset1.DO1 0
+quadEMTest:TetrAMM:PosX:Reset1.LNK1 quadEMTest:TetrAMM:PosX:MaxY PP MS
+quadEMTest:TetrAMM:PosX:Reset1.WAIT1 0
+quadEMTest:TetrAMM:PosX:Reset1.DLY2 0
+quadEMTest:TetrAMM:PosX:Reset1.DOL2 0
+quadEMTest:TetrAMM:PosX:Reset1.STR2 0
+quadEMTest:TetrAMM:PosX:Reset1.DO2 0
+quadEMTest:TetrAMM:PosX:Reset1.LNK2 quadEMTest:TetrAMM:PosX:CentroidX PP MS
+quadEMTest:TetrAMM:PosX:Reset1.WAIT2 0
+quadEMTest:TetrAMM:PosX:Reset1.DLY3 0
+quadEMTest:TetrAMM:PosX:Reset1.DOL3 0
+quadEMTest:TetrAMM:PosX:Reset1.STR3 0
+quadEMTest:TetrAMM:PosX:Reset1.DO3 0
+quadEMTest:TetrAMM:PosX:Reset1.LNK3 quadEMTest:TetrAMM:PosX:CentroidY PP MS
+quadEMTest:TetrAMM:PosX:Reset1.WAIT3 0
+quadEMTest:TetrAMM:PosX:Reset1.DLY4 0
+quadEMTest:TetrAMM:PosX:Reset1.DOL4 0
+quadEMTest:TetrAMM:PosX:Reset1.STR4 0
+quadEMTest:TetrAMM:PosX:Reset1.DO4 0
+quadEMTest:TetrAMM:PosX:Reset1.LNK4 quadEMTest:TetrAMM:PosX:SigmaX PP MS
+quadEMTest:TetrAMM:PosX:Reset1.WAIT4 0
+quadEMTest:TetrAMM:PosX:Reset1.DLY5 0
+quadEMTest:TetrAMM:PosX:Reset1.DOL5 0
+quadEMTest:TetrAMM:PosX:Reset1.STR5 0
+quadEMTest:TetrAMM:PosX:Reset1.DO5 0
+quadEMTest:TetrAMM:PosX:Reset1.LNK5 quadEMTest:TetrAMM:PosX:SigmaY PP MS
+quadEMTest:TetrAMM:PosX:Reset1.WAIT5 0
+quadEMTest:TetrAMM:PosX:Reset1.DLY6 0
+quadEMTest:TetrAMM:PosX:Reset1.DOL6 0
+quadEMTest:TetrAMM:PosX:Reset1.STR6 0
+quadEMTest:TetrAMM:PosX:Reset1.DO6 0
+quadEMTest:TetrAMM:PosX:Reset1.LNK6 quadEMTest:TetrAMM:PosX:SigmaXY PP MS
+quadEMTest:TetrAMM:PosX:Reset1.WAIT6 0
+quadEMTest:TetrAMM:PosX:Reset1.DLY7 0
+quadEMTest:TetrAMM:PosX:Reset1.DOL7 0
+quadEMTest:TetrAMM:PosX:Reset1.STR7 0
+quadEMTest:TetrAMM:PosX:Reset1.DO7 0
+quadEMTest:TetrAMM:PosX:Reset1.LNK7 quadEMTest:TetrAMM:PosX:HistEntropy PP 
+quadEMTest:TetrAMM:PosX:Reset1.WAIT7 0
+quadEMTest:TetrAMM:PosX:Reset1.DLY8 0
+quadEMTest:TetrAMM:PosX:Reset1.DOL8 
+quadEMTest:TetrAMM:PosX:Reset1.STR8 0
+quadEMTest:TetrAMM:PosX:Reset1.DO8 0
+quadEMTest:TetrAMM:PosX:Reset1.LNK8 
+quadEMTest:TetrAMM:PosX:Reset1.WAIT8 0
+quadEMTest:TetrAMM:PosX:Reset1.DLY9 0
+quadEMTest:TetrAMM:PosX:Reset1.DOL9 
+quadEMTest:TetrAMM:PosX:Reset1.STR9 0
+quadEMTest:TetrAMM:PosX:Reset1.DO9 0
+quadEMTest:TetrAMM:PosX:Reset1.LNK9 
+quadEMTest:TetrAMM:PosX:Reset1.WAIT9 0
+quadEMTest:TetrAMM:PosX:Reset1.DLYA 0
+quadEMTest:TetrAMM:PosX:Reset1.DOLA 
+quadEMTest:TetrAMM:PosX:Reset1.STRA 0
+quadEMTest:TetrAMM:PosX:Reset1.DOA 0
+quadEMTest:TetrAMM:PosX:Reset1.LNKA 
+quadEMTest:TetrAMM:PosX:Reset1.WAITA 0
+quadEMTest:TetrAMM:PosX:Reset1.FLNK 0
+quadEMTest:TetrAMM:PosX:Reset1.SELL 
+quadEMTest:TetrAMM:PosX:Reset1.SELN 1
+quadEMTest:TetrAMM:PosX:Reset1.SELM 0
+quadEMTest:TetrAMM:PosY:BgdWidth 1
+quadEMTest:TetrAMM:PosY:ComputeStatistics 1
+quadEMTest:TetrAMM:PosY:ComputeCentroid 0
+quadEMTest:TetrAMM:PosY:CentroidThreshold 1
+quadEMTest:TetrAMM:PosY:ComputeProfiles 0
+quadEMTest:TetrAMM:PosY:CursorX 256
+quadEMTest:TetrAMM:PosY:CursorY 256
+quadEMTest:TetrAMM:PosY:ComputeHistogram 0
+quadEMTest:TetrAMM:PosY:HistSize 256
+quadEMTest:TetrAMM:PosY:HistMin 0
+quadEMTest:TetrAMM:PosY:HistMax 255
+quadEMTest:TetrAMM:PosY:TSNumPoints 2048
+quadEMTest:TetrAMM:PosY:TSRead.SCAN 6
+quadEMTest:TetrAMM:PosY:NDArrayPort TetrAMM
+quadEMTest:TetrAMM:PosY:NDArrayAddress 10
+quadEMTest:TetrAMM:PosY:EnableCallbacks 1
+quadEMTest:TetrAMM:PosY:MinCallbackTime 0
+quadEMTest:TetrAMM:PosY:BlockingCallbacks 0
+quadEMTest:TetrAMM:PosY:QueueSize 20
+quadEMTest:TetrAMM:PosY:DataType 1
+quadEMTest:TetrAMM:PosY:ColorMode 0
+quadEMTest:TetrAMM:PosY:ArrayCallbacks 1
+quadEMTest:TetrAMM:PosY:NDAttributesFile 
+quadEMTest:TetrAMM:PosY:PoolUsedMem.SCAN 6
+quadEMTest:TetrAMM:PosY:Reset.SCAN 0
+quadEMTest:TetrAMM:PosY:Reset.DESC 
+quadEMTest:TetrAMM:PosY:Reset.PREC 0
+quadEMTest:TetrAMM:PosY:Reset.DLY1 0
+quadEMTest:TetrAMM:PosY:Reset.DOL1 0
+quadEMTest:TetrAMM:PosY:Reset.STR1 0
+quadEMTest:TetrAMM:PosY:Reset.DO1 0
+quadEMTest:TetrAMM:PosY:Reset.LNK1 quadEMTest:TetrAMM:PosY:MinValue PP MS
+quadEMTest:TetrAMM:PosY:Reset.WAIT1 0
+quadEMTest:TetrAMM:PosY:Reset.DLY2 0
+quadEMTest:TetrAMM:PosY:Reset.DOL2 0
+quadEMTest:TetrAMM:PosY:Reset.STR2 0
+quadEMTest:TetrAMM:PosY:Reset.DO2 0
+quadEMTest:TetrAMM:PosY:Reset.LNK2 quadEMTest:TetrAMM:PosY:MaxValue PP MS
+quadEMTest:TetrAMM:PosY:Reset.WAIT2 0
+quadEMTest:TetrAMM:PosY:Reset.DLY3 0
+quadEMTest:TetrAMM:PosY:Reset.DOL3 0
+quadEMTest:TetrAMM:PosY:Reset.STR3 0
+quadEMTest:TetrAMM:PosY:Reset.DO3 0
+quadEMTest:TetrAMM:PosY:Reset.LNK3 quadEMTest:TetrAMM:PosY:MaxValue PP MS
+quadEMTest:TetrAMM:PosY:Reset.WAIT3 0
+quadEMTest:TetrAMM:PosY:Reset.DLY4 0
+quadEMTest:TetrAMM:PosY:Reset.DOL4 0
+quadEMTest:TetrAMM:PosY:Reset.STR4 0
+quadEMTest:TetrAMM:PosY:Reset.DO4 0
+quadEMTest:TetrAMM:PosY:Reset.LNK4 quadEMTest:TetrAMM:PosY:MeanValue PP MS
+quadEMTest:TetrAMM:PosY:Reset.WAIT4 0
+quadEMTest:TetrAMM:PosY:Reset.DLY5 0
+quadEMTest:TetrAMM:PosY:Reset.DOL5 0
+quadEMTest:TetrAMM:PosY:Reset.STR5 0
+quadEMTest:TetrAMM:PosY:Reset.DO5 0
+quadEMTest:TetrAMM:PosY:Reset.LNK5 quadEMTest:TetrAMM:PosY:SigmaValue PP M
+quadEMTest:TetrAMM:PosY:Reset.WAIT5 0
+quadEMTest:TetrAMM:PosY:Reset.DLY6 0
+quadEMTest:TetrAMM:PosY:Reset.DOL6 0
+quadEMTest:TetrAMM:PosY:Reset.STR6 0
+quadEMTest:TetrAMM:PosY:Reset.DO6 0
+quadEMTest:TetrAMM:PosY:Reset.LNK6 quadEMTest:TetrAMM:PosY:Total PP MS
+quadEMTest:TetrAMM:PosY:Reset.WAIT6 0
+quadEMTest:TetrAMM:PosY:Reset.DLY7 0
+quadEMTest:TetrAMM:PosY:Reset.DOL7 0
+quadEMTest:TetrAMM:PosY:Reset.STR7 0
+quadEMTest:TetrAMM:PosY:Reset.DO7 0
+quadEMTest:TetrAMM:PosY:Reset.LNK7 quadEMTest:TetrAMM:PosY:Net PP MS
+quadEMTest:TetrAMM:PosY:Reset.WAIT7 0
+quadEMTest:TetrAMM:PosY:Reset.DLY8 0
+quadEMTest:TetrAMM:PosY:Reset.DOL8 0
+quadEMTest:TetrAMM:PosY:Reset.STR8 0
+quadEMTest:TetrAMM:PosY:Reset.DO8 0
+quadEMTest:TetrAMM:PosY:Reset.LNK8 quadEMTest:TetrAMM:PosY:MinX PP MS
+quadEMTest:TetrAMM:PosY:Reset.WAIT8 0
+quadEMTest:TetrAMM:PosY:Reset.DLY9 0
+quadEMTest:TetrAMM:PosY:Reset.DOL9 0
+quadEMTest:TetrAMM:PosY:Reset.STR9 0
+quadEMTest:TetrAMM:PosY:Reset.DO9 0
+quadEMTest:TetrAMM:PosY:Reset.LNK9 quadEMTest:TetrAMM:PosY:MinY PP MS
+quadEMTest:TetrAMM:PosY:Reset.WAIT9 0
+quadEMTest:TetrAMM:PosY:Reset.DLYA 0
+quadEMTest:TetrAMM:PosY:Reset.DOLA 0
+quadEMTest:TetrAMM:PosY:Reset.STRA 0
+quadEMTest:TetrAMM:PosY:Reset.DOA 0
+quadEMTest:TetrAMM:PosY:Reset.LNKA quadEMTest:TetrAMM:PosY:MaxX PP MS
+quadEMTest:TetrAMM:PosY:Reset.WAITA 0
+quadEMTest:TetrAMM:PosY:Reset.FLNK quadEMTest:TetrAMM:PosY:Reset1
+quadEMTest:TetrAMM:PosY:Reset.SELL 
+quadEMTest:TetrAMM:PosY:Reset.SELN 1
+quadEMTest:TetrAMM:PosY:Reset.SELM 0
+quadEMTest:TetrAMM:PosY:Reset1.SCAN 0
+quadEMTest:TetrAMM:PosY:Reset1.DESC 
+quadEMTest:TetrAMM:PosY:Reset1.PREC 0
+quadEMTest:TetrAMM:PosY:Reset1.DLY1 0
+quadEMTest:TetrAMM:PosY:Reset1.DOL1 0
+quadEMTest:TetrAMM:PosY:Reset1.STR1 0
+quadEMTest:TetrAMM:PosY:Reset1.DO1 0
+quadEMTest:TetrAMM:PosY:Reset1.LNK1 quadEMTest:TetrAMM:PosY:MaxY PP MS
+quadEMTest:TetrAMM:PosY:Reset1.WAIT1 0
+quadEMTest:TetrAMM:PosY:Reset1.DLY2 0
+quadEMTest:TetrAMM:PosY:Reset1.DOL2 0
+quadEMTest:TetrAMM:PosY:Reset1.STR2 0
+quadEMTest:TetrAMM:PosY:Reset1.DO2 0
+quadEMTest:TetrAMM:PosY:Reset1.LNK2 quadEMTest:TetrAMM:PosY:CentroidX PP MS
+quadEMTest:TetrAMM:PosY:Reset1.WAIT2 0
+quadEMTest:TetrAMM:PosY:Reset1.DLY3 0
+quadEMTest:TetrAMM:PosY:Reset1.DOL3 0
+quadEMTest:TetrAMM:PosY:Reset1.STR3 0
+quadEMTest:TetrAMM:PosY:Reset1.DO3 0
+quadEMTest:TetrAMM:PosY:Reset1.LNK3 quadEMTest:TetrAMM:PosY:CentroidY PP MS
+quadEMTest:TetrAMM:PosY:Reset1.WAIT3 0
+quadEMTest:TetrAMM:PosY:Reset1.DLY4 0
+quadEMTest:TetrAMM:PosY:Reset1.DOL4 0
+quadEMTest:TetrAMM:PosY:Reset1.STR4 0
+quadEMTest:TetrAMM:PosY:Reset1.DO4 0
+quadEMTest:TetrAMM:PosY:Reset1.LNK4 quadEMTest:TetrAMM:PosY:SigmaX PP MS
+quadEMTest:TetrAMM:PosY:Reset1.WAIT4 0
+quadEMTest:TetrAMM:PosY:Reset1.DLY5 0
+quadEMTest:TetrAMM:PosY:Reset1.DOL5 0
+quadEMTest:TetrAMM:PosY:Reset1.STR5 0
+quadEMTest:TetrAMM:PosY:Reset1.DO5 0
+quadEMTest:TetrAMM:PosY:Reset1.LNK5 quadEMTest:TetrAMM:PosY:SigmaY PP MS
+quadEMTest:TetrAMM:PosY:Reset1.WAIT5 0
+quadEMTest:TetrAMM:PosY:Reset1.DLY6 0
+quadEMTest:TetrAMM:PosY:Reset1.DOL6 0
+quadEMTest:TetrAMM:PosY:Reset1.STR6 0
+quadEMTest:TetrAMM:PosY:Reset1.DO6 0
+quadEMTest:TetrAMM:PosY:Reset1.LNK6 quadEMTest:TetrAMM:PosY:SigmaXY PP MS
+quadEMTest:TetrAMM:PosY:Reset1.WAIT6 0
+quadEMTest:TetrAMM:PosY:Reset1.DLY7 0
+quadEMTest:TetrAMM:PosY:Reset1.DOL7 0
+quadEMTest:TetrAMM:PosY:Reset1.STR7 0
+quadEMTest:TetrAMM:PosY:Reset1.DO7 0
+quadEMTest:TetrAMM:PosY:Reset1.LNK7 quadEMTest:TetrAMM:PosY:HistEntropy PP 
+quadEMTest:TetrAMM:PosY:Reset1.WAIT7 0
+quadEMTest:TetrAMM:PosY:Reset1.DLY8 0
+quadEMTest:TetrAMM:PosY:Reset1.DOL8 
+quadEMTest:TetrAMM:PosY:Reset1.STR8 0
+quadEMTest:TetrAMM:PosY:Reset1.DO8 0
+quadEMTest:TetrAMM:PosY:Reset1.LNK8 
+quadEMTest:TetrAMM:PosY:Reset1.WAIT8 0
+quadEMTest:TetrAMM:PosY:Reset1.DLY9 0
+quadEMTest:TetrAMM:PosY:Reset1.DOL9 
+quadEMTest:TetrAMM:PosY:Reset1.STR9 0
+quadEMTest:TetrAMM:PosY:Reset1.DO9 0
+quadEMTest:TetrAMM:PosY:Reset1.LNK9 
+quadEMTest:TetrAMM:PosY:Reset1.WAIT9 0
+quadEMTest:TetrAMM:PosY:Reset1.DLYA 0
+quadEMTest:TetrAMM:PosY:Reset1.DOLA 
+quadEMTest:TetrAMM:PosY:Reset1.STRA 0
+quadEMTest:TetrAMM:PosY:Reset1.DOA 0
+quadEMTest:TetrAMM:PosY:Reset1.LNKA 
+quadEMTest:TetrAMM:PosY:Reset1.WAITA 0
+quadEMTest:TetrAMM:PosY:Reset1.FLNK 0
+quadEMTest:TetrAMM:PosY:Reset1.SELL 
+quadEMTest:TetrAMM:PosY:Reset1.SELN 1
+quadEMTest:TetrAMM:PosY:Reset1.SELM 0
+quadEMTest:TetrAMM:netCDF1:FilePath 
+quadEMTest:TetrAMM:netCDF1:FileName 
+quadEMTest:TetrAMM:netCDF1:FileNumber 0
+quadEMTest:TetrAMM:netCDF1:AutoIncrement 0
+quadEMTest:TetrAMM:netCDF1:FileTemplate 
+quadEMTest:TetrAMM:netCDF1:AutoSave 0
+quadEMTest:TetrAMM:netCDF1:FileFormat 0
+quadEMTest:TetrAMM:netCDF1:FileWriteMode 0
+quadEMTest:TetrAMM:netCDF1:NumCapture 1
+quadEMTest:TetrAMM:netCDF1:DeleteDriverFile 0
+quadEMTest:TetrAMM:netCDF1:CreateDirectory 0
+quadEMTest:TetrAMM:netCDF1:LazyOpen 0
+quadEMTest:TetrAMM:netCDF1:TempSuffix 
+quadEMTest:TetrAMM:netCDF1:NDArrayPort TetrAMM
+quadEMTest:TetrAMM:netCDF1:NDArrayAddress 11
+quadEMTest:TetrAMM:netCDF1:EnableCallbacks 0
+quadEMTest:TetrAMM:netCDF1:MinCallbackTime 0
+quadEMTest:TetrAMM:netCDF1:BlockingCallbacks 0
+quadEMTest:TetrAMM:netCDF1:QueueSize 20
+quadEMTest:TetrAMM:netCDF1:DataType 1
+quadEMTest:TetrAMM:netCDF1:ColorMode 0
+quadEMTest:TetrAMM:netCDF1:ArrayCallbacks 0
+quadEMTest:TetrAMM:netCDF1:NDAttributesFile 
+quadEMTest:TetrAMM:netCDF1:PoolUsedMem.SCAN 6
+quadEMTest:TetrAMM:image1:NDArrayPort TetrAMM
+quadEMTest:TetrAMM:image1:NDArrayAddress 11
+quadEMTest:TetrAMM:image1:EnableCallbacks 0
+quadEMTest:TetrAMM:image1:MinCallbackTime 0
+quadEMTest:TetrAMM:image1:BlockingCallbacks 0
+quadEMTest:TetrAMM:image1:QueueSize 20
+quadEMTest:TetrAMM:image1:DataType 1
+quadEMTest:TetrAMM:image1:ColorMode 0
+quadEMTest:TetrAMM:image1:ArrayCallbacks 0
+quadEMTest:TetrAMM:image1:NDAttributesFile 
+quadEMTest:TetrAMM:image1:PoolUsedMem.SCAN 6
+quadEMTest:TetrAMM:TS:TSNumPoints 2048
+quadEMTest:TetrAMM:TS:TSAveragingTime 0.1
+quadEMTest:TetrAMM:TS:TSRead.SCAN 6
+quadEMTest:TetrAMM:TS:TSAcquireMode 0
+quadEMTest:TetrAMM:TS:NDArrayPort TetrAMM
+quadEMTest:TetrAMM:TS:NDArrayAddress 11
+quadEMTest:TetrAMM:TS:EnableCallbacks 1
+quadEMTest:TetrAMM:TS:MinCallbackTime 0
+quadEMTest:TetrAMM:TS:BlockingCallbacks 0
+quadEMTest:TetrAMM:TS:QueueSize 20
+quadEMTest:TetrAMM:TS:DataType 1
+quadEMTest:TetrAMM:TS:ColorMode 0
+quadEMTest:TetrAMM:TS:ArrayCallbacks 1
+quadEMTest:TetrAMM:TS:NDAttributesFile 
+quadEMTest:TetrAMM:TS:PoolUsedMem.SCAN 6
+quadEMTest:TetrAMM:TS:Current1:Name Current1
+quadEMTest:TetrAMM:TS:Current2:Name Current2
+quadEMTest:TetrAMM:TS:Current3:Name Current3
+quadEMTest:TetrAMM:TS:Current4:Name Current4
+quadEMTest:TetrAMM:TS:SumX:Name SumX
+quadEMTest:TetrAMM:TS:SumY:Name SumY
+quadEMTest:TetrAMM:TS:SumAll:Name SumAll
+quadEMTest:TetrAMM:TS:DiffX:Name DiffX
+quadEMTest:TetrAMM:TS:DiffY:Name DiffY
+quadEMTest:TetrAMM:TS:PosX:Name PosX
+quadEMTest:TetrAMM:TS:PosY:Name PosY
+quadEMTest:TetrAMM:FFT:Current1:NDArrayPort TS1
+quadEMTest:TetrAMM:FFT:Current1:NDArrayAddress 0
+quadEMTest:TetrAMM:FFT:Current1:EnableCallbacks 1
+quadEMTest:TetrAMM:FFT:Current1:MinCallbackTime 0
+quadEMTest:TetrAMM:FFT:Current1:BlockingCallbacks 0
+quadEMTest:TetrAMM:FFT:Current1:QueueSize 20
+quadEMTest:TetrAMM:FFT:Current1:DataType 1
+quadEMTest:TetrAMM:FFT:Current1:ColorMode 0
+quadEMTest:TetrAMM:FFT:Current1:ArrayCallbacks 1
+quadEMTest:TetrAMM:FFT:Current1:NDAttributesFile 
+quadEMTest:TetrAMM:FFT:Current1:PoolUsedMem.SCAN 6
+quadEMTest:TetrAMM:FFT:Current1:FFTDirection 0
+quadEMTest:TetrAMM:FFT:Current1:FFTSuppressDC 0
+quadEMTest:TetrAMM:FFT:Current1:FFTNumAverage 1
+quadEMTest:TetrAMM:FFT:Current1:Name Current1
+quadEMTest:TetrAMM:FFT:Current2:NDArrayPort TS1
+quadEMTest:TetrAMM:FFT:Current2:NDArrayAddress 1
+quadEMTest:TetrAMM:FFT:Current2:EnableCallbacks 1
+quadEMTest:TetrAMM:FFT:Current2:MinCallbackTime 0
+quadEMTest:TetrAMM:FFT:Current2:BlockingCallbacks 0
+quadEMTest:TetrAMM:FFT:Current2:QueueSize 20
+quadEMTest:TetrAMM:FFT:Current2:DataType 1
+quadEMTest:TetrAMM:FFT:Current2:ColorMode 0
+quadEMTest:TetrAMM:FFT:Current2:ArrayCallbacks 1
+quadEMTest:TetrAMM:FFT:Current2:NDAttributesFile 
+quadEMTest:TetrAMM:FFT:Current2:PoolUsedMem.SCAN 6
+quadEMTest:TetrAMM:FFT:Current2:FFTDirection 0
+quadEMTest:TetrAMM:FFT:Current2:FFTSuppressDC 0
+quadEMTest:TetrAMM:FFT:Current2:FFTNumAverage 1
+quadEMTest:TetrAMM:FFT:Current2:Name Current2
+quadEMTest:TetrAMM:FFT:Current3:NDArrayPort TS1
+quadEMTest:TetrAMM:FFT:Current3:NDArrayAddress 2
+quadEMTest:TetrAMM:FFT:Current3:EnableCallbacks 1
+quadEMTest:TetrAMM:FFT:Current3:MinCallbackTime 0
+quadEMTest:TetrAMM:FFT:Current3:BlockingCallbacks 0
+quadEMTest:TetrAMM:FFT:Current3:QueueSize 20
+quadEMTest:TetrAMM:FFT:Current3:DataType 1
+quadEMTest:TetrAMM:FFT:Current3:ColorMode 0
+quadEMTest:TetrAMM:FFT:Current3:ArrayCallbacks 1
+quadEMTest:TetrAMM:FFT:Current3:NDAttributesFile 
+quadEMTest:TetrAMM:FFT:Current3:PoolUsedMem.SCAN 6
+quadEMTest:TetrAMM:FFT:Current3:FFTDirection 0
+quadEMTest:TetrAMM:FFT:Current3:FFTSuppressDC 0
+quadEMTest:TetrAMM:FFT:Current3:FFTNumAverage 1
+quadEMTest:TetrAMM:FFT:Current3:Name Current3
+quadEMTest:TetrAMM:FFT:Current4:NDArrayPort TS1
+quadEMTest:TetrAMM:FFT:Current4:NDArrayAddress 3
+quadEMTest:TetrAMM:FFT:Current4:EnableCallbacks 1
+quadEMTest:TetrAMM:FFT:Current4:MinCallbackTime 0
+quadEMTest:TetrAMM:FFT:Current4:BlockingCallbacks 0
+quadEMTest:TetrAMM:FFT:Current4:QueueSize 20
+quadEMTest:TetrAMM:FFT:Current4:DataType 1
+quadEMTest:TetrAMM:FFT:Current4:ColorMode 0
+quadEMTest:TetrAMM:FFT:Current4:ArrayCallbacks 1
+quadEMTest:TetrAMM:FFT:Current4:NDAttributesFile 
+quadEMTest:TetrAMM:FFT:Current4:PoolUsedMem.SCAN 6
+quadEMTest:TetrAMM:FFT:Current4:FFTDirection 0
+quadEMTest:TetrAMM:FFT:Current4:FFTSuppressDC 0
+quadEMTest:TetrAMM:FFT:Current4:FFTNumAverage 1
+quadEMTest:TetrAMM:FFT:Current4:Name Current4
+quadEMTest:TetrAMM:FFT:SumX:NDArrayPort TS1
+quadEMTest:TetrAMM:FFT:SumX:NDArrayAddress 4
+quadEMTest:TetrAMM:FFT:SumX:EnableCallbacks 1
+quadEMTest:TetrAMM:FFT:SumX:MinCallbackTime 0
+quadEMTest:TetrAMM:FFT:SumX:BlockingCallbacks 0
+quadEMTest:TetrAMM:FFT:SumX:QueueSize 20
+quadEMTest:TetrAMM:FFT:SumX:DataType 1
+quadEMTest:TetrAMM:FFT:SumX:ColorMode 0
+quadEMTest:TetrAMM:FFT:SumX:ArrayCallbacks 1
+quadEMTest:TetrAMM:FFT:SumX:NDAttributesFile 
+quadEMTest:TetrAMM:FFT:SumX:PoolUsedMem.SCAN 6
+quadEMTest:TetrAMM:FFT:SumX:FFTDirection 0
+quadEMTest:TetrAMM:FFT:SumX:FFTSuppressDC 0
+quadEMTest:TetrAMM:FFT:SumX:FFTNumAverage 1
+quadEMTest:TetrAMM:FFT:SumX:Name SumX
+quadEMTest:TetrAMM:FFT:SumY:NDArrayPort TS1
+quadEMTest:TetrAMM:FFT:SumY:NDArrayAddress 5
+quadEMTest:TetrAMM:FFT:SumY:EnableCallbacks 1
+quadEMTest:TetrAMM:FFT:SumY:MinCallbackTime 0
+quadEMTest:TetrAMM:FFT:SumY:BlockingCallbacks 0
+quadEMTest:TetrAMM:FFT:SumY:QueueSize 20
+quadEMTest:TetrAMM:FFT:SumY:DataType 1
+quadEMTest:TetrAMM:FFT:SumY:ColorMode 0
+quadEMTest:TetrAMM:FFT:SumY:ArrayCallbacks 1
+quadEMTest:TetrAMM:FFT:SumY:NDAttributesFile 
+quadEMTest:TetrAMM:FFT:SumY:PoolUsedMem.SCAN 6
+quadEMTest:TetrAMM:FFT:SumY:FFTDirection 0
+quadEMTest:TetrAMM:FFT:SumY:FFTSuppressDC 0
+quadEMTest:TetrAMM:FFT:SumY:FFTNumAverage 1
+quadEMTest:TetrAMM:FFT:SumY:Name SumY
+quadEMTest:TetrAMM:FFT:SumAll:NDArrayPort TS1
+quadEMTest:TetrAMM:FFT:SumAll:NDArrayAddress 6
+quadEMTest:TetrAMM:FFT:SumAll:EnableCallbacks 1
+quadEMTest:TetrAMM:FFT:SumAll:MinCallbackTime 0
+quadEMTest:TetrAMM:FFT:SumAll:BlockingCallbacks 0
+quadEMTest:TetrAMM:FFT:SumAll:QueueSize 20
+quadEMTest:TetrAMM:FFT:SumAll:DataType 1
+quadEMTest:TetrAMM:FFT:SumAll:ColorMode 0
+quadEMTest:TetrAMM:FFT:SumAll:ArrayCallbacks 1
+quadEMTest:TetrAMM:FFT:SumAll:NDAttributesFile 
+quadEMTest:TetrAMM:FFT:SumAll:PoolUsedMem.SCAN 6
+quadEMTest:TetrAMM:FFT:SumAll:FFTDirection 0
+quadEMTest:TetrAMM:FFT:SumAll:FFTSuppressDC 0
+quadEMTest:TetrAMM:FFT:SumAll:FFTNumAverage 1
+quadEMTest:TetrAMM:FFT:SumAll:Name SumAll
+quadEMTest:TetrAMM:FFT:DiffX:NDArrayPort TS1
+quadEMTest:TetrAMM:FFT:DiffX:NDArrayAddress 7
+quadEMTest:TetrAMM:FFT:DiffX:EnableCallbacks 1
+quadEMTest:TetrAMM:FFT:DiffX:MinCallbackTime 0
+quadEMTest:TetrAMM:FFT:DiffX:BlockingCallbacks 0
+quadEMTest:TetrAMM:FFT:DiffX:QueueSize 20
+quadEMTest:TetrAMM:FFT:DiffX:DataType 1
+quadEMTest:TetrAMM:FFT:DiffX:ColorMode 0
+quadEMTest:TetrAMM:FFT:DiffX:ArrayCallbacks 1
+quadEMTest:TetrAMM:FFT:DiffX:NDAttributesFile 
+quadEMTest:TetrAMM:FFT:DiffX:PoolUsedMem.SCAN 6
+quadEMTest:TetrAMM:FFT:DiffX:FFTDirection 0
+quadEMTest:TetrAMM:FFT:DiffX:FFTSuppressDC 0
+quadEMTest:TetrAMM:FFT:DiffX:FFTNumAverage 1
+quadEMTest:TetrAMM:FFT:DiffX:Name DiffX
+quadEMTest:TetrAMM:FFT:DiffY:NDArrayPort TS1
+quadEMTest:TetrAMM:FFT:DiffY:NDArrayAddress 8
+quadEMTest:TetrAMM:FFT:DiffY:EnableCallbacks 1
+quadEMTest:TetrAMM:FFT:DiffY:MinCallbackTime 0
+quadEMTest:TetrAMM:FFT:DiffY:BlockingCallbacks 0
+quadEMTest:TetrAMM:FFT:DiffY:QueueSize 20
+quadEMTest:TetrAMM:FFT:DiffY:DataType 1
+quadEMTest:TetrAMM:FFT:DiffY:ColorMode 0
+quadEMTest:TetrAMM:FFT:DiffY:ArrayCallbacks 1
+quadEMTest:TetrAMM:FFT:DiffY:NDAttributesFile 
+quadEMTest:TetrAMM:FFT:DiffY:PoolUsedMem.SCAN 6
+quadEMTest:TetrAMM:FFT:DiffY:FFTDirection 0
+quadEMTest:TetrAMM:FFT:DiffY:FFTSuppressDC 0
+quadEMTest:TetrAMM:FFT:DiffY:FFTNumAverage 1
+quadEMTest:TetrAMM:FFT:DiffY:Name DiffY
+quadEMTest:TetrAMM:FFT:PosX:NDArrayPort TS1
+quadEMTest:TetrAMM:FFT:PosX:NDArrayAddress 9
+quadEMTest:TetrAMM:FFT:PosX:EnableCallbacks 1
+quadEMTest:TetrAMM:FFT:PosX:MinCallbackTime 0
+quadEMTest:TetrAMM:FFT:PosX:BlockingCallbacks 0
+quadEMTest:TetrAMM:FFT:PosX:QueueSize 20
+quadEMTest:TetrAMM:FFT:PosX:DataType 1
+quadEMTest:TetrAMM:FFT:PosX:ColorMode 0
+quadEMTest:TetrAMM:FFT:PosX:ArrayCallbacks 1
+quadEMTest:TetrAMM:FFT:PosX:NDAttributesFile 
+quadEMTest:TetrAMM:FFT:PosX:PoolUsedMem.SCAN 6
+quadEMTest:TetrAMM:FFT:PosX:FFTDirection 0
+quadEMTest:TetrAMM:FFT:PosX:FFTSuppressDC 0
+quadEMTest:TetrAMM:FFT:PosX:FFTNumAverage 1
+quadEMTest:TetrAMM:FFT:PosX:Name PosX
+quadEMTest:TetrAMM:FFT:PosY:NDArrayPort TS1
+quadEMTest:TetrAMM:FFT:PosY:NDArrayAddress 10
+quadEMTest:TetrAMM:FFT:PosY:EnableCallbacks 1
+quadEMTest:TetrAMM:FFT:PosY:MinCallbackTime 0
+quadEMTest:TetrAMM:FFT:PosY:BlockingCallbacks 0
+quadEMTest:TetrAMM:FFT:PosY:QueueSize 20
+quadEMTest:TetrAMM:FFT:PosY:DataType 1
+quadEMTest:TetrAMM:FFT:PosY:ColorMode 0
+quadEMTest:TetrAMM:FFT:PosY:ArrayCallbacks 1
+quadEMTest:TetrAMM:FFT:PosY:NDAttributesFile 
+quadEMTest:TetrAMM:FFT:PosY:PoolUsedMem.SCAN 6
+quadEMTest:TetrAMM:FFT:PosY:FFTDirection 0
+quadEMTest:TetrAMM:FFT:PosY:FFTSuppressDC 0
+quadEMTest:TetrAMM:FFT:PosY:FFTNumAverage 1
+quadEMTest:TetrAMM:FFT:PosY:Name PosY
+<END>

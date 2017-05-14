@@ -1,0 +1,13 @@
+file "db/motor.db"
+{
+pattern
+{P,              M,                     MOTOR,  PORT,  ADDR,  DESC,  DTYP,      MRES,   EGU,  PREC,  ALIAS }
+{"XF:16IDC-OP",  "{CRL-Ax:Z}Mtr",       "M0",   "P0",  1,     "Z",   asynMotor, "1.0",  "um", 3,     ""    }
+{"XF:16IDC-OP",  "{CRL-Ax:Z1}Mtr",      "M0",   "P0",  2,     "Z1",  asynMotor, "1.0",  "um", 3,     ""    }
+{"XF:16IDC-ES",  "{Stg:WAXS1-Ax:X}Mtr", "M0",   "P0",  3,     "X",   asynMotor, "1.0",  "um", 3,     ""    }
+{"XF:16IDC-ES",  "{Stg:WAXS1-Ax:Y}Mtr", "M0",   "P0",  4,     "Z",   asynMotor, "1.0",  "um", 3,     ""    }
+{"XF:16IDC-ES",  "{Stg:WAXS1-Ax:Z}Mtr", "M0",   "P0",  5,     "Y",   asynMotor, "1.0",  "um", 3,     ""    }
+{"XF:16IDC-ES",  "{Stg:WAXS2-Ax:X}Mtr", "M0",   "P0",  6,     "X",   asynMotor, "1.0",  "um", 3,     ""    }
+{"XF:16IDC-ES",  "{Stg:WAXS2-Ax:Y}Mtr", "M0",   "P0",  7,     "Y",   asynMotor, "1.0",  "um", 3,     ""    }
+{"XF:16IDC-ES",  "{Stg:WAXS2-Ax:Z}Mtr", "M0",   "P0",  8,     "Z",   asynMotor, "1.0",  "um", 3,     ""    }
+}

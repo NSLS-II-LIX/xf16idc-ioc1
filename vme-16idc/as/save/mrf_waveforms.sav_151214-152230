@@ -1,0 +1,7 @@
+# autosave R5.3	Automatically generated - DO NOT MODIFY - 151214-152117
+XF:16ID-TS{EVR:C1-Out:FP4}Pat:Wf-SP.VAL 
+XF:16ID-TS{EVR:C1-Out:FP5}Pat:Wf-SP.VAL 
+XF:16ID-TS{EVR:C1-Out:FP6}Pat:Wf-SP.VAL 
+XF:16ID-TS{EVR:C1}dbus:send:s8.VAL 
+XF:16ID-TS{EVR:C1}dbus:send:u32.VAL 0
+<END>

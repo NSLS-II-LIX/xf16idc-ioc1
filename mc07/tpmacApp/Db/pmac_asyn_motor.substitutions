@@ -1,0 +1,10 @@
+file "db/pmac_asyn_motor.db"
+{
+pattern
+{SYS,                  DEV,                   MOTOR,  SPORT,  ADDR,             DESC,         DTYP        PREC,  EGU}
+{"XF:16IDC-OP",        "{Slt:DDA-Ax:X}",      "M0",   "P0",   1,                "X",          asynMotor,  3,     "um"}
+{"XF:16IDC-OP",        "{Slt:DDA-Ax:Y}",      "M0",   "P0",   2,                "Y",          asynMotor,  3,     "um"}
+{"XF:16IDC-OP",        "{Slt:DDA-Ax:dX}",     "M0",   "P0",   3,                "dX",         asynMotor,  3,     "um"}
+{"XF:16IDC-OP",        "{Slt:DDA-Ax:dY}",     "M0",   "P0",   4,                "dY",         asynMotor,  3,     "um"}
+{"XF:16IDC-ES:InAir",  "{Mscp:1-Ax:Pol}",    "M0",   "P0",   7,                "polarizer",  asynMotor,  3,     "um"}
+}
