@@ -1,8 +1,8 @@
-# autosave R5.3	Automatically generated - DO NOT MODIFY - 170428-131837
+# autosave R5.3	Automatically generated - DO NOT MODIFY - 171214-130235
 XF:16IDC-CT{IOC:PI621}:ACCESS.VAL 0
 XF:16IDC-ES:InAir{Stg:ScanF-Ax:X}Mtr.DIR 0
-XF:16IDC-ES:InAir{Stg:ScanF-Ax:X}Mtr.DHLM 110
-XF:16IDC-ES:InAir{Stg:ScanF-Ax:X}Mtr.DLLM -5
+XF:16IDC-ES:InAir{Stg:ScanF-Ax:X}Mtr.DHLM 1100
+XF:16IDC-ES:InAir{Stg:ScanF-Ax:X}Mtr.DLLM -900
 XF:16IDC-ES:InAir{Stg:ScanF-Ax:X}Mtr.TWV 10
 XF:16IDC-ES:InAir{Stg:ScanF-Ax:X}Mtr.SREV 200
 XF:16IDC-ES:InAir{Stg:ScanF-Ax:X}Mtr.MRES 0.0001
@@ -27,7 +27,7 @@ XF:16IDC-ES:InAir{Stg:ScanF-Ax:X}Mtr.PREC 5
 XF:16IDC-ES:InAir{Stg:ScanF-Ax:X}Mtr.DISA 0
 XF:16IDC-ES:InAir{Stg:ScanF-Ax:X}Mtr.DISP 0
 XF:16IDC-ES:InAir{Stg:ScanF-Ax:X}Mtr.FOFF 0
-XF:16IDC-ES:InAir{Stg:ScanF-Ax:X}Mtr.OFF 0
+XF:16IDC-ES:InAir{Stg:ScanF-Ax:X}Mtr.OFF -100
 XF:16IDC-ES:InAir{Stg:ScanF-Ax:X}Mtr.FRAC 1
 XF:16IDC-ES:InAir{Stg:ScanF-Ax:X}Mtr.OMSL 0
 XF:16IDC-ES:InAir{Stg:ScanF-Ax:X}Mtr.JVEL 2
@@ -39,8 +39,8 @@ XF:16IDC-ES:InAir{Stg:ScanF-Ax:X}Mtr.HVEL 2
 XF:16IDC-ES:InAir{Stg:ScanF-Ax:X}Mtr.NTM 0
 XF:16IDC-ES:InAir{Stg:ScanF-Ax:X}Mtr.NTMF 2
 XF:16IDC-ES:InAir{Stg:ScanF-Ax:Y}Mtr.DIR 0
-XF:16IDC-ES:InAir{Stg:ScanF-Ax:Y}Mtr.DHLM 120
-XF:16IDC-ES:InAir{Stg:ScanF-Ax:Y}Mtr.DLLM 0
+XF:16IDC-ES:InAir{Stg:ScanF-Ax:Y}Mtr.DHLM 1000
+XF:16IDC-ES:InAir{Stg:ScanF-Ax:Y}Mtr.DLLM -1000
 XF:16IDC-ES:InAir{Stg:ScanF-Ax:Y}Mtr.TWV 1
 XF:16IDC-ES:InAir{Stg:ScanF-Ax:Y}Mtr.SREV 200
 XF:16IDC-ES:InAir{Stg:ScanF-Ax:Y}Mtr.MRES 0.0001
@@ -65,7 +65,7 @@ XF:16IDC-ES:InAir{Stg:ScanF-Ax:Y}Mtr.PREC 5
 XF:16IDC-ES:InAir{Stg:ScanF-Ax:Y}Mtr.DISA 0
 XF:16IDC-ES:InAir{Stg:ScanF-Ax:Y}Mtr.DISP 0
 XF:16IDC-ES:InAir{Stg:ScanF-Ax:Y}Mtr.FOFF 0
-XF:16IDC-ES:InAir{Stg:ScanF-Ax:Y}Mtr.OFF -61.8535
+XF:16IDC-ES:InAir{Stg:ScanF-Ax:Y}Mtr.OFF 0
 XF:16IDC-ES:InAir{Stg:ScanF-Ax:Y}Mtr.FRAC 1
 XF:16IDC-ES:InAir{Stg:ScanF-Ax:Y}Mtr.OMSL 0
 XF:16IDC-ES:InAir{Stg:ScanF-Ax:Y}Mtr.JVEL 2

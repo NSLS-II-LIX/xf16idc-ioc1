@@ -1,1 +1,1 @@
- swapped Z and Y Ax4 and Ax5 in motor.substitutions
+Add PMAC configuration file

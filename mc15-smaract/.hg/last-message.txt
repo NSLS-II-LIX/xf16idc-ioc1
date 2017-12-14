@@ -1,1 +1,1 @@
-Initial Commit
+Change to st.cmd and motor.substitutions

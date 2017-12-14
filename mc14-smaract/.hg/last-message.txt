@@ -1,1 +1,1 @@
-Smaract MCS BPM2:Y (C Hutch)
+Change to motor.substitutions

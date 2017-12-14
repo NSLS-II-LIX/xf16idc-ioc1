@@ -2,9 +2,8 @@ file "$(TOP)/db/basic_asyn_motor.db"
 {
 pattern
 {P,                  M,                 PORT, ADDR,  DESC,          DTYPE,      EGU,   MRES}
-{"XF:16IDC-ES:Sol", "{Enc-Ax:Y}Mtr",   MCB4B1,  0, "enclosure y",  asynMotor, "mm",   "4.2061e-4" }
-#{"XF:16IDC-ES:Sol", "{Enc-Ax:Y}Mtr",   MCB4B1,  0, "enclosure y",  asynMotor, "mm",   "0.01" }
-{"XF:16IDC-ES:Sol", "{Enc-Ax:Xu}Mtr",  MCB4B1,  1, "upper x",      asynMotor, "mm",   "4.763e-4" }
-{"XF:16IDC-ES:Sol", "{Enc-Ax:Xl}Mtr",  MCB4B1,  2, "lower x",      asynMotor, "mm",   "3.969e-3" }
-{"XF:16IDC-ES:Sol", "m3",  MCB4B1,  3, "TBD",            asynMotor, "mm",   "0.01" }
+{"XF:16IDC-ES:Sol", "{Enc-Ax:Xu}Mtr",  MCB4B1,  0, "upper x",      asynMotor, "mm",   "4.763e-4" }
+{"XF:16IDC-ES:Sol", "{Enc-Ax:Xl}Mtr",  MCB4B1,  1, "lower x",      asynMotor, "mm",   "3.969e-3" }
+{"XF:16IDC-ES:InAir", "{Mscp:1-Ax:Rx}Mtr",  MCB4B1,  2, "microscope tilt x",   asynMotor, "deg",   "6.392e-5" }
+{"XF:16IDC-ES:InAir", "{Mscp:1-Ax:Ry}Mtr",  MCB4B1,  3, "microscope tilt y",   asynMotor, "deg",   "6.392e-4" }
 }

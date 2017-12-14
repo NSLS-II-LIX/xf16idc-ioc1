@@ -23,7 +23,7 @@ asynSetTraceIOMask("PISerial_1",0,2)
 asynSetTraceMask("PISerial_1",0,9)
 
 # PIE816Setup("Max. controller count", "Polling rate")
-PIE816Setup(1, 5)
+PIE816Setup(1, 60)
 # PIE816Config("Card being configured", "asyn port name", "asyn address")
 PIE816Config(0, "PISerial_1", 0)
 PIE816Config(1, "PISerial_1", 0)

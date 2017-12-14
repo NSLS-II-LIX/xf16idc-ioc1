@@ -1,1 +1,1 @@
-substitution for R1, R2, R3. Still to be verified
+Add PMAC configuration file

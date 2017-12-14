@@ -1,1 +1,1 @@
-Add G2 Slits
+Add PMAC configuration file

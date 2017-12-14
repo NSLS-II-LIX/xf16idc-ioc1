@@ -1,5 +1,5 @@
-# autosave R5.3	Automatically generated - DO NOT MODIFY - 170428-131832
-XF:16IDC-ES{Det:Sat}:PollTime 0.01
+# autosave R5.3	Automatically generated - DO NOT MODIFY - 171214-125210
+XF:16IDC-ES{Det:Sat}:PollTime 1
 XF:16IDC-ES{Det:Sat}:NumSCAs 16
 XF:16IDC-ES{Det:Sat}:SaveSystemFile 0
 XF:16IDC-ES{Det:Sat}:dxp1:PeakingTime 2
@@ -18,7 +18,7 @@ XF:16IDC-ES{Det:Sat}:dxp1:DetectorPolarity 1
 XF:16IDC-ES{Det:Sat}:dxp1:ResetDelay 10
 XF:16IDC-ES{Det:Sat}:dxp1:DecayTime 50
 XF:16IDC-ES{Det:Sat}:dxp1:GapTime 1
-XF:16IDC-ES{Det:Sat}:dxp1:TriggerPeakingTime 1
+XF:16IDC-ES{Det:Sat}:dxp1:TriggerPeakingTime 0.1
 XF:16IDC-ES{Det:Sat}:dxp1:TriggerGapTime 1
 XF:16IDC-ES{Det:Sat}:dxp1:MaxWidth 4
 XF:16IDC-ES{Det:Sat}:dxp1:PresetMode 1
@@ -40,14 +40,14 @@ XF:16IDC-ES{Det:Sat}:mca1.DWEL 1
 XF:16IDC-ES{Det:Sat}:mca1.PSCL 1
 XF:16IDC-ES{Det:Sat}:mca1.CHAS 0
 XF:16IDC-ES{Det:Sat}:mca1.MODE 0
-XF:16IDC-ES{Det:Sat}:mca1.R0LO 600
-XF:16IDC-ES{Det:Sat}:mca1.R0HI 633
+XF:16IDC-ES{Det:Sat}:mca1.R0LO 800
+XF:16IDC-ES{Det:Sat}:mca1.R0HI 865
 XF:16IDC-ES{Det:Sat}:mca1.R0IP 0
 XF:16IDC-ES{Det:Sat}:mca1.R0P 0
 XF:16IDC-ES{Det:Sat}:mca1.R0BG 0
 XF:16IDC-ES{Det:Sat}:mca1.R0NM 
-XF:16IDC-ES{Det:Sat}:mca1.R1LO 680
-XF:16IDC-ES{Det:Sat}:mca1.R1HI 750
+XF:16IDC-ES{Det:Sat}:mca1.R1LO 880
+XF:16IDC-ES{Det:Sat}:mca1.R1HI 1000
 XF:16IDC-ES{Det:Sat}:mca1.R1IP 0
 XF:16IDC-ES{Det:Sat}:mca1.R1P 0
 XF:16IDC-ES{Det:Sat}:mca1.R1BG 0

@@ -1,1 +1,1 @@
-Add geobrick backup file
+Add PMAC configuration file

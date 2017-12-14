@@ -8,7 +8,7 @@ data/tpmacApp/Db/motor.substitutions.i
 data/configure/RULES_DIRS.i
 data/tpmacApp/Db/motor.db.i
 data/st.cmd.i
-data/tpmacApp/Db/pmac_asyn_motor.substitutions.i
+data/tpmacApp/pmc/xf16idc-mc10-homing.substitutions.i
 data/configure/RULES.ioc.i
 data/tpmacApp/pmc/build/pip-delete-this-directory.txt.i
 data/tpmacApp/pmc/BRICK_M_variables.pmc.i
@@ -16,10 +16,11 @@ data/configure/RULES_PMC.i
 data/tpmacApp/Db/cs.substitutions.i
 data/tpmacApp/pmc/02-02-16-mc10-backup.CFG.i
 data/tpmacApp/Db/pmacStatus.substitutions.i
-data/tpmacApp/pmc/xf16idc-mc10-homing.substitutions.i
+data/tpmacApp/Db/pmac_asyn_motor.substitutions.i
 data/iocBoot/Makefile.i
 data/iocBoot/iocmtrctl/st.cmd.i
 data/.hgignore.i
+data/XF16IDC-MC10.CFG.i
 data/tpmacApp/src/Makefile.i
 data/tpmacApp/Makefile.i
 data/configure/Makefile.i

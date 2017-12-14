@@ -1,1 +1,1 @@
-added coarse scanning stage, and asyn module
+Add PMAC configuration file
