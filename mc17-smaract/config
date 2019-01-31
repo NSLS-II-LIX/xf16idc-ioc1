@@ -1,0 +1,4 @@
+NAME=mc17-smaract
+USER=softioc
+PORT=4092
+HOST=xf16idc-ioc1
