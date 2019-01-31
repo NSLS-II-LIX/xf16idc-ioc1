@@ -1,0 +1,8 @@
+epicsEnvSet("ARCH","linux-x86_64")
+epicsEnvSet("IOC","iocfts")
+epicsEnvSet("TOP","/epics/iocs/fts")
+epicsEnvSet("SUPPORT","/usr/lib/epics")
+epicsEnvSet("ASYN","/usr/lib/epics")
+epicsEnvSet("STREAM","/usr/lib/epics")
+epicsEnvSet("DEVIOCSTATS","/usr/lib/epics")
+epicsEnvSet("EPICS_BASE","/usr/lib/epics")

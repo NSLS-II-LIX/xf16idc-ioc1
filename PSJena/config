@@ -1,0 +1,4 @@
+NAME=PSJena
+USER=softioc
+PORT=4059
+HOST=xf16idc-ioc1

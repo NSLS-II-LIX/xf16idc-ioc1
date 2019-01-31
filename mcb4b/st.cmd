@@ -20,6 +20,7 @@ MCB4BCreateController("MCB4B1", "serial1", 4, 1000, 500)
 dbLoadTemplate "motor.substitutions.mcb4b"
 
 dbLoadRecords("$(ASYN)/db/asynRecord.db","P=XF:16IDC-ES:Sol,R=serial1,PORT=serial1,ADDR=0,OMAX=80,IMAX=80")
+#dbLoadRecords("$(ASYN)/db/asynRecord.db","P=IOC:,R=serial1,PORT=serial1,ADDR=0,OMAX=80,IMAX=80")
 
 iocInit
 

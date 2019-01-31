@@ -1,4 +1,4 @@
-# autosave R5.3	Automatically generated - DO NOT MODIFY - 171201-150953
+# autosave R5.3	Automatically generated - DO NOT MODIFY - 190129-105901
 XF:16IDC-ES{TETRAMM:1}Acquire 1
 XF:16IDC-ES{TETRAMM:1}AcquireMode 0
 XF:16IDC-ES{TETRAMM:1}Range 1
@@ -9,9 +9,9 @@ XF:16IDC-ES{TETRAMM:1}TriggerMode 0
 XF:16IDC-ES{TETRAMM:1}TriggerPolarity 0
 XF:16IDC-ES{TETRAMM:1}NumChannels 2
 XF:16IDC-ES{TETRAMM:1}Resolution 0
-XF:16IDC-ES{TETRAMM:1}BiasState 0
+XF:16IDC-ES{TETRAMM:1}BiasState 1
 XF:16IDC-ES{TETRAMM:1}BiasVoltage 10
-XF:16IDC-ES{TETRAMM:1}BiasInterlock 0
+XF:16IDC-ES{TETRAMM:1}BiasInterlock 1
 XF:16IDC-ES{TETRAMM:1}ValuesPerRead 5
 XF:16IDC-ES{TETRAMM:1}NumAcquire 1
 XF:16IDC-ES{TETRAMM:1}ReadFormat 0

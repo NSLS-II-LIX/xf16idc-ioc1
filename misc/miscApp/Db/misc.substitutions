@@ -1,0 +1,19 @@
+global { P="\$(P)" }
+
+file "ao.template" {
+pattern
+{ R                          }
+{ "{Misc-BeamCenter:X}"      }
+{ "{Misc-BeamCenter:Y}"      }
+{ "{Misc-BeamSize:X}"        }
+{ "{Misc-BeamSize:Y}"        }
+{ "{Misc-Hi2LoMagOffset:X}"  }
+{ "{Misc-Hi2LoMagOffset:Y}"  }
+{ "{Misc-AuxCursor1:X}"      }
+{ "{Misc-AuxCursor1:Y}"      }
+{ "{Misc-AuxCursor2:X}"      }
+{ "{Misc-AuxCursor2:Y}"      }
+{ "{Misc-AuxCursor3:X}"      }
+{ "{Misc-AuxCursor3:Y}"      }
+{ "{Misc-BeamFlux}"          }
+}

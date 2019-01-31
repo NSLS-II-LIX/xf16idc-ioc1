@@ -1,0 +1,9 @@
+record(ao, "$(P)$(R)") {
+    field(DTYP,"asynFloat64")
+    field(DOL, "$(INP) CP")
+    field(OMSL,"closed_loop")
+    field(OUT,"@asyn($(PORT) $(OFFSET))FLOAT32_LE")
+    field(PREC,"$(PREC)")
+    field(HOPR,"9999.9")
+    field(LOPR,"-9999.9")
+}

@@ -5,3 +5,14 @@ syntax: glob
 *.swp
 *.xlsx
 *.orig
+syntax: glob
+as$
+lib$
+O\.linux-x86$
+O\.linux-x86_64$
+/O\.Common$
+linux-x86_x64$
+bin$
+db$
+dbd$
+/envPaths$

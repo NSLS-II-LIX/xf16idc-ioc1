@@ -1,0 +1,4 @@
+NAME=bestcalc
+USER=softioc
+PORT=4056
+HOST=xf16idc-ioc1

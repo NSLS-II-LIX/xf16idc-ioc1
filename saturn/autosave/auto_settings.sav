@@ -1,4 +1,4 @@
-# autosave R5.3	Automatically generated - DO NOT MODIFY - 171214-130210
+# autosave R5.3	Automatically generated - DO NOT MODIFY - 190131-154938
 XF:16IDC-ES{Det:Sat}:PollTime 1
 XF:16IDC-ES{Det:Sat}:NumSCAs 16
 XF:16IDC-ES{Det:Sat}:SaveSystemFile 0
@@ -18,7 +18,7 @@ XF:16IDC-ES{Det:Sat}:dxp1:DetectorPolarity 1
 XF:16IDC-ES{Det:Sat}:dxp1:ResetDelay 10
 XF:16IDC-ES{Det:Sat}:dxp1:DecayTime 50
 XF:16IDC-ES{Det:Sat}:dxp1:GapTime 1
-XF:16IDC-ES{Det:Sat}:dxp1:TriggerPeakingTime 0.1
+XF:16IDC-ES{Det:Sat}:dxp1:TriggerPeakingTime 0.15
 XF:16IDC-ES{Det:Sat}:dxp1:TriggerGapTime 1
 XF:16IDC-ES{Det:Sat}:dxp1:MaxWidth 4
 XF:16IDC-ES{Det:Sat}:dxp1:PresetMode 1
@@ -40,32 +40,32 @@ XF:16IDC-ES{Det:Sat}:mca1.DWEL 1
 XF:16IDC-ES{Det:Sat}:mca1.PSCL 1
 XF:16IDC-ES{Det:Sat}:mca1.CHAS 0
 XF:16IDC-ES{Det:Sat}:mca1.MODE 0
-XF:16IDC-ES{Det:Sat}:mca1.R0LO 800
-XF:16IDC-ES{Det:Sat}:mca1.R0HI 865
+XF:16IDC-ES{Det:Sat}:mca1.R0LO 590
+XF:16IDC-ES{Det:Sat}:mca1.R0HI 640
 XF:16IDC-ES{Det:Sat}:mca1.R0IP 0
 XF:16IDC-ES{Det:Sat}:mca1.R0P 0
 XF:16IDC-ES{Det:Sat}:mca1.R0BG 0
-XF:16IDC-ES{Det:Sat}:mca1.R0NM 
-XF:16IDC-ES{Det:Sat}:mca1.R1LO 880
-XF:16IDC-ES{Det:Sat}:mca1.R1HI 1000
+XF:16IDC-ES{Det:Sat}:mca1.R0NM Au
+XF:16IDC-ES{Det:Sat}:mca1.R1LO 630
+XF:16IDC-ES{Det:Sat}:mca1.R1HI 720
 XF:16IDC-ES{Det:Sat}:mca1.R1IP 0
 XF:16IDC-ES{Det:Sat}:mca1.R1P 0
 XF:16IDC-ES{Det:Sat}:mca1.R1BG 0
-XF:16IDC-ES{Det:Sat}:mca1.R1NM 
-XF:16IDC-ES{Det:Sat}:mca1.R2LO -1
-XF:16IDC-ES{Det:Sat}:mca1.R2HI -1
+XF:16IDC-ES{Det:Sat}:mca1.R1NM Zn Kb
+XF:16IDC-ES{Det:Sat}:mca1.R2LO 0
+XF:16IDC-ES{Det:Sat}:mca1.R2HI 0
 XF:16IDC-ES{Det:Sat}:mca1.R2IP 0
 XF:16IDC-ES{Det:Sat}:mca1.R2P 0
 XF:16IDC-ES{Det:Sat}:mca1.R2BG 0
-XF:16IDC-ES{Det:Sat}:mca1.R2NM 
-XF:16IDC-ES{Det:Sat}:mca1.R3LO -1
-XF:16IDC-ES{Det:Sat}:mca1.R3HI -1
+XF:16IDC-ES{Det:Sat}:mca1.R2NM Fe K a
+XF:16IDC-ES{Det:Sat}:mca1.R3LO 0
+XF:16IDC-ES{Det:Sat}:mca1.R3HI 0
 XF:16IDC-ES{Det:Sat}:mca1.R3IP 0
 XF:16IDC-ES{Det:Sat}:mca1.R3P 0
 XF:16IDC-ES{Det:Sat}:mca1.R3BG 0
-XF:16IDC-ES{Det:Sat}:mca1.R3NM 
-XF:16IDC-ES{Det:Sat}:mca1.R4LO -1
-XF:16IDC-ES{Det:Sat}:mca1.R4HI -1
+XF:16IDC-ES{Det:Sat}:mca1.R3NM Fe K b
+XF:16IDC-ES{Det:Sat}:mca1.R4LO 0
+XF:16IDC-ES{Det:Sat}:mca1.R4HI 0
 XF:16IDC-ES{Det:Sat}:mca1.R4IP 0
 XF:16IDC-ES{Det:Sat}:mca1.R4P 0
 XF:16IDC-ES{Det:Sat}:mca1.R4BG 0

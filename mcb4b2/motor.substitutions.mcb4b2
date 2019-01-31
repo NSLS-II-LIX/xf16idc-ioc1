@@ -1,0 +1,14 @@
+file "$(TOP)/db/basic_asyn_motor.db"
+{
+pattern
+{P,                  M,                 PORT, ADDR,  DESC,          DTYPE,      EGU,   MRES}
+{"XF:16IDC-ES:InAir", "{Mscp:1-Ax:Rx}Mtr",  MCB4B2,  0, "microscope tilt x",   asynMotor, "deg",   "6.392e-5" }
+{"XF:16IDC-ES:InAir", "{Mscp:1-Ax:Ry}Mtr",  MCB4B2,  1, "microscope tilt y",   asynMotor, "deg",   "6.392e-4" }
+{"XF:16IDC-ES:Scan2", "{Ax:RX1}Mtr", MCB4B2, 2, "scan rx 1", asynMotor, "deg", "0.0075"}
+{"XF:16IDC-BI", "{FS:SF-Ax:Y}Mtr",  MCB4B2,  3, "SF fluo scn y",   asynMotor, "mm",   "3.175e-3" }
+{"XF:16IDC-OP", "{Slt:Gs-Ax:X}Mtr",  MCB4B2,  4, "sol guard slits X",   asynMotor, "mm",   "6.35e-5" }
+{"XF:16IDC-OP", "{Slt:Gs-Ax:dX}Mtr",  MCB4B2,  5, "sol gaurd slits dX",   asynMotor, "mm",   "1.27e-4" }
+{"XF:16IDC-OP", "{Slt:Gs-Ax:Y}Mtr",  MCB4B2,  6, "sol guard slits Y",   asynMotor, "mm",   "6.35e-5" }
+{"XF:16IDC-OP", "{Slt:Gs-Ax:dY}Mtr",  MCB4B2,  7, "sol guard slits dY",   asynMotor, "mm",   "1.27e-4" }
+}
+

@@ -1,0 +1,64 @@
+record(calcout, "XF:16IDC-BI{Cam:Sol}Stats1:Total_RBV-Thresh") {
+    field(INPA, "XF:16IDC-BI{Cam:Sol}Stats1:Total_RBV")
+    field(INPB, "30000")
+    field(CALC, "A > B")
+    field(OCAL, "0")
+    field(DOPT, "Use OCAL")
+    field(OOPT, "When Non-zero")
+    field(SCAN, "1 second")
+#    field(OUT,  "output PV here")
+}
+record(calcout, "XF:16IDC-BI{Cam:Sol}Stats1:Sigma_RBV-Thresh") {
+    field(INPA, "XF:16IDC-BI{Cam:Sol}Stats1:Sigma_RBV")
+    field(INPB, "30")
+    field(CALC, "A > B")
+    field(OCAL, "0")
+    field(DOPT, "Use OCAL")
+    field(OOPT, "When Non-zero")
+    field(SCAN, "1 second")
+#    field(OUT,  "output pv here")
+}
+record(calcout, "XF:16IDC-BI{Cam:Sol}Stats1:MaxValue_RBV-Thresh") {
+    field(INPA, "XF:16IDC-BI{Cam:Sol}Stats1:MaxValue_RBV")
+    field(INPB, "125")
+    field(CALC, "A > B")
+    field(OCAL, "0")
+    field(DOPT, "Use OCAL")
+    field(OOPT, "When Non-zero")
+    field(SCAN, "1 second")
+#    field(OUT,  "output PV here")
+}
+record(calcout, "XF:16IDC-BI{Cam:Sol}Stats2:Total_RBV-Thresh") {
+    field(INPA, "XF:16IDC-BI{Cam:Sol}Stats2:Total_RBV")
+    field(INPB, "30000")
+    field(CALC, "A > B")
+    field(OCAL, "0")
+    field(DOPT, "Use OCAL")
+    field(OOPT, "When Non-zero")
+    field(SCAN, "1 second")
+#    field(OUT,  "output pv here")
+}
+record(calcout, "XF:16IDC-BI{Cam:Sol}Stats1:SigOrMaxVal") {
+    field(INPA, "XF:16IDC-BI{Cam:Sol}Stats1:MaxValue_RBV-Thresh")
+    field(INPB, "XF:16IDC-BI{Cam:Sol}Stats1:Sigma_RBV-Thresh")
+    field(INPC, "1")
+    field(CALC, "(A+B) >= 1")
+    field(OCAL, "0")
+    field(DOPT, "Use OCAL")
+    field(OOPT, "When Non-zero")
+    field(SCAN, "1 second")
+#    field(OUT,  "output pv here")
+}
+record(calcout, "XF:16IDC-BI{Cam:Sol}Stats1:SigOrMaxVal2") {
+    field(INPA, "XF:16IDC-BI{Cam:Sol}Stats1:MaxValue_RBV-Thresh")
+    field(INPB, "XF:16IDC-BI{Cam:Sol}Stats1:Sigma_RBV-Thresh")
+    field(INPC, "50")
+    field(INPD, "50")
+    field(CALC, "(((C-A)||(D-B))<0)? 1:0")
+#    field(OCAL, "0")
+#    field(DOPT, "Use OCAL")
+    field(OOPT, "When Non-zero")
+    field(SCAN, "1 second")
+#    field(OUT,  "output pv here")
+}
+

@@ -1,0 +1,5 @@
+epicsEnvSet("ARCH","linux-x86_64")
+epicsEnvSet("IOC","iocbestcalc")
+epicsEnvSet("TOP","/epics/iocs/bestcalc")
+epicsEnvSet("CALC","/usr/lib/epics")
+epicsEnvSet("EPICS_BASE","/usr/lib/epics")

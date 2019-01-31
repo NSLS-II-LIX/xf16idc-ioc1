@@ -1,0 +1,87 @@
+#record(calcout, "XF:16IDA-BI{FS:2}-Gap") {
+#    field(INPA, "SR:C16-ID:G1{IVU:1-LEnc}Gap")
+#    field(INPB, "20")
+#    field(CALC, "A < B")
+#    field(OCAL, "1")
+#    field(DOPT, "Use OCAL")
+#    field(OOPT, "When Non-zero")
+#    field(SCAN, "1 second")
+#    field(OUT,  "XF:16IDA-BI{FS:2}Cmd:Cls-Cmd")
+#}
+
+#record(calcout, "XF:16IDA-BI{FS:2}-RC") {
+#    field(INPA, "SR:C03-BI{DCCT:1}I:Real-I")
+#    field(INPB, "5")
+#    field(CALC, "A > B")
+#    field(OCAL, "1")
+#    field(DOPT, "Use OCAL")
+#    field(OOPT, "When Non-zero")
+#    field(SCAN, "1 second")
+#    field(OUT,  "XF:16IDA-BI{FS:2}Cmd:Cls-Cmd")
+#}
+
+record(ao, "$(P){Misc-BeamCenter:X}Pos-SP") {
+    field(PINI, "YES")
+    info(autosaveFields, "VAL EGU")
+}
+
+record(ao, "$(P){Misc-BeamCenter:Y}Pos-SP") {
+    field(PINI, "YES")
+    info(autosaveFields, "VAL EGU")
+}
+
+record(ao, "$(P){Misc-BeamSize:X}Pos-SP") {
+    field(PINI, "YES")
+    info(autosaveFields, "VAL EGU")
+}
+
+record(ao, "$(P){Misc-BeamSize:Y}Pos-SP") {
+    field(PINI, "YES")
+    info(autosaveFields, "VAL EGU")
+}
+
+record(ao, "$(P){Misc-Hi2LoMagOffset:X}Pos-SP") {
+    field(PINI, "YES")
+    info(autosaveFields, "VAL EGU")
+}
+
+record(ao, "$(P){Misc-Hi2LoMagOffset:Y}Pos-SP") {
+    field(PINI, "YES")
+    info(autosaveFields, "VAL EGU")
+}
+
+record(ao, "$(P){Misc-AuxCursor1:X}Pos-SP") {
+    field(PINI, "YES")
+    info(autosaveFields, "VAL EGU")
+}
+
+record(ao, "$(P){Misc-AuxCursor1:Y}Pos-SP") {
+    field(PINI, "YES")
+    info(autosaveFields, "VAL EGU")
+}
+
+record(ao, "$(P){Misc-AuxCursor2:X}Pos-SP") {
+    field(PINI, "YES")
+    info(autosaveFields, "VAL EGU")
+}
+
+record(ao, "$(P){Misc-AuxCursor2:Y}Pos-SP") {
+    field(PINI, "YES")
+    info(autosaveFields, "VAL EGU")
+}
+
+record(ao, "$(P){Misc-AuxCursor3:X}Pos-SP") {
+    field(PINI, "YES")
+    info(autosaveFields, "VAL EGU")
+}
+
+record(ao, "$(P){Misc-AuxCursor3:Y}Pos-SP") {
+    field(PINI, "YES")
+    info(autosaveFields, "VAL EGU")
+}
+
+record(ao, "$(P){Misc-BeamFlux}Pos-SP") {
+    field(PINI, "YES")
+    info(autosaveFields, "VAL EGU")
+}
+

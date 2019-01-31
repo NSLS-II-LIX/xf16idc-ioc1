@@ -1,0 +1,65 @@
+record(acalcout, "$(P):BPM0:PosX_Mean")
+{
+        field(DESC, "Waveform Position X Mean")
+        field(INAA, "$(P):BPM0:PosX CP")
+        field(NELM, 1024)
+        field(CALC, "AVG(AA)")
+        field(PINI, 1)
+        field(EGU, "um")
+        field(PREC, 5)
+}
+
+record(acalcout, "$(P):BPM0:PosX_Std")
+{
+        field(DESC, "Waveform Position X Std")
+        field(INAA, "$(P):BPM0:PosX CP")
+        field(NELM, 1024)
+        field(CALC, "STD(AA)")
+        field(PINI, 1)
+        field(EGU, "um")
+        field(PREC, 5)
+}
+
+record(acalcout, "$(P):BPM0:PosY_Mean")
+{
+        field(DESC, "Waveform Position Y Mean")
+        field(INAA, "$(P):BPM0:PosY CP")
+        field(NELM, 1024)
+        field(CALC, "AVG(AA)")
+        field(PINI, 1)
+        field(EGU, "um")
+        field(PREC, 5)
+}
+
+record(acalcout, "$(P):BPM0:PosY_Std")
+{
+        field(DESC, "Waveform Position Y Std")
+        field(INAA, "$(P):BPM0:PosY CP")
+        field(NELM, 1024)
+        field(CALC, "STD(AA)")
+        field(PINI, 1)
+        field(EGU, "um")
+        field(PREC, 5)
+}
+
+record(acalcout, "$(P):BPM0:Int_Mean")
+{
+        field(DESC, "Waveform Intensity Mean")
+        field(INAA, "$(P):BPM0:Int CP")
+        field(NELM, 1024)
+        field(CALC, "AVG(AA)")
+        field(PINI, 1)
+        field(EGU, "Amper")
+        field(PREC, 5)
+}
+
+record(acalcout, "$(P):BPM0:Int_Std")
+{
+        field(DESC, "Waveform Intensity Std")
+        field(INAA, "$(P):BPM0:Int CP")
+        field(NELM, 1024)
+        field(CALC, "STD(AA)")
+        field(PINI, 1)
+        field(EGU, "Amper")
+        field(PREC, 5)
+}

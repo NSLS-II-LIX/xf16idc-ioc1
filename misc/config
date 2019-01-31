@@ -1,0 +1,5 @@
+NAME=misc
+USER=softioc
+PORT=4086
+HOST=xf16idc-ioc1
+CHDIR="$CHDIR/iocBoot/iocmisc"

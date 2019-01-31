@@ -1,0 +1,10 @@
+file "db/motor.db"
+{
+
+pattern
+{P,           			M,        DTYP,         C,      S,       DESC,      EGU,    DIR,   VELO,VBAS,  ACCL,     BDST,      BVEL,  BACC,   MRES,   PREC,   OFF, DHLM,   DLLM, INIT}
+{"XF:16IDB-OP{Slt:SSA-Ax:",	"X}Mtr",  "PIJEDS",      0,      0,      "SSA:X",   um,     Neg,   2.,   0,     .2,      0,         0,     .2,     .001,   5,      240, 250,    -0.1,  ""}
+{"XF:16IDB-OP{Slt:SSA-Ax:",     "Y}Mtr",  "PIJEDS",      0,      1,      "SSA:Y",   um,     Neg,   2.,   0,     .2,      0,         0,     .2,     .001,   5,      240, 250,    -0.1,  ""}
+}
+
+

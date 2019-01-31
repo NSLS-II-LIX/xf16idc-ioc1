@@ -1,0 +1,15 @@
+# bi record template for register inputs
+record(bi,"$(P)$(R)") {
+    field(DTYP,"asynUInt32Digital")
+    field(INP, "@asynMask($(PORT) $(OFFSET) 0x1)")
+    field(FLNK,"$(P)$(R)_Calc_")
+    field(SCAN,"$(SCAN)")
+}
+
+record(calcout, "$(P)$(R)_Calc_") {
+    field(INPA, "$(P)$(R)")
+    field(CALC, "A")
+#    field(OOPT, "On Change")
+    field(OOPT, "Every Time")
+    field(OUT,  "$(OUTPUT)")
+}

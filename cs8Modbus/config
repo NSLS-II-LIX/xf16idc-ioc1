@@ -1,0 +1,5 @@
+NAME=cs8Modbus
+USER=softioc
+PORT=4090
+HOST=xf16idc-ioc1
+

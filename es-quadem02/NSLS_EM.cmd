@@ -32,4 +32,4 @@ asynSetTraceIOMask("$(PORT)",0,2)
 iocInit()
 
 # save settings every thirty seconds
-create_monitor_set("auto_settings.req",30,"P=$(PREFIX), R=$(RECORD)")
+create_monitor_set("auto_settings.req",80000,"P=$(PREFIX), R=$(RECORD)")

@@ -1,0 +1,849 @@
+# autosave R5.3	Automatically generated - DO NOT MODIFY - 170428-131832
+XF:16IDC-ES{Det:Sat}:PollTime 0.01
+XF:16IDC-ES{Det:Sat}:NumSCAs 16
+XF:16IDC-ES{Det:Sat}:SaveSystemFile 0
+XF:16IDC-ES{Det:Sat}:dxp1:PeakingTime 2
+XF:16IDC-ES{Det:Sat}:dxp1:TriggerThreshold 1
+XF:16IDC-ES{Det:Sat}:dxp1:BaselineThreshold 2
+XF:16IDC-ES{Det:Sat}:dxp1:BaselineCutPercent 5
+XF:16IDC-ES{Det:Sat}:dxp1:BaselineCutEnable 1
+XF:16IDC-ES{Det:Sat}:dxp1:BaselineFilterLength 5
+XF:16IDC-ES{Det:Sat}:dxp1:EnergyThreshold 2
+XF:16IDC-ES{Det:Sat}:dxp1:TriggerOutput 0
+XF:16IDC-ES{Det:Sat}:dxp1:LiveTimeOutput 0
+XF:16IDC-ES{Det:Sat}:dxp1:ADCPercentRule 5
+XF:16IDC-ES{Det:Sat}:dxp1:MaxEnergy 20
+XF:16IDC-ES{Det:Sat}:dxp1:PreampGain 1.7
+XF:16IDC-ES{Det:Sat}:dxp1:DetectorPolarity 1
+XF:16IDC-ES{Det:Sat}:dxp1:ResetDelay 10
+XF:16IDC-ES{Det:Sat}:dxp1:DecayTime 50
+XF:16IDC-ES{Det:Sat}:dxp1:GapTime 1
+XF:16IDC-ES{Det:Sat}:dxp1:TriggerPeakingTime 1
+XF:16IDC-ES{Det:Sat}:dxp1:TriggerGapTime 1
+XF:16IDC-ES{Det:Sat}:dxp1:MaxWidth 4
+XF:16IDC-ES{Det:Sat}:dxp1:PresetMode 1
+XF:16IDC-ES{Det:Sat}:dxp1:PresetEvents 0
+XF:16IDC-ES{Det:Sat}:dxp1:PresetTriggers 0
+XF:16IDC-ES{Det:Sat}:dxp1:TraceMode 0
+XF:16IDC-ES{Det:Sat}:dxp1:TraceTime 0.1
+XF:16IDC-ES{Det:Sat}:mca1.CALO 0
+XF:16IDC-ES{Det:Sat}:mca1.CALS 1
+XF:16IDC-ES{Det:Sat}:mca1.CALQ 0
+XF:16IDC-ES{Det:Sat}:mca1.EGU 
+XF:16IDC-ES{Det:Sat}:mca1.TTH 10
+XF:16IDC-ES{Det:Sat}:mca1.PRTM 1
+XF:16IDC-ES{Det:Sat}:mca1.PLTM 1
+XF:16IDC-ES{Det:Sat}:mca1.PCT 0
+XF:16IDC-ES{Det:Sat}:mca1.PCTL 0
+XF:16IDC-ES{Det:Sat}:mca1.PCTH 0
+XF:16IDC-ES{Det:Sat}:mca1.DWEL 1
+XF:16IDC-ES{Det:Sat}:mca1.PSCL 1
+XF:16IDC-ES{Det:Sat}:mca1.CHAS 0
+XF:16IDC-ES{Det:Sat}:mca1.MODE 0
+XF:16IDC-ES{Det:Sat}:mca1.R0LO 600
+XF:16IDC-ES{Det:Sat}:mca1.R0HI 633
+XF:16IDC-ES{Det:Sat}:mca1.R0IP 0
+XF:16IDC-ES{Det:Sat}:mca1.R0P 0
+XF:16IDC-ES{Det:Sat}:mca1.R0BG 0
+XF:16IDC-ES{Det:Sat}:mca1.R0NM 
+XF:16IDC-ES{Det:Sat}:mca1.R1LO 680
+XF:16IDC-ES{Det:Sat}:mca1.R1HI 750
+XF:16IDC-ES{Det:Sat}:mca1.R1IP 0
+XF:16IDC-ES{Det:Sat}:mca1.R1P 0
+XF:16IDC-ES{Det:Sat}:mca1.R1BG 0
+XF:16IDC-ES{Det:Sat}:mca1.R1NM 
+XF:16IDC-ES{Det:Sat}:mca1.R2LO -1
+XF:16IDC-ES{Det:Sat}:mca1.R2HI -1
+XF:16IDC-ES{Det:Sat}:mca1.R2IP 0
+XF:16IDC-ES{Det:Sat}:mca1.R2P 0
+XF:16IDC-ES{Det:Sat}:mca1.R2BG 0
+XF:16IDC-ES{Det:Sat}:mca1.R2NM 
+XF:16IDC-ES{Det:Sat}:mca1.R3LO -1
+XF:16IDC-ES{Det:Sat}:mca1.R3HI -1
+XF:16IDC-ES{Det:Sat}:mca1.R3IP 0
+XF:16IDC-ES{Det:Sat}:mca1.R3P 0
+XF:16IDC-ES{Det:Sat}:mca1.R3BG 0
+XF:16IDC-ES{Det:Sat}:mca1.R3NM 
+XF:16IDC-ES{Det:Sat}:mca1.R4LO -1
+XF:16IDC-ES{Det:Sat}:mca1.R4HI -1
+XF:16IDC-ES{Det:Sat}:mca1.R4IP 0
+XF:16IDC-ES{Det:Sat}:mca1.R4P 0
+XF:16IDC-ES{Det:Sat}:mca1.R4BG 0
+XF:16IDC-ES{Det:Sat}:mca1.R4NM 
+XF:16IDC-ES{Det:Sat}:mca1.R5LO -1
+XF:16IDC-ES{Det:Sat}:mca1.R5HI -1
+XF:16IDC-ES{Det:Sat}:mca1.R5IP 0
+XF:16IDC-ES{Det:Sat}:mca1.R5P 0
+XF:16IDC-ES{Det:Sat}:mca1.R5BG 0
+XF:16IDC-ES{Det:Sat}:mca1.R5NM 
+XF:16IDC-ES{Det:Sat}:mca1.R6LO -1
+XF:16IDC-ES{Det:Sat}:mca1.R6HI -1
+XF:16IDC-ES{Det:Sat}:mca1.R6IP 0
+XF:16IDC-ES{Det:Sat}:mca1.R6P 0
+XF:16IDC-ES{Det:Sat}:mca1.R6BG 0
+XF:16IDC-ES{Det:Sat}:mca1.R6NM 
+XF:16IDC-ES{Det:Sat}:mca1.R7LO -1
+XF:16IDC-ES{Det:Sat}:mca1.R7HI -1
+XF:16IDC-ES{Det:Sat}:mca1.R7IP 0
+XF:16IDC-ES{Det:Sat}:mca1.R7P 0
+XF:16IDC-ES{Det:Sat}:mca1.R7BG 0
+XF:16IDC-ES{Det:Sat}:mca1.R7NM 
+XF:16IDC-ES{Det:Sat}:mca1.R8LO -1
+XF:16IDC-ES{Det:Sat}:mca1.R8HI -1
+XF:16IDC-ES{Det:Sat}:mca1.R8IP 0
+XF:16IDC-ES{Det:Sat}:mca1.R8P 0
+XF:16IDC-ES{Det:Sat}:mca1.R8BG 0
+XF:16IDC-ES{Det:Sat}:mca1.R8NM 
+XF:16IDC-ES{Det:Sat}:mca1.R9LO -1
+XF:16IDC-ES{Det:Sat}:mca1.R9HI -1
+XF:16IDC-ES{Det:Sat}:mca1.R9IP 0
+XF:16IDC-ES{Det:Sat}:mca1.R9P 0
+XF:16IDC-ES{Det:Sat}:mca1.R9BG 0
+XF:16IDC-ES{Det:Sat}:mca1.R9NM 
+XF:16IDC-ES{Det:Sat}:mca1.R10LO -1
+XF:16IDC-ES{Det:Sat}:mca1.R10HI -1
+XF:16IDC-ES{Det:Sat}:mca1.R10IP 0
+XF:16IDC-ES{Det:Sat}:mca1.R10P 0
+XF:16IDC-ES{Det:Sat}:mca1.R10BG 0
+XF:16IDC-ES{Det:Sat}:mca1.R10NM 
+XF:16IDC-ES{Det:Sat}:mca1.R11LO -1
+XF:16IDC-ES{Det:Sat}:mca1.R11HI -1
+XF:16IDC-ES{Det:Sat}:mca1.R11IP 0
+XF:16IDC-ES{Det:Sat}:mca1.R11P 0
+XF:16IDC-ES{Det:Sat}:mca1.R11BG 0
+XF:16IDC-ES{Det:Sat}:mca1.R11NM 
+XF:16IDC-ES{Det:Sat}:mca1.R12LO -1
+XF:16IDC-ES{Det:Sat}:mca1.R12HI -1
+XF:16IDC-ES{Det:Sat}:mca1.R12IP 0
+XF:16IDC-ES{Det:Sat}:mca1.R12P 0
+XF:16IDC-ES{Det:Sat}:mca1.R12BG 0
+XF:16IDC-ES{Det:Sat}:mca1.R12NM 
+XF:16IDC-ES{Det:Sat}:mca1.R13LO -1
+XF:16IDC-ES{Det:Sat}:mca1.R13HI -1
+XF:16IDC-ES{Det:Sat}:mca1.R13IP 0
+XF:16IDC-ES{Det:Sat}:mca1.R13P 0
+XF:16IDC-ES{Det:Sat}:mca1.R13BG 0
+XF:16IDC-ES{Det:Sat}:mca1.R13NM 
+XF:16IDC-ES{Det:Sat}:mca1.R14LO -1
+XF:16IDC-ES{Det:Sat}:mca1.R14HI -1
+XF:16IDC-ES{Det:Sat}:mca1.R14IP 0
+XF:16IDC-ES{Det:Sat}:mca1.R14P 0
+XF:16IDC-ES{Det:Sat}:mca1.R14BG 0
+XF:16IDC-ES{Det:Sat}:mca1.R14NM 
+XF:16IDC-ES{Det:Sat}:mca1.R15LO -1
+XF:16IDC-ES{Det:Sat}:mca1.R15HI -1
+XF:16IDC-ES{Det:Sat}:mca1.R15IP 0
+XF:16IDC-ES{Det:Sat}:mca1.R15P 0
+XF:16IDC-ES{Det:Sat}:mca1.R15BG 0
+XF:16IDC-ES{Det:Sat}:mca1.R15NM 
+XF:16IDC-ES{Det:Sat}:mca1.R16LO -1
+XF:16IDC-ES{Det:Sat}:mca1.R16HI -1
+XF:16IDC-ES{Det:Sat}:mca1.R16IP 0
+XF:16IDC-ES{Det:Sat}:mca1.R16P 0
+XF:16IDC-ES{Det:Sat}:mca1.R16BG 0
+XF:16IDC-ES{Det:Sat}:mca1.R16NM 
+XF:16IDC-ES{Det:Sat}:mca1.R17LO -1
+XF:16IDC-ES{Det:Sat}:mca1.R17HI -1
+XF:16IDC-ES{Det:Sat}:mca1.R17IP 0
+XF:16IDC-ES{Det:Sat}:mca1.R17P 0
+XF:16IDC-ES{Det:Sat}:mca1.R17BG 0
+XF:16IDC-ES{Det:Sat}:mca1.R17NM 
+XF:16IDC-ES{Det:Sat}:mca1.R18LO -1
+XF:16IDC-ES{Det:Sat}:mca1.R18HI -1
+XF:16IDC-ES{Det:Sat}:mca1.R18IP 0
+XF:16IDC-ES{Det:Sat}:mca1.R18P 0
+XF:16IDC-ES{Det:Sat}:mca1.R18BG 0
+XF:16IDC-ES{Det:Sat}:mca1.R18NM 
+XF:16IDC-ES{Det:Sat}:mca1.R19LO -1
+XF:16IDC-ES{Det:Sat}:mca1.R19HI -1
+XF:16IDC-ES{Det:Sat}:mca1.R19IP 0
+XF:16IDC-ES{Det:Sat}:mca1.R19P 0
+XF:16IDC-ES{Det:Sat}:mca1.R19BG 0
+XF:16IDC-ES{Det:Sat}:mca1.R19NM 
+XF:16IDC-ES{Det:Sat}:mca1.R20LO -1
+XF:16IDC-ES{Det:Sat}:mca1.R20HI -1
+XF:16IDC-ES{Det:Sat}:mca1.R20IP 0
+XF:16IDC-ES{Det:Sat}:mca1.R20P 0
+XF:16IDC-ES{Det:Sat}:mca1.R20BG 0
+XF:16IDC-ES{Det:Sat}:mca1.R20NM 
+XF:16IDC-ES{Det:Sat}:mca1.R21LO -1
+XF:16IDC-ES{Det:Sat}:mca1.R21HI -1
+XF:16IDC-ES{Det:Sat}:mca1.R21IP 0
+XF:16IDC-ES{Det:Sat}:mca1.R21P 0
+XF:16IDC-ES{Det:Sat}:mca1.R21BG 0
+XF:16IDC-ES{Det:Sat}:mca1.R21NM 
+XF:16IDC-ES{Det:Sat}:mca1.R22LO -1
+XF:16IDC-ES{Det:Sat}:mca1.R22HI -1
+XF:16IDC-ES{Det:Sat}:mca1.R22IP 0
+XF:16IDC-ES{Det:Sat}:mca1.R22P 0
+XF:16IDC-ES{Det:Sat}:mca1.R22BG 0
+XF:16IDC-ES{Det:Sat}:mca1.R22NM 
+XF:16IDC-ES{Det:Sat}:mca1.R23LO -1
+XF:16IDC-ES{Det:Sat}:mca1.R23HI -1
+XF:16IDC-ES{Det:Sat}:mca1.R23IP 0
+XF:16IDC-ES{Det:Sat}:mca1.R23P 0
+XF:16IDC-ES{Det:Sat}:mca1.R23BG 0
+XF:16IDC-ES{Det:Sat}:mca1.R23NM 
+XF:16IDC-ES{Det:Sat}:mca1.R24LO -1
+XF:16IDC-ES{Det:Sat}:mca1.R24HI -1
+XF:16IDC-ES{Det:Sat}:mca1.R24IP 0
+XF:16IDC-ES{Det:Sat}:mca1.R24P 0
+XF:16IDC-ES{Det:Sat}:mca1.R24BG 0
+XF:16IDC-ES{Det:Sat}:mca1.R24NM 
+XF:16IDC-ES{Det:Sat}:mca1.R25LO -1
+XF:16IDC-ES{Det:Sat}:mca1.R25HI -1
+XF:16IDC-ES{Det:Sat}:mca1.R25IP 0
+XF:16IDC-ES{Det:Sat}:mca1.R25P 0
+XF:16IDC-ES{Det:Sat}:mca1.R25BG 0
+XF:16IDC-ES{Det:Sat}:mca1.R25NM 
+XF:16IDC-ES{Det:Sat}:mca1.R26LO -1
+XF:16IDC-ES{Det:Sat}:mca1.R26HI -1
+XF:16IDC-ES{Det:Sat}:mca1.R26IP 0
+XF:16IDC-ES{Det:Sat}:mca1.R26P 0
+XF:16IDC-ES{Det:Sat}:mca1.R26BG 0
+XF:16IDC-ES{Det:Sat}:mca1.R26NM 
+XF:16IDC-ES{Det:Sat}:mca1.R27LO -1
+XF:16IDC-ES{Det:Sat}:mca1.R27HI -1
+XF:16IDC-ES{Det:Sat}:mca1.R27IP 0
+XF:16IDC-ES{Det:Sat}:mca1.R27P 0
+XF:16IDC-ES{Det:Sat}:mca1.R27BG 0
+XF:16IDC-ES{Det:Sat}:mca1.R27NM 
+XF:16IDC-ES{Det:Sat}:mca1.R28LO -1
+XF:16IDC-ES{Det:Sat}:mca1.R28HI -1
+XF:16IDC-ES{Det:Sat}:mca1.R28IP 0
+XF:16IDC-ES{Det:Sat}:mca1.R28P 0
+XF:16IDC-ES{Det:Sat}:mca1.R28BG 0
+XF:16IDC-ES{Det:Sat}:mca1.R28NM 
+XF:16IDC-ES{Det:Sat}:mca1.R29LO -1
+XF:16IDC-ES{Det:Sat}:mca1.R29HI -1
+XF:16IDC-ES{Det:Sat}:mca1.R29IP 0
+XF:16IDC-ES{Det:Sat}:mca1.R29P 0
+XF:16IDC-ES{Det:Sat}:mca1.R29BG 0
+XF:16IDC-ES{Det:Sat}:mca1.R29NM 
+XF:16IDC-ES{Det:Sat}:mca1.R30LO -1
+XF:16IDC-ES{Det:Sat}:mca1.R30HI -1
+XF:16IDC-ES{Det:Sat}:mca1.R30IP 0
+XF:16IDC-ES{Det:Sat}:mca1.R30P 0
+XF:16IDC-ES{Det:Sat}:mca1.R30BG 0
+XF:16IDC-ES{Det:Sat}:mca1.R30NM 
+XF:16IDC-ES{Det:Sat}:mca1.R31LO -1
+XF:16IDC-ES{Det:Sat}:mca1.R31HI -1
+XF:16IDC-ES{Det:Sat}:mca1.R31IP 0
+XF:16IDC-ES{Det:Sat}:mca1.R31P 0
+XF:16IDC-ES{Det:Sat}:mca1.R31BG 0
+XF:16IDC-ES{Det:Sat}:mca1.R31NM 
+XF:16IDC-ES{Det:Sat}:mca1Read.SCAN 6
+XF:16IDC-ES{Det:Sat}:mca1Status.SCAN 9
+XF:16IDC-ES{Det:Sat}:scan1.ATIME 0
+XF:16IDC-ES{Det:Sat}:scan1.COPYTO 0
+XF:16IDC-ES{Det:Sat}:scan1.FLNK 0
+XF:16IDC-ES{Det:Sat}:scan1.NPTS 10
+XF:16IDC-ES{Det:Sat}:scan1.ACQT 0
+XF:16IDC-ES{Det:Sat}:scan1.ACQM 0
+XF:16IDC-ES{Det:Sat}:scan1.PASM 0
+XF:16IDC-ES{Det:Sat}:scan1.BSPV 
+XF:16IDC-ES{Det:Sat}:scan1.BSCD 1
+XF:16IDC-ES{Det:Sat}:scan1.BSWAIT 0
+XF:16IDC-ES{Det:Sat}:scan1.ASPV 
+XF:16IDC-ES{Det:Sat}:scan1.ASCD 1
+XF:16IDC-ES{Det:Sat}:scan1.ASWAIT 0
+XF:16IDC-ES{Det:Sat}:scan1.T1PV 
+XF:16IDC-ES{Det:Sat}:scan1.T1CD 1
+XF:16IDC-ES{Det:Sat}:scan1.T2PV 
+XF:16IDC-ES{Det:Sat}:scan1.T2CD 1
+XF:16IDC-ES{Det:Sat}:scan1.T3PV 
+XF:16IDC-ES{Det:Sat}:scan1.T3CD 1
+XF:16IDC-ES{Det:Sat}:scan1.T4PV 
+XF:16IDC-ES{Det:Sat}:scan1.T4CD 1
+XF:16IDC-ES{Det:Sat}:scan1.P1PV 
+XF:16IDC-ES{Det:Sat}:scan1.R1PV 
+XF:16IDC-ES{Det:Sat}:scan1.P1SM 0
+XF:16IDC-ES{Det:Sat}:scan1.P1SP 0
+XF:16IDC-ES{Det:Sat}:scan1.P1EP 0
+XF:16IDC-ES{Det:Sat}:scan1.P1AR 0
+XF:16IDC-ES{Det:Sat}:scan1.P2PV 
+XF:16IDC-ES{Det:Sat}:scan1.R2PV 
+XF:16IDC-ES{Det:Sat}:scan1.P2SM 0
+XF:16IDC-ES{Det:Sat}:scan1.P2SP 0
+XF:16IDC-ES{Det:Sat}:scan1.P2EP 0
+XF:16IDC-ES{Det:Sat}:scan1.P2AR 0
+XF:16IDC-ES{Det:Sat}:scan1.P3PV 
+XF:16IDC-ES{Det:Sat}:scan1.R3PV 
+XF:16IDC-ES{Det:Sat}:scan1.P3SM 0
+XF:16IDC-ES{Det:Sat}:scan1.P3SP 0
+XF:16IDC-ES{Det:Sat}:scan1.P3EP 0
+XF:16IDC-ES{Det:Sat}:scan1.P3AR 0
+XF:16IDC-ES{Det:Sat}:scan1.P4PV 
+XF:16IDC-ES{Det:Sat}:scan1.R4PV 
+XF:16IDC-ES{Det:Sat}:scan1.P4SM 0
+XF:16IDC-ES{Det:Sat}:scan1.P4SP 0
+XF:16IDC-ES{Det:Sat}:scan1.P4EP 0
+XF:16IDC-ES{Det:Sat}:scan1.P4AR 0
+XF:16IDC-ES{Det:Sat}:scan1.PDLY 0
+XF:16IDC-ES{Det:Sat}:scan1.DDLY 0
+XF:16IDC-ES{Det:Sat}:scan1.REFD 1
+XF:16IDC-ES{Det:Sat}:scan1.AWCT 0
+XF:16IDC-ES{Det:Sat}:scan1.A1PV 
+XF:16IDC-ES{Det:Sat}:scan1.A1CD 1
+XF:16IDC-ES{Det:Sat}:scan1.D01PV 
+XF:16IDC-ES{Det:Sat}:scan1.D02PV 
+XF:16IDC-ES{Det:Sat}:scan1.D03PV 
+XF:16IDC-ES{Det:Sat}:scan1.D04PV 
+XF:16IDC-ES{Det:Sat}:scan1.D05PV 
+XF:16IDC-ES{Det:Sat}:scan1.D06PV 
+XF:16IDC-ES{Det:Sat}:scan1.D07PV 
+XF:16IDC-ES{Det:Sat}:scan1.D08PV 
+XF:16IDC-ES{Det:Sat}:scan1.D09PV 
+XF:16IDC-ES{Det:Sat}:scan1.D10PV 
+XF:16IDC-ES{Det:Sat}:scan1.D11PV 
+XF:16IDC-ES{Det:Sat}:scan1.D12PV 
+XF:16IDC-ES{Det:Sat}:scan1.D13PV 
+XF:16IDC-ES{Det:Sat}:scan1.D14PV 
+XF:16IDC-ES{Det:Sat}:scan1.D15PV 
+XF:16IDC-ES{Det:Sat}:scan1.D16PV 
+XF:16IDC-ES{Det:Sat}:scan1.D17PV 
+XF:16IDC-ES{Det:Sat}:scan1.D18PV 
+XF:16IDC-ES{Det:Sat}:scan1.D19PV 
+XF:16IDC-ES{Det:Sat}:scan1.D20PV 
+XF:16IDC-ES{Det:Sat}:scan1.D21PV 
+XF:16IDC-ES{Det:Sat}:scan1.D22PV 
+XF:16IDC-ES{Det:Sat}:scan1.D23PV 
+XF:16IDC-ES{Det:Sat}:scan1.D24PV 
+XF:16IDC-ES{Det:Sat}:scan1.D25PV 
+XF:16IDC-ES{Det:Sat}:scan1.D26PV 
+XF:16IDC-ES{Det:Sat}:scan1.D27PV 
+XF:16IDC-ES{Det:Sat}:scan1.D28PV 
+XF:16IDC-ES{Det:Sat}:scan1.D29PV 
+XF:16IDC-ES{Det:Sat}:scan1.D30PV 
+XF:16IDC-ES{Det:Sat}:scan1.D31PV 
+XF:16IDC-ES{Det:Sat}:scan1.D32PV 
+XF:16IDC-ES{Det:Sat}:scan1.D33PV 
+XF:16IDC-ES{Det:Sat}:scan1.D34PV 
+XF:16IDC-ES{Det:Sat}:scan1.D35PV 
+XF:16IDC-ES{Det:Sat}:scan1.D36PV 
+XF:16IDC-ES{Det:Sat}:scan1.D37PV 
+XF:16IDC-ES{Det:Sat}:scan1.D38PV 
+XF:16IDC-ES{Det:Sat}:scan1.D39PV 
+XF:16IDC-ES{Det:Sat}:scan1.D40PV 
+XF:16IDC-ES{Det:Sat}:scan1.D41PV 
+XF:16IDC-ES{Det:Sat}:scan1.D42PV 
+XF:16IDC-ES{Det:Sat}:scan1.D43PV 
+XF:16IDC-ES{Det:Sat}:scan1.D44PV 
+XF:16IDC-ES{Det:Sat}:scan1.D45PV 
+XF:16IDC-ES{Det:Sat}:scan1.D46PV 
+XF:16IDC-ES{Det:Sat}:scan1.D47PV 
+XF:16IDC-ES{Det:Sat}:scan1.D48PV 
+XF:16IDC-ES{Det:Sat}:scan1.D49PV 
+XF:16IDC-ES{Det:Sat}:scan1.D50PV 
+XF:16IDC-ES{Det:Sat}:scan1.D51PV 
+XF:16IDC-ES{Det:Sat}:scan1.D52PV 
+XF:16IDC-ES{Det:Sat}:scan1.D53PV 
+XF:16IDC-ES{Det:Sat}:scan1.D54PV 
+XF:16IDC-ES{Det:Sat}:scan1.D55PV 
+XF:16IDC-ES{Det:Sat}:scan1.D56PV 
+XF:16IDC-ES{Det:Sat}:scan1.D57PV 
+XF:16IDC-ES{Det:Sat}:scan1.D58PV 
+XF:16IDC-ES{Det:Sat}:scan1.D59PV 
+XF:16IDC-ES{Det:Sat}:scan1.D60PV 
+XF:16IDC-ES{Det:Sat}:scan1.D61PV 
+XF:16IDC-ES{Det:Sat}:scan1.D62PV 
+XF:16IDC-ES{Det:Sat}:scan1.D63PV 
+XF:16IDC-ES{Det:Sat}:scan1.D64PV 
+XF:16IDC-ES{Det:Sat}:scan1.D65PV 
+XF:16IDC-ES{Det:Sat}:scan1.D66PV 
+XF:16IDC-ES{Det:Sat}:scan1.D67PV 
+XF:16IDC-ES{Det:Sat}:scan1.D68PV 
+XF:16IDC-ES{Det:Sat}:scan1.D69PV 
+XF:16IDC-ES{Det:Sat}:scan1.D70PV 
+XF:16IDC-ES{Det:Sat}:scan2.ATIME 0
+XF:16IDC-ES{Det:Sat}:scan2.COPYTO 0
+XF:16IDC-ES{Det:Sat}:scan2.FLNK 0
+XF:16IDC-ES{Det:Sat}:scan2.NPTS 10
+XF:16IDC-ES{Det:Sat}:scan2.ACQT 0
+XF:16IDC-ES{Det:Sat}:scan2.ACQM 0
+XF:16IDC-ES{Det:Sat}:scan2.PASM 0
+XF:16IDC-ES{Det:Sat}:scan2.BSPV 
+XF:16IDC-ES{Det:Sat}:scan2.BSCD 1
+XF:16IDC-ES{Det:Sat}:scan2.BSWAIT 0
+XF:16IDC-ES{Det:Sat}:scan2.ASPV 
+XF:16IDC-ES{Det:Sat}:scan2.ASCD 1
+XF:16IDC-ES{Det:Sat}:scan2.ASWAIT 0
+XF:16IDC-ES{Det:Sat}:scan2.T1PV XF:16IDC-ES{Det:Sat}:scan1.EXSC
+XF:16IDC-ES{Det:Sat}:scan2.T1CD 1
+XF:16IDC-ES{Det:Sat}:scan2.T2PV 
+XF:16IDC-ES{Det:Sat}:scan2.T2CD 1
+XF:16IDC-ES{Det:Sat}:scan2.T3PV 
+XF:16IDC-ES{Det:Sat}:scan2.T3CD 1
+XF:16IDC-ES{Det:Sat}:scan2.T4PV 
+XF:16IDC-ES{Det:Sat}:scan2.T4CD 1
+XF:16IDC-ES{Det:Sat}:scan2.P1PV 
+XF:16IDC-ES{Det:Sat}:scan2.R1PV 
+XF:16IDC-ES{Det:Sat}:scan2.P1SM 0
+XF:16IDC-ES{Det:Sat}:scan2.P1SP 0
+XF:16IDC-ES{Det:Sat}:scan2.P1EP 0
+XF:16IDC-ES{Det:Sat}:scan2.P1AR 0
+XF:16IDC-ES{Det:Sat}:scan2.P2PV 
+XF:16IDC-ES{Det:Sat}:scan2.R2PV 
+XF:16IDC-ES{Det:Sat}:scan2.P2SM 0
+XF:16IDC-ES{Det:Sat}:scan2.P2SP 0
+XF:16IDC-ES{Det:Sat}:scan2.P2EP 0
+XF:16IDC-ES{Det:Sat}:scan2.P2AR 0
+XF:16IDC-ES{Det:Sat}:scan2.P3PV 
+XF:16IDC-ES{Det:Sat}:scan2.R3PV 
+XF:16IDC-ES{Det:Sat}:scan2.P3SM 0
+XF:16IDC-ES{Det:Sat}:scan2.P3SP 0
+XF:16IDC-ES{Det:Sat}:scan2.P3EP 0
+XF:16IDC-ES{Det:Sat}:scan2.P3AR 0
+XF:16IDC-ES{Det:Sat}:scan2.P4PV 
+XF:16IDC-ES{Det:Sat}:scan2.R4PV 
+XF:16IDC-ES{Det:Sat}:scan2.P4SM 0
+XF:16IDC-ES{Det:Sat}:scan2.P4SP 0
+XF:16IDC-ES{Det:Sat}:scan2.P4EP 0
+XF:16IDC-ES{Det:Sat}:scan2.P4AR 0
+XF:16IDC-ES{Det:Sat}:scan2.PDLY 0
+XF:16IDC-ES{Det:Sat}:scan2.DDLY 0
+XF:16IDC-ES{Det:Sat}:scan2.REFD 1
+XF:16IDC-ES{Det:Sat}:scan2.AWCT 0
+XF:16IDC-ES{Det:Sat}:scan2.A1PV 
+XF:16IDC-ES{Det:Sat}:scan2.A1CD 1
+XF:16IDC-ES{Det:Sat}:scan2.D01PV 
+XF:16IDC-ES{Det:Sat}:scan2.D02PV 
+XF:16IDC-ES{Det:Sat}:scan2.D03PV 
+XF:16IDC-ES{Det:Sat}:scan2.D04PV 
+XF:16IDC-ES{Det:Sat}:scan2.D05PV 
+XF:16IDC-ES{Det:Sat}:scan2.D06PV 
+XF:16IDC-ES{Det:Sat}:scan2.D07PV 
+XF:16IDC-ES{Det:Sat}:scan2.D08PV 
+XF:16IDC-ES{Det:Sat}:scan2.D09PV 
+XF:16IDC-ES{Det:Sat}:scan2.D10PV 
+XF:16IDC-ES{Det:Sat}:scan2.D11PV 
+XF:16IDC-ES{Det:Sat}:scan2.D12PV 
+XF:16IDC-ES{Det:Sat}:scan2.D13PV 
+XF:16IDC-ES{Det:Sat}:scan2.D14PV 
+XF:16IDC-ES{Det:Sat}:scan2.D15PV 
+XF:16IDC-ES{Det:Sat}:scan2.D16PV 
+XF:16IDC-ES{Det:Sat}:scan2.D17PV 
+XF:16IDC-ES{Det:Sat}:scan2.D18PV 
+XF:16IDC-ES{Det:Sat}:scan2.D19PV 
+XF:16IDC-ES{Det:Sat}:scan2.D20PV 
+XF:16IDC-ES{Det:Sat}:scan2.D21PV 
+XF:16IDC-ES{Det:Sat}:scan2.D22PV 
+XF:16IDC-ES{Det:Sat}:scan2.D23PV 
+XF:16IDC-ES{Det:Sat}:scan2.D24PV 
+XF:16IDC-ES{Det:Sat}:scan2.D25PV 
+XF:16IDC-ES{Det:Sat}:scan2.D26PV 
+XF:16IDC-ES{Det:Sat}:scan2.D27PV 
+XF:16IDC-ES{Det:Sat}:scan2.D28PV 
+XF:16IDC-ES{Det:Sat}:scan2.D29PV 
+XF:16IDC-ES{Det:Sat}:scan2.D30PV 
+XF:16IDC-ES{Det:Sat}:scan2.D31PV 
+XF:16IDC-ES{Det:Sat}:scan2.D32PV 
+XF:16IDC-ES{Det:Sat}:scan2.D33PV 
+XF:16IDC-ES{Det:Sat}:scan2.D34PV 
+XF:16IDC-ES{Det:Sat}:scan2.D35PV 
+XF:16IDC-ES{Det:Sat}:scan2.D36PV 
+XF:16IDC-ES{Det:Sat}:scan2.D37PV 
+XF:16IDC-ES{Det:Sat}:scan2.D38PV 
+XF:16IDC-ES{Det:Sat}:scan2.D39PV 
+XF:16IDC-ES{Det:Sat}:scan2.D40PV 
+XF:16IDC-ES{Det:Sat}:scan2.D41PV 
+XF:16IDC-ES{Det:Sat}:scan2.D42PV 
+XF:16IDC-ES{Det:Sat}:scan2.D43PV 
+XF:16IDC-ES{Det:Sat}:scan2.D44PV 
+XF:16IDC-ES{Det:Sat}:scan2.D45PV 
+XF:16IDC-ES{Det:Sat}:scan2.D46PV 
+XF:16IDC-ES{Det:Sat}:scan2.D47PV 
+XF:16IDC-ES{Det:Sat}:scan2.D48PV 
+XF:16IDC-ES{Det:Sat}:scan2.D49PV 
+XF:16IDC-ES{Det:Sat}:scan2.D50PV 
+XF:16IDC-ES{Det:Sat}:scan2.D51PV 
+XF:16IDC-ES{Det:Sat}:scan2.D52PV 
+XF:16IDC-ES{Det:Sat}:scan2.D53PV 
+XF:16IDC-ES{Det:Sat}:scan2.D54PV 
+XF:16IDC-ES{Det:Sat}:scan2.D55PV 
+XF:16IDC-ES{Det:Sat}:scan2.D56PV 
+XF:16IDC-ES{Det:Sat}:scan2.D57PV 
+XF:16IDC-ES{Det:Sat}:scan2.D58PV 
+XF:16IDC-ES{Det:Sat}:scan2.D59PV 
+XF:16IDC-ES{Det:Sat}:scan2.D60PV 
+XF:16IDC-ES{Det:Sat}:scan2.D61PV 
+XF:16IDC-ES{Det:Sat}:scan2.D62PV 
+XF:16IDC-ES{Det:Sat}:scan2.D63PV 
+XF:16IDC-ES{Det:Sat}:scan2.D64PV 
+XF:16IDC-ES{Det:Sat}:scan2.D65PV 
+XF:16IDC-ES{Det:Sat}:scan2.D66PV 
+XF:16IDC-ES{Det:Sat}:scan2.D67PV 
+XF:16IDC-ES{Det:Sat}:scan2.D68PV 
+XF:16IDC-ES{Det:Sat}:scan2.D69PV 
+XF:16IDC-ES{Det:Sat}:scan2.D70PV 
+XF:16IDC-ES{Det:Sat}:scan3.ATIME 0
+XF:16IDC-ES{Det:Sat}:scan3.COPYTO 0
+XF:16IDC-ES{Det:Sat}:scan3.FLNK 0
+XF:16IDC-ES{Det:Sat}:scan3.NPTS 10
+XF:16IDC-ES{Det:Sat}:scan3.ACQT 0
+XF:16IDC-ES{Det:Sat}:scan3.ACQM 0
+XF:16IDC-ES{Det:Sat}:scan3.PASM 0
+XF:16IDC-ES{Det:Sat}:scan3.BSPV 
+XF:16IDC-ES{Det:Sat}:scan3.BSCD 1
+XF:16IDC-ES{Det:Sat}:scan3.BSWAIT 0
+XF:16IDC-ES{Det:Sat}:scan3.ASPV 
+XF:16IDC-ES{Det:Sat}:scan3.ASCD 1
+XF:16IDC-ES{Det:Sat}:scan3.ASWAIT 0
+XF:16IDC-ES{Det:Sat}:scan3.T1PV XF:16IDC-ES{Det:Sat}:scan2.EXSC
+XF:16IDC-ES{Det:Sat}:scan3.T1CD 1
+XF:16IDC-ES{Det:Sat}:scan3.T2PV 
+XF:16IDC-ES{Det:Sat}:scan3.T2CD 1
+XF:16IDC-ES{Det:Sat}:scan3.T3PV 
+XF:16IDC-ES{Det:Sat}:scan3.T3CD 1
+XF:16IDC-ES{Det:Sat}:scan3.T4PV 
+XF:16IDC-ES{Det:Sat}:scan3.T4CD 1
+XF:16IDC-ES{Det:Sat}:scan3.P1PV 
+XF:16IDC-ES{Det:Sat}:scan3.R1PV 
+XF:16IDC-ES{Det:Sat}:scan3.P1SM 0
+XF:16IDC-ES{Det:Sat}:scan3.P1SP 0
+XF:16IDC-ES{Det:Sat}:scan3.P1EP 0
+XF:16IDC-ES{Det:Sat}:scan3.P1AR 0
+XF:16IDC-ES{Det:Sat}:scan3.P2PV 
+XF:16IDC-ES{Det:Sat}:scan3.R2PV 
+XF:16IDC-ES{Det:Sat}:scan3.P2SM 0
+XF:16IDC-ES{Det:Sat}:scan3.P2SP 0
+XF:16IDC-ES{Det:Sat}:scan3.P2EP 0
+XF:16IDC-ES{Det:Sat}:scan3.P2AR 0
+XF:16IDC-ES{Det:Sat}:scan3.P3PV 
+XF:16IDC-ES{Det:Sat}:scan3.R3PV 
+XF:16IDC-ES{Det:Sat}:scan3.P3SM 0
+XF:16IDC-ES{Det:Sat}:scan3.P3SP 0
+XF:16IDC-ES{Det:Sat}:scan3.P3EP 0
+XF:16IDC-ES{Det:Sat}:scan3.P3AR 0
+XF:16IDC-ES{Det:Sat}:scan3.P4PV 
+XF:16IDC-ES{Det:Sat}:scan3.R4PV 
+XF:16IDC-ES{Det:Sat}:scan3.P4SM 0
+XF:16IDC-ES{Det:Sat}:scan3.P4SP 0
+XF:16IDC-ES{Det:Sat}:scan3.P4EP 0
+XF:16IDC-ES{Det:Sat}:scan3.P4AR 0
+XF:16IDC-ES{Det:Sat}:scan3.PDLY 0
+XF:16IDC-ES{Det:Sat}:scan3.DDLY 0
+XF:16IDC-ES{Det:Sat}:scan3.REFD 1
+XF:16IDC-ES{Det:Sat}:scan3.AWCT 0
+XF:16IDC-ES{Det:Sat}:scan3.A1PV 
+XF:16IDC-ES{Det:Sat}:scan3.A1CD 1
+XF:16IDC-ES{Det:Sat}:scan3.D01PV 
+XF:16IDC-ES{Det:Sat}:scan3.D02PV 
+XF:16IDC-ES{Det:Sat}:scan3.D03PV 
+XF:16IDC-ES{Det:Sat}:scan3.D04PV 
+XF:16IDC-ES{Det:Sat}:scan3.D05PV 
+XF:16IDC-ES{Det:Sat}:scan3.D06PV 
+XF:16IDC-ES{Det:Sat}:scan3.D07PV 
+XF:16IDC-ES{Det:Sat}:scan3.D08PV 
+XF:16IDC-ES{Det:Sat}:scan3.D09PV 
+XF:16IDC-ES{Det:Sat}:scan3.D10PV 
+XF:16IDC-ES{Det:Sat}:scan3.D11PV 
+XF:16IDC-ES{Det:Sat}:scan3.D12PV 
+XF:16IDC-ES{Det:Sat}:scan3.D13PV 
+XF:16IDC-ES{Det:Sat}:scan3.D14PV 
+XF:16IDC-ES{Det:Sat}:scan3.D15PV 
+XF:16IDC-ES{Det:Sat}:scan3.D16PV 
+XF:16IDC-ES{Det:Sat}:scan3.D17PV 
+XF:16IDC-ES{Det:Sat}:scan3.D18PV 
+XF:16IDC-ES{Det:Sat}:scan3.D19PV 
+XF:16IDC-ES{Det:Sat}:scan3.D20PV 
+XF:16IDC-ES{Det:Sat}:scan3.D21PV 
+XF:16IDC-ES{Det:Sat}:scan3.D22PV 
+XF:16IDC-ES{Det:Sat}:scan3.D23PV 
+XF:16IDC-ES{Det:Sat}:scan3.D24PV 
+XF:16IDC-ES{Det:Sat}:scan3.D25PV 
+XF:16IDC-ES{Det:Sat}:scan3.D26PV 
+XF:16IDC-ES{Det:Sat}:scan3.D27PV 
+XF:16IDC-ES{Det:Sat}:scan3.D28PV 
+XF:16IDC-ES{Det:Sat}:scan3.D29PV 
+XF:16IDC-ES{Det:Sat}:scan3.D30PV 
+XF:16IDC-ES{Det:Sat}:scan3.D31PV 
+XF:16IDC-ES{Det:Sat}:scan3.D32PV 
+XF:16IDC-ES{Det:Sat}:scan3.D33PV 
+XF:16IDC-ES{Det:Sat}:scan3.D34PV 
+XF:16IDC-ES{Det:Sat}:scan3.D35PV 
+XF:16IDC-ES{Det:Sat}:scan3.D36PV 
+XF:16IDC-ES{Det:Sat}:scan3.D37PV 
+XF:16IDC-ES{Det:Sat}:scan3.D38PV 
+XF:16IDC-ES{Det:Sat}:scan3.D39PV 
+XF:16IDC-ES{Det:Sat}:scan3.D40PV 
+XF:16IDC-ES{Det:Sat}:scan3.D41PV 
+XF:16IDC-ES{Det:Sat}:scan3.D42PV 
+XF:16IDC-ES{Det:Sat}:scan3.D43PV 
+XF:16IDC-ES{Det:Sat}:scan3.D44PV 
+XF:16IDC-ES{Det:Sat}:scan3.D45PV 
+XF:16IDC-ES{Det:Sat}:scan3.D46PV 
+XF:16IDC-ES{Det:Sat}:scan3.D47PV 
+XF:16IDC-ES{Det:Sat}:scan3.D48PV 
+XF:16IDC-ES{Det:Sat}:scan3.D49PV 
+XF:16IDC-ES{Det:Sat}:scan3.D50PV 
+XF:16IDC-ES{Det:Sat}:scan3.D51PV 
+XF:16IDC-ES{Det:Sat}:scan3.D52PV 
+XF:16IDC-ES{Det:Sat}:scan3.D53PV 
+XF:16IDC-ES{Det:Sat}:scan3.D54PV 
+XF:16IDC-ES{Det:Sat}:scan3.D55PV 
+XF:16IDC-ES{Det:Sat}:scan3.D56PV 
+XF:16IDC-ES{Det:Sat}:scan3.D57PV 
+XF:16IDC-ES{Det:Sat}:scan3.D58PV 
+XF:16IDC-ES{Det:Sat}:scan3.D59PV 
+XF:16IDC-ES{Det:Sat}:scan3.D60PV 
+XF:16IDC-ES{Det:Sat}:scan3.D61PV 
+XF:16IDC-ES{Det:Sat}:scan3.D62PV 
+XF:16IDC-ES{Det:Sat}:scan3.D63PV 
+XF:16IDC-ES{Det:Sat}:scan3.D64PV 
+XF:16IDC-ES{Det:Sat}:scan3.D65PV 
+XF:16IDC-ES{Det:Sat}:scan3.D66PV 
+XF:16IDC-ES{Det:Sat}:scan3.D67PV 
+XF:16IDC-ES{Det:Sat}:scan3.D68PV 
+XF:16IDC-ES{Det:Sat}:scan3.D69PV 
+XF:16IDC-ES{Det:Sat}:scan3.D70PV 
+XF:16IDC-ES{Det:Sat}:scan4.ATIME 0
+XF:16IDC-ES{Det:Sat}:scan4.COPYTO 0
+XF:16IDC-ES{Det:Sat}:scan4.FLNK 0
+XF:16IDC-ES{Det:Sat}:scan4.NPTS 10
+XF:16IDC-ES{Det:Sat}:scan4.ACQT 0
+XF:16IDC-ES{Det:Sat}:scan4.ACQM 0
+XF:16IDC-ES{Det:Sat}:scan4.PASM 0
+XF:16IDC-ES{Det:Sat}:scan4.BSPV 
+XF:16IDC-ES{Det:Sat}:scan4.BSCD 1
+XF:16IDC-ES{Det:Sat}:scan4.BSWAIT 0
+XF:16IDC-ES{Det:Sat}:scan4.ASPV 
+XF:16IDC-ES{Det:Sat}:scan4.ASCD 1
+XF:16IDC-ES{Det:Sat}:scan4.ASWAIT 0
+XF:16IDC-ES{Det:Sat}:scan4.T1PV XF:16IDC-ES{Det:Sat}:scan3.EXSC
+XF:16IDC-ES{Det:Sat}:scan4.T1CD 1
+XF:16IDC-ES{Det:Sat}:scan4.T2PV 
+XF:16IDC-ES{Det:Sat}:scan4.T2CD 1
+XF:16IDC-ES{Det:Sat}:scan4.T3PV 
+XF:16IDC-ES{Det:Sat}:scan4.T3CD 1
+XF:16IDC-ES{Det:Sat}:scan4.T4PV 
+XF:16IDC-ES{Det:Sat}:scan4.T4CD 1
+XF:16IDC-ES{Det:Sat}:scan4.P1PV 
+XF:16IDC-ES{Det:Sat}:scan4.R1PV 
+XF:16IDC-ES{Det:Sat}:scan4.P1SM 0
+XF:16IDC-ES{Det:Sat}:scan4.P1SP 0
+XF:16IDC-ES{Det:Sat}:scan4.P1EP 0
+XF:16IDC-ES{Det:Sat}:scan4.P1AR 0
+XF:16IDC-ES{Det:Sat}:scan4.P2PV 
+XF:16IDC-ES{Det:Sat}:scan4.R2PV 
+XF:16IDC-ES{Det:Sat}:scan4.P2SM 0
+XF:16IDC-ES{Det:Sat}:scan4.P2SP 0
+XF:16IDC-ES{Det:Sat}:scan4.P2EP 0
+XF:16IDC-ES{Det:Sat}:scan4.P2AR 0
+XF:16IDC-ES{Det:Sat}:scan4.P3PV 
+XF:16IDC-ES{Det:Sat}:scan4.R3PV 
+XF:16IDC-ES{Det:Sat}:scan4.P3SM 0
+XF:16IDC-ES{Det:Sat}:scan4.P3SP 0
+XF:16IDC-ES{Det:Sat}:scan4.P3EP 0
+XF:16IDC-ES{Det:Sat}:scan4.P3AR 0
+XF:16IDC-ES{Det:Sat}:scan4.P4PV 
+XF:16IDC-ES{Det:Sat}:scan4.R4PV 
+XF:16IDC-ES{Det:Sat}:scan4.P4SM 0
+XF:16IDC-ES{Det:Sat}:scan4.P4SP 0
+XF:16IDC-ES{Det:Sat}:scan4.P4EP 0
+XF:16IDC-ES{Det:Sat}:scan4.P4AR 0
+XF:16IDC-ES{Det:Sat}:scan4.PDLY 0
+XF:16IDC-ES{Det:Sat}:scan4.DDLY 0
+XF:16IDC-ES{Det:Sat}:scan4.REFD 1
+XF:16IDC-ES{Det:Sat}:scan4.AWCT 0
+XF:16IDC-ES{Det:Sat}:scan4.A1PV 
+XF:16IDC-ES{Det:Sat}:scan4.A1CD 1
+XF:16IDC-ES{Det:Sat}:scan4.D01PV 
+XF:16IDC-ES{Det:Sat}:scan4.D02PV 
+XF:16IDC-ES{Det:Sat}:scan4.D03PV 
+XF:16IDC-ES{Det:Sat}:scan4.D04PV 
+XF:16IDC-ES{Det:Sat}:scan4.D05PV 
+XF:16IDC-ES{Det:Sat}:scan4.D06PV 
+XF:16IDC-ES{Det:Sat}:scan4.D07PV 
+XF:16IDC-ES{Det:Sat}:scan4.D08PV 
+XF:16IDC-ES{Det:Sat}:scan4.D09PV 
+XF:16IDC-ES{Det:Sat}:scan4.D10PV 
+XF:16IDC-ES{Det:Sat}:scan4.D11PV 
+XF:16IDC-ES{Det:Sat}:scan4.D12PV 
+XF:16IDC-ES{Det:Sat}:scan4.D13PV 
+XF:16IDC-ES{Det:Sat}:scan4.D14PV 
+XF:16IDC-ES{Det:Sat}:scan4.D15PV 
+XF:16IDC-ES{Det:Sat}:scan4.D16PV 
+XF:16IDC-ES{Det:Sat}:scan4.D17PV 
+XF:16IDC-ES{Det:Sat}:scan4.D18PV 
+XF:16IDC-ES{Det:Sat}:scan4.D19PV 
+XF:16IDC-ES{Det:Sat}:scan4.D20PV 
+XF:16IDC-ES{Det:Sat}:scan4.D21PV 
+XF:16IDC-ES{Det:Sat}:scan4.D22PV 
+XF:16IDC-ES{Det:Sat}:scan4.D23PV 
+XF:16IDC-ES{Det:Sat}:scan4.D24PV 
+XF:16IDC-ES{Det:Sat}:scan4.D25PV 
+XF:16IDC-ES{Det:Sat}:scan4.D26PV 
+XF:16IDC-ES{Det:Sat}:scan4.D27PV 
+XF:16IDC-ES{Det:Sat}:scan4.D28PV 
+XF:16IDC-ES{Det:Sat}:scan4.D29PV 
+XF:16IDC-ES{Det:Sat}:scan4.D30PV 
+XF:16IDC-ES{Det:Sat}:scan4.D31PV 
+XF:16IDC-ES{Det:Sat}:scan4.D32PV 
+XF:16IDC-ES{Det:Sat}:scan4.D33PV 
+XF:16IDC-ES{Det:Sat}:scan4.D34PV 
+XF:16IDC-ES{Det:Sat}:scan4.D35PV 
+XF:16IDC-ES{Det:Sat}:scan4.D36PV 
+XF:16IDC-ES{Det:Sat}:scan4.D37PV 
+XF:16IDC-ES{Det:Sat}:scan4.D38PV 
+XF:16IDC-ES{Det:Sat}:scan4.D39PV 
+XF:16IDC-ES{Det:Sat}:scan4.D40PV 
+XF:16IDC-ES{Det:Sat}:scan4.D41PV 
+XF:16IDC-ES{Det:Sat}:scan4.D42PV 
+XF:16IDC-ES{Det:Sat}:scan4.D43PV 
+XF:16IDC-ES{Det:Sat}:scan4.D44PV 
+XF:16IDC-ES{Det:Sat}:scan4.D45PV 
+XF:16IDC-ES{Det:Sat}:scan4.D46PV 
+XF:16IDC-ES{Det:Sat}:scan4.D47PV 
+XF:16IDC-ES{Det:Sat}:scan4.D48PV 
+XF:16IDC-ES{Det:Sat}:scan4.D49PV 
+XF:16IDC-ES{Det:Sat}:scan4.D50PV 
+XF:16IDC-ES{Det:Sat}:scan4.D51PV 
+XF:16IDC-ES{Det:Sat}:scan4.D52PV 
+XF:16IDC-ES{Det:Sat}:scan4.D53PV 
+XF:16IDC-ES{Det:Sat}:scan4.D54PV 
+XF:16IDC-ES{Det:Sat}:scan4.D55PV 
+XF:16IDC-ES{Det:Sat}:scan4.D56PV 
+XF:16IDC-ES{Det:Sat}:scan4.D57PV 
+XF:16IDC-ES{Det:Sat}:scan4.D58PV 
+XF:16IDC-ES{Det:Sat}:scan4.D59PV 
+XF:16IDC-ES{Det:Sat}:scan4.D60PV 
+XF:16IDC-ES{Det:Sat}:scan4.D61PV 
+XF:16IDC-ES{Det:Sat}:scan4.D62PV 
+XF:16IDC-ES{Det:Sat}:scan4.D63PV 
+XF:16IDC-ES{Det:Sat}:scan4.D64PV 
+XF:16IDC-ES{Det:Sat}:scan4.D65PV 
+XF:16IDC-ES{Det:Sat}:scan4.D66PV 
+XF:16IDC-ES{Det:Sat}:scan4.D67PV 
+XF:16IDC-ES{Det:Sat}:scan4.D68PV 
+XF:16IDC-ES{Det:Sat}:scan4.D69PV 
+XF:16IDC-ES{Det:Sat}:scan4.D70PV 
+XF:16IDC-ES{Det:Sat}:scanH.ATIME 0
+XF:16IDC-ES{Det:Sat}:scanH.COPYTO 0
+XF:16IDC-ES{Det:Sat}:scanH.FLNK 0
+XF:16IDC-ES{Det:Sat}:scanH.NPTS 10
+XF:16IDC-ES{Det:Sat}:scanH.ACQT 1
+XF:16IDC-ES{Det:Sat}:scanH.ACQM 0
+XF:16IDC-ES{Det:Sat}:scanH.PASM 0
+XF:16IDC-ES{Det:Sat}:scanH.BSPV 
+XF:16IDC-ES{Det:Sat}:scanH.BSCD 1
+XF:16IDC-ES{Det:Sat}:scanH.BSWAIT 0
+XF:16IDC-ES{Det:Sat}:scanH.ASPV 
+XF:16IDC-ES{Det:Sat}:scanH.ASCD 1
+XF:16IDC-ES{Det:Sat}:scanH.ASWAIT 0
+XF:16IDC-ES{Det:Sat}:scanH.T1PV 
+XF:16IDC-ES{Det:Sat}:scanH.T1CD 1
+XF:16IDC-ES{Det:Sat}:scanH.T2PV 
+XF:16IDC-ES{Det:Sat}:scanH.T2CD 1
+XF:16IDC-ES{Det:Sat}:scanH.T3PV 
+XF:16IDC-ES{Det:Sat}:scanH.T3CD 1
+XF:16IDC-ES{Det:Sat}:scanH.T4PV 
+XF:16IDC-ES{Det:Sat}:scanH.T4CD 1
+XF:16IDC-ES{Det:Sat}:scanH.P1PV 
+XF:16IDC-ES{Det:Sat}:scanH.R1PV 
+XF:16IDC-ES{Det:Sat}:scanH.P1SM 0
+XF:16IDC-ES{Det:Sat}:scanH.P1SP 0
+XF:16IDC-ES{Det:Sat}:scanH.P1EP 0
+XF:16IDC-ES{Det:Sat}:scanH.P1AR 0
+XF:16IDC-ES{Det:Sat}:scanH.P2PV 
+XF:16IDC-ES{Det:Sat}:scanH.R2PV 
+XF:16IDC-ES{Det:Sat}:scanH.P2SM 0
+XF:16IDC-ES{Det:Sat}:scanH.P2SP 0
+XF:16IDC-ES{Det:Sat}:scanH.P2EP 0
+XF:16IDC-ES{Det:Sat}:scanH.P2AR 0
+XF:16IDC-ES{Det:Sat}:scanH.P3PV 
+XF:16IDC-ES{Det:Sat}:scanH.R3PV 
+XF:16IDC-ES{Det:Sat}:scanH.P3SM 0
+XF:16IDC-ES{Det:Sat}:scanH.P3SP 0
+XF:16IDC-ES{Det:Sat}:scanH.P3EP 0
+XF:16IDC-ES{Det:Sat}:scanH.P3AR 0
+XF:16IDC-ES{Det:Sat}:scanH.P4PV 
+XF:16IDC-ES{Det:Sat}:scanH.R4PV 
+XF:16IDC-ES{Det:Sat}:scanH.P4SM 0
+XF:16IDC-ES{Det:Sat}:scanH.P4SP 0
+XF:16IDC-ES{Det:Sat}:scanH.P4EP 0
+XF:16IDC-ES{Det:Sat}:scanH.P4AR 0
+XF:16IDC-ES{Det:Sat}:scanH.PDLY 0
+XF:16IDC-ES{Det:Sat}:scanH.DDLY 0
+XF:16IDC-ES{Det:Sat}:scanH.REFD 1
+XF:16IDC-ES{Det:Sat}:scanH.AWCT 0
+XF:16IDC-ES{Det:Sat}:scanH.A1PV 
+XF:16IDC-ES{Det:Sat}:scanH.A1CD 1
+XF:16IDC-ES{Det:Sat}:scanH.D01PV 
+XF:16IDC-ES{Det:Sat}:scanH.D02PV 
+XF:16IDC-ES{Det:Sat}:scanH.D03PV 
+XF:16IDC-ES{Det:Sat}:scanH.D04PV 
+XF:16IDC-ES{Det:Sat}:scanH.D05PV 
+XF:16IDC-ES{Det:Sat}:scanH.D06PV 
+XF:16IDC-ES{Det:Sat}:scanH.D07PV 
+XF:16IDC-ES{Det:Sat}:scanH.D08PV 
+XF:16IDC-ES{Det:Sat}:scanH.D09PV 
+XF:16IDC-ES{Det:Sat}:scanH.D10PV 
+XF:16IDC-ES{Det:Sat}:scanH.D11PV 
+XF:16IDC-ES{Det:Sat}:scanH.D12PV 
+XF:16IDC-ES{Det:Sat}:scanH.D13PV 
+XF:16IDC-ES{Det:Sat}:scanH.D14PV 
+XF:16IDC-ES{Det:Sat}:scanH.D15PV 
+XF:16IDC-ES{Det:Sat}:scanH.D16PV 
+XF:16IDC-ES{Det:Sat}:scanH.D17PV 
+XF:16IDC-ES{Det:Sat}:scanH.D18PV 
+XF:16IDC-ES{Det:Sat}:scanH.D19PV 
+XF:16IDC-ES{Det:Sat}:scanH.D20PV 
+XF:16IDC-ES{Det:Sat}:scanH.D21PV 
+XF:16IDC-ES{Det:Sat}:scanH.D22PV 
+XF:16IDC-ES{Det:Sat}:scanH.D23PV 
+XF:16IDC-ES{Det:Sat}:scanH.D24PV 
+XF:16IDC-ES{Det:Sat}:scanH.D25PV 
+XF:16IDC-ES{Det:Sat}:scanH.D26PV 
+XF:16IDC-ES{Det:Sat}:scanH.D27PV 
+XF:16IDC-ES{Det:Sat}:scanH.D28PV 
+XF:16IDC-ES{Det:Sat}:scanH.D29PV 
+XF:16IDC-ES{Det:Sat}:scanH.D30PV 
+XF:16IDC-ES{Det:Sat}:scanH.D31PV 
+XF:16IDC-ES{Det:Sat}:scanH.D32PV 
+XF:16IDC-ES{Det:Sat}:scanH.D33PV 
+XF:16IDC-ES{Det:Sat}:scanH.D34PV 
+XF:16IDC-ES{Det:Sat}:scanH.D35PV 
+XF:16IDC-ES{Det:Sat}:scanH.D36PV 
+XF:16IDC-ES{Det:Sat}:scanH.D37PV 
+XF:16IDC-ES{Det:Sat}:scanH.D38PV 
+XF:16IDC-ES{Det:Sat}:scanH.D39PV 
+XF:16IDC-ES{Det:Sat}:scanH.D40PV 
+XF:16IDC-ES{Det:Sat}:scanH.D41PV 
+XF:16IDC-ES{Det:Sat}:scanH.D42PV 
+XF:16IDC-ES{Det:Sat}:scanH.D43PV 
+XF:16IDC-ES{Det:Sat}:scanH.D44PV 
+XF:16IDC-ES{Det:Sat}:scanH.D45PV 
+XF:16IDC-ES{Det:Sat}:scanH.D46PV 
+XF:16IDC-ES{Det:Sat}:scanH.D47PV 
+XF:16IDC-ES{Det:Sat}:scanH.D48PV 
+XF:16IDC-ES{Det:Sat}:scanH.D49PV 
+XF:16IDC-ES{Det:Sat}:scanH.D50PV 
+XF:16IDC-ES{Det:Sat}:scanH.D51PV 
+XF:16IDC-ES{Det:Sat}:scanH.D52PV 
+XF:16IDC-ES{Det:Sat}:scanH.D53PV 
+XF:16IDC-ES{Det:Sat}:scanH.D54PV 
+XF:16IDC-ES{Det:Sat}:scanH.D55PV 
+XF:16IDC-ES{Det:Sat}:scanH.D56PV 
+XF:16IDC-ES{Det:Sat}:scanH.D57PV 
+XF:16IDC-ES{Det:Sat}:scanH.D58PV 
+XF:16IDC-ES{Det:Sat}:scanH.D59PV 
+XF:16IDC-ES{Det:Sat}:scanH.D60PV 
+XF:16IDC-ES{Det:Sat}:scanH.D61PV 
+XF:16IDC-ES{Det:Sat}:scanH.D62PV 
+XF:16IDC-ES{Det:Sat}:scanH.D63PV 
+XF:16IDC-ES{Det:Sat}:scanH.D64PV 
+XF:16IDC-ES{Det:Sat}:scanH.D65PV 
+XF:16IDC-ES{Det:Sat}:scanH.D66PV 
+XF:16IDC-ES{Det:Sat}:scanH.D67PV 
+XF:16IDC-ES{Det:Sat}:scanH.D68PV 
+XF:16IDC-ES{Det:Sat}:scanH.D69PV 
+XF:16IDC-ES{Det:Sat}:scanH.D70PV 
+XF:16IDC-ES{Det:Sat}:saveData_fileSystem 
+XF:16IDC-ES{Det:Sat}:saveData_subDir 
+XF:16IDC-ES{Det:Sat}:saveData_baseName 
+XF:16IDC-ES{Det:Sat}:saveData_scanNumber 0
+XF:16IDC-ES{Det:Sat}:saveData_realTime1D 0
+XF:16IDC-ES{Det:Sat}:saveData_maxAllowedRetries 10
+XF:16IDC-ES{Det:Sat}:saveData_retryWaitInSecs 15
+<END>

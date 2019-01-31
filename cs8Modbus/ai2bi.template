@@ -1,0 +1,15 @@
+record(calc, "$(P)$(R)_Calc_") {
+    field(INPA, "$(INPA) CP")
+    field(INPB, "$(INPB) CP")
+    field(CALC, "$(CALC)")
+    field(SCAN, "1 second")
+    #field(OOPT, "Every Time")
+}
+
+record(bo, "$(P)$(R)") {
+    field(DTYP,"asynUInt32Digital")
+    field(DOL, "$(P)$(R)_Calc_ CP")
+    field(OMSL,"closed_loop")
+    field(OUT, "@asynMask($(PORT) $(OFFSET) 0x1)")
+}
+

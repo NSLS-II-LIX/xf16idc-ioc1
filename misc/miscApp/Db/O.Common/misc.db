@@ -1,0 +1,65 @@
+record(ao, "$(P){Misc-BeamCenter:X}Pos-SP") {
+    field(PINI, "YES")
+    info(autosaveFields, "VAL EGU")
+}
+
+record(ao, "$(P){Misc-BeamCenter:Y}Pos-SP") {
+    field(PINI, "YES")
+    info(autosaveFields, "VAL EGU")
+}
+
+record(ao, "$(P){Misc-BeamSize:X}Pos-SP") {
+    field(PINI, "YES")
+    info(autosaveFields, "VAL EGU")
+}
+
+record(ao, "$(P){Misc-BeamSize:Y}Pos-SP") {
+    field(PINI, "YES")
+    info(autosaveFields, "VAL EGU")
+}
+
+record(ao, "$(P){Misc-Hi2LoMagOffset:X}Pos-SP") {
+    field(PINI, "YES")
+    info(autosaveFields, "VAL EGU")
+}
+
+record(ao, "$(P){Misc-Hi2LoMagOffset:Y}Pos-SP") {
+    field(PINI, "YES")
+    info(autosaveFields, "VAL EGU")
+}
+
+record(ao, "$(P){Misc-AuxCursor1:X}Pos-SP") {
+    field(PINI, "YES")
+    info(autosaveFields, "VAL EGU")
+}
+
+record(ao, "$(P){Misc-AuxCursor1:Y}Pos-SP") {
+    field(PINI, "YES")
+    info(autosaveFields, "VAL EGU")
+}
+
+record(ao, "$(P){Misc-AuxCursor2:X}Pos-SP") {
+    field(PINI, "YES")
+    info(autosaveFields, "VAL EGU")
+}
+
+record(ao, "$(P){Misc-AuxCursor2:Y}Pos-SP") {
+    field(PINI, "YES")
+    info(autosaveFields, "VAL EGU")
+}
+
+record(ao, "$(P){Misc-AuxCursor3:X}Pos-SP") {
+    field(PINI, "YES")
+    info(autosaveFields, "VAL EGU")
+}
+
+record(ao, "$(P){Misc-AuxCursor3:Y}Pos-SP") {
+    field(PINI, "YES")
+    info(autosaveFields, "VAL EGU")
+}
+
+record(ao, "$(P){Misc-BeamFlux}Pos-SP") {
+    field(PINI, "YES")
+    info(autosaveFields, "VAL EGU")
+}
+

@@ -1,0 +1,4 @@
+epicsEnvSet("ARCH","linux-x86_64")
+epicsEnvSet("IOC","iocPSJena")
+epicsEnvSet("TOP","/epics/iocs/PSJena")
+epicsEnvSet("EPICS_BASE","/usr/lib/epics")

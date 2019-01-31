@@ -1,0 +1,5 @@
+record(ao, "$(P)$(R)Pos-SP") {
+    field(PINI, "YES")
+    info(autosaveFields, "VAL EGU")
+}
+

@@ -1,0 +1,691 @@
+record(calc, "$(P)beamline_merit"){
+        field(PINI, "1")
+        field(INPA, "0")    
+        field(CALC, "a")
+}
+
+record(calc, "$(P)fprime_infl"){
+        field(PINI, "1")
+        field(INPA, "0.0")    
+        field(CALC, "a")
+}
+
+record(calc, "$(P)energy_fall"){
+        field(PINI, "1")
+        field(INPA, "0.0")    
+        field(CALC, "a")
+}
+
+record(calc, "$(P)spcgrp"){
+        field(PINI, "1")
+        field(INPA, "1")    
+        field(CALC, "a")
+}
+
+record(calc, "$(P)wavelength0"){
+        field(PINI, "1")
+        field(INPA, "1.1")    
+        field(CALC, "a")
+}
+
+
+record(calc, "$(P)mono_wave_current"){
+        field(PINI, "1")
+        field(INPA, "0.0")    
+        field(CALC, "a")
+}
+
+record(calc, "$(P)wave_peak"){
+        field(PINI, "1")
+        field(INPA, "1.0")    
+        field(CALC, "a")
+}
+
+record(calc, "$(P)mono_energy_target"){
+        field(PINI, "1")
+        field(INPA, "1.1")    
+        field(CALC, "a")
+}
+
+record(calc, "$(P)sweep_count"){
+        field(PINI, "1")
+        field(INPA, "0")    
+        field(CALC, "a")
+}
+
+
+record(calc, "$(P)xbeam"){
+        field(PINI, "1")
+        field(INPA, "157.00")    
+        field(CALC, "a")
+}
+
+record(calc, "$(P)overwrite_check_flag"){
+        field(PINI, "1")
+        field(INPA, "1")    
+        field(CALC, "a")
+}
+
+record(calc, "$(P)f2prime_infl"){
+        field(PINI, "1")
+        field(INPA, "0.0")    
+        field(CALC, "a")
+}
+
+
+record(calc, "$(P)active_sweep"){
+        field(PINI, "1")
+        field(INPA, "-1")    
+        field(CALC, "a")
+}
+
+record(calc, "$(P)edna_aimed_ISig"){
+        field(PINI, "1")
+        field(INPA, "2.0")    
+        field(CALC, "a")
+}
+
+record(calc, "$(P)energy_peak"){
+        field(PINI, "1")
+        field(INPA, "12.3985")    
+        field(CALC, "a")
+}
+
+
+record(calc, "$(P)zinger_flag"){
+        field(PINI, "1")
+        field(INPA, "0")    
+        field(CALC, "a")
+}
+
+
+record(calc, "$(P)state_percent"){
+        field(PINI, "1")
+        field(INPA, "0")    
+        field(CALC, "a")
+}
+
+record(calc, "$(P)f2prime_peak"){
+        field(PINI, "1")
+        field(INPA, "0.0")    
+        field(CALC, "a")
+}
+
+
+record(calc, "$(P)size_mode"){
+        field(PINI, "1")
+        field(INPA, "0")    
+        field(CALC, "a")
+}
+
+
+record(calc, "$(P)datum_phi"){
+        field(PINI, "1")
+        field(INPA, "0.0")    
+        field(CALC, "a")
+}
+
+
+record(calc, "$(P)exptime0"){
+        field(PINI, "1")
+        field(INPA, "1.0")    
+        field(CALC, "a")
+}
+
+
+record(calc, "$(P)rot_dist0"){
+        field(PINI, "1")
+        field(INPA, "300.0")    
+        field(CALC, "a")
+}
+
+
+record(calc, "$(P)edna_aimed_completeness"){
+        field(PINI, "1")
+        field(INPA, "0.99")    
+        field(CALC, "a")
+}
+
+record(calc, "$(P)theta"){
+        field(PINI, "1")
+        field(INPA, "0.0")    
+        field(CALC, "a")
+}
+
+record(calc, "$(P)datum_omega"){
+        field(PINI, "1")
+        field(INPA, "0.0")    
+        field(CALC, "a")
+}
+
+record(calc, "$(P)phi"){
+        field(PINI, "1")
+        field(INPA, "0.0")    
+        field(CALC, "a")
+}
+
+record(calc, "$(P)take_xtal_pics"){
+        field(PINI, "1")
+        field(INPA, "0")    
+        field(CALC, "a")
+}
+
+record(calc, "$(P)html_logging"){
+        field(PINI, "1")
+        field(INPA, "0")    
+        field(CALC, "a")
+}
+
+
+record(calc, "$(P)energy_inflection"){
+        field(PINI, "1")
+        field(INPA, "0.0")    
+        field(CALC, "a")
+}
+
+record(calc, "$(P)numstar0"){
+        field(PINI, "1")
+        field(INPA, "0")    
+        field(CALC, "a")
+}
+
+record(longout,"$(P)numstart0"){
+        field(PINI, "1")
+        field(VAL,"1")
+        field(DTYP,"Soft Channel")
+}
+
+
+record(stringout, "$(P)mounted_pin")
+{
+    field(PINI, "1")
+    field(VAL,  "")
+}
+
+
+
+record(calc, "$(P)datum_kappa"){
+        field(PINI, "1")
+        field(INPA, "0.0")    
+        field(CALC, "a")
+}
+
+record(calc, "$(P)fprime_peak"){
+        field(PINI, "1")
+        field(INPA, "0.0")    
+        field(CALC, "a")
+}
+
+record(calc, "$(P)automax_frequency"){
+        field(PINI, "1")
+        field(INPA, "0")    
+        field(CALC, "a")
+}
+
+
+record(calc, "$(P)omega"){
+        field(PINI, "1")
+        field(INPA, "0.0")    
+        field(CALC, "a")
+}
+
+record(calc, "$(P)inc0"){
+        field(PINI, "1")
+        field(INPA, "0.0")    
+        field(CALC, "a")
+}
+
+
+record(calc, "$(P)distance"){
+        field(PINI, "1")
+        field(INPA, "0.0")    
+        field(CALC, "a")
+}
+
+record(calc, "$(P)current_pinpos"){
+        field(PINI, "1")
+        field(INPA, "0")    
+        field(CALC, "a")
+}
+
+
+record(calc, "$(P)kappa"){
+        field(PINI, "1")
+        field(INPA, "0.0")    
+        field(CALC, "a")
+}
+
+
+record(calc, "$(P)mono_wave_target"){
+        field(PINI, "1")
+        field(INPA, "1.1")    
+        field(CALC, "a")
+}
+
+record(calc, "$(P)wave_fall"){
+        field(PINI, "1")
+        field(INPA, "0.0")    
+        field(CALC, "a")
+}
+
+
+record(calc, "$(P)wave_inflection"){
+        field(PINI, "1")
+        field(INPA, "1.0")    
+        field(CALC, "a")
+}
+
+
+record(calc, "$(P)filter"){
+        field(PINI, "1")
+        field(INPA, "0")    
+        field(CALC, "a")
+}
+
+
+record(calc, "$(P)ybeam"){
+        field(PINI, "1")
+        field(INPA, "157.0")    
+        field(CALC, "a")
+}
+
+
+record(calc, "$(P)max_before_sweep"){
+        field(PINI, "1")
+        field(INPA, "0")    
+        field(CALC, "a")
+}
+
+
+record(calc, "$(P)mono_energy_current"){
+        field(PINI, "1")
+        field(INPA, "1.1")    
+        field(CALC, "a")
+}
+
+record(calc, "$(P)mono_scan_points"){
+        field(PINI, "1")
+        field(INPA, "1.1")    
+        field(CALC, "a")
+}
+
+
+record(calc, "$(P)mono_energy_scan_step"){
+        field(PINI, "1")
+        field(INPA, "1.1")    
+        field(CALC, "a")
+}
+
+record(calc, "$(P)col_start0"){
+        field(PINI, "1")
+        field(INPA, "0.0")    
+        field(CALC, "a")
+}
+
+
+record(calc, "$(P)beam_check_flag"){
+        field(PINI, "1")
+        field(INPA, "0")    
+        field(CALC, "a")
+}
+
+record(calc, "$(P)col_end0"){
+        field(PINI, "1")
+        field(INPA, "0.0")    
+        field(CALC, "a")
+}
+
+record(calc, "$(P)inc0"){
+        field(PINI, "1")
+        field(INPA, "0.0")    
+        field(CALC, "a")
+}
+
+record(waveform, "$(P)file_prefix0")
+{
+    field(PINI, "1")
+    field(INP,  "")
+    field(FTVL, "UCHAR")
+    field(NELM, "512")
+}
+
+record(waveform, "$(P)message_string")
+{
+    field(PINI, "1")
+    field(INP,  "")
+    field(FTVL, "UCHAR")
+    field(NELM, "1024")
+}
+
+record(waveform, "$(P)gui_popup_message_string")
+{
+    field(PINI, "1")
+    field(INP,  "")
+    field(FTVL, "UCHAR")
+    field(NELM, "1024")
+}
+
+
+record(stringout, "$(P)group_name")
+{
+    field(PINI, "1")
+    field(VAL,  "")
+}
+
+record(stringout, "$(P)program_state")
+{
+        field(PINI, "1")
+    field(VAL,  "")
+}
+
+record(waveform, "$(P)datafilename")
+{
+    field(PINI, "1")
+    field(INP,  "")
+    field(FTVL, "UCHAR")
+    field(NELM, "512")
+}
+
+record(stringout, "$(P)state")
+{
+        field(PINI, "1")
+    field(VAL,  "")
+}
+
+
+record(stringout, "$(P)xtal_id")
+{
+        field(PINI, "1")
+    field(VAL,"")
+}
+
+record(stringout, "$(P)edna_aimed_resolution")
+{
+        field(PINI, "1")
+    field(VAL,  "")
+}
+
+
+record(stringout, "$(P)scan_axis")
+{
+        field(PINI, "1")
+    field(VAL,  "")
+}
+
+
+record(stringout, "$(P)px_id")
+{
+        field(PINI, "1")
+    field(VAL,  "")
+}
+
+
+record(stringout, "$(P)edna_aimed_multiplicity")
+{
+        field(PINI, "1")
+    field(VAL,  "")
+}
+
+
+record(waveform, "$(P)command_s")
+{
+    field(PINI, "1")
+    field(INP,  "")
+    field(FTVL, "UCHAR")
+    field(NELM, "1024")
+}
+
+record(waveform, "$(P)immediate_command_s")
+{
+    field(PINI, "1")
+    field(INP,  "")
+    field(FTVL, "UCHAR")
+    field(NELM, "1024")
+}
+
+record(stringout, "$(P)pause_button_state")
+{
+        field(PINI, "1")
+    field(VAL,  "")
+}
+
+
+record(calc, "$(P)grid_w"){
+        field(PINI, "1")
+        field(INPA, "210")    
+        field(CALC, "a")
+}
+
+
+record(calc, "$(P)grid_h"){
+        field(PINI, "1")
+        field(INPA, "150")    
+        field(CALC, "a")
+}
+
+record(calc, "$(P)grid_i"){
+        field(PINI, "1")
+        field(INPA, "30")    
+        field(CALC, "a")
+}
+
+
+record(calc, "$(P)grid_on"){
+        field(PINI, "1")
+        field(INPA, "0")    
+        field(CALC, "a")
+}
+
+record(calc, "$(P)grid_exptime"){
+        field(PINI, "1")
+        field(INPA, "0.2")
+        field(CALC, "a")
+}
+
+record(calc, "$(P)grid_imwidth"){
+        field(PINI, "1")
+        field(INPA, "0.2")
+        field(CALC, "a")
+}
+
+
+record(calc, "$(P)vector_fpp"){
+        field(PINI, "1")
+        field(INPA, "1")    
+        field(CALC, "a")
+}
+
+
+record(calc, "$(P)vector_on"){
+        field(PINI, "1")
+        field(INPA, "0")    
+        field(CALC, "a")
+}
+
+record(calc, "$(P)last_specx"){
+        field(PINI, "1")
+        field(INPA, "0.0")
+        field(CALC, "a")
+}
+
+record(calc, "$(P)last_specy"){
+        field(PINI, "1")
+        field(INPA, "0.0")
+        field(CALC, "a")
+}
+
+record(calc, "$(P)last_specz"){
+        field(PINI, "1")
+        field(INPA, "0.0")
+        field(CALC, "a")
+}
+
+record(calc, "$(P)raman_slit"){
+        field(PINI, "1")
+        field(INPA, "1000.0")
+        field(CALC, "a")
+}
+
+record(calc, "$(P)raman_laser"){
+        field(PINI, "1")
+        field(INPA, "0")
+        field(CALC, "a")
+}
+
+record(calc, "$(P)raman_grating"){
+        field(PINI, "1")
+        field(INPA, "0")    
+        field(CALC, "a")
+}
+
+record(calc, "$(P)raman_scan_num"){
+        field(PINI, "1")
+        field(INPA, "0")    
+        field(CALC, "a")
+}
+
+record(calc, "$(P)raman_scan_from"){
+        field(PINI, "1")
+        field(INPA, "0")    
+        field(CALC, "a")
+}
+
+record(calc, "$(P)raman_scan_to"){
+        field(PINI, "1")
+        field(INPA, "0")    
+        field(CALC, "a")
+}
+
+record(calc, "$(P)raman_scan_exptime"){
+        field(PINI, "1")
+        field(INPA, "0")    
+        field(CALC, "a")
+}
+
+record(calc, "$(P)xia2_on"){
+        field(PINI, "1")
+        field(INPA, "0")    
+        field(CALC, "a")
+}
+
+record(calc, "$(P)spec_mode"){
+        field(PINI, "1")
+        field(INPA, "0")    
+        field(CALC, "a")
+}
+
+record(calc, "$(P)raman_active"){
+        field(PINI, "1")
+        field(INPA, "0")    
+        field(CALC, "a")
+}
+
+record(calc, "$(P)plate_num"){
+        field(PINI, "1")
+        field(INPA, "0")    
+        field(CALC, "a")
+}
+
+record(calc, "$(P)well_num"){
+        field(PINI, "1")
+        field(INPA, "0")    
+        field(CALC, "a")
+}
+
+record(calc, "$(P)vector_step"){
+        field(PINI, "1")
+        field(INPA, "0.0")
+        field(CALC, "a")
+}
+
+record(calc, "$(P)vector_translation"){
+        field(PINI, "1")
+        field(INPA, "0.0")
+        field(CALC, "a")
+}
+
+record(calc, "$(P)ade"){
+        field(PINI, "1")
+        field(INPA, "0")    
+        field(CALC, "a")
+}
+
+record(calc, "$(P)live_q_change_flag"){
+        field(PINI, "1")
+        field(INPA, "0")    
+        field(CALC, "a")
+}
+
+record(calc, "$(P)collimator"){
+        field(PINI, "1")
+        field(INPA, "0.0")    
+        field(CALC, "a")
+}
+
+record(calc, "$(P)aperature"){
+        field(PINI, "1")
+        field(INPA, "0.0")    
+        field(CALC, "a")
+}
+
+record(calc, "$(P)lamp"){
+        field(PINI, "1")
+        field(INPA, "0.0")    
+        field(CALC, "a")
+}
+
+record(calc, "$(P)beamStop"){
+        field(PINI, "1")
+        field(INPA, "0.0")    
+        field(CALC, "a")
+}
+
+record(waveform, "$(P)stateCommand_s")
+{
+    field(PINI, "1")
+    field(INP,  "")
+    field(FTVL, "UCHAR")
+    field(NELM, "1024")
+}
+
+
+record(state, "$(P)beamlineStateName")
+{
+    field(PINI, "1")
+    field(VAL,  "")
+}
+
+
+record(mbbo,"$(P)beamlineState") {
+    field(DESC,"Beamline State")
+    field(ZRVL,"0")
+    field(ZRST,"Maintenance")
+    field(ONVL,"1")
+    field(ONST,"BeamLocation")
+    field(TWVL,"2")
+    field(TWST,"DataCollection")
+    field(THVL,"3")
+    field(THST,"SampleAlignment")
+    field(FRVL,"4")
+    field(FRST,"SampleExchange")
+}
+
+
+record(calc, "$(P)rasterScoreFlag"){
+        field(PINI, "0")
+        field(INPA, "0")    
+        field(CALC, "a")
+}
+
+record(stringout, "$(P)choochResultFlag"){
+    field(PINI, "1")
+    field(VAL,  "0")
+
+}
+
+
+record(stringout, "$(P)xrecRasterFlag")
+{
+    field(PINI, "1")
+    field(VAL,  "0")
+}

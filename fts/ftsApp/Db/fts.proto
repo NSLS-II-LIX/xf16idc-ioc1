@@ -1,0 +1,23 @@
+Timeout=1000;
+Terminator = "";
+
+read{
+    MaxInput = 16;
+    out "\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00%0.2r\x00\x00";
+    in "\x12\x34%(A)02r%(B)2r%(C)2r%(D)2r%(E)2r%(F)2r%(G)2r";
+    disconnect;
+}
+    
+readCalibration {
+    MaxInput = 24;
+    out "\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00";
+    in "\x12\x34%(A)01r%(B)01r%(C)04r%(D)04r%(E)02r%(F)02r%(G)02r%(H)02r%(I)02r%(J)02r";
+    disconnect;
+    @init {
+        out "\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00";
+        in "\x12\x34%(A)01r%(B)01r%(C)04r%(D)04r%(E)02r%(F)02r%(G)02r%(H)02r%(I)02r%(J)02r";
+        disconnect;
+    }
+
+}
+    

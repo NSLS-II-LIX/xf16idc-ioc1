@@ -1,0 +1,56 @@
+#!/epics/src/modbus/bin/linux-x86_64/modbusApp
+
+epicsEnvSet("EPICS_CA_AUTO_ADDR_LIST", 	"NO")
+epicsEnvSet("EPICS_CA_ADDR_LIST", 	"10.16.0.255 10.16.2.62")
+
+epicsEnvSet("MODBUS",	"/epics/src/modbus")
+epicsEnvSet("CS8IP",	"10.16.2.192")
+#epicsEnvSet("CS8IP",	"xf16idc-robot1")
+epicsEnvSet("PREFIX",	"XF:16IDC-ES:LIX{CS8}")
+epicsEnvSet("IOSCAN",    "I/O Intr")
+
+dbLoadDatabase("$(MODBUS)/dbd/modbus.dbd")
+modbus_registerRecordDeviceDriver(pdbbase)
+
+drvAsynIPPortConfigure("TX40-CS8",    "$(CS8IP):502", 0, 0, 1)
+
+modbusInterposeConfig("TX40-CS8", 0, 0, 0)
+
+# Name, Asyn port, Slave addr, Function code, Address offset, Address len, Data type (0=UINT16,4=INT16), Poll (ms), PLC type
+drvModbusAsynConfigure("LIX-WRITE2DI", "TX40-CS8", "0", "5", "0x0000", "64", "0", "500", "CS8")
+drvModbusAsynConfigure("LIX-READDO",   "TX40-CS8", "0", "1", "0x0040", "32", "0", "500", "CS8")
+drvModbusAsynConfigure("LIX-WRITE2AI", "TX40-CS8", "0", "6", "0x0000", "16", "0", "500", "CS8")
+drvModbusAsynConfigure("LIX-WRITE2AIF","TX40-CS8", "0", "16","0x0010", "32", "7", "500", "CS8")
+drvModbusAsynConfigure("LIX-READAOF",  "TX40-CS8", "0", "3", "0x0030", "16", "7", "500", "CS8")
+
+
+# Read from Epics bi and Write to CS8 digital inputs
+dbLoadRecords("cs8bi.template", "P=$(PREFIX),   PORT=LIX-WRITE2DI,INP=XF:16IDC-ES:LIX{FTS:1}Status-I,	    OFFSET=0x01,R=Collission")
+dbLoadRecords("cs8bi.template",	"P=$(PREFIX),	PORT=LIX-WRITE2DI,INP=XF:16IDC-ES:Sol{ctrl}HolderPresent,   OFFSET=0x02,R=StageSatus")
+dbLoadRecords("cs8bi.template",	"P=$(PREFIX),	PORT=LIX-WRITE2DI,INP=XF:16IDC-ES:Sol{ctrl}EMSolReady,	    OFFSET=0x03,R=StageReady")
+#dbLoadRecords("cs8bi.template", "P=$(PREFIX),	PORT=LIX-WRITE2DI,INP=XF:16IDC-ES:LIX			,	OFFSET=0x04,R=StorageReady")
+
+dbLoadRecords("cs8calc.template", "P=$(PREFIX),	R=test")
+
+
+
+# Read from CS8 digital outputs and Write to Epics bo
+dbLoadRecords("cs8bo.template", "P=$(PREFIX),   PORT=LIX-READDO,SCAN=$(IOSCAN),OFFSET=0x00,     OUTPUT=XF:16IDC-ES:Chalet{ctrl}door_sel, R=Door")
+#dbLoadRecords("cs8bo.template", "P=$(PREFIX),   PORT=LIX-READDO,SCAN=$(IOSCAN),OFFSET=0x01,     OUTPUT=XF:16IDC-ES:LIX,                 R=StageRest")
+#dbLoadRecords("cs8bo.template", "P=$(PREFIX),   PORT=LIX-READDO,SCAN=$(IOSCAN),OFFSET=0x02,     OUTPUT=XF:16IDC-ES:LIX,                 R=StorageReset")
+
+
+# Read analog inputs from Epics and Write to CS8
+dbLoadRecords("cs8ai.template", "P=$(PREFIX),PORT=LIX-WRITE2AIF,INP=XF:16IDC-ES:LIX{FTS:1}ForceX-I,       	PREC=5,OFFSET=0x00, R=Fx")
+dbLoadRecords("cs8ai.template", "P=$(PREFIX),PORT=LIX-WRITE2AIF,INP=XF:16IDC-ES:LIX{FTS:1}ForceY-I,       	PREC=5,OFFSET=0x02, R=Fy")
+dbLoadRecords("cs8ai.template", "P=$(PREFIX),PORT=LIX-WRITE2AIF,INP=XF:16IDC-ES:LIX{FTS:1}ForceZ-I,       	PREC=5,OFFSET=0x04, R=Fz")
+dbLoadRecords("cs8ai.template", "P=$(PREFIX),PORT=LIX-WRITE2AIF,INP=XF:16IDC-ES:LIX{FTS:1}TorqueX-I,       	PREC=5,OFFSET=0x06, R=Tx")
+dbLoadRecords("cs8ai.template", "P=$(PREFIX),PORT=LIX-WRITE2AIF,INP=XF:16IDC-ES:LIX{FTS:1}TorqueY-I,       	PREC=5,OFFSET=0x08, R=Ty")
+dbLoadRecords("cs8ai.template", "P=$(PREFIX),PORT=LIX-WRITE2AIF,INP=XF:16IDC-ES:LIX{FTS:1}TorqueZ-I,       	PREC=5,OFFSET=0x0A, R=Tz")
+
+
+
+
+iocInit()
+
+

@@ -6,7 +6,8 @@ file "db/motor.db"
 pattern
 { P,             M,               MOTOR,   PORT, ADDR, DESC,     DTYP, EGU, MRES, PREC }
 { "XF:16IDB-BI", "{BPM:1-Ax:X}Mtr", "motor", "P0", 0, "BPM:1 X", asynMotor, "mm", "1e-6", 6}
-{ "XF:16IDB-BI", "{BPM:1-Ax:Y}Mtr", "motor", "P0", 2, "BPM:1 Y", asynMotor, "mm", "1e-6", 6}
+{ "XF:16IDB-BI", "{BPM:1-Ax:Y}Mtr", "motor", "P0", 1, "BPM:1 Y", asynMotor, "mm", "1e-6", 6}
+{ "XF:16IDB-BI", "{SCN:SS-Ax:Y}Mtr", "motor", "P0", 2, "SCN:SS Y", asynMotor, "mm", "1e-6", 6}
 #{ "XF:16IDC-BI", "{BPM:2-Ax:Y}Mtr", "motor", "P0", 2, "BPM:2 Y", asynMotor, "mm", "1e-6", 6}
 #{ "LIX","{Ax:1}Mtr", "motor", "P0", 0, "Motor 1", asynMotor, "deg", "1e-6", 6}
 #{ "LIX","{Ax:2}Mtr", "motor", "P0", 1, "Motor 2", asynMotor, "mm", "1e-6", 6}

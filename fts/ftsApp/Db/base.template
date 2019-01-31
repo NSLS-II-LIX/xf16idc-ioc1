@@ -1,0 +1,224 @@
+# Reading PVs
+
+# Controls whether to enable the lower 6 (0) or the higher 6 thresholds (1)
+record(bo, "$(P)$(R)Thresholds-Sel") {
+    field(ZNAM, "Lower 6")
+    field(ONAM, "Higher 6")
+    field(VAL,  "0")
+    field(PINI, "YES")
+    field(FLNK, "$(P)$(R)Read-Cmd")
+}
+
+record(calcout, "$(P)$(R)Read-Cmd") {
+    field(DTYP, "stream")
+    field(INPH, "$(P)$(R)Thresholds-Sel")
+    field(CALC, "H ? 0x0FC0 : 0x003F")
+    field(OUT,  "@fts.proto read() $(PORT)")
+    field(FLNK, "$(P)$(R)Read-Fout1")
+} 
+
+record(fanout, "$(P)$(R)Read-Fout1") {
+    field(LNK1, "$(P)$(R)Status-I")
+    field(LNK2, "$(P)$(R)Read-Fout2")
+}
+
+record(fanout, "$(P)$(R)Read-Fout2") {
+    field(LNK1, "$(P)$(R)ForceXRaw-I")
+    field(LNK2, "$(P)$(R)ForceYRaw-I")
+    field(LNK3, "$(P)$(R)ForceZRaw-I")
+    field(LNK4, "$(P)$(R)TorqueXRaw-I")
+    field(LNK5, "$(P)$(R)TorqueYRaw-I")
+    field(LNK6, "$(P)$(R)TorqueZRaw-I")
+}
+
+record(ai, "$(P)$(R)Status-I") {
+    field(DTYP, "Raw Soft Channel")
+    field(INP,  "$(P)$(R)Read-Cmd.A NPP")
+}
+
+record(ai, "$(P)$(R)ForceXRaw-I") {
+    field(DTYP, "Raw Soft Channel")
+    field(INP,  "$(P)$(R)Read-Cmd.B")
+    field(FLNK, "$(P)$(R)ForceX-I")
+}
+
+record(calc, "$(P)$(R)ForceX-I") {
+    field(INPA, "$(P)$(R)ForceXRaw-I")
+    field(INPB, "$(P)$(R)CtsPerForce-I")
+    field(INPC, "$(P)$(R)ForceXScale-I")
+    field(CALC, "A*C/B")
+    field(PREC, "6")
+}
+
+record(ai, "$(P)$(R)ForceYRaw-I") {
+    field(DTYP, "Raw Soft Channel")
+    field(INP,  "$(P)$(R)Read-Cmd.C")
+    field(FLNK, "$(P)$(R)ForceY-I")
+}
+
+record(calc, "$(P)$(R)ForceY-I") {
+    field(INPA, "$(P)$(R)ForceXRaw-I")
+    field(INPB, "$(P)$(R)CtsPerForce-I")
+    field(INPC, "$(P)$(R)ForceYScale-I")
+    field(CALC, "A*C/B")
+    field(PREC, "6")
+}
+
+record(ai, "$(P)$(R)ForceZRaw-I") {
+    field(DTYP, "Raw Soft Channel")
+    field(INP,  "$(P)$(R)Read-Cmd.D")
+    field(FLNK, "$(P)$(R)ForceZ-I")
+}
+
+record(calc, "$(P)$(R)ForceZ-I") {
+    field(INPA, "$(P)$(R)ForceZRaw-I")
+    field(INPB, "$(P)$(R)CtsPerForce-I")
+    field(INPC, "$(P)$(R)ForceZScale-I")
+    field(CALC, "A*C/B")
+    field(PREC, "6")
+}
+
+record(ai, "$(P)$(R)TorqueXRaw-I") {
+    field(DTYP, "Raw Soft Channel")
+    field(INP,  "$(P)$(R)Read-Cmd.E")
+    field(FLNK, "$(P)$(R)TorqueX-I")
+}
+
+record(calc, "$(P)$(R)TorqueX-I") {
+    field(INPA, "$(P)$(R)TorqueXRaw-I")
+    field(INPB, "$(P)$(R)CtsPerTorque-I")
+    field(INPC, "$(P)$(R)TorqueXScale-I")
+    field(CALC, "A*C/B")
+    field(PREC, "6")
+}
+
+record(ai, "$(P)$(R)TorqueYRaw-I") {
+    field(DTYP, "Raw Soft Channel")
+    field(INP,  "$(P)$(R)Read-Cmd.F")
+    field(FLNK, "$(P)$(R)TorqueY-I")
+}
+
+record(calc, "$(P)$(R)TorqueY-I") {
+    field(INPA, "$(P)$(R)TorqueYRaw-I")
+    field(INPB, "$(P)$(R)CtsPerTorque-I")
+    field(INPC, "$(P)$(R)TorqueYScale-I")
+    field(CALC, "A*C/B")
+    field(PREC, "6")
+}
+
+record(ai, "$(P)$(R)TorqueZRaw-I") {
+    field(DTYP, "Raw Soft Channel")
+    field(INP,  "$(P)$(R)Read-Cmd.G")
+    field(FLNK, "$(P)$(R)TorqueZ-I")
+}
+
+record(calc, "$(P)$(R)TorqueZ-I") {
+    field(INPA, "$(P)$(R)TorqueZRaw-I")
+    field(INPB, "$(P)$(R)CtsPerTorque-I")
+    field(INPC, "$(P)$(R)TorqueZScale-I")
+    field(CALC, "A*C/B")
+    field(PREC, "6")
+}
+
+
+# Calibration PVs
+
+record(calcout, "$(P)$(R)ReadCalib-Cmd") {
+    field(DTYP, "stream")
+    field(CALC, "0")
+    field(OUT,  "@fts.proto readCalibration() $(PORT)")
+    field(FLNK, "$(P)$(R)Calib-Fout1")
+    field(PINI, "YES")
+} 
+
+record(fanout, "$(P)$(R)Calib-Fout1") {
+    field(LNK1, "$(P)$(R)ForceUnits-I")
+    field(LNK2, "$(P)$(R)TorqueUnits-I")
+    field(LNK3, "$(P)$(R)CtsPerForce-I")
+    field(LNK4, "$(P)$(R)CtsPerTorque-I")
+    field(LNK5, "$(P)$(R)Calib-Fout2")
+}
+
+record(fanout, "$(P)$(R)Calib-Fout2") {
+    field(LNK1, "$(P)$(R)ForceXScale-I")
+    field(LNK2, "$(P)$(R)ForceYScale-I")
+    field(LNK3, "$(P)$(R)ForceZScale-I")
+    field(LNK4, "$(P)$(R)TorqueXScale-I")
+    field(LNK5, "$(P)$(R)TorqueYScale-I")
+    field(LNK6, "$(P)$(R)TorqueZScale-I")
+}
+
+record(mbbi, "$(P)$(R)ForceUnits-I") {
+    field(DTYP, "Raw Soft Channel")
+    field(INP,  "$(P)$(R)ReadCalib-Cmd.A")
+    field(ZRVL, 1)
+    field(ONVL, 2)
+    field(TWVL, 3)
+    field(THVL, 4)
+    field(FRVL, 5)
+    field(FVVL, 6)
+    field(ZRST, "lb")
+    field(ONST, "N")
+    field(TWST, "klb")
+    field(THST, "kN")
+    field(FRST, "kg")
+    field(FVST, "g")
+}
+
+record(mbbi, "$(P)$(R)TorqueUnits-I") {
+    field(DTYP, "Raw Soft Channel")
+    field(INP,  "$(P)$(R)ReadCalib-Cmd.B")
+    field(ZRVL, 1)
+    field(ONVL, 2)
+    field(TWVL, 3)
+    field(THVL, 4)
+    field(FRVL, 5)
+    field(FVVL, 6)
+    field(ZRST, "lb-in")
+    field(ONST, "lb-ft")
+    field(TWST, "Nm")
+    field(THST, "Nmm")
+    field(FRST, "kg-cm")
+    field(FVST, "kN-m")
+}
+
+record(ai, "$(P)$(R)CtsPerForce-I") {
+    field(DTYP, "Raw Soft Channel")
+    field(INP,  "$(P)$(R)ReadCalib-Cmd.C")
+}
+
+record(ai, "$(P)$(R)CtsPerTorque-I") {
+    field(DTYP, "Raw Soft Channel")
+    field(INP,  "$(P)$(R)ReadCalib-Cmd.D")
+}
+
+record(ai, "$(P)$(R)ForceXScale-I") {
+    field(DTYP, "Raw Soft Channel")
+    field(INP,  "$(P)$(R)ReadCalib-Cmd.E")
+}
+
+record(ai, "$(P)$(R)ForceYScale-I") {
+    field(DTYP, "Raw Soft Channel")
+    field(INP,  "$(P)$(R)ReadCalib-Cmd.F")
+}
+
+record(ai, "$(P)$(R)ForceZScale-I") {
+    field(DTYP, "Raw Soft Channel")
+    field(INP,  "$(P)$(R)ReadCalib-Cmd.G")
+}
+
+record(ai, "$(P)$(R)TorqueXScale-I") {
+    field(DTYP, "Raw Soft Channel")
+    field(INP,  "$(P)$(R)ReadCalib-Cmd.H")
+}
+
+record(ai, "$(P)$(R)TorqueYScale-I") {
+    field(DTYP, "Raw Soft Channel")
+    field(INP,  "$(P)$(R)ReadCalib-Cmd.I")
+}
+
+record(ai, "$(P)$(R)TorqueZScale-I") {
+    field(DTYP, "Raw Soft Channel")
+    field(INP,  "$(P)$(R)ReadCalib-Cmd.J")
+}
+

@@ -1,0 +1,4 @@
+NAME=mcb4b2
+USER=softioc
+PORT=4087
+HOST=xf16idc-ioc1

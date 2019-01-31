@@ -1,0 +1,160 @@
+######################################################################
+#
+#  Define video image size in pixels and mm, and get coordinates of the
+#  crosshairs for use in the click to center application of CBASS.
+#
+#  The first (Xmin) and last (Xmax) pixels in the video frame, and its
+#  size in mm are read from the tftpboot file in the .A, .B, and .C
+#  fields of the image_X_scale record, and the image scale is calculated
+#  into the .VAL field if this record.
+#
+#  The video image has its origin (0,0) at the upper left, the x-axis
+#  running horizontally and the y-axis down.  The displayed video image
+#  size (x,y) is 1020 by 1020 pixels. The crystal viewing angle of the
+#  Infinity microscope and digital video camera is down a vertical line
+#  and perpendicular to the beam. The measured field of view is 1.64(?)
+#  x 1.146(?) mm. One pixel measures then 0.00233(?) mm x 0.00238(?) mm.
+#
+######################################################################
+
+record(calc, "$(P)image_X_scale")
+{
+        field(INPA, "0")        # video image Xmin pixel (left margin)
+        field(INPB, "1292")     # video image Xmax pixel (right margin) (skinner - what we display)
+        field(INPC, "130")     # video X image size in mm (skinner - this changes with digital zoom)
+        field(CALC, "c/(b-a)")
+}
+
+record(calc, "$(P)image_Y_scale"){
+        field(INPA, "0")        # video image Ymin pixel (top margin)
+        field(INPB, "964")     # video image Ymax pixel (bottom margin)
+        field(INPC, "100")     # video Y image size in mm
+        field(CALC, "c/(b-a)")
+}
+
+record(calc, "$(P)image_X_center"){
+#       field(DESC, "video image X cross-hair coord in pixels")
+        field(INPA, "646")       
+        field(CALC, "A")
+}
+
+record(calc, "$(P)image_Y_center"){
+#       field(DESC, "video image Y cross-hair coord in pixels")
+        field(INPA, "482")
+        field(CALC, "A")
+}
+
+
+######################################################################
+#
+#  Translate the click to center coordinates received from CBASS
+#  in units of pixels measured from the upper left corner of the image
+#  into goniometer adjustment vectors. These are calculated in the
+#  video image plane as vectors pointing from the click coords to the
+#  cross-hairs. The click coords are supplied in .A and the vectors are
+#  calculated into .VAL of the image_Y/Y_target record.
+#
+#  x-mm-increment = - ( x-click-pix - x-cross-hair-pix ) * mm/x-pixel
+#  y-mm-increment = - ( y-click-pix - y-cross-hair-pix ) * mm/y-pixel
+#
+######################################################################
+
+record(calc, "$(P)image_X_target"){
+#       field(DESC, "video X target coords in pixels")
+        field(INPA, "0")
+        field(INPB, "$(P)image_X_center.VAL PP")
+        field(INPC, "$(P)image_X_scale.VAL PP")
+        field(CALC, "(a-b)*c")
+}
+
+record(calc, "$(P)image_Y_target"){
+#       field(DESC, "video Y target coords in pixels" )
+        field(INPA, "0")
+        field(INPB, "$(P)image_Y_center.VAL PP")
+        field(INPC, "$(P)image_Y_scale.VAL PP")
+        field(CALC, "-(a-b)*c")
+}
+
+
+######################################################################
+#
+#  Make crystal height correction by processing the video image
+#  x-component of a click to center request from CBASS. The video
+#  x-coord is colinear with the y-coord in X25B space, and it is
+#  colinear with the omega axis.
+#
+######################################################################
+
+record(calcout, "$(P)image_X_move"){
+        field(INPA, "$(P)image_X_target.VAL PP MS")
+        field(CALC, "A")
+	field(OUT,  "$(P):Scan2{Ax:X}Mtr.RLV CA")
+	field(FLNK, "$(P):Scan2{Ax:X}Mtr")
+}
+
+
+######################################################################
+#
+#  Make crystal translational corrections by processing the video image
+#  y-component coordinate. The video y-vector translates into both a
+#  gonio head x and z motion. The head delta-x is proportional to
+#  cos(omega), and the head delta-z is proportional to -sin(omega).
+#
+#  CBASS sent its omega angle in degrees along with the x- and y targets.
+#  Omega defines the rotation of the goniometer head coordinate system
+#  off its 'home' setting at omega=0. At X25 omega rotates cw when
+#  seen from the outboard user side. CBASS deposits the omega angle in
+#  degrees in .A of the OmegaPos record, and radians are calculated
+#  into .VAL
+#
+######################################################################
+
+record(calc, "$(P)OmegaPos"){
+#       field(DESC, "Convert omega degrees from CBASS into radians")
+        field(INPA, "0")              # omega degrees from CBASS
+        field(INPB, "0")              # omega offset angle
+        field(CALC, "(a-b)*0.017453") # convert omega to radians
+}
+
+record(calcout, "$(P)image_YX_move"){
+        field(INPA, "$(P)OmegaPos.VAL PP MS")
+        field(INPB, "$(P)image_Y_target.VAL PP MS")
+        field(CALC, "b*sin(a)")
+        field(OUT,  "$(P):InAir{Mscp:1-Ax:F}Mtr.RLV PP")
+}
+
+record(calcout, "$(P)image_YZ_move"){
+        field(INPA, "$(P)OmegaPos.VAL PP MS")
+        field(INPB, "$(P)image_Y_target.VAL PP MS")
+        field(CALC, "b*cos(a)")
+        field(OUT,  "$(P):Scan2{Ax:Y}Mtr.RLV PP")
+}
+
+
+######################################################################
+#
+#  Set up a input trigger so that the processing of the record's stack
+#  has a "go" button.  This is required by the current CBASS that sends
+#  this go once it has acquired from its point and click window a valid
+#  set of video image coordinates.
+#
+######################################################################
+
+record(fanout, "$(P)click_center"){
+        field(LNK1, "$(P)image_X_move")
+        field(LNK2, "$(P)image_YX_move")
+        field(LNK3, "$(P)image_YZ_move")
+}
+
+
+record(calcout,"$(P)gonioDone"){
+        field(PINI, "YES")
+        field(OOPT, "Transition To Non-zero")
+        field(INPA, "$(P):Scan2{Ax:X}Mtr.DMOV CP MS")
+        field(INPB, "$(P):Scan2{Ax:Y}Mtr.DMOV CP MS")
+        field(INPC, "$(P):InAir{Mscp:1-Ax:F}Mtr.DMOV CP MS")
+        field(CALC, "A&&B&&C")
+}
+
+
+

@@ -1,0 +1,56 @@
+# DO NOT EDIT: This file created by mkmf.pl,v 1.5 2002/03/25 21:33:24 jba Exp $ 
+
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/base.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/calcSupport.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/menuGlobal.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/menuConvert.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/aaiRecord.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/aaoRecord.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/aiRecord.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/aoRecord.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/aSubRecord.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/biRecord.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/boRecord.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/calcRecord.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/calcoutRecord.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/compressRecord.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/dfanoutRecord.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/eventRecord.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/fanoutRecord.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/histogramRecord.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/longinRecord.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/longoutRecord.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/mbbiRecord.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/mbbiDirectRecord.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/mbboRecord.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/mbboDirectRecord.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/permissiveRecord.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/selRecord.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/seqRecord.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/stateRecord.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/stringinRecord.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/stringoutRecord.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/subRecord.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/subArrayRecord.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/waveformRecord.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/devSoft.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/transformRecord.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/sCalcoutRecord.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/aCalcoutRecord.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/sseqRecord.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/swaitRecord.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/menuAlarmSevr.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/menuAlarmStat.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/menuCompress.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/menuFtype.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/menuIvoa.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/menuOmsl.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/menuPini.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/menuPriority.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/menuScan.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/menuSimm.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/menuYesNo.dbd
+../O.Common/bestcalc.dbd : /usr/lib/epics/dbd/dbCommon.dbd
+
+
+../O.Common/bestcalcInclude.dbd : ../Makefile

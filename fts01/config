@@ -1,0 +1,4 @@
+NAME=fts01
+USER=fts01
+PORT=4088
+HOST=xf16idc-ioc1

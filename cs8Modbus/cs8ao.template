@@ -1,0 +1,14 @@
+record(ai,"$(P)$(R)") {
+    field(DTYP,"asynFloat64")
+    field(INP, "@asyn($(PORT) $(OFFSET))FLOAT32_LE")
+    field(FLNK,"$(P)$(R)_Calc_")
+    field(SCAN,"$(SCAN)")
+    field(PREC,"$(PREC)")
+}
+
+record(calcout, "$(P)$(R)_Calc_") {
+    field(INPA, "$(P)$(R)")
+    field(CALC, "A")
+    field(OOPT, "On Change")
+    field(OUT,  "$(OUTPUT)")
+}

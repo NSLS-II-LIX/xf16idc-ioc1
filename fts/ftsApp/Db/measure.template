@@ -1,0 +1,21 @@
+# $(TYPE)$(AXIS)
+
+record(ai, "$(P)$(R)$(TYPE)$(AXIS)Raw-I") {
+    field(DTYP, "Raw Soft Channel")
+    field(INP,  "$(P)$(R)Read-Cmd.$(SRC)")
+    field(FLNK, "$(P)$(R)$(TYPE)$(AXIS)-I")
+}
+
+record(calc, "$(P)$(R)$(TYPE)$(AXIS)-I") {
+    field(INPA, "$(P)$(R)$(TYPE)$(AXIS)Raw-I")
+    field(INPB, "$(P)$(R)CtsPer$(TYPE)-I")
+    field(INPC, "$(P)$(R)$(TYPE)$(AXIS)Scale-I")
+    field(CALC, "A*C/B")
+    field(PREC, "6")
+}
+
+record(ai, "$(P)$(R)$(TYPE)$(AXIS)Scale-I") {
+    field(DTYP, "Raw Soft Channel")
+    field(INP,  "$(P)$(R)ReadCalib-Cmd.$(CALIBSRC)")
+}
+
