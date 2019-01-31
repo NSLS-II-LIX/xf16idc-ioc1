@@ -1,0 +1,11 @@
+file "db/motor.db"
+{
+
+# ADDR ---> axis #
+# NOTE ---> 2 asyn ports: 1) lowel comms ("P0"), and 2) Motor Record ("motor")
+pattern
+{ P,            M,                   MOTOR,   PORT, ADDR, DESC,           DTYP,      EGU,    MRES,   PREC }
+{"XF:16IDC-ES", ":TScan{Ax:RX}Mtr",   "motor", "P0", 0,    "Tilt Ax:RX",   asynMotor, "deg", "1e-9", 2    }
+{"XF:16IDC-ES", ":TScan{Ax:RZ}Mtr",   "motor", "P0", 1,    "Tilt Ax:RZ",   asynMotor, "deg", "1e-9", 2    }
+}
+

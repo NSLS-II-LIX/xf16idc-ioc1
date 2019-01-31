@@ -1,0 +1,4 @@
+NAME=mc16-smaract
+USER=softioc
+PORT=4085
+HOST=xf16idc-ioc1

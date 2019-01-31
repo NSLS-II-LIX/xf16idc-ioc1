@@ -1,0 +1,5 @@
+epicsEnvSet("ARCH","linux-x86_64")
+epicsEnvSet("IOC","ioclocalhost")
+epicsEnvSet("TOP","/epics/iocs/mc16-smaract")
+epicsEnvSet("SMARACT","/epics/src/motor-synapps")
+epicsEnvSet("EPICS_BASE","/usr/lib/epics")
