@@ -1,0 +1,88 @@
+#!/epics/src/motor-synapps/bin/linux-x86_64/WithAsyn
+# revised from /epics/src/motor-synapps/iocBoot/iocWithAsyn/st.cmd.xps
+# refer to https://confluence.slac.stanford.edu/display/PCDS/Newport+XPS+Series+Motor+Controllers
+errlogInit(5000)
+< envPaths
+
+epicsEnvSet("XPS_IP", "10.16.2.100")
+epicsEnvSet("XPS_PORT", "5001")
+
+# Tell EPICS all about the record types, device-support modules, drivers,
+# etc. in this build from CARS
+dbLoadDatabase("$(TOP)/dbd/WithAsyn.dbd")
+WithAsyn_registerRecordDeviceDriver(pdbbase)
+
+### Motors
+dbLoadTemplate "motor.substitutions.5axes"
+
+dbLoadTemplate "XPSAux.substitutions.5axes"
+
+# cards (total controllers)
+#XPSSetup(1)
+
+# asyn port, IP address, IP port, number of axes, 
+# active poll period (ms), idle poll period (ms), 
+# enable set position, set position settling time (ms)
+XPSCreateController("XPS1", "$(XPS_IP)", $(XPS_PORT), 5, 10, 500, 0, 500)
+asynSetTraceIOMask("XPS1", 0, 2)
+
+# card, IP, PORT, number of axes, active poll period (ms), idle poll period (ms)
+#XPSConfig(0, "10.16.2.100", 5001, 5, 10, 1000)
+
+# asynPort, IP address, IP port, poll period (ms)
+XPSAuxConfig("XPS_AUX1", "$(XPS_IP)", $(XPS_PORT), 50)
+#asynSetTraceMask("XPS_AUX1", 0, 255)
+#asynSetTraceIOMask("XPS_AUX1", 0, 2)
+
+# XPsyn port, driver name, controller index, max. axes)
+#drvAsynMotorConfigure("XPS1", "motorXPS", 0, 5)
+#XPSInterpose("XPS1")
+XPSCreateAxis("XPS1",0,"Group1.Pos",              "10000")
+XPSCreateAxis("XPS1",1,"Group2.Pos",              "10000")
+XPSCreateAxis("XPS1",2,"Group3.Pos",              "2000")
+XPSCreateAxis("XPS1",3,"M.MY",                    "10000")
+XPSCreateAxis("XPS1",4,"M.MX",                    "100")
+
+
+# card ,  axis, groupName.positionerName, step/EGU (must be reciprocal to MRES)
+#XPSConfigAxis(0,0,"Group1.Pos",              10000) 
+# GTS30V
+# VP-5ZA, 0.06um min step
+
+#XPSConfigAxis(0,1,"Group2.Pos",              10000) 
+# VP-25XA, 0.1um min step
+
+#XPSConfigAxis(0,2,"Group3.Pos",               2000) 
+# URS50BCC
+
+#XPSConfigAxis(0,3,"M.MY",                     10000)
+# VP-5ZA, 0.06um min step
+
+#XPSConfigAxis(0,4,"M.MX",                       100)
+# ILS100PP
+
+XPSEnableSetPosition(0)
+# the following lines are produce errors when starting the IOC
+#XPSEnableSetPosition("XPS1", 0)
+#XPSSetPositionSettlingTime(XPS1, 200)
+
+# XPS asyn port,  max points, FTP username, FTP password
+# Note: this must be done after configuring axes
+XPSCreateProfile("XPS1", 2000, "Administrator", "Administrator")
+
+iocInit
+
+# This IOC does not use save/restore, so set values of some PVs
+#dbpf("IOC:m1.RTRY", "0")
+#dbpf("IOC:m1.TWV", "0.1")
+#dbpf("IOC:m2.RTRY", "0")
+#dbpf("IOC:m2.TWV", "0.1")
+#dbpf("IOC:m3.RTRY", "0")
+#dbpf("IOC:m3.TWV", "0.1")
+
+dbpf("XF:16IDC-ES:Scan2:Prof1:M1UseAxis", "1")
+dbpf("XF:16IDC-ES:Scan2:Prof1:M2UseAxis", "1")
+dbpf("XF:16IDC-ES:Scan2:Prof1:NumAxes",   "2")
+dbpf("XF:16IDC-ES:Scan2:Prof1:GroupName", "M")
+dbpf("XF:16IDC-ES:Scan2:Prof1:MoveMode",  "1")
+

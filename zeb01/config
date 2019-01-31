@@ -1,0 +1,5 @@
+NAME=zeb01
+USER=zeb01
+PORT=4091
+HOST=xf16idc-ioc1
+CHDIR="$CHDIR/iocBoot/ioczebra"

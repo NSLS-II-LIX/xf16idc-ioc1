@@ -1,0 +1,118 @@
+file "$(TOP)/db/XPSAuxLi.db"
+{
+pattern
+{P,               R,          PORT,       CHAN,   SCAN}
+{"XF:16IDC-ES:",  XPSAux1Li,  XPS_AUX1,   0,      "I/O Intr"}
+{"XF:16IDC-ES:",  XPSAux2Li,  XPS_AUX1,   1,      "I/O Intr"}
+{"XF:16IDC-ES:",  XPSAux3Li,  XPS_AUX1,   2,      "I/O Intr"}
+{"XF:16IDC-ES:",  XPSAux4Li,  XPS_AUX1,   3,      "I/O Intr"}
+}
+
+file "$(TOP)/db/XPSAuxBi.db"
+{
+pattern
+{P,              R,           PORT,     CHAN,  MASK,     SCAN}
+{"XF:16IDC-ES:", XPSAux1Bi0,  XPS_AUX1, 0,     0x000001, "I/O Intr"}
+{"XF:16IDC-ES:", XPSAux1Bi1,  XPS_AUX1, 0,     0x000002, "I/O Intr"}
+{"XF:16IDC-ES:", XPSAux1Bi2,  XPS_AUX1, 0,     0x000004, "I/O Intr"}
+{"XF:16IDC-ES:", XPSAux1Bi3,  XPS_AUX1, 0,     0x000008, "I/O Intr"}
+{"XF:16IDC-ES:", XPSAux1Bi4,  XPS_AUX1, 0,     0x000010, "I/O Intr"}
+{"XF:16IDC-ES:", XPSAux1Bi5,  XPS_AUX1, 0,     0x000020, "I/O Intr"}
+{"XF:16IDC-ES:", XPSAux1Bi6,  XPS_AUX1, 0,     0x000040, "I/O Intr"}
+{"XF:16IDC-ES:", XPSAux1Bi7,  XPS_AUX1, 0,     0x000080, "I/O Intr"}
+{"XF:16IDC-ES:", XPSAux2Bi0,  XPS_AUX1, 1,     0x000001, "I/O Intr"}
+{"XF:16IDC-ES:", XPSAux2Bi1,  XPS_AUX1, 1,     0x000002, "I/O Intr"}
+{"XF:16IDC-ES:", XPSAux2Bi2,  XPS_AUX1, 1,     0x000004, "I/O Intr"}
+{"XF:16IDC-ES:", XPSAux2Bi3,  XPS_AUX1, 1,     0x000008, "I/O Intr"}
+{"XF:16IDC-ES:", XPSAux2Bi4,  XPS_AUX1, 1,     0x000010, "I/O Intr"}
+{"XF:16IDC-ES:", XPSAux2Bi5,  XPS_AUX1, 1,     0x000020, "I/O Intr"}
+{"XF:16IDC-ES:", XPSAux3Bi0,  XPS_AUX1, 2,     0x000001, "I/O Intr"}
+{"XF:16IDC-ES:", XPSAux3Bi1,  XPS_AUX1, 2,     0x000002, "I/O Intr"}
+{"XF:16IDC-ES:", XPSAux3Bi2,  XPS_AUX1, 2,     0x000004, "I/O Intr"}
+{"XF:16IDC-ES:", XPSAux3Bi3,  XPS_AUX1, 2,     0x000008, "I/O Intr"}
+{"XF:16IDC-ES:", XPSAux3Bi4,  XPS_AUX1, 2,     0x000010, "I/O Intr"}
+{"XF:16IDC-ES:", XPSAux3Bi5,  XPS_AUX1, 2,     0x000020, "I/O Intr"}
+{"XF:16IDC-ES:", XPSAux4Bi0,  XPS_AUX1, 3,     0x000001, "I/O Intr"}
+{"XF:16IDC-ES:", XPSAux4Bi1,  XPS_AUX1, 3,     0x000002, "I/O Intr"}
+{"XF:16IDC-ES:", XPSAux4Bi2,  XPS_AUX1, 3,     0x000004, "I/O Intr"}
+{"XF:16IDC-ES:", XPSAux4Bi3,  XPS_AUX1, 3,     0x000008, "I/O Intr"}
+{"XF:16IDC-ES:", XPSAux4Bi4,  XPS_AUX1, 3,     0x000010, "I/O Intr"}
+{"XF:16IDC-ES:", XPSAux4Bi5,  XPS_AUX1, 3,     0x000020, "I/O Intr"}
+{"XF:16IDC-ES:", XPSAux4Bi6,  XPS_AUX1, 3,     0x000040, "I/O Intr"}
+{"XF:16IDC-ES:", XPSAux4Bi7,  XPS_AUX1, 3,     0x000080, "I/O Intr"}
+{"XF:16IDC-ES:", XPSAux4Bi8,  XPS_AUX1, 3,     0x000100, "I/O Intr"}
+{"XF:16IDC-ES:", XPSAux4Bi9,  XPS_AUX1, 3,     0x000200, "I/O Intr"}
+{"XF:16IDC-ES:", XPSAux4Bi10, XPS_AUX1, 3,     0x000400, "I/O Intr"}
+{"XF:16IDC-ES:", XPSAux4Bi11, XPS_AUX1, 3,     0x000800, "I/O Intr"}
+{"XF:16IDC-ES:", XPSAux4Bi12, XPS_AUX1, 3,     0x001000, "I/O Intr"}
+{"XF:16IDC-ES:", XPSAux4Bi13, XPS_AUX1, 3,     0x002000, "I/O Intr"}
+{"XF:16IDC-ES:", XPSAux4Bi14, XPS_AUX1, 3,     0x004000, "I/O Intr"}
+{"XF:16IDC-ES:", XPSAux4Bi15, XPS_AUX1, 3,     0x008000, "I/O Intr"}
+}
+
+file "$(TOP)/db/XPSAuxBo.db"
+{
+pattern
+{P,              R,           PORT,     CHAN, MASK}
+{"XF:16IDC-ES:", XPSAux1Bo0,  XPS_AUX1, 0,    0x000001}
+{"XF:16IDC-ES:", XPSAux1Bo1,  XPS_AUX1, 0,    0x000002}
+{"XF:16IDC-ES:", XPSAux1Bo2,  XPS_AUX1, 0,    0x000004}
+{"XF:16IDC-ES:", XPSAux1Bo3,  XPS_AUX1, 0,    0x000008}
+{"XF:16IDC-ES:", XPSAux1Bo4,  XPS_AUX1, 0,    0x000010}
+{"XF:16IDC-ES:", XPSAux1Bo5,  XPS_AUX1, 0,    0x000020}
+{"XF:16IDC-ES:", XPSAux1Bo6,  XPS_AUX1, 0,    0x000040}
+{"XF:16IDC-ES:", XPSAux1Bo7,  XPS_AUX1, 0,    0x000080}
+{"XF:16IDC-ES:", XPSAux3Bo0,  XPS_AUX1, 1,    0x000001}
+{"XF:16IDC-ES:", XPSAux3Bo1,  XPS_AUX1, 1,    0x000002}
+{"XF:16IDC-ES:", XPSAux3Bo2,  XPS_AUX1, 1,    0x000004}
+{"XF:16IDC-ES:", XPSAux3Bo3,  XPS_AUX1, 1,    0x000008}
+{"XF:16IDC-ES:", XPSAux3Bo4,  XPS_AUX1, 1,    0x000010}
+{"XF:16IDC-ES:", XPSAux3Bo5,  XPS_AUX1, 1,    0x000020}
+{"XF:16IDC-ES:", XPSAux4Bo0,  XPS_AUX1, 2,    0x000001}
+{"XF:16IDC-ES:", XPSAux4Bo1,  XPS_AUX1, 2,    0x000002}
+{"XF:16IDC-ES:", XPSAux4Bo2,  XPS_AUX1, 2,    0x000004}
+{"XF:16IDC-ES:", XPSAux4Bo3,  XPS_AUX1, 2,    0x000008}
+{"XF:16IDC-ES:", XPSAux4Bo4,  XPS_AUX1, 2,    0x000010}
+{"XF:16IDC-ES:", XPSAux4Bo5,  XPS_AUX1, 2,    0x000020}
+{"XF:16IDC-ES:", XPSAux4Bo6,  XPS_AUX1, 2,    0x000040}
+{"XF:16IDC-ES:", XPSAux4Bo7,  XPS_AUX1, 2,    0x000080}
+{"XF:16IDC-ES:", XPSAux4Bo8,  XPS_AUX1, 2,    0x000100}
+{"XF:16IDC-ES:", XPSAux4Bo9,  XPS_AUX1, 2,    0x000200}
+{"XF:16IDC-ES:", XPSAux4Bo10, XPS_AUX1, 2,    0x000400}
+{"XF:16IDC-ES:", XPSAux4Bo11, XPS_AUX1, 2,    0x000800}
+{"XF:16IDC-ES:", XPSAux4Bo12, XPS_AUX1, 2,    0x001000}
+{"XF:16IDC-ES:", XPSAux4Bo13, XPS_AUX1, 2,    0x002000}
+{"XF:16IDC-ES:", XPSAux4Bo14, XPS_AUX1, 2,    0x004000}
+{"XF:16IDC-ES:", XPSAux4Bo15, XPS_AUX1, 2,    0x008000}
+}
+
+file "$(TOP)/db/XPSAuxLo.db"
+{
+pattern
+{P,               R,         PORT,     CHAN}
+{"XF:16IDC-ES:",  XPSAux1Lo, XPS_AUX1, 0}
+{"XF:16IDC-ES:",  XPSAux3Lo, XPS_AUX1, 1}
+{"XF:16IDC-ES:",  XPSAux4Lo, XPS_AUX1, 2}
+}
+
+
+file "$(TOP)/db/XPSAuxAi.db"
+{
+pattern
+{P,              R,          PORT,     CHAN, LOPR,   HOPR,  PREC, SCAN}
+{"XF:16IDC-ES:", XPSAuxAi0,  XPS_AUX1, 0,    -10.0,  10.0,  4,    "1 second"}
+{"XF:16IDC-ES:", XPSAuxAi1,  XPS_AUX1, 1,    -10.0,  10.0,  4,    "1 second"}
+{"XF:16IDC-ES:", XPSAuxAi2,  XPS_AUX1, 2,    -10.0,  10.0,  4,    "1 second"}
+{"XF:16IDC-ES:", XPSAuxAi3,  XPS_AUX1, 3,    -10.0,  10.0,  4,    "1 second"}
+}
+
+file "$(TOP)/db/XPSAuxAo.db"
+{
+pattern
+{P,              R,          PORT,     CHAN, DRVL,   LOPR,   DRVH,  HOPR,  PREC}
+{"XF:16IDC-ES:", XPSAuxAo0,  XPS_AUX1, 0,    -10.0,  -10.0,  10.0,  10.0,   4}
+{"XF:16IDC-ES:", XPSAuxAo1,  XPS_AUX1, 1,    -10.0,  -10.0,  10.0,  10.0,   4}
+{"XF:16IDC-ES:", XPSAuxAo2,  XPS_AUX1, 2,    -10.0,  -10.0,  10.0,  10.0,   4}
+{"XF:16IDC-ES:", XPSAuxAo3,  XPS_AUX1, 3,    -10.0,  -10.0,  10.0,  10.0    4}
+}
+

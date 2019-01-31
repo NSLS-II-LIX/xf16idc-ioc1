@@ -1,0 +1,4 @@
+NAME=maxi
+USER=softioc
+PORT=4089
+HOST=xf16idc-ioc1

@@ -1,0 +1,59 @@
+# positioners
+# ch 1: VP-5ZA, min inc motion = 60 nm, max speed = 5 mm/s
+# ch 2: VP-25XA, min inc motion = 0.1 um, max speed = 25 mm/s
+# ch 3: URS50BCC, min inc motion = 1 mdeg, max speed = 20 deg/s
+# ch 4: ILS100PP,  min inc motion = 1 um, max speed = 50 mm/s
+# ch 5: GTS30V,  min inc motion = 0.1 um, max speed = 10 mm/s
+
+file "$(MOTOR)/db/basic_asyn_motor.db"
+{
+pattern
+{P,                   N,  M,           DTYP,         PORT,  ADDR,  DESC,   EGU,  DIR,  VELO, VBAS,  ACCL,  BDST,  BVEL, BACC, MRES,    PREC,  DHLM,     DLLM,  INIT}
+{"XF:16IDC-ES:Scan2", 1, "{Ax:Y}Mtr",  "asynMotor",  XPS1,    0,  "    Y",  mm,  Pos,    2.,  .2,   0.5,     0,    1,   .2,  0.0001,     4,     2.4,    -2.4,   ""}
+{"XF:16IDC-ES:Scan2", 3, "{Ax:RY}Mtr", "asynMotor",  XPS1,    1,  "theta", deg,  Pos,   20.,   2,   0.5,     0,    1,   .2,   0.001,     4,   150.0,  -150.0,   ""}
+{"XF:16IDC-ES:Scan2", 4, "{Ax:X}Mtr",  "asynMotor",  XPS1,    2,      "X",  mm,  Pos,    2.,  .2,   0.5,     0,    1,   .2,   0.001,     4,    50.0,   -50.0,   ""}
+{"XF:16IDC-ES:Scan2", 2, "{Ax:sX}Mtr", "asynMotor",  XPS1,    3,  "scanX",  mm,  Pos,    2.,  .2,   0.5,     0,    1,   .2,  0.0001,     4,    12.4,   -12.4,   ""}
+{"XF:16IDC-ES:Scan2", 5, "{Ax:sY}Mtr", "asynMotor",  XPS1,    4,  "scanY",  mm,  Pos,    2.,  .2,   0.5,     0,    1,   .2,  0.0001,     4,    30.0,     0.0,   ""}
+}
+file "$(MOTOR)/db/XPS_extra.db"
+{
+pattern
+{P,                    R,             PORT,  ADDR}
+{"XF:16IDC-ES:Scan2",   "{Ax:Y}Mtr",  XPS1,   0}
+{"XF:16IDC-ES:Scan2",  "{Ax:RY}Mtr",  XPS1,   1}
+{"XF:16IDC-ES:Scan2",   "{Ax:X}Mtr",  XPS1,   2}
+{"XF:16IDC-ES:Scan2",  "{Ax:sX}Mtr",  XPS1,   3}
+{"XF:16IDC-ES:Scan2",  "{Ax:sY}Mtr",  XPS1,   4}
+}
+
+file "$(TOP)/db/profileMoveController.template"
+{
+pattern
+{P,                     R,      PORT, NAXES, NPOINTS, NPULSES, TIMEOUT}
+{"XF:16IDC-ES:Scan2:",  Prof1:, XPS1,     2,    2000,    2000,       1}
+}
+
+file "$(TOP)/db/profileMoveControllerXPS.template"
+{
+pattern
+{P,                     R,      PORT, NAXES, NPOINTS, NPULSES, TIMEOUT}
+{"XF:16IDC-ES:Scan2:",  Prof1:, XPS1,     2,    2000,    2000,       1}
+}
+
+file "$(TOP)/db/profileMoveAxis.template"
+{
+pattern
+{P,                     R,      M,  PORT, ADDR,NPOINTS, NREADBACK,            MOTOR,              PREC, TIMEOUT}
+{"XF:16IDC-ES:Scan2:",  Prof1:, 1,  XPS1,    3,   12005, 12005, "XF:16IDC-ES:Scan2{Ax:sX}Mtr",   4,       1}
+{"XF:16IDC-ES:Scan2:",  Prof1:, 2,  XPS1,    4,   12005, 12005, "XF:16IDC-ES:Scan2{Ax:sY}Mtr",   4,       1}
+}
+
+file "$(TOP)/db/profileMoveAxisXPS.template"
+{
+pattern
+{P,                     R,      M,  PORT, ADDR,NPOINTS, NREADBACK, PREC, TIMEOUT}
+{"XF:16IDC-ES:Scan2:",  Prof1:, 1,  XPS1,    3,   12005,  12005,    4,       1}
+{"XF:16IDC-ES:Scan2:",  Prof1:, 2,  XPS1,    4,   12005,  12005,    4,       1}
+}
+
+

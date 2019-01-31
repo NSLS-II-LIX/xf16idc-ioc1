@@ -1,0 +1,58 @@
+#!/epics/src/motor-synapps/bin/linux-x86_64/WithAsyn
+
+#errlogInit(5000)
+< envPaths
+
+epicsEnvSet("XPS_IP", "10.16.2.100")
+epicsEnvSet("XPS_PORT", "5001")
+
+# Tell EPICS all about the record types, device-support modules, drivers,
+# etc. in this build from CARS
+dbLoadDatabase("$(MOTOR)/dbd/WithAsyn.dbd")
+WithAsyn_registerRecordDeviceDriver(pdbbase)
+
+### Motors
+dbLoadTemplate "motor.substitutions.xpsLIX"
+
+dbLoadTemplate "XPSAux.substitutions.xpsLIX"
+
+# asyn port, IP address, IP port, number of axes, 
+# active poll period (ms), idle poll period (ms), 
+# enable set position, set position settling time (ms)
+XPSCreateController("XPS1", "$(XPS_IP)", $(XPS_PORT), 3, 10, 500, 0, 500)
+asynSetTraceIOMask("XPS1", 0, 2)
+#asynSetTraceMask("XPS1", 0, 255)
+#asynSetTraceMask("XPS1", 0, 0x0010)
+
+# asynPort, IP address, IP port, poll period (ms)
+XPSAuxConfig("XPS_AUX1", "$(XPS_IP)", $(XPS_PORT), 50)
+#asynSetTraceIOMask("XPS_AUX1", 0, 2)
+#asynSetTraceMask("XPS_AUX1", 0, 255)
+
+# XPS asyn port,  axis, groupName.positionerName, stepSize
+XPSCreateAxis("XPS1",0,"M.Y",                     "10000")
+XPSCreateAxis("XPS1",1,"M.X",                     "10000")
+XPSCreateAxis("XPS1",2,"M.RY",                    "2000")
+
+# XPS asyn port,  max points, FTP username, FTP password
+# Note: this must be done after configuring axes
+XPSCreateProfile("XPS1", 2000, "Administrator", "Administrator")
+
+iocInit
+
+# This IOC does not use save/restore, so set values of some PVs
+#dbpf("IOC:m1.RTRY", "0")
+#dbpf("IOC:m1.TWV", "0.1")
+#dbpf("IOC:m2.RTRY", "0")
+#dbpf("IOC:m2.TWV", "0.1")
+#dbpf("IOC:m3.RTRY", "0")
+#dbpf("IOC:m3.TWV", "0.1")
+
+dbpf("XF:16IDC-ES:Scan2:Prof1:M1UseAxis", "1")
+dbpf("XF:16IDC-ES:Scan2:Prof1:M2UseAxis", "1")
+dbpf("XF:16IDC-ES:Scan2:Prof1:M3UseAxis", "1")
+dbpf("XF:16IDC-ES:Scan2:Prof1:NumAxes",   "3")
+dbpf("XF:16IDC-ES:Scan2:Prof1:GroupName", "M")
+dbpf("XF:16IDC-ES:Scan2:Prof1:MoveMode",  "1")
+
+
