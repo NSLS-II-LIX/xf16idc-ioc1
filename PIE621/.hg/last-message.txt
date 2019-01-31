@@ -1,1 +1,0 @@
-Initial commit, for this driver to work. hw needs to be properly configured
