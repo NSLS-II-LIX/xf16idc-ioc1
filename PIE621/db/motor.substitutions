@@ -1,0 +1,10 @@
+file "db/motor.db"
+{
+
+pattern
+{P,           				M,        DTYP,         C,      S,       DESC,      EGU,    DIR,   VELO,VBAS,  ACCL,     BDST,      BVEL,  BACC,   MRES,   PREC,   DHLM,   DLLM, INIT}
+{"XF:16IDC-ES:InAir{Stg:ScanF-Ax:",	"X}Mtr",  "PIE816",     0,     0,      "ScanF:X",   um,     Pos,   2.,   2.0,   .1,      0,         0,     .2,     .0001,   5,      0,       0,  ""}
+{"XF:16IDC-ES:InAir{Stg:ScanF-Ax:",	"Y}Mtr",  "PIE816",     0,     1,      "ScanF:X",   um,     Pos,   2.,   2.0,   .1,      0,         0,     .2,     .0001,   5,      0,       0,  ""}
+}
+
+
