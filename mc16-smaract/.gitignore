@@ -1,0 +1,14 @@
+syntax: glob
+
+as/*
+.*project
+*bin
+O.*
+db
+dbd
+envPaths
+syntax: glob
+*~
+.hgignore
+.hg/
+records.dbl

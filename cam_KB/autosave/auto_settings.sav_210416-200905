@@ -1,0 +1,1233 @@
+# autosave R5.3	Automatically generated - DO NOT MODIFY - 210416-200851
+! 57 channel(s) not connected - or not all gets were successful
+#XF:16IDC-BI{Cam:sam_top}cam1:BinX Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:BinY Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:MinX Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:MinY Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:SizeX Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:SizeY Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:ReverseX Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:ReverseY Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:AcquireTime Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:AcquirePeriod Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:Gain Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:FrameType Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:ImageMode Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:TriggerMode Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:NumExposures Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:NumImages Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:ShutterMode Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:ShutterOpenDelay Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:ShutterCloseDelay Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:ShutterOpenEPICS.OUT Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:ShutterCloseEPICS.OUT Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:ShutterOpenEPICS.OCAL Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:ShutterCloseEPICS.OCAL Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:ShutterStatusEPICS_RBV.INP Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:ShutterStatusEPICS_RBV.ZRVL Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:ShutterStatusEPICS_RBV.ONVL Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:Temperature Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:ReadStatus.SCAN Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:DataType Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:ColorMode Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:ArrayCallbacks Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:NDAttributesFile Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:NDAttributesMacros Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:PoolUsedMem.SCAN Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:WaitForPlugins Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:BayerConvert Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:GainMode Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:ExposureMode Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:PSReadStatistics.SCAN Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:PSByteRate Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:SyncOut1Mode Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:SyncOut1Level Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:SyncOut1Invert Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:SyncOut2Mode Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:SyncOut2Level Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:SyncOut2Invert Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:SyncOut3Mode Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:SyncOut3Level Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:SyncOut3Invert Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:Strobe1Mode Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:Strobe1CtlDuration Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:Strobe1Delay Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:Strobe1Duration Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:TriggerEvent Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:TriggerOverlap Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:TriggerDelay Search Issued
+#XF:16IDC-BI{Cam:sam_top}cam1:PSTimestampType Search Issued
+XF:16IDC-BI{Cam:sam_top}image1:NDArrayPort cam
+XF:16IDC-BI{Cam:sam_top}image1:NDArrayAddress 0
+XF:16IDC-BI{Cam:sam_top}image1:EnableCallbacks 0
+XF:16IDC-BI{Cam:sam_top}image1:MinCallbackTime 0
+XF:16IDC-BI{Cam:sam_top}image1:MaxByteRate 0
+XF:16IDC-BI{Cam:sam_top}image1:BlockingCallbacks 0
+XF:16IDC-BI{Cam:sam_top}image1:QueueSize 5
+XF:16IDC-BI{Cam:sam_top}image1:NumThreads 1
+XF:16IDC-BI{Cam:sam_top}image1:SortTime 0.1
+XF:16IDC-BI{Cam:sam_top}image1:SortMode 0
+XF:16IDC-BI{Cam:sam_top}image1:SortSize 20
+XF:16IDC-BI{Cam:sam_top}image1:DataType 0
+XF:16IDC-BI{Cam:sam_top}image1:ColorMode 0
+XF:16IDC-BI{Cam:sam_top}image1:ArrayCallbacks 0
+XF:16IDC-BI{Cam:sam_top}image1:NDAttributesFile 
+XF:16IDC-BI{Cam:sam_top}image1:NDAttributesMacros 
+XF:16IDC-BI{Cam:sam_top}image1:PoolUsedMem.SCAN 6
+XF:16IDC-BI{Cam:sam_top}image1:WaitForPlugins 0
+XF:16IDC-BI{Cam:sam_top}TIFF1:FilePath 
+XF:16IDC-BI{Cam:sam_top}TIFF1:FileName 
+XF:16IDC-BI{Cam:sam_top}TIFF1:FileNumber 0
+XF:16IDC-BI{Cam:sam_top}TIFF1:AutoIncrement 0
+XF:16IDC-BI{Cam:sam_top}TIFF1:FileTemplate 
+XF:16IDC-BI{Cam:sam_top}TIFF1:AutoSave 0
+XF:16IDC-BI{Cam:sam_top}TIFF1:FileFormat 0
+XF:16IDC-BI{Cam:sam_top}TIFF1:FileWriteMode 0
+XF:16IDC-BI{Cam:sam_top}TIFF1:NumCapture 1
+XF:16IDC-BI{Cam:sam_top}TIFF1:DeleteDriverFile 0
+XF:16IDC-BI{Cam:sam_top}TIFF1:CreateDirectory 0
+XF:16IDC-BI{Cam:sam_top}TIFF1:LazyOpen 0
+XF:16IDC-BI{Cam:sam_top}TIFF1:TempSuffix 
+XF:16IDC-BI{Cam:sam_top}TIFF1:NDArrayPort cam
+XF:16IDC-BI{Cam:sam_top}TIFF1:NDArrayAddress 0
+XF:16IDC-BI{Cam:sam_top}TIFF1:EnableCallbacks 0
+XF:16IDC-BI{Cam:sam_top}TIFF1:MinCallbackTime 0
+XF:16IDC-BI{Cam:sam_top}TIFF1:MaxByteRate 0
+XF:16IDC-BI{Cam:sam_top}TIFF1:BlockingCallbacks 0
+XF:16IDC-BI{Cam:sam_top}TIFF1:QueueSize 20
+XF:16IDC-BI{Cam:sam_top}TIFF1:NumThreads 1
+XF:16IDC-BI{Cam:sam_top}TIFF1:SortTime 0.1
+XF:16IDC-BI{Cam:sam_top}TIFF1:SortMode 0
+XF:16IDC-BI{Cam:sam_top}TIFF1:SortSize 20
+XF:16IDC-BI{Cam:sam_top}TIFF1:DataType 0
+XF:16IDC-BI{Cam:sam_top}TIFF1:ColorMode 0
+XF:16IDC-BI{Cam:sam_top}TIFF1:ArrayCallbacks 0
+XF:16IDC-BI{Cam:sam_top}TIFF1:NDAttributesFile 
+XF:16IDC-BI{Cam:sam_top}TIFF1:NDAttributesMacros 
+XF:16IDC-BI{Cam:sam_top}TIFF1:PoolUsedMem.SCAN 6
+XF:16IDC-BI{Cam:sam_top}TIFF1:WaitForPlugins 0
+XF:16IDC-BI{Cam:sam_top}JPEG1:JPEGQuality 50
+XF:16IDC-BI{Cam:sam_top}JPEG1:FilePath 
+XF:16IDC-BI{Cam:sam_top}JPEG1:FileName 
+XF:16IDC-BI{Cam:sam_top}JPEG1:FileNumber 0
+XF:16IDC-BI{Cam:sam_top}JPEG1:AutoIncrement 0
+XF:16IDC-BI{Cam:sam_top}JPEG1:FileTemplate 
+XF:16IDC-BI{Cam:sam_top}JPEG1:AutoSave 0
+XF:16IDC-BI{Cam:sam_top}JPEG1:FileFormat 0
+XF:16IDC-BI{Cam:sam_top}JPEG1:FileWriteMode 0
+XF:16IDC-BI{Cam:sam_top}JPEG1:NumCapture 1
+XF:16IDC-BI{Cam:sam_top}JPEG1:DeleteDriverFile 0
+XF:16IDC-BI{Cam:sam_top}JPEG1:CreateDirectory 0
+XF:16IDC-BI{Cam:sam_top}JPEG1:LazyOpen 0
+XF:16IDC-BI{Cam:sam_top}JPEG1:TempSuffix 
+XF:16IDC-BI{Cam:sam_top}JPEG1:NDArrayPort cam
+XF:16IDC-BI{Cam:sam_top}JPEG1:NDArrayAddress 0
+XF:16IDC-BI{Cam:sam_top}JPEG1:EnableCallbacks 0
+XF:16IDC-BI{Cam:sam_top}JPEG1:MinCallbackTime 0
+XF:16IDC-BI{Cam:sam_top}JPEG1:MaxByteRate 0
+XF:16IDC-BI{Cam:sam_top}JPEG1:BlockingCallbacks 0
+XF:16IDC-BI{Cam:sam_top}JPEG1:QueueSize 20
+XF:16IDC-BI{Cam:sam_top}JPEG1:NumThreads 1
+XF:16IDC-BI{Cam:sam_top}JPEG1:SortTime 0.1
+XF:16IDC-BI{Cam:sam_top}JPEG1:SortMode 0
+XF:16IDC-BI{Cam:sam_top}JPEG1:SortSize 20
+XF:16IDC-BI{Cam:sam_top}JPEG1:DataType 0
+XF:16IDC-BI{Cam:sam_top}JPEG1:ColorMode 0
+XF:16IDC-BI{Cam:sam_top}JPEG1:ArrayCallbacks 0
+XF:16IDC-BI{Cam:sam_top}JPEG1:NDAttributesFile 
+XF:16IDC-BI{Cam:sam_top}JPEG1:NDAttributesMacros 
+XF:16IDC-BI{Cam:sam_top}JPEG1:PoolUsedMem.SCAN 6
+XF:16IDC-BI{Cam:sam_top}JPEG1:WaitForPlugins 0
+XF:16IDC-BI{Cam:sam_top}HDF1:ChunkSizeAuto 1
+XF:16IDC-BI{Cam:sam_top}HDF1:NumRowChunks 0
+XF:16IDC-BI{Cam:sam_top}HDF1:NumColChunks 0
+XF:16IDC-BI{Cam:sam_top}HDF1:ChunkSize2 0
+XF:16IDC-BI{Cam:sam_top}HDF1:ChunkSize3 0
+XF:16IDC-BI{Cam:sam_top}HDF1:ChunkSize4 0
+XF:16IDC-BI{Cam:sam_top}HDF1:ChunkSize5 0
+XF:16IDC-BI{Cam:sam_top}HDF1:ChunkSize6 0
+XF:16IDC-BI{Cam:sam_top}HDF1:ChunkSize7 0
+XF:16IDC-BI{Cam:sam_top}HDF1:ChunkSize8 0
+XF:16IDC-BI{Cam:sam_top}HDF1:ChunkSize9 0
+XF:16IDC-BI{Cam:sam_top}HDF1:NumFramesChunks 0
+XF:16IDC-BI{Cam:sam_top}HDF1:BoundaryAlign 0
+XF:16IDC-BI{Cam:sam_top}HDF1:BoundaryThreshold 65536
+XF:16IDC-BI{Cam:sam_top}HDF1:NumFramesFlush 0
+XF:16IDC-BI{Cam:sam_top}HDF1:Compression 0
+XF:16IDC-BI{Cam:sam_top}HDF1:NumDataBits 8
+XF:16IDC-BI{Cam:sam_top}HDF1:DataBitsOffset 0
+XF:16IDC-BI{Cam:sam_top}HDF1:SZipNumPixels 16
+XF:16IDC-BI{Cam:sam_top}HDF1:ZLevel 6
+XF:16IDC-BI{Cam:sam_top}HDF1:BloscShuffle 1
+XF:16IDC-BI{Cam:sam_top}HDF1:BloscCompressor 0
+XF:16IDC-BI{Cam:sam_top}HDF1:BloscLevel 5
+XF:16IDC-BI{Cam:sam_top}HDF1:JPEGQuality 90
+XF:16IDC-BI{Cam:sam_top}HDF1:StorePerform 1
+XF:16IDC-BI{Cam:sam_top}HDF1:StoreAttr 1
+XF:16IDC-BI{Cam:sam_top}HDF1:NumExtraDims 0
+XF:16IDC-BI{Cam:sam_top}HDF1:ExtraDimSizeN 1
+XF:16IDC-BI{Cam:sam_top}HDF1:ExtraDimSizeX 1
+XF:16IDC-BI{Cam:sam_top}HDF1:ExtraDimSizeY 1
+XF:16IDC-BI{Cam:sam_top}HDF1:XMLFileName 
+XF:16IDC-BI{Cam:sam_top}HDF1:SWMRMode 0
+XF:16IDC-BI{Cam:sam_top}HDF1:FilePath 
+XF:16IDC-BI{Cam:sam_top}HDF1:FileName 
+XF:16IDC-BI{Cam:sam_top}HDF1:FileNumber 0
+XF:16IDC-BI{Cam:sam_top}HDF1:AutoIncrement 0
+XF:16IDC-BI{Cam:sam_top}HDF1:FileTemplate 
+XF:16IDC-BI{Cam:sam_top}HDF1:AutoSave 0
+XF:16IDC-BI{Cam:sam_top}HDF1:FileFormat 0
+XF:16IDC-BI{Cam:sam_top}HDF1:FileWriteMode 0
+XF:16IDC-BI{Cam:sam_top}HDF1:NumCapture 1
+XF:16IDC-BI{Cam:sam_top}HDF1:DeleteDriverFile 0
+XF:16IDC-BI{Cam:sam_top}HDF1:CreateDirectory 0
+XF:16IDC-BI{Cam:sam_top}HDF1:LazyOpen 0
+XF:16IDC-BI{Cam:sam_top}HDF1:TempSuffix 
+XF:16IDC-BI{Cam:sam_top}HDF1:NDArrayPort cam
+XF:16IDC-BI{Cam:sam_top}HDF1:NDArrayAddress 0
+XF:16IDC-BI{Cam:sam_top}HDF1:EnableCallbacks 0
+XF:16IDC-BI{Cam:sam_top}HDF1:MinCallbackTime 0
+XF:16IDC-BI{Cam:sam_top}HDF1:MaxByteRate 0
+XF:16IDC-BI{Cam:sam_top}HDF1:BlockingCallbacks 0
+XF:16IDC-BI{Cam:sam_top}HDF1:QueueSize 20
+XF:16IDC-BI{Cam:sam_top}HDF1:NumThreads 1
+XF:16IDC-BI{Cam:sam_top}HDF1:SortTime 0.1
+XF:16IDC-BI{Cam:sam_top}HDF1:SortMode 0
+XF:16IDC-BI{Cam:sam_top}HDF1:SortSize 20
+XF:16IDC-BI{Cam:sam_top}HDF1:DataType 0
+XF:16IDC-BI{Cam:sam_top}HDF1:ColorMode 0
+XF:16IDC-BI{Cam:sam_top}HDF1:ArrayCallbacks 0
+XF:16IDC-BI{Cam:sam_top}HDF1:NDAttributesFile 
+XF:16IDC-BI{Cam:sam_top}HDF1:NDAttributesMacros 
+XF:16IDC-BI{Cam:sam_top}HDF1:PoolUsedMem.SCAN 6
+XF:16IDC-BI{Cam:sam_top}HDF1:WaitForPlugins 0
+XF:16IDC-BI{Cam:sam_top}ROI1:Name 
+XF:16IDC-BI{Cam:sam_top}ROI1:DataTypeOut 10
+XF:16IDC-BI{Cam:sam_top}ROI1:BinX 1
+XF:16IDC-BI{Cam:sam_top}ROI1:BinY 1
+XF:16IDC-BI{Cam:sam_top}ROI1:BinZ 1
+XF:16IDC-BI{Cam:sam_top}ROI1:MinX 0
+XF:16IDC-BI{Cam:sam_top}ROI1:MinY 0
+XF:16IDC-BI{Cam:sam_top}ROI1:MinZ 0
+XF:16IDC-BI{Cam:sam_top}ROI1:SizeX 1000000
+XF:16IDC-BI{Cam:sam_top}ROI1:SizeY 1000000
+XF:16IDC-BI{Cam:sam_top}ROI1:SizeZ 1000000
+XF:16IDC-BI{Cam:sam_top}ROI1:ReverseX 0
+XF:16IDC-BI{Cam:sam_top}ROI1:ReverseY 0
+XF:16IDC-BI{Cam:sam_top}ROI1:ReverseZ 0
+XF:16IDC-BI{Cam:sam_top}ROI1:AutoSizeX 0
+XF:16IDC-BI{Cam:sam_top}ROI1:AutoSizeY 0
+XF:16IDC-BI{Cam:sam_top}ROI1:AutoSizeZ 0
+XF:16IDC-BI{Cam:sam_top}ROI1:EnableX 1
+XF:16IDC-BI{Cam:sam_top}ROI1:EnableY 1
+XF:16IDC-BI{Cam:sam_top}ROI1:EnableZ 1
+XF:16IDC-BI{Cam:sam_top}ROI1:EnableScale 0
+XF:16IDC-BI{Cam:sam_top}ROI1:Scale 1
+XF:16IDC-BI{Cam:sam_top}ROI1:CollapseDims 0
+XF:16IDC-BI{Cam:sam_top}ROI1:NDArrayPort cam
+XF:16IDC-BI{Cam:sam_top}ROI1:NDArrayAddress 0
+XF:16IDC-BI{Cam:sam_top}ROI1:EnableCallbacks 0
+XF:16IDC-BI{Cam:sam_top}ROI1:MinCallbackTime 0
+XF:16IDC-BI{Cam:sam_top}ROI1:MaxByteRate 0
+XF:16IDC-BI{Cam:sam_top}ROI1:BlockingCallbacks 0
+XF:16IDC-BI{Cam:sam_top}ROI1:QueueSize 20
+XF:16IDC-BI{Cam:sam_top}ROI1:NumThreads 1
+XF:16IDC-BI{Cam:sam_top}ROI1:SortTime 0.1
+XF:16IDC-BI{Cam:sam_top}ROI1:SortMode 0
+XF:16IDC-BI{Cam:sam_top}ROI1:SortSize 20
+XF:16IDC-BI{Cam:sam_top}ROI1:DataType 0
+XF:16IDC-BI{Cam:sam_top}ROI1:ColorMode 0
+XF:16IDC-BI{Cam:sam_top}ROI1:ArrayCallbacks 1
+XF:16IDC-BI{Cam:sam_top}ROI1:NDAttributesFile 
+XF:16IDC-BI{Cam:sam_top}ROI1:NDAttributesMacros 
+XF:16IDC-BI{Cam:sam_top}ROI1:PoolUsedMem.SCAN 6
+XF:16IDC-BI{Cam:sam_top}ROI1:WaitForPlugins 0
+XF:16IDC-BI{Cam:sam_top}ROI2:Name 
+XF:16IDC-BI{Cam:sam_top}ROI2:DataTypeOut 10
+XF:16IDC-BI{Cam:sam_top}ROI2:BinX 1
+XF:16IDC-BI{Cam:sam_top}ROI2:BinY 1
+XF:16IDC-BI{Cam:sam_top}ROI2:BinZ 1
+XF:16IDC-BI{Cam:sam_top}ROI2:MinX 0
+XF:16IDC-BI{Cam:sam_top}ROI2:MinY 0
+XF:16IDC-BI{Cam:sam_top}ROI2:MinZ 0
+XF:16IDC-BI{Cam:sam_top}ROI2:SizeX 1000000
+XF:16IDC-BI{Cam:sam_top}ROI2:SizeY 1000000
+XF:16IDC-BI{Cam:sam_top}ROI2:SizeZ 1000000
+XF:16IDC-BI{Cam:sam_top}ROI2:ReverseX 0
+XF:16IDC-BI{Cam:sam_top}ROI2:ReverseY 0
+XF:16IDC-BI{Cam:sam_top}ROI2:ReverseZ 0
+XF:16IDC-BI{Cam:sam_top}ROI2:AutoSizeX 0
+XF:16IDC-BI{Cam:sam_top}ROI2:AutoSizeY 0
+XF:16IDC-BI{Cam:sam_top}ROI2:AutoSizeZ 0
+XF:16IDC-BI{Cam:sam_top}ROI2:EnableX 1
+XF:16IDC-BI{Cam:sam_top}ROI2:EnableY 1
+XF:16IDC-BI{Cam:sam_top}ROI2:EnableZ 1
+XF:16IDC-BI{Cam:sam_top}ROI2:EnableScale 0
+XF:16IDC-BI{Cam:sam_top}ROI2:Scale 1
+XF:16IDC-BI{Cam:sam_top}ROI2:CollapseDims 0
+XF:16IDC-BI{Cam:sam_top}ROI2:NDArrayPort cam
+XF:16IDC-BI{Cam:sam_top}ROI2:NDArrayAddress 0
+XF:16IDC-BI{Cam:sam_top}ROI2:EnableCallbacks 0
+XF:16IDC-BI{Cam:sam_top}ROI2:MinCallbackTime 0
+XF:16IDC-BI{Cam:sam_top}ROI2:MaxByteRate 0
+XF:16IDC-BI{Cam:sam_top}ROI2:BlockingCallbacks 0
+XF:16IDC-BI{Cam:sam_top}ROI2:QueueSize 20
+XF:16IDC-BI{Cam:sam_top}ROI2:NumThreads 1
+XF:16IDC-BI{Cam:sam_top}ROI2:SortTime 0.1
+XF:16IDC-BI{Cam:sam_top}ROI2:SortMode 0
+XF:16IDC-BI{Cam:sam_top}ROI2:SortSize 20
+XF:16IDC-BI{Cam:sam_top}ROI2:DataType 0
+XF:16IDC-BI{Cam:sam_top}ROI2:ColorMode 0
+XF:16IDC-BI{Cam:sam_top}ROI2:ArrayCallbacks 1
+XF:16IDC-BI{Cam:sam_top}ROI2:NDAttributesFile 
+XF:16IDC-BI{Cam:sam_top}ROI2:NDAttributesMacros 
+XF:16IDC-BI{Cam:sam_top}ROI2:PoolUsedMem.SCAN 6
+XF:16IDC-BI{Cam:sam_top}ROI2:WaitForPlugins 0
+XF:16IDC-BI{Cam:sam_top}ROI3:Name 
+XF:16IDC-BI{Cam:sam_top}ROI3:DataTypeOut 10
+XF:16IDC-BI{Cam:sam_top}ROI3:BinX 1
+XF:16IDC-BI{Cam:sam_top}ROI3:BinY 1
+XF:16IDC-BI{Cam:sam_top}ROI3:BinZ 1
+XF:16IDC-BI{Cam:sam_top}ROI3:MinX 0
+XF:16IDC-BI{Cam:sam_top}ROI3:MinY 0
+XF:16IDC-BI{Cam:sam_top}ROI3:MinZ 0
+XF:16IDC-BI{Cam:sam_top}ROI3:SizeX 1000000
+XF:16IDC-BI{Cam:sam_top}ROI3:SizeY 1000000
+XF:16IDC-BI{Cam:sam_top}ROI3:SizeZ 1000000
+XF:16IDC-BI{Cam:sam_top}ROI3:ReverseX 0
+XF:16IDC-BI{Cam:sam_top}ROI3:ReverseY 0
+XF:16IDC-BI{Cam:sam_top}ROI3:ReverseZ 0
+XF:16IDC-BI{Cam:sam_top}ROI3:AutoSizeX 0
+XF:16IDC-BI{Cam:sam_top}ROI3:AutoSizeY 0
+XF:16IDC-BI{Cam:sam_top}ROI3:AutoSizeZ 0
+XF:16IDC-BI{Cam:sam_top}ROI3:EnableX 1
+XF:16IDC-BI{Cam:sam_top}ROI3:EnableY 1
+XF:16IDC-BI{Cam:sam_top}ROI3:EnableZ 1
+XF:16IDC-BI{Cam:sam_top}ROI3:EnableScale 0
+XF:16IDC-BI{Cam:sam_top}ROI3:Scale 1
+XF:16IDC-BI{Cam:sam_top}ROI3:CollapseDims 0
+XF:16IDC-BI{Cam:sam_top}ROI3:NDArrayPort cam
+XF:16IDC-BI{Cam:sam_top}ROI3:NDArrayAddress 0
+XF:16IDC-BI{Cam:sam_top}ROI3:EnableCallbacks 0
+XF:16IDC-BI{Cam:sam_top}ROI3:MinCallbackTime 0
+XF:16IDC-BI{Cam:sam_top}ROI3:MaxByteRate 0
+XF:16IDC-BI{Cam:sam_top}ROI3:BlockingCallbacks 0
+XF:16IDC-BI{Cam:sam_top}ROI3:QueueSize 20
+XF:16IDC-BI{Cam:sam_top}ROI3:NumThreads 1
+XF:16IDC-BI{Cam:sam_top}ROI3:SortTime 0.1
+XF:16IDC-BI{Cam:sam_top}ROI3:SortMode 0
+XF:16IDC-BI{Cam:sam_top}ROI3:SortSize 20
+XF:16IDC-BI{Cam:sam_top}ROI3:DataType 0
+XF:16IDC-BI{Cam:sam_top}ROI3:ColorMode 0
+XF:16IDC-BI{Cam:sam_top}ROI3:ArrayCallbacks 1
+XF:16IDC-BI{Cam:sam_top}ROI3:NDAttributesFile 
+XF:16IDC-BI{Cam:sam_top}ROI3:NDAttributesMacros 
+XF:16IDC-BI{Cam:sam_top}ROI3:PoolUsedMem.SCAN 6
+XF:16IDC-BI{Cam:sam_top}ROI3:WaitForPlugins 0
+XF:16IDC-BI{Cam:sam_top}ROI4:Name 
+XF:16IDC-BI{Cam:sam_top}ROI4:DataTypeOut 10
+XF:16IDC-BI{Cam:sam_top}ROI4:BinX 1
+XF:16IDC-BI{Cam:sam_top}ROI4:BinY 1
+XF:16IDC-BI{Cam:sam_top}ROI4:BinZ 1
+XF:16IDC-BI{Cam:sam_top}ROI4:MinX 0
+XF:16IDC-BI{Cam:sam_top}ROI4:MinY 0
+XF:16IDC-BI{Cam:sam_top}ROI4:MinZ 0
+XF:16IDC-BI{Cam:sam_top}ROI4:SizeX 1000000
+XF:16IDC-BI{Cam:sam_top}ROI4:SizeY 1000000
+XF:16IDC-BI{Cam:sam_top}ROI4:SizeZ 1000000
+XF:16IDC-BI{Cam:sam_top}ROI4:ReverseX 0
+XF:16IDC-BI{Cam:sam_top}ROI4:ReverseY 0
+XF:16IDC-BI{Cam:sam_top}ROI4:ReverseZ 0
+XF:16IDC-BI{Cam:sam_top}ROI4:AutoSizeX 0
+XF:16IDC-BI{Cam:sam_top}ROI4:AutoSizeY 0
+XF:16IDC-BI{Cam:sam_top}ROI4:AutoSizeZ 0
+XF:16IDC-BI{Cam:sam_top}ROI4:EnableX 1
+XF:16IDC-BI{Cam:sam_top}ROI4:EnableY 1
+XF:16IDC-BI{Cam:sam_top}ROI4:EnableZ 1
+XF:16IDC-BI{Cam:sam_top}ROI4:EnableScale 0
+XF:16IDC-BI{Cam:sam_top}ROI4:Scale 1
+XF:16IDC-BI{Cam:sam_top}ROI4:CollapseDims 0
+XF:16IDC-BI{Cam:sam_top}ROI4:NDArrayPort cam
+XF:16IDC-BI{Cam:sam_top}ROI4:NDArrayAddress 0
+XF:16IDC-BI{Cam:sam_top}ROI4:EnableCallbacks 0
+XF:16IDC-BI{Cam:sam_top}ROI4:MinCallbackTime 0
+XF:16IDC-BI{Cam:sam_top}ROI4:MaxByteRate 0
+XF:16IDC-BI{Cam:sam_top}ROI4:BlockingCallbacks 0
+XF:16IDC-BI{Cam:sam_top}ROI4:QueueSize 20
+XF:16IDC-BI{Cam:sam_top}ROI4:NumThreads 1
+XF:16IDC-BI{Cam:sam_top}ROI4:SortTime 0.1
+XF:16IDC-BI{Cam:sam_top}ROI4:SortMode 0
+XF:16IDC-BI{Cam:sam_top}ROI4:SortSize 20
+XF:16IDC-BI{Cam:sam_top}ROI4:DataType 0
+XF:16IDC-BI{Cam:sam_top}ROI4:ColorMode 0
+XF:16IDC-BI{Cam:sam_top}ROI4:ArrayCallbacks 1
+XF:16IDC-BI{Cam:sam_top}ROI4:NDAttributesFile 
+XF:16IDC-BI{Cam:sam_top}ROI4:NDAttributesMacros 
+XF:16IDC-BI{Cam:sam_top}ROI4:PoolUsedMem.SCAN 6
+XF:16IDC-BI{Cam:sam_top}ROI4:WaitForPlugins 0
+XF:16IDC-BI{Cam:sam_top}Proc1:DataTypeOut 10
+XF:16IDC-BI{Cam:sam_top}Proc1:EnableBackground 0
+XF:16IDC-BI{Cam:sam_top}Proc1:EnableFlatField 0
+XF:16IDC-BI{Cam:sam_top}Proc1:ScaleFlatField 255
+XF:16IDC-BI{Cam:sam_top}Proc1:EnableOffsetScale 0
+XF:16IDC-BI{Cam:sam_top}Proc1:Offset 0
+XF:16IDC-BI{Cam:sam_top}Proc1:Scale 1
+XF:16IDC-BI{Cam:sam_top}Proc1:EnableLowClip 0
+XF:16IDC-BI{Cam:sam_top}Proc1:LowClip 0
+XF:16IDC-BI{Cam:sam_top}Proc1:EnableHighClip 0
+XF:16IDC-BI{Cam:sam_top}Proc1:HighClip 100
+XF:16IDC-BI{Cam:sam_top}Proc1:EnableFilter 0
+XF:16IDC-BI{Cam:sam_top}Proc1:AutoResetFilter 0
+XF:16IDC-BI{Cam:sam_top}Proc1:FilterCallbacks 0
+XF:16IDC-BI{Cam:sam_top}Proc1:NumFilter 1
+XF:16IDC-BI{Cam:sam_top}Proc1:FilterType 0
+XF:16IDC-BI{Cam:sam_top}Proc1:OOffset 0
+XF:16IDC-BI{Cam:sam_top}Proc1:OScale 1
+XF:16IDC-BI{Cam:sam_top}Proc1:OC1 1
+XF:16IDC-BI{Cam:sam_top}Proc1:OC2 -1
+XF:16IDC-BI{Cam:sam_top}Proc1:OC3 0
+XF:16IDC-BI{Cam:sam_top}Proc1:OC4 1
+XF:16IDC-BI{Cam:sam_top}Proc1:FOffset 0
+XF:16IDC-BI{Cam:sam_top}Proc1:FScale 1
+XF:16IDC-BI{Cam:sam_top}Proc1:FC1 1
+XF:16IDC-BI{Cam:sam_top}Proc1:FC2 -1
+XF:16IDC-BI{Cam:sam_top}Proc1:FC3 0
+XF:16IDC-BI{Cam:sam_top}Proc1:FC4 1
+XF:16IDC-BI{Cam:sam_top}Proc1:ROffset 0
+XF:16IDC-BI{Cam:sam_top}Proc1:RC1 0
+XF:16IDC-BI{Cam:sam_top}Proc1:RC2 1
+XF:16IDC-BI{Cam:sam_top}Proc1:NDArrayPort cam
+XF:16IDC-BI{Cam:sam_top}Proc1:NDArrayAddress 0
+XF:16IDC-BI{Cam:sam_top}Proc1:EnableCallbacks 0
+XF:16IDC-BI{Cam:sam_top}Proc1:MinCallbackTime 0
+XF:16IDC-BI{Cam:sam_top}Proc1:MaxByteRate 0
+XF:16IDC-BI{Cam:sam_top}Proc1:BlockingCallbacks 0
+XF:16IDC-BI{Cam:sam_top}Proc1:QueueSize 20
+XF:16IDC-BI{Cam:sam_top}Proc1:NumThreads 1
+XF:16IDC-BI{Cam:sam_top}Proc1:SortTime 0.1
+XF:16IDC-BI{Cam:sam_top}Proc1:SortMode 0
+XF:16IDC-BI{Cam:sam_top}Proc1:SortSize 20
+XF:16IDC-BI{Cam:sam_top}Proc1:DataType 0
+XF:16IDC-BI{Cam:sam_top}Proc1:ColorMode 0
+XF:16IDC-BI{Cam:sam_top}Proc1:ArrayCallbacks 1
+XF:16IDC-BI{Cam:sam_top}Proc1:NDAttributesFile 
+XF:16IDC-BI{Cam:sam_top}Proc1:NDAttributesMacros 
+XF:16IDC-BI{Cam:sam_top}Proc1:PoolUsedMem.SCAN 6
+XF:16IDC-BI{Cam:sam_top}Proc1:WaitForPlugins 0
+XF:16IDC-BI{Cam:sam_top}Proc1:TIFF:FilePath 
+XF:16IDC-BI{Cam:sam_top}Proc1:TIFF:FileName 
+XF:16IDC-BI{Cam:sam_top}Proc1:TIFF:FileNumber 0
+XF:16IDC-BI{Cam:sam_top}Proc1:TIFF:AutoIncrement 0
+XF:16IDC-BI{Cam:sam_top}Proc1:TIFF:FileTemplate 
+XF:16IDC-BI{Cam:sam_top}Proc1:TIFF:AutoSave 0
+XF:16IDC-BI{Cam:sam_top}Proc1:TIFF:FileFormat 0
+XF:16IDC-BI{Cam:sam_top}Proc1:TIFF:FileWriteMode 0
+XF:16IDC-BI{Cam:sam_top}Proc1:TIFF:NumCapture 1
+XF:16IDC-BI{Cam:sam_top}Proc1:TIFF:DeleteDriverFile 0
+XF:16IDC-BI{Cam:sam_top}Proc1:TIFF:CreateDirectory 0
+XF:16IDC-BI{Cam:sam_top}Proc1:TIFF:LazyOpen 0
+XF:16IDC-BI{Cam:sam_top}Proc1:TIFF:TempSuffix 
+XF:16IDC-BI{Cam:sam_top}Proc1:TIFF:NDArrayPort cam
+XF:16IDC-BI{Cam:sam_top}Proc1:TIFF:NDArrayAddress 0
+XF:16IDC-BI{Cam:sam_top}Proc1:TIFF:EnableCallbacks 0
+XF:16IDC-BI{Cam:sam_top}Proc1:TIFF:MinCallbackTime 0
+XF:16IDC-BI{Cam:sam_top}Proc1:TIFF:MaxByteRate 0
+XF:16IDC-BI{Cam:sam_top}Proc1:TIFF:BlockingCallbacks 0
+XF:16IDC-BI{Cam:sam_top}Proc1:TIFF:QueueSize 20
+XF:16IDC-BI{Cam:sam_top}Proc1:TIFF:NumThreads 1
+XF:16IDC-BI{Cam:sam_top}Proc1:TIFF:SortTime 0.1
+XF:16IDC-BI{Cam:sam_top}Proc1:TIFF:SortMode 0
+XF:16IDC-BI{Cam:sam_top}Proc1:TIFF:SortSize 20
+XF:16IDC-BI{Cam:sam_top}Proc1:TIFF:DataType 0
+XF:16IDC-BI{Cam:sam_top}Proc1:TIFF:ColorMode 0
+XF:16IDC-BI{Cam:sam_top}Proc1:TIFF:ArrayCallbacks 0
+XF:16IDC-BI{Cam:sam_top}Proc1:TIFF:NDAttributesFile 
+XF:16IDC-BI{Cam:sam_top}Proc1:TIFF:NDAttributesMacros 
+XF:16IDC-BI{Cam:sam_top}Proc1:TIFF:PoolUsedMem.SCAN 6
+XF:16IDC-BI{Cam:sam_top}Proc1:TIFF:WaitForPlugins 0
+XF:16IDC-BI{Cam:sam_top}Scatter1:NDArrayPort cam
+XF:16IDC-BI{Cam:sam_top}Scatter1:NDArrayAddress 0
+XF:16IDC-BI{Cam:sam_top}Scatter1:EnableCallbacks 0
+XF:16IDC-BI{Cam:sam_top}Scatter1:MinCallbackTime 0
+XF:16IDC-BI{Cam:sam_top}Scatter1:MaxByteRate 0
+XF:16IDC-BI{Cam:sam_top}Scatter1:BlockingCallbacks 0
+XF:16IDC-BI{Cam:sam_top}Scatter1:QueueSize 20
+XF:16IDC-BI{Cam:sam_top}Scatter1:NumThreads 1
+XF:16IDC-BI{Cam:sam_top}Scatter1:SortTime 0.1
+XF:16IDC-BI{Cam:sam_top}Scatter1:SortMode 0
+XF:16IDC-BI{Cam:sam_top}Scatter1:SortSize 20
+XF:16IDC-BI{Cam:sam_top}Scatter1:DataType 0
+XF:16IDC-BI{Cam:sam_top}Scatter1:ColorMode 0
+XF:16IDC-BI{Cam:sam_top}Scatter1:ArrayCallbacks 1
+XF:16IDC-BI{Cam:sam_top}Scatter1:NDAttributesFile 
+XF:16IDC-BI{Cam:sam_top}Scatter1:NDAttributesMacros 
+XF:16IDC-BI{Cam:sam_top}Scatter1:PoolUsedMem.SCAN 6
+XF:16IDC-BI{Cam:sam_top}Scatter1:WaitForPlugins 0
+XF:16IDC-BI{Cam:sam_top}Gather1:NDArrayPort cam
+XF:16IDC-BI{Cam:sam_top}Gather1:NDArrayAddress 0
+XF:16IDC-BI{Cam:sam_top}Gather1:EnableCallbacks 0
+XF:16IDC-BI{Cam:sam_top}Gather1:MinCallbackTime 0
+XF:16IDC-BI{Cam:sam_top}Gather1:MaxByteRate 0
+XF:16IDC-BI{Cam:sam_top}Gather1:BlockingCallbacks 0
+XF:16IDC-BI{Cam:sam_top}Gather1:QueueSize 20
+XF:16IDC-BI{Cam:sam_top}Gather1:NumThreads 1
+XF:16IDC-BI{Cam:sam_top}Gather1:SortTime 0.1
+XF:16IDC-BI{Cam:sam_top}Gather1:SortMode 0
+XF:16IDC-BI{Cam:sam_top}Gather1:SortSize 20
+XF:16IDC-BI{Cam:sam_top}Gather1:DataType 0
+XF:16IDC-BI{Cam:sam_top}Gather1:ColorMode 0
+XF:16IDC-BI{Cam:sam_top}Gather1:ArrayCallbacks 1
+XF:16IDC-BI{Cam:sam_top}Gather1:NDAttributesFile 
+XF:16IDC-BI{Cam:sam_top}Gather1:NDAttributesMacros 
+XF:16IDC-BI{Cam:sam_top}Gather1:PoolUsedMem.SCAN 6
+XF:16IDC-BI{Cam:sam_top}Gather1:WaitForPlugins 0
+XF:16IDC-BI{Cam:sam_top}Gather1:NDArrayPort_1 cam
+XF:16IDC-BI{Cam:sam_top}Gather1:NDArrayAddress_1 0
+XF:16IDC-BI{Cam:sam_top}Gather1:NDArrayPort_2 cam
+XF:16IDC-BI{Cam:sam_top}Gather1:NDArrayAddress_2 0
+XF:16IDC-BI{Cam:sam_top}Gather1:NDArrayPort_3 cam
+XF:16IDC-BI{Cam:sam_top}Gather1:NDArrayAddress_3 0
+XF:16IDC-BI{Cam:sam_top}Gather1:NDArrayPort_4 cam
+XF:16IDC-BI{Cam:sam_top}Gather1:NDArrayAddress_4 0
+XF:16IDC-BI{Cam:sam_top}Gather1:NDArrayPort_5 cam
+XF:16IDC-BI{Cam:sam_top}Gather1:NDArrayAddress_5 0
+XF:16IDC-BI{Cam:sam_top}Gather1:NDArrayPort_6 cam
+XF:16IDC-BI{Cam:sam_top}Gather1:NDArrayAddress_6 0
+XF:16IDC-BI{Cam:sam_top}Gather1:NDArrayPort_7 cam
+XF:16IDC-BI{Cam:sam_top}Gather1:NDArrayAddress_7 0
+XF:16IDC-BI{Cam:sam_top}Gather1:NDArrayPort_8 cam
+XF:16IDC-BI{Cam:sam_top}Gather1:NDArrayAddress_8 0
+XF:16IDC-BI{Cam:sam_top}Stats1:BgdWidth 1
+XF:16IDC-BI{Cam:sam_top}Stats1:ComputeStatistics 1
+XF:16IDC-BI{Cam:sam_top}Stats1:ComputeCentroid 0
+XF:16IDC-BI{Cam:sam_top}Stats1:CentroidThreshold 1
+XF:16IDC-BI{Cam:sam_top}Stats1:ComputeProfiles 0
+XF:16IDC-BI{Cam:sam_top}Stats1:CursorX 256
+XF:16IDC-BI{Cam:sam_top}Stats1:CursorY 256
+XF:16IDC-BI{Cam:sam_top}Stats1:ComputeHistogram 0
+XF:16IDC-BI{Cam:sam_top}Stats1:HistSize 256
+XF:16IDC-BI{Cam:sam_top}Stats1:HistMin 0
+XF:16IDC-BI{Cam:sam_top}Stats1:HistMax 255
+XF:16IDC-BI{Cam:sam_top}Stats1:TS:TSNumPoints 2048
+XF:16IDC-BI{Cam:sam_top}Stats1:TS:TSTimePerPointLink.DOL 0.1
+XF:16IDC-BI{Cam:sam_top}Stats1:TS:TSAveragingTime 0.1
+XF:16IDC-BI{Cam:sam_top}Stats1:TS:TSRead.SCAN 6
+XF:16IDC-BI{Cam:sam_top}Stats1:TS:TSAcquireMode 0
+XF:16IDC-BI{Cam:sam_top}Stats1:TS:NDArrayPort STATS1
+XF:16IDC-BI{Cam:sam_top}Stats1:TS:NDArrayAddress 1
+XF:16IDC-BI{Cam:sam_top}Stats1:TS:EnableCallbacks 1
+XF:16IDC-BI{Cam:sam_top}Stats1:TS:MinCallbackTime 0
+XF:16IDC-BI{Cam:sam_top}Stats1:TS:MaxByteRate 0
+XF:16IDC-BI{Cam:sam_top}Stats1:TS:BlockingCallbacks 0
+XF:16IDC-BI{Cam:sam_top}Stats1:TS:QueueSize 20
+XF:16IDC-BI{Cam:sam_top}Stats1:TS:NumThreads 1
+XF:16IDC-BI{Cam:sam_top}Stats1:TS:SortTime 0.1
+XF:16IDC-BI{Cam:sam_top}Stats1:TS:SortMode 0
+XF:16IDC-BI{Cam:sam_top}Stats1:TS:SortSize 20
+XF:16IDC-BI{Cam:sam_top}Stats1:TS:DataType 0
+XF:16IDC-BI{Cam:sam_top}Stats1:TS:ColorMode 0
+XF:16IDC-BI{Cam:sam_top}Stats1:TS:ArrayCallbacks 1
+XF:16IDC-BI{Cam:sam_top}Stats1:TS:NDAttributesFile 
+XF:16IDC-BI{Cam:sam_top}Stats1:TS:NDAttributesMacros 
+XF:16IDC-BI{Cam:sam_top}Stats1:TS:PoolUsedMem.SCAN 6
+XF:16IDC-BI{Cam:sam_top}Stats1:TS:WaitForPlugins 0
+XF:16IDC-BI{Cam:sam_top}Stats1:NDArrayPort cam
+XF:16IDC-BI{Cam:sam_top}Stats1:NDArrayAddress 0
+XF:16IDC-BI{Cam:sam_top}Stats1:EnableCallbacks 0
+XF:16IDC-BI{Cam:sam_top}Stats1:MinCallbackTime 0
+XF:16IDC-BI{Cam:sam_top}Stats1:MaxByteRate 0
+XF:16IDC-BI{Cam:sam_top}Stats1:BlockingCallbacks 0
+XF:16IDC-BI{Cam:sam_top}Stats1:QueueSize 20
+XF:16IDC-BI{Cam:sam_top}Stats1:NumThreads 1
+XF:16IDC-BI{Cam:sam_top}Stats1:SortTime 0.1
+XF:16IDC-BI{Cam:sam_top}Stats1:SortMode 0
+XF:16IDC-BI{Cam:sam_top}Stats1:SortSize 20
+XF:16IDC-BI{Cam:sam_top}Stats1:DataType 0
+XF:16IDC-BI{Cam:sam_top}Stats1:ColorMode 0
+XF:16IDC-BI{Cam:sam_top}Stats1:ArrayCallbacks 1
+XF:16IDC-BI{Cam:sam_top}Stats1:NDAttributesFile 
+XF:16IDC-BI{Cam:sam_top}Stats1:NDAttributesMacros 
+XF:16IDC-BI{Cam:sam_top}Stats1:PoolUsedMem.SCAN 6
+XF:16IDC-BI{Cam:sam_top}Stats1:WaitForPlugins 0
+XF:16IDC-BI{Cam:sam_top}Stats2:BgdWidth 1
+XF:16IDC-BI{Cam:sam_top}Stats2:ComputeStatistics 1
+XF:16IDC-BI{Cam:sam_top}Stats2:ComputeCentroid 0
+XF:16IDC-BI{Cam:sam_top}Stats2:CentroidThreshold 1
+XF:16IDC-BI{Cam:sam_top}Stats2:ComputeProfiles 0
+XF:16IDC-BI{Cam:sam_top}Stats2:CursorX 256
+XF:16IDC-BI{Cam:sam_top}Stats2:CursorY 256
+XF:16IDC-BI{Cam:sam_top}Stats2:ComputeHistogram 0
+XF:16IDC-BI{Cam:sam_top}Stats2:HistSize 256
+XF:16IDC-BI{Cam:sam_top}Stats2:HistMin 0
+XF:16IDC-BI{Cam:sam_top}Stats2:HistMax 255
+XF:16IDC-BI{Cam:sam_top}Stats2:TS:TSNumPoints 2048
+XF:16IDC-BI{Cam:sam_top}Stats2:TS:TSTimePerPointLink.DOL 0.1
+XF:16IDC-BI{Cam:sam_top}Stats2:TS:TSAveragingTime 0.1
+XF:16IDC-BI{Cam:sam_top}Stats2:TS:TSRead.SCAN 6
+XF:16IDC-BI{Cam:sam_top}Stats2:TS:TSAcquireMode 0
+XF:16IDC-BI{Cam:sam_top}Stats2:TS:NDArrayPort STATS2
+XF:16IDC-BI{Cam:sam_top}Stats2:TS:NDArrayAddress 1
+XF:16IDC-BI{Cam:sam_top}Stats2:TS:EnableCallbacks 1
+XF:16IDC-BI{Cam:sam_top}Stats2:TS:MinCallbackTime 0
+XF:16IDC-BI{Cam:sam_top}Stats2:TS:MaxByteRate 0
+XF:16IDC-BI{Cam:sam_top}Stats2:TS:BlockingCallbacks 0
+XF:16IDC-BI{Cam:sam_top}Stats2:TS:QueueSize 20
+XF:16IDC-BI{Cam:sam_top}Stats2:TS:NumThreads 1
+XF:16IDC-BI{Cam:sam_top}Stats2:TS:SortTime 0.1
+XF:16IDC-BI{Cam:sam_top}Stats2:TS:SortMode 0
+XF:16IDC-BI{Cam:sam_top}Stats2:TS:SortSize 20
+XF:16IDC-BI{Cam:sam_top}Stats2:TS:DataType 0
+XF:16IDC-BI{Cam:sam_top}Stats2:TS:ColorMode 0
+XF:16IDC-BI{Cam:sam_top}Stats2:TS:ArrayCallbacks 1
+XF:16IDC-BI{Cam:sam_top}Stats2:TS:NDAttributesFile 
+XF:16IDC-BI{Cam:sam_top}Stats2:TS:NDAttributesMacros 
+XF:16IDC-BI{Cam:sam_top}Stats2:TS:PoolUsedMem.SCAN 6
+XF:16IDC-BI{Cam:sam_top}Stats2:TS:WaitForPlugins 0
+XF:16IDC-BI{Cam:sam_top}Stats2:NDArrayPort cam
+XF:16IDC-BI{Cam:sam_top}Stats2:NDArrayAddress 0
+XF:16IDC-BI{Cam:sam_top}Stats2:EnableCallbacks 0
+XF:16IDC-BI{Cam:sam_top}Stats2:MinCallbackTime 0
+XF:16IDC-BI{Cam:sam_top}Stats2:MaxByteRate 0
+XF:16IDC-BI{Cam:sam_top}Stats2:BlockingCallbacks 0
+XF:16IDC-BI{Cam:sam_top}Stats2:QueueSize 20
+XF:16IDC-BI{Cam:sam_top}Stats2:NumThreads 1
+XF:16IDC-BI{Cam:sam_top}Stats2:SortTime 0.1
+XF:16IDC-BI{Cam:sam_top}Stats2:SortMode 0
+XF:16IDC-BI{Cam:sam_top}Stats2:SortSize 20
+XF:16IDC-BI{Cam:sam_top}Stats2:DataType 0
+XF:16IDC-BI{Cam:sam_top}Stats2:ColorMode 0
+XF:16IDC-BI{Cam:sam_top}Stats2:ArrayCallbacks 1
+XF:16IDC-BI{Cam:sam_top}Stats2:NDAttributesFile 
+XF:16IDC-BI{Cam:sam_top}Stats2:NDAttributesMacros 
+XF:16IDC-BI{Cam:sam_top}Stats2:PoolUsedMem.SCAN 6
+XF:16IDC-BI{Cam:sam_top}Stats2:WaitForPlugins 0
+XF:16IDC-BI{Cam:sam_top}Stats3:BgdWidth 1
+XF:16IDC-BI{Cam:sam_top}Stats3:ComputeStatistics 1
+XF:16IDC-BI{Cam:sam_top}Stats3:ComputeCentroid 0
+XF:16IDC-BI{Cam:sam_top}Stats3:CentroidThreshold 1
+XF:16IDC-BI{Cam:sam_top}Stats3:ComputeProfiles 0
+XF:16IDC-BI{Cam:sam_top}Stats3:CursorX 256
+XF:16IDC-BI{Cam:sam_top}Stats3:CursorY 256
+XF:16IDC-BI{Cam:sam_top}Stats3:ComputeHistogram 0
+XF:16IDC-BI{Cam:sam_top}Stats3:HistSize 256
+XF:16IDC-BI{Cam:sam_top}Stats3:HistMin 0
+XF:16IDC-BI{Cam:sam_top}Stats3:HistMax 255
+XF:16IDC-BI{Cam:sam_top}Stats3:TS:TSNumPoints 2048
+XF:16IDC-BI{Cam:sam_top}Stats3:TS:TSTimePerPointLink.DOL 0.1
+XF:16IDC-BI{Cam:sam_top}Stats3:TS:TSAveragingTime 0.1
+XF:16IDC-BI{Cam:sam_top}Stats3:TS:TSRead.SCAN 6
+XF:16IDC-BI{Cam:sam_top}Stats3:TS:TSAcquireMode 0
+XF:16IDC-BI{Cam:sam_top}Stats3:TS:NDArrayPort STATS3
+XF:16IDC-BI{Cam:sam_top}Stats3:TS:NDArrayAddress 1
+XF:16IDC-BI{Cam:sam_top}Stats3:TS:EnableCallbacks 1
+XF:16IDC-BI{Cam:sam_top}Stats3:TS:MinCallbackTime 0
+XF:16IDC-BI{Cam:sam_top}Stats3:TS:MaxByteRate 0
+XF:16IDC-BI{Cam:sam_top}Stats3:TS:BlockingCallbacks 0
+XF:16IDC-BI{Cam:sam_top}Stats3:TS:QueueSize 20
+XF:16IDC-BI{Cam:sam_top}Stats3:TS:NumThreads 1
+XF:16IDC-BI{Cam:sam_top}Stats3:TS:SortTime 0.1
+XF:16IDC-BI{Cam:sam_top}Stats3:TS:SortMode 0
+XF:16IDC-BI{Cam:sam_top}Stats3:TS:SortSize 20
+XF:16IDC-BI{Cam:sam_top}Stats3:TS:DataType 0
+XF:16IDC-BI{Cam:sam_top}Stats3:TS:ColorMode 0
+XF:16IDC-BI{Cam:sam_top}Stats3:TS:ArrayCallbacks 1
+XF:16IDC-BI{Cam:sam_top}Stats3:TS:NDAttributesFile 
+XF:16IDC-BI{Cam:sam_top}Stats3:TS:NDAttributesMacros 
+XF:16IDC-BI{Cam:sam_top}Stats3:TS:PoolUsedMem.SCAN 6
+XF:16IDC-BI{Cam:sam_top}Stats3:TS:WaitForPlugins 0
+XF:16IDC-BI{Cam:sam_top}Stats3:NDArrayPort cam
+XF:16IDC-BI{Cam:sam_top}Stats3:NDArrayAddress 0
+XF:16IDC-BI{Cam:sam_top}Stats3:EnableCallbacks 0
+XF:16IDC-BI{Cam:sam_top}Stats3:MinCallbackTime 0
+XF:16IDC-BI{Cam:sam_top}Stats3:MaxByteRate 0
+XF:16IDC-BI{Cam:sam_top}Stats3:BlockingCallbacks 0
+XF:16IDC-BI{Cam:sam_top}Stats3:QueueSize 20
+XF:16IDC-BI{Cam:sam_top}Stats3:NumThreads 1
+XF:16IDC-BI{Cam:sam_top}Stats3:SortTime 0.1
+XF:16IDC-BI{Cam:sam_top}Stats3:SortMode 0
+XF:16IDC-BI{Cam:sam_top}Stats3:SortSize 20
+XF:16IDC-BI{Cam:sam_top}Stats3:DataType 0
+XF:16IDC-BI{Cam:sam_top}Stats3:ColorMode 0
+XF:16IDC-BI{Cam:sam_top}Stats3:ArrayCallbacks 1
+XF:16IDC-BI{Cam:sam_top}Stats3:NDAttributesFile 
+XF:16IDC-BI{Cam:sam_top}Stats3:NDAttributesMacros 
+XF:16IDC-BI{Cam:sam_top}Stats3:PoolUsedMem.SCAN 6
+XF:16IDC-BI{Cam:sam_top}Stats3:WaitForPlugins 0
+XF:16IDC-BI{Cam:sam_top}Stats4:BgdWidth 1
+XF:16IDC-BI{Cam:sam_top}Stats4:ComputeStatistics 1
+XF:16IDC-BI{Cam:sam_top}Stats4:ComputeCentroid 0
+XF:16IDC-BI{Cam:sam_top}Stats4:CentroidThreshold 1
+XF:16IDC-BI{Cam:sam_top}Stats4:ComputeProfiles 0
+XF:16IDC-BI{Cam:sam_top}Stats4:CursorX 256
+XF:16IDC-BI{Cam:sam_top}Stats4:CursorY 256
+XF:16IDC-BI{Cam:sam_top}Stats4:ComputeHistogram 0
+XF:16IDC-BI{Cam:sam_top}Stats4:HistSize 256
+XF:16IDC-BI{Cam:sam_top}Stats4:HistMin 0
+XF:16IDC-BI{Cam:sam_top}Stats4:HistMax 255
+XF:16IDC-BI{Cam:sam_top}Stats4:TS:TSNumPoints 2048
+XF:16IDC-BI{Cam:sam_top}Stats4:TS:TSTimePerPointLink.DOL 0.1
+XF:16IDC-BI{Cam:sam_top}Stats4:TS:TSAveragingTime 0.1
+XF:16IDC-BI{Cam:sam_top}Stats4:TS:TSRead.SCAN 6
+XF:16IDC-BI{Cam:sam_top}Stats4:TS:TSAcquireMode 0
+XF:16IDC-BI{Cam:sam_top}Stats4:TS:NDArrayPort STATS4
+XF:16IDC-BI{Cam:sam_top}Stats4:TS:NDArrayAddress 1
+XF:16IDC-BI{Cam:sam_top}Stats4:TS:EnableCallbacks 1
+XF:16IDC-BI{Cam:sam_top}Stats4:TS:MinCallbackTime 0
+XF:16IDC-BI{Cam:sam_top}Stats4:TS:MaxByteRate 0
+XF:16IDC-BI{Cam:sam_top}Stats4:TS:BlockingCallbacks 0
+XF:16IDC-BI{Cam:sam_top}Stats4:TS:QueueSize 20
+XF:16IDC-BI{Cam:sam_top}Stats4:TS:NumThreads 1
+XF:16IDC-BI{Cam:sam_top}Stats4:TS:SortTime 0.1
+XF:16IDC-BI{Cam:sam_top}Stats4:TS:SortMode 0
+XF:16IDC-BI{Cam:sam_top}Stats4:TS:SortSize 20
+XF:16IDC-BI{Cam:sam_top}Stats4:TS:DataType 0
+XF:16IDC-BI{Cam:sam_top}Stats4:TS:ColorMode 0
+XF:16IDC-BI{Cam:sam_top}Stats4:TS:ArrayCallbacks 1
+XF:16IDC-BI{Cam:sam_top}Stats4:TS:NDAttributesFile 
+XF:16IDC-BI{Cam:sam_top}Stats4:TS:NDAttributesMacros 
+XF:16IDC-BI{Cam:sam_top}Stats4:TS:PoolUsedMem.SCAN 6
+XF:16IDC-BI{Cam:sam_top}Stats4:TS:WaitForPlugins 0
+XF:16IDC-BI{Cam:sam_top}Stats4:NDArrayPort cam
+XF:16IDC-BI{Cam:sam_top}Stats4:NDArrayAddress 0
+XF:16IDC-BI{Cam:sam_top}Stats4:EnableCallbacks 0
+XF:16IDC-BI{Cam:sam_top}Stats4:MinCallbackTime 0
+XF:16IDC-BI{Cam:sam_top}Stats4:MaxByteRate 0
+XF:16IDC-BI{Cam:sam_top}Stats4:BlockingCallbacks 0
+XF:16IDC-BI{Cam:sam_top}Stats4:QueueSize 20
+XF:16IDC-BI{Cam:sam_top}Stats4:NumThreads 1
+XF:16IDC-BI{Cam:sam_top}Stats4:SortTime 0.1
+XF:16IDC-BI{Cam:sam_top}Stats4:SortMode 0
+XF:16IDC-BI{Cam:sam_top}Stats4:SortSize 20
+XF:16IDC-BI{Cam:sam_top}Stats4:DataType 0
+XF:16IDC-BI{Cam:sam_top}Stats4:ColorMode 0
+XF:16IDC-BI{Cam:sam_top}Stats4:ArrayCallbacks 1
+XF:16IDC-BI{Cam:sam_top}Stats4:NDAttributesFile 
+XF:16IDC-BI{Cam:sam_top}Stats4:NDAttributesMacros 
+XF:16IDC-BI{Cam:sam_top}Stats4:PoolUsedMem.SCAN 6
+XF:16IDC-BI{Cam:sam_top}Stats4:WaitForPlugins 0
+XF:16IDC-BI{Cam:sam_top}Stats5:BgdWidth 1
+XF:16IDC-BI{Cam:sam_top}Stats5:ComputeStatistics 1
+XF:16IDC-BI{Cam:sam_top}Stats5:ComputeCentroid 0
+XF:16IDC-BI{Cam:sam_top}Stats5:CentroidThreshold 1
+XF:16IDC-BI{Cam:sam_top}Stats5:ComputeProfiles 0
+XF:16IDC-BI{Cam:sam_top}Stats5:CursorX 256
+XF:16IDC-BI{Cam:sam_top}Stats5:CursorY 256
+XF:16IDC-BI{Cam:sam_top}Stats5:ComputeHistogram 0
+XF:16IDC-BI{Cam:sam_top}Stats5:HistSize 256
+XF:16IDC-BI{Cam:sam_top}Stats5:HistMin 0
+XF:16IDC-BI{Cam:sam_top}Stats5:HistMax 255
+XF:16IDC-BI{Cam:sam_top}Stats5:TS:TSNumPoints 2048
+XF:16IDC-BI{Cam:sam_top}Stats5:TS:TSTimePerPointLink.DOL 0.1
+XF:16IDC-BI{Cam:sam_top}Stats5:TS:TSAveragingTime 0.1
+XF:16IDC-BI{Cam:sam_top}Stats5:TS:TSRead.SCAN 6
+XF:16IDC-BI{Cam:sam_top}Stats5:TS:TSAcquireMode 0
+XF:16IDC-BI{Cam:sam_top}Stats5:TS:NDArrayPort STATS5
+XF:16IDC-BI{Cam:sam_top}Stats5:TS:NDArrayAddress 1
+XF:16IDC-BI{Cam:sam_top}Stats5:TS:EnableCallbacks 1
+XF:16IDC-BI{Cam:sam_top}Stats5:TS:MinCallbackTime 0
+XF:16IDC-BI{Cam:sam_top}Stats5:TS:MaxByteRate 0
+XF:16IDC-BI{Cam:sam_top}Stats5:TS:BlockingCallbacks 0
+XF:16IDC-BI{Cam:sam_top}Stats5:TS:QueueSize 20
+XF:16IDC-BI{Cam:sam_top}Stats5:TS:NumThreads 1
+XF:16IDC-BI{Cam:sam_top}Stats5:TS:SortTime 0.1
+XF:16IDC-BI{Cam:sam_top}Stats5:TS:SortMode 0
+XF:16IDC-BI{Cam:sam_top}Stats5:TS:SortSize 20
+XF:16IDC-BI{Cam:sam_top}Stats5:TS:DataType 0
+XF:16IDC-BI{Cam:sam_top}Stats5:TS:ColorMode 0
+XF:16IDC-BI{Cam:sam_top}Stats5:TS:ArrayCallbacks 1
+XF:16IDC-BI{Cam:sam_top}Stats5:TS:NDAttributesFile 
+XF:16IDC-BI{Cam:sam_top}Stats5:TS:NDAttributesMacros 
+XF:16IDC-BI{Cam:sam_top}Stats5:TS:PoolUsedMem.SCAN 6
+XF:16IDC-BI{Cam:sam_top}Stats5:TS:WaitForPlugins 0
+XF:16IDC-BI{Cam:sam_top}Stats5:NDArrayPort cam
+XF:16IDC-BI{Cam:sam_top}Stats5:NDArrayAddress 0
+XF:16IDC-BI{Cam:sam_top}Stats5:EnableCallbacks 0
+XF:16IDC-BI{Cam:sam_top}Stats5:MinCallbackTime 0
+XF:16IDC-BI{Cam:sam_top}Stats5:MaxByteRate 0
+XF:16IDC-BI{Cam:sam_top}Stats5:BlockingCallbacks 0
+XF:16IDC-BI{Cam:sam_top}Stats5:QueueSize 20
+XF:16IDC-BI{Cam:sam_top}Stats5:NumThreads 1
+XF:16IDC-BI{Cam:sam_top}Stats5:SortTime 0.1
+XF:16IDC-BI{Cam:sam_top}Stats5:SortMode 0
+XF:16IDC-BI{Cam:sam_top}Stats5:SortSize 20
+XF:16IDC-BI{Cam:sam_top}Stats5:DataType 0
+XF:16IDC-BI{Cam:sam_top}Stats5:ColorMode 0
+XF:16IDC-BI{Cam:sam_top}Stats5:ArrayCallbacks 1
+XF:16IDC-BI{Cam:sam_top}Stats5:NDAttributesFile 
+XF:16IDC-BI{Cam:sam_top}Stats5:NDAttributesMacros 
+XF:16IDC-BI{Cam:sam_top}Stats5:PoolUsedMem.SCAN 6
+XF:16IDC-BI{Cam:sam_top}Stats5:WaitForPlugins 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:TSNumPoints 2048
+XF:16IDC-BI{Cam:sam_top}ROIStat1:TSRead.SCAN 6
+XF:16IDC-BI{Cam:sam_top}ROIStat1:NDArrayPort cam
+XF:16IDC-BI{Cam:sam_top}ROIStat1:NDArrayAddress 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:EnableCallbacks 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:MinCallbackTime 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:MaxByteRate 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:BlockingCallbacks 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:QueueSize 20
+XF:16IDC-BI{Cam:sam_top}ROIStat1:NumThreads 1
+XF:16IDC-BI{Cam:sam_top}ROIStat1:SortTime 0.1
+XF:16IDC-BI{Cam:sam_top}ROIStat1:SortMode 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:SortSize 20
+XF:16IDC-BI{Cam:sam_top}ROIStat1:DataType 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:ColorMode 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:ArrayCallbacks 1
+XF:16IDC-BI{Cam:sam_top}ROIStat1:NDAttributesFile 
+XF:16IDC-BI{Cam:sam_top}ROIStat1:NDAttributesMacros 
+XF:16IDC-BI{Cam:sam_top}ROIStat1:PoolUsedMem.SCAN 6
+XF:16IDC-BI{Cam:sam_top}ROIStat1:WaitForPlugins 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:1:Name 
+XF:16IDC-BI{Cam:sam_top}ROIStat1:1:Use 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:1:BgdWidth 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:1:MinX 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:1:MinY 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:1:SizeX 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:1:SizeY 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:2:Name 
+XF:16IDC-BI{Cam:sam_top}ROIStat1:2:Use 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:2:BgdWidth 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:2:MinX 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:2:MinY 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:2:SizeX 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:2:SizeY 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:3:Name 
+XF:16IDC-BI{Cam:sam_top}ROIStat1:3:Use 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:3:BgdWidth 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:3:MinX 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:3:MinY 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:3:SizeX 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:3:SizeY 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:4:Name 
+XF:16IDC-BI{Cam:sam_top}ROIStat1:4:Use 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:4:BgdWidth 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:4:MinX 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:4:MinY 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:4:SizeX 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:4:SizeY 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:5:Name 
+XF:16IDC-BI{Cam:sam_top}ROIStat1:5:Use 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:5:BgdWidth 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:5:MinX 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:5:MinY 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:5:SizeX 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:5:SizeY 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:6:Name 
+XF:16IDC-BI{Cam:sam_top}ROIStat1:6:Use 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:6:BgdWidth 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:6:MinX 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:6:MinY 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:6:SizeX 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:6:SizeY 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:7:Name 
+XF:16IDC-BI{Cam:sam_top}ROIStat1:7:Use 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:7:BgdWidth 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:7:MinX 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:7:MinY 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:7:SizeX 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:7:SizeY 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:8:Name 
+XF:16IDC-BI{Cam:sam_top}ROIStat1:8:Use 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:8:BgdWidth 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:8:MinX 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:8:MinY 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:8:SizeX 0
+XF:16IDC-BI{Cam:sam_top}ROIStat1:8:SizeY 0
+XF:16IDC-BI{Cam:sam_top}Trans1:Type 0
+XF:16IDC-BI{Cam:sam_top}Trans1:NDArrayPort cam
+XF:16IDC-BI{Cam:sam_top}Trans1:NDArrayAddress 0
+XF:16IDC-BI{Cam:sam_top}Trans1:EnableCallbacks 0
+XF:16IDC-BI{Cam:sam_top}Trans1:MinCallbackTime 0
+XF:16IDC-BI{Cam:sam_top}Trans1:MaxByteRate 0
+XF:16IDC-BI{Cam:sam_top}Trans1:BlockingCallbacks 0
+XF:16IDC-BI{Cam:sam_top}Trans1:QueueSize 20
+XF:16IDC-BI{Cam:sam_top}Trans1:NumThreads 1
+XF:16IDC-BI{Cam:sam_top}Trans1:SortTime 0.1
+XF:16IDC-BI{Cam:sam_top}Trans1:SortMode 0
+XF:16IDC-BI{Cam:sam_top}Trans1:SortSize 20
+XF:16IDC-BI{Cam:sam_top}Trans1:DataType 0
+XF:16IDC-BI{Cam:sam_top}Trans1:ColorMode 0
+XF:16IDC-BI{Cam:sam_top}Trans1:ArrayCallbacks 1
+XF:16IDC-BI{Cam:sam_top}Trans1:NDAttributesFile 
+XF:16IDC-BI{Cam:sam_top}Trans1:NDAttributesMacros 
+XF:16IDC-BI{Cam:sam_top}Trans1:PoolUsedMem.SCAN 6
+XF:16IDC-BI{Cam:sam_top}Trans1:WaitForPlugins 0
+XF:16IDC-BI{Cam:sam_top}Over1:NDArrayPort cam
+XF:16IDC-BI{Cam:sam_top}Over1:NDArrayAddress 0
+XF:16IDC-BI{Cam:sam_top}Over1:EnableCallbacks 0
+XF:16IDC-BI{Cam:sam_top}Over1:MinCallbackTime 0
+XF:16IDC-BI{Cam:sam_top}Over1:MaxByteRate 0
+XF:16IDC-BI{Cam:sam_top}Over1:BlockingCallbacks 0
+XF:16IDC-BI{Cam:sam_top}Over1:QueueSize 20
+XF:16IDC-BI{Cam:sam_top}Over1:NumThreads 1
+XF:16IDC-BI{Cam:sam_top}Over1:SortTime 0.1
+XF:16IDC-BI{Cam:sam_top}Over1:SortMode 0
+XF:16IDC-BI{Cam:sam_top}Over1:SortSize 20
+XF:16IDC-BI{Cam:sam_top}Over1:DataType 0
+XF:16IDC-BI{Cam:sam_top}Over1:ColorMode 0
+XF:16IDC-BI{Cam:sam_top}Over1:ArrayCallbacks 1
+XF:16IDC-BI{Cam:sam_top}Over1:NDAttributesFile 
+XF:16IDC-BI{Cam:sam_top}Over1:NDAttributesMacros 
+XF:16IDC-BI{Cam:sam_top}Over1:PoolUsedMem.SCAN 6
+XF:16IDC-BI{Cam:sam_top}Over1:WaitForPlugins 0
+XF:16IDC-BI{Cam:sam_top}Over1:1:Name ROI1
+XF:16IDC-BI{Cam:sam_top}Over1:1:Use 0
+XF:16IDC-BI{Cam:sam_top}Over1:1:PositionXLink.DOL XF:16IDC-BI{Cam:sam_top}ROI1:MinX_RBV C
+XF:16IDC-BI{Cam:sam_top}Over1:1:PositionX 0
+XF:16IDC-BI{Cam:sam_top}Over1:1:PositionYLink.DOL XF:16IDC-BI{Cam:sam_top}ROI1:MinY_RBV C
+XF:16IDC-BI{Cam:sam_top}Over1:1:PositionY 0
+XF:16IDC-BI{Cam:sam_top}Over1:1:SizeXLink.DOL XF:16IDC-BI{Cam:sam_top}ROI1:SizeX_RBV 
+XF:16IDC-BI{Cam:sam_top}Over1:1:SizeX 1000000
+XF:16IDC-BI{Cam:sam_top}Over1:1:SizeYLink.DOL XF:16IDC-BI{Cam:sam_top}ROI1:SizeY_RBV 
+XF:16IDC-BI{Cam:sam_top}Over1:1:SizeY 1000000
+XF:16IDC-BI{Cam:sam_top}Over1:1:WidthXLink.DOL CP NPP MS
+XF:16IDC-BI{Cam:sam_top}Over1:1:WidthX 0
+XF:16IDC-BI{Cam:sam_top}Over1:1:WidthYLink.DOL CP NPP MS
+XF:16IDC-BI{Cam:sam_top}Over1:1:WidthY 0
+XF:16IDC-BI{Cam:sam_top}Over1:1:DrawMode 0
+XF:16IDC-BI{Cam:sam_top}Over1:1:Shape 1
+XF:16IDC-BI{Cam:sam_top}Over1:1:Red 1
+XF:16IDC-BI{Cam:sam_top}Over1:1:Green 1
+XF:16IDC-BI{Cam:sam_top}Over1:1:Blue 1
+XF:16IDC-BI{Cam:sam_top}Over1:1:TimeStampFormat %Y-%m-%d %H:%M:%S.%03f
+XF:16IDC-BI{Cam:sam_top}Over1:1:Font 0
+XF:16IDC-BI{Cam:sam_top}Over1:1:DisplayText 
+XF:16IDC-BI{Cam:sam_top}Over1:2:Name ROI2
+XF:16IDC-BI{Cam:sam_top}Over1:2:Use 0
+XF:16IDC-BI{Cam:sam_top}Over1:2:PositionXLink.DOL XF:16IDC-BI{Cam:sam_top}ROI2:MinX_RBV C
+XF:16IDC-BI{Cam:sam_top}Over1:2:PositionX 0
+XF:16IDC-BI{Cam:sam_top}Over1:2:PositionYLink.DOL XF:16IDC-BI{Cam:sam_top}ROI2:MinY_RBV C
+XF:16IDC-BI{Cam:sam_top}Over1:2:PositionY 0
+XF:16IDC-BI{Cam:sam_top}Over1:2:SizeXLink.DOL XF:16IDC-BI{Cam:sam_top}ROI2:SizeX_RBV 
+XF:16IDC-BI{Cam:sam_top}Over1:2:SizeX 1000000
+XF:16IDC-BI{Cam:sam_top}Over1:2:SizeYLink.DOL XF:16IDC-BI{Cam:sam_top}ROI2:SizeY_RBV 
+XF:16IDC-BI{Cam:sam_top}Over1:2:SizeY 1000000
+XF:16IDC-BI{Cam:sam_top}Over1:2:WidthXLink.DOL CP NPP MS
+XF:16IDC-BI{Cam:sam_top}Over1:2:WidthX 0
+XF:16IDC-BI{Cam:sam_top}Over1:2:WidthYLink.DOL CP NPP MS
+XF:16IDC-BI{Cam:sam_top}Over1:2:WidthY 0
+XF:16IDC-BI{Cam:sam_top}Over1:2:DrawMode 0
+XF:16IDC-BI{Cam:sam_top}Over1:2:Shape 1
+XF:16IDC-BI{Cam:sam_top}Over1:2:Red 1
+XF:16IDC-BI{Cam:sam_top}Over1:2:Green 1
+XF:16IDC-BI{Cam:sam_top}Over1:2:Blue 1
+XF:16IDC-BI{Cam:sam_top}Over1:2:TimeStampFormat %Y-%m-%d %H:%M:%S.%03f
+XF:16IDC-BI{Cam:sam_top}Over1:2:Font 0
+XF:16IDC-BI{Cam:sam_top}Over1:2:DisplayText 
+XF:16IDC-BI{Cam:sam_top}Over1:3:Name ROI3
+XF:16IDC-BI{Cam:sam_top}Over1:3:Use 0
+XF:16IDC-BI{Cam:sam_top}Over1:3:PositionXLink.DOL XF:16IDC-BI{Cam:sam_top}ROI3:MinX_RBV C
+XF:16IDC-BI{Cam:sam_top}Over1:3:PositionX 0
+XF:16IDC-BI{Cam:sam_top}Over1:3:PositionYLink.DOL XF:16IDC-BI{Cam:sam_top}ROI3:MinY_RBV C
+XF:16IDC-BI{Cam:sam_top}Over1:3:PositionY 0
+XF:16IDC-BI{Cam:sam_top}Over1:3:SizeXLink.DOL XF:16IDC-BI{Cam:sam_top}ROI3:SizeX_RBV 
+XF:16IDC-BI{Cam:sam_top}Over1:3:SizeX 1000000
+XF:16IDC-BI{Cam:sam_top}Over1:3:SizeYLink.DOL XF:16IDC-BI{Cam:sam_top}ROI3:SizeY_RBV 
+XF:16IDC-BI{Cam:sam_top}Over1:3:SizeY 1000000
+XF:16IDC-BI{Cam:sam_top}Over1:3:WidthXLink.DOL CP NPP MS
+XF:16IDC-BI{Cam:sam_top}Over1:3:WidthX 0
+XF:16IDC-BI{Cam:sam_top}Over1:3:WidthYLink.DOL CP NPP MS
+XF:16IDC-BI{Cam:sam_top}Over1:3:WidthY 0
+XF:16IDC-BI{Cam:sam_top}Over1:3:DrawMode 0
+XF:16IDC-BI{Cam:sam_top}Over1:3:Shape 1
+XF:16IDC-BI{Cam:sam_top}Over1:3:Red 1
+XF:16IDC-BI{Cam:sam_top}Over1:3:Green 1
+XF:16IDC-BI{Cam:sam_top}Over1:3:Blue 1
+XF:16IDC-BI{Cam:sam_top}Over1:3:TimeStampFormat %Y-%m-%d %H:%M:%S.%03f
+XF:16IDC-BI{Cam:sam_top}Over1:3:Font 0
+XF:16IDC-BI{Cam:sam_top}Over1:3:DisplayText 
+XF:16IDC-BI{Cam:sam_top}Over1:4:Name ROI4
+XF:16IDC-BI{Cam:sam_top}Over1:4:Use 0
+XF:16IDC-BI{Cam:sam_top}Over1:4:PositionXLink.DOL XF:16IDC-BI{Cam:sam_top}ROI4:MinX_RBV C
+XF:16IDC-BI{Cam:sam_top}Over1:4:PositionX 0
+XF:16IDC-BI{Cam:sam_top}Over1:4:PositionYLink.DOL XF:16IDC-BI{Cam:sam_top}ROI4:MinY_RBV C
+XF:16IDC-BI{Cam:sam_top}Over1:4:PositionY 0
+XF:16IDC-BI{Cam:sam_top}Over1:4:SizeXLink.DOL XF:16IDC-BI{Cam:sam_top}ROI4:SizeX_RBV 
+XF:16IDC-BI{Cam:sam_top}Over1:4:SizeX 1000000
+XF:16IDC-BI{Cam:sam_top}Over1:4:SizeYLink.DOL XF:16IDC-BI{Cam:sam_top}ROI4:SizeY_RBV 
+XF:16IDC-BI{Cam:sam_top}Over1:4:SizeY 1000000
+XF:16IDC-BI{Cam:sam_top}Over1:4:WidthXLink.DOL CP NPP MS
+XF:16IDC-BI{Cam:sam_top}Over1:4:WidthX 0
+XF:16IDC-BI{Cam:sam_top}Over1:4:WidthYLink.DOL CP NPP MS
+XF:16IDC-BI{Cam:sam_top}Over1:4:WidthY 0
+XF:16IDC-BI{Cam:sam_top}Over1:4:DrawMode 0
+XF:16IDC-BI{Cam:sam_top}Over1:4:Shape 1
+XF:16IDC-BI{Cam:sam_top}Over1:4:Red 1
+XF:16IDC-BI{Cam:sam_top}Over1:4:Green 1
+XF:16IDC-BI{Cam:sam_top}Over1:4:Blue 1
+XF:16IDC-BI{Cam:sam_top}Over1:4:TimeStampFormat %Y-%m-%d %H:%M:%S.%03f
+XF:16IDC-BI{Cam:sam_top}Over1:4:Font 0
+XF:16IDC-BI{Cam:sam_top}Over1:4:DisplayText 
+XF:16IDC-BI{Cam:sam_top}Over1:5:Name Cursor1
+XF:16IDC-BI{Cam:sam_top}Over1:5:Use 0
+XF:16IDC-BI{Cam:sam_top}Over1:5:PositionXLink.DOL junk CP MS
+XF:16IDC-BI{Cam:sam_top}Over1:5:PositionX 0
+XF:16IDC-BI{Cam:sam_top}Over1:5:PositionYLink.DOL junk CP MS
+XF:16IDC-BI{Cam:sam_top}Over1:5:PositionY 0
+XF:16IDC-BI{Cam:sam_top}Over1:5:SizeXLink.DOL junk CP MS
+XF:16IDC-BI{Cam:sam_top}Over1:5:SizeX 1
+XF:16IDC-BI{Cam:sam_top}Over1:5:SizeYLink.DOL junk CP MS
+XF:16IDC-BI{Cam:sam_top}Over1:5:SizeY 0
+XF:16IDC-BI{Cam:sam_top}Over1:5:WidthXLink.DOL CP NPP MS
+XF:16IDC-BI{Cam:sam_top}Over1:5:WidthX 0
+XF:16IDC-BI{Cam:sam_top}Over1:5:WidthYLink.DOL CP NPP MS
+XF:16IDC-BI{Cam:sam_top}Over1:5:WidthY 0
+XF:16IDC-BI{Cam:sam_top}Over1:5:DrawMode 0
+XF:16IDC-BI{Cam:sam_top}Over1:5:Shape 1
+XF:16IDC-BI{Cam:sam_top}Over1:5:Red 1
+XF:16IDC-BI{Cam:sam_top}Over1:5:Green 1
+XF:16IDC-BI{Cam:sam_top}Over1:5:Blue 1
+XF:16IDC-BI{Cam:sam_top}Over1:5:TimeStampFormat %Y-%m-%d %H:%M:%S.%03f
+XF:16IDC-BI{Cam:sam_top}Over1:5:Font 0
+XF:16IDC-BI{Cam:sam_top}Over1:5:DisplayText 
+XF:16IDC-BI{Cam:sam_top}Over1:6:Name Cursor2
+XF:16IDC-BI{Cam:sam_top}Over1:6:Use 0
+XF:16IDC-BI{Cam:sam_top}Over1:6:PositionXLink.DOL junk CP MS
+XF:16IDC-BI{Cam:sam_top}Over1:6:PositionX 0
+XF:16IDC-BI{Cam:sam_top}Over1:6:PositionYLink.DOL junk CP MS
+XF:16IDC-BI{Cam:sam_top}Over1:6:PositionY 0
+XF:16IDC-BI{Cam:sam_top}Over1:6:SizeXLink.DOL junk CP MS
+XF:16IDC-BI{Cam:sam_top}Over1:6:SizeX 1
+XF:16IDC-BI{Cam:sam_top}Over1:6:SizeYLink.DOL junk CP MS
+XF:16IDC-BI{Cam:sam_top}Over1:6:SizeY 0
+XF:16IDC-BI{Cam:sam_top}Over1:6:WidthXLink.DOL CP NPP MS
+XF:16IDC-BI{Cam:sam_top}Over1:6:WidthX 0
+XF:16IDC-BI{Cam:sam_top}Over1:6:WidthYLink.DOL CP NPP MS
+XF:16IDC-BI{Cam:sam_top}Over1:6:WidthY 0
+XF:16IDC-BI{Cam:sam_top}Over1:6:DrawMode 0
+XF:16IDC-BI{Cam:sam_top}Over1:6:Shape 1
+XF:16IDC-BI{Cam:sam_top}Over1:6:Red 1
+XF:16IDC-BI{Cam:sam_top}Over1:6:Green 1
+XF:16IDC-BI{Cam:sam_top}Over1:6:Blue 1
+XF:16IDC-BI{Cam:sam_top}Over1:6:TimeStampFormat %Y-%m-%d %H:%M:%S.%03f
+XF:16IDC-BI{Cam:sam_top}Over1:6:Font 0
+XF:16IDC-BI{Cam:sam_top}Over1:6:DisplayText 
+XF:16IDC-BI{Cam:sam_top}Over1:7:Name Box1
+XF:16IDC-BI{Cam:sam_top}Over1:7:Use 0
+XF:16IDC-BI{Cam:sam_top}Over1:7:PositionXLink.DOL junk CP MS
+XF:16IDC-BI{Cam:sam_top}Over1:7:PositionX 0
+XF:16IDC-BI{Cam:sam_top}Over1:7:PositionYLink.DOL junk CP MS
+XF:16IDC-BI{Cam:sam_top}Over1:7:PositionY 0
+XF:16IDC-BI{Cam:sam_top}Over1:7:SizeXLink.DOL junk CP MS
+XF:16IDC-BI{Cam:sam_top}Over1:7:SizeX 1
+XF:16IDC-BI{Cam:sam_top}Over1:7:SizeYLink.DOL junk CP MS
+XF:16IDC-BI{Cam:sam_top}Over1:7:SizeY 0
+XF:16IDC-BI{Cam:sam_top}Over1:7:WidthXLink.DOL CP NPP MS
+XF:16IDC-BI{Cam:sam_top}Over1:7:WidthX 0
+XF:16IDC-BI{Cam:sam_top}Over1:7:WidthYLink.DOL CP NPP MS
+XF:16IDC-BI{Cam:sam_top}Over1:7:WidthY 0
+XF:16IDC-BI{Cam:sam_top}Over1:7:DrawMode 0
+XF:16IDC-BI{Cam:sam_top}Over1:7:Shape 1
+XF:16IDC-BI{Cam:sam_top}Over1:7:Red 1
+XF:16IDC-BI{Cam:sam_top}Over1:7:Green 1
+XF:16IDC-BI{Cam:sam_top}Over1:7:Blue 1
+XF:16IDC-BI{Cam:sam_top}Over1:7:TimeStampFormat %Y-%m-%d %H:%M:%S.%03f
+XF:16IDC-BI{Cam:sam_top}Over1:7:Font 0
+XF:16IDC-BI{Cam:sam_top}Over1:7:DisplayText 
+XF:16IDC-BI{Cam:sam_top}Over1:8:Name Box2
+XF:16IDC-BI{Cam:sam_top}Over1:8:Use 0
+XF:16IDC-BI{Cam:sam_top}Over1:8:PositionXLink.DOL junk CP MS
+XF:16IDC-BI{Cam:sam_top}Over1:8:PositionX 0
+XF:16IDC-BI{Cam:sam_top}Over1:8:PositionYLink.DOL junk CP MS
+XF:16IDC-BI{Cam:sam_top}Over1:8:PositionY 0
+XF:16IDC-BI{Cam:sam_top}Over1:8:SizeXLink.DOL junk CP MS
+XF:16IDC-BI{Cam:sam_top}Over1:8:SizeX 1
+XF:16IDC-BI{Cam:sam_top}Over1:8:SizeYLink.DOL junk CP MS
+XF:16IDC-BI{Cam:sam_top}Over1:8:SizeY 0
+XF:16IDC-BI{Cam:sam_top}Over1:8:WidthXLink.DOL CP NPP MS
+XF:16IDC-BI{Cam:sam_top}Over1:8:WidthX 0
+XF:16IDC-BI{Cam:sam_top}Over1:8:WidthYLink.DOL CP NPP MS
+XF:16IDC-BI{Cam:sam_top}Over1:8:WidthY 0
+XF:16IDC-BI{Cam:sam_top}Over1:8:DrawMode 0
+XF:16IDC-BI{Cam:sam_top}Over1:8:Shape 1
+XF:16IDC-BI{Cam:sam_top}Over1:8:Red 1
+XF:16IDC-BI{Cam:sam_top}Over1:8:Green 1
+XF:16IDC-BI{Cam:sam_top}Over1:8:Blue 1
+XF:16IDC-BI{Cam:sam_top}Over1:8:TimeStampFormat %Y-%m-%d %H:%M:%S.%03f
+XF:16IDC-BI{Cam:sam_top}Over1:8:Font 0
+XF:16IDC-BI{Cam:sam_top}Over1:8:DisplayText 
+XF:16IDC-BI{Cam:sam_top}CC1:ColorModeOut 0
+XF:16IDC-BI{Cam:sam_top}CC1:NDArrayPort cam
+XF:16IDC-BI{Cam:sam_top}CC1:NDArrayAddress 0
+XF:16IDC-BI{Cam:sam_top}CC1:EnableCallbacks 0
+XF:16IDC-BI{Cam:sam_top}CC1:MinCallbackTime 0
+XF:16IDC-BI{Cam:sam_top}CC1:MaxByteRate 0
+XF:16IDC-BI{Cam:sam_top}CC1:BlockingCallbacks 0
+XF:16IDC-BI{Cam:sam_top}CC1:QueueSize 20
+XF:16IDC-BI{Cam:sam_top}CC1:NumThreads 1
+XF:16IDC-BI{Cam:sam_top}CC1:SortTime 0.1
+XF:16IDC-BI{Cam:sam_top}CC1:SortMode 0
+XF:16IDC-BI{Cam:sam_top}CC1:SortSize 20
+XF:16IDC-BI{Cam:sam_top}CC1:DataType 0
+XF:16IDC-BI{Cam:sam_top}CC1:ColorMode 0
+XF:16IDC-BI{Cam:sam_top}CC1:ArrayCallbacks 1
+XF:16IDC-BI{Cam:sam_top}CC1:NDAttributesFile 
+XF:16IDC-BI{Cam:sam_top}CC1:NDAttributesMacros 
+XF:16IDC-BI{Cam:sam_top}CC1:PoolUsedMem.SCAN 6
+XF:16IDC-BI{Cam:sam_top}CC1:WaitForPlugins 0
+XF:16IDC-BI{Cam:sam_top}CC2:ColorModeOut 0
+XF:16IDC-BI{Cam:sam_top}CC2:NDArrayPort cam
+XF:16IDC-BI{Cam:sam_top}CC2:NDArrayAddress 0
+XF:16IDC-BI{Cam:sam_top}CC2:EnableCallbacks 0
+XF:16IDC-BI{Cam:sam_top}CC2:MinCallbackTime 0
+XF:16IDC-BI{Cam:sam_top}CC2:MaxByteRate 0
+XF:16IDC-BI{Cam:sam_top}CC2:BlockingCallbacks 0
+XF:16IDC-BI{Cam:sam_top}CC2:QueueSize 20
+XF:16IDC-BI{Cam:sam_top}CC2:NumThreads 1
+XF:16IDC-BI{Cam:sam_top}CC2:SortTime 0.1
+XF:16IDC-BI{Cam:sam_top}CC2:SortMode 0
+XF:16IDC-BI{Cam:sam_top}CC2:SortSize 20
+XF:16IDC-BI{Cam:sam_top}CC2:DataType 0
+XF:16IDC-BI{Cam:sam_top}CC2:ColorMode 0
+XF:16IDC-BI{Cam:sam_top}CC2:ArrayCallbacks 1
+XF:16IDC-BI{Cam:sam_top}CC2:NDAttributesFile 
+XF:16IDC-BI{Cam:sam_top}CC2:NDAttributesMacros 
+XF:16IDC-BI{Cam:sam_top}CC2:PoolUsedMem.SCAN 6
+XF:16IDC-BI{Cam:sam_top}CC2:WaitForPlugins 0
+XF:16IDC-BI{Cam:sam_top}CB1:TriggerA 
+XF:16IDC-BI{Cam:sam_top}CB1:TriggerB 
+XF:16IDC-BI{Cam:sam_top}CB1:TriggerCalc 
+XF:16IDC-BI{Cam:sam_top}CB1:PreCount 100
+XF:16IDC-BI{Cam:sam_top}CB1:PostCount 100
+XF:16IDC-BI{Cam:sam_top}CB1:PresetTriggerCount 1
+XF:16IDC-BI{Cam:sam_top}CB1:FlushOnSoftTrg 0
+XF:16IDC-BI{Cam:sam_top}CB1:NDArrayPort cam
+XF:16IDC-BI{Cam:sam_top}CB1:NDArrayAddress 0
+XF:16IDC-BI{Cam:sam_top}CB1:EnableCallbacks 0
+XF:16IDC-BI{Cam:sam_top}CB1:MinCallbackTime 0
+XF:16IDC-BI{Cam:sam_top}CB1:MaxByteRate 0
+XF:16IDC-BI{Cam:sam_top}CB1:BlockingCallbacks 0
+XF:16IDC-BI{Cam:sam_top}CB1:QueueSize 20
+XF:16IDC-BI{Cam:sam_top}CB1:NumThreads 1
+XF:16IDC-BI{Cam:sam_top}CB1:SortTime 0.1
+XF:16IDC-BI{Cam:sam_top}CB1:SortMode 0
+XF:16IDC-BI{Cam:sam_top}CB1:SortSize 20
+XF:16IDC-BI{Cam:sam_top}CB1:DataType 0
+XF:16IDC-BI{Cam:sam_top}CB1:ColorMode 0
+XF:16IDC-BI{Cam:sam_top}CB1:ArrayCallbacks 1
+XF:16IDC-BI{Cam:sam_top}CB1:NDAttributesFile 
+XF:16IDC-BI{Cam:sam_top}CB1:NDAttributesMacros 
+XF:16IDC-BI{Cam:sam_top}CB1:PoolUsedMem.SCAN 6
+XF:16IDC-BI{Cam:sam_top}CB1:WaitForPlugins 0
+XF:16IDC-BI{Cam:sam_top}Attr1:TS:TSNumPoints 2048
+XF:16IDC-BI{Cam:sam_top}Attr1:TS:TSTimePerPointLink.DOL 0.1
+XF:16IDC-BI{Cam:sam_top}Attr1:TS:TSAveragingTime 0.1
+XF:16IDC-BI{Cam:sam_top}Attr1:TS:TSRead.SCAN 6
+XF:16IDC-BI{Cam:sam_top}Attr1:TS:TSAcquireMode 0
+XF:16IDC-BI{Cam:sam_top}Attr1:TS:NDArrayPort ATTR1
+XF:16IDC-BI{Cam:sam_top}Attr1:TS:NDArrayAddress 1
+XF:16IDC-BI{Cam:sam_top}Attr1:TS:EnableCallbacks 1
+XF:16IDC-BI{Cam:sam_top}Attr1:TS:MinCallbackTime 0
+XF:16IDC-BI{Cam:sam_top}Attr1:TS:MaxByteRate 0
+XF:16IDC-BI{Cam:sam_top}Attr1:TS:BlockingCallbacks 0
+XF:16IDC-BI{Cam:sam_top}Attr1:TS:QueueSize 20
+XF:16IDC-BI{Cam:sam_top}Attr1:TS:NumThreads 1
+XF:16IDC-BI{Cam:sam_top}Attr1:TS:SortTime 0.1
+XF:16IDC-BI{Cam:sam_top}Attr1:TS:SortMode 0
+XF:16IDC-BI{Cam:sam_top}Attr1:TS:SortSize 20
+XF:16IDC-BI{Cam:sam_top}Attr1:TS:DataType 0
+XF:16IDC-BI{Cam:sam_top}Attr1:TS:ColorMode 0
+XF:16IDC-BI{Cam:sam_top}Attr1:TS:ArrayCallbacks 1
+XF:16IDC-BI{Cam:sam_top}Attr1:TS:NDAttributesFile 
+XF:16IDC-BI{Cam:sam_top}Attr1:TS:NDAttributesMacros 
+XF:16IDC-BI{Cam:sam_top}Attr1:TS:PoolUsedMem.SCAN 6
+XF:16IDC-BI{Cam:sam_top}Attr1:TS:WaitForPlugins 0
+XF:16IDC-BI{Cam:sam_top}Attr1:NDArrayPort cam
+XF:16IDC-BI{Cam:sam_top}Attr1:NDArrayAddress 0
+XF:16IDC-BI{Cam:sam_top}Attr1:EnableCallbacks 0
+XF:16IDC-BI{Cam:sam_top}Attr1:MinCallbackTime 0
+XF:16IDC-BI{Cam:sam_top}Attr1:MaxByteRate 0
+XF:16IDC-BI{Cam:sam_top}Attr1:BlockingCallbacks 0
+XF:16IDC-BI{Cam:sam_top}Attr1:QueueSize 20
+XF:16IDC-BI{Cam:sam_top}Attr1:NumThreads 1
+XF:16IDC-BI{Cam:sam_top}Attr1:SortTime 0.1
+XF:16IDC-BI{Cam:sam_top}Attr1:SortMode 0
+XF:16IDC-BI{Cam:sam_top}Attr1:SortSize 20
+XF:16IDC-BI{Cam:sam_top}Attr1:DataType 0
+XF:16IDC-BI{Cam:sam_top}Attr1:ColorMode 0
+XF:16IDC-BI{Cam:sam_top}Attr1:ArrayCallbacks 0
+XF:16IDC-BI{Cam:sam_top}Attr1:NDAttributesFile 
+XF:16IDC-BI{Cam:sam_top}Attr1:NDAttributesMacros 
+XF:16IDC-BI{Cam:sam_top}Attr1:PoolUsedMem.SCAN 6
+XF:16IDC-BI{Cam:sam_top}Attr1:WaitForPlugins 0
+XF:16IDC-BI{Cam:sam_top}Attr1:1:AttrName 
+XF:16IDC-BI{Cam:sam_top}Attr1:2:AttrName 
+XF:16IDC-BI{Cam:sam_top}Attr1:3:AttrName 
+XF:16IDC-BI{Cam:sam_top}Attr1:4:AttrName 
+XF:16IDC-BI{Cam:sam_top}Attr1:5:AttrName 
+XF:16IDC-BI{Cam:sam_top}Attr1:6:AttrName 
+XF:16IDC-BI{Cam:sam_top}Attr1:7:AttrName 
+XF:16IDC-BI{Cam:sam_top}Attr1:8:AttrName 
+XF:16IDC-BI{Cam:sam_top}FFT1:NDArrayPort cam
+XF:16IDC-BI{Cam:sam_top}FFT1:NDArrayAddress 0
+XF:16IDC-BI{Cam:sam_top}FFT1:EnableCallbacks 0
+XF:16IDC-BI{Cam:sam_top}FFT1:MinCallbackTime 0
+XF:16IDC-BI{Cam:sam_top}FFT1:MaxByteRate 0
+XF:16IDC-BI{Cam:sam_top}FFT1:BlockingCallbacks 0
+XF:16IDC-BI{Cam:sam_top}FFT1:QueueSize 20
+XF:16IDC-BI{Cam:sam_top}FFT1:NumThreads 1
+XF:16IDC-BI{Cam:sam_top}FFT1:SortTime 0.1
+XF:16IDC-BI{Cam:sam_top}FFT1:SortMode 0
+XF:16IDC-BI{Cam:sam_top}FFT1:SortSize 20
+XF:16IDC-BI{Cam:sam_top}FFT1:DataType 0
+XF:16IDC-BI{Cam:sam_top}FFT1:ColorMode 0
+XF:16IDC-BI{Cam:sam_top}FFT1:ArrayCallbacks 1
+XF:16IDC-BI{Cam:sam_top}FFT1:NDAttributesFile 
+XF:16IDC-BI{Cam:sam_top}FFT1:NDAttributesMacros 
+XF:16IDC-BI{Cam:sam_top}FFT1:PoolUsedMem.SCAN 6
+XF:16IDC-BI{Cam:sam_top}FFT1:WaitForPlugins 0
+XF:16IDC-BI{Cam:sam_top}FFT1:FFTDirection 0
+XF:16IDC-BI{Cam:sam_top}FFT1:FFTSuppressDC 0
+XF:16IDC-BI{Cam:sam_top}FFT1:FFTNumAverage 1
+XF:16IDC-BI{Cam:sam_top}FFT1:Name FFT1
+XF:16IDC-BI{Cam:sam_top}Codec1:Mode 0
+XF:16IDC-BI{Cam:sam_top}Codec1:Compressor 0
+XF:16IDC-BI{Cam:sam_top}Codec1:JPEGQuality 85
+XF:16IDC-BI{Cam:sam_top}Codec1:BloscCompressor 0
+XF:16IDC-BI{Cam:sam_top}Codec1:BloscCLevel 5
+XF:16IDC-BI{Cam:sam_top}Codec1:BloscShuffle 0
+XF:16IDC-BI{Cam:sam_top}Codec1:BloscNumThreads 1
+XF:16IDC-BI{Cam:sam_top}Codec1:NDArrayPort cam
+XF:16IDC-BI{Cam:sam_top}Codec1:NDArrayAddress 0
+XF:16IDC-BI{Cam:sam_top}Codec1:EnableCallbacks 0
+XF:16IDC-BI{Cam:sam_top}Codec1:MinCallbackTime 0
+XF:16IDC-BI{Cam:sam_top}Codec1:MaxByteRate 0
+XF:16IDC-BI{Cam:sam_top}Codec1:BlockingCallbacks 0
+XF:16IDC-BI{Cam:sam_top}Codec1:QueueSize 20
+XF:16IDC-BI{Cam:sam_top}Codec1:NumThreads 1
+XF:16IDC-BI{Cam:sam_top}Codec1:SortTime 0.1
+XF:16IDC-BI{Cam:sam_top}Codec1:SortMode 0
+XF:16IDC-BI{Cam:sam_top}Codec1:SortSize 20
+XF:16IDC-BI{Cam:sam_top}Codec1:DataType 0
+XF:16IDC-BI{Cam:sam_top}Codec1:ColorMode 0
+XF:16IDC-BI{Cam:sam_top}Codec1:ArrayCallbacks 1
+XF:16IDC-BI{Cam:sam_top}Codec1:NDAttributesFile 
+XF:16IDC-BI{Cam:sam_top}Codec1:NDAttributesMacros 
+XF:16IDC-BI{Cam:sam_top}Codec1:PoolUsedMem.SCAN 6
+XF:16IDC-BI{Cam:sam_top}Codec1:WaitForPlugins 0
+XF:16IDC-BI{Cam:sam_top}Codec2:Mode 0
+XF:16IDC-BI{Cam:sam_top}Codec2:Compressor 0
+XF:16IDC-BI{Cam:sam_top}Codec2:JPEGQuality 85
+XF:16IDC-BI{Cam:sam_top}Codec2:BloscCompressor 0
+XF:16IDC-BI{Cam:sam_top}Codec2:BloscCLevel 5
+XF:16IDC-BI{Cam:sam_top}Codec2:BloscShuffle 0
+XF:16IDC-BI{Cam:sam_top}Codec2:BloscNumThreads 1
+XF:16IDC-BI{Cam:sam_top}Codec2:NDArrayPort cam
+XF:16IDC-BI{Cam:sam_top}Codec2:NDArrayAddress 0
+XF:16IDC-BI{Cam:sam_top}Codec2:EnableCallbacks 0
+XF:16IDC-BI{Cam:sam_top}Codec2:MinCallbackTime 0
+XF:16IDC-BI{Cam:sam_top}Codec2:MaxByteRate 0
+XF:16IDC-BI{Cam:sam_top}Codec2:BlockingCallbacks 0
+XF:16IDC-BI{Cam:sam_top}Codec2:QueueSize 20
+XF:16IDC-BI{Cam:sam_top}Codec2:NumThreads 1
+XF:16IDC-BI{Cam:sam_top}Codec2:SortTime 0.1
+XF:16IDC-BI{Cam:sam_top}Codec2:SortMode 0
+XF:16IDC-BI{Cam:sam_top}Codec2:SortSize 20
+XF:16IDC-BI{Cam:sam_top}Codec2:DataType 0
+XF:16IDC-BI{Cam:sam_top}Codec2:ColorMode 0
+XF:16IDC-BI{Cam:sam_top}Codec2:ArrayCallbacks 1
+XF:16IDC-BI{Cam:sam_top}Codec2:NDAttributesFile 
+XF:16IDC-BI{Cam:sam_top}Codec2:NDAttributesMacros 
+XF:16IDC-BI{Cam:sam_top}Codec2:PoolUsedMem.SCAN 6
+XF:16IDC-BI{Cam:sam_top}Codec2:WaitForPlugins 0
+<END>

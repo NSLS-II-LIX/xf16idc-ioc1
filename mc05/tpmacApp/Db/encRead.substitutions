@@ -2,7 +2,7 @@ file "db/encRead.db"
 {
 pattern
 {MtrName,              				N,	MRES}
-{"XF:16IDB-OP{Fltr:Atn-Ax:X1}Mtr_",		5,	0.000625}
-{"XF:16IDB-OP{Fltr:Atn-Ax:X2}Mtr_",		6,      0.000625}
-{"XF:16IDB-OP{Fltr:Atn-Ax:X3}Mtr_",		7,      0.000625}
+{"XF:16IDB-OP{Fltr:Atn-Ax:X1}Mtr_",		5,	0.1016}
+{"XF:16IDB-OP{Fltr:Atn-Ax:X2}Mtr_",		6,      0.1016}
+{"XF:16IDB-OP{Fltr:Atn-Ax:X3}Mtr_",		7,      0.1016}
 }

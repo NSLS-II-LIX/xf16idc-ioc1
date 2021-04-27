@@ -1,0 +1,8 @@
+2015-10-31 23:36:34.711 INFO [Thread 69] com.cosylab.epics.caj.CAJContext (searchResponse) - More than one PVs with name 'XF:16IDA-BI{FS:4-Cam:1}Stats1:ComputeProfiles' detected, additional response from: /10.16.1.2:38804
+2015-10-31 23:36:34.712 INFO [Thread 69] com.cosylab.epics.caj.CAJContext (searchResponse) - More than one PVs with name 'XF:16IDA-BI{FS:4-Cam:1}Stats1:HistEntropy_RBV' detected, additional response from: /10.16.1.2:38804
+2015-10-31 23:36:34.712 INFO [Thread 69] com.cosylab.epics.caj.CAJContext (searchResponse) - More than one PVs with name 'XF:16IDA-BI{FS:4-Cam:1}Stats1:HistMax' detected, additional response from: /10.16.1.2:38804
+2015-10-31 23:36:34.712 INFO [Thread 69] com.cosylab.epics.caj.CAJContext (searchResponse) - More than one PVs with name 'XF:16IDA-BI{FS:4-Cam:1}Stats1:HistMin' detected, additional response from: /10.16.1.2:38804
+2015-10-31 23:36:34.712 INFO [Thread 69] com.cosylab.epics.caj.CAJContext (searchResponse) - More than one PVs with name 'XF:16IDA-BI{FS:4-Cam:1}Stats1:HistSize' detected, additional response from: /10.16.1.2:38804
+2015-10-31 23:36:34.712 INFO [Thread 69] com.cosylab.epics.caj.CAJContext (searchResponse) - More than one PVs with name 'XF:16IDA-BI{FS:4-Cam:1}Stats1:HistMin_RBV' detected, additional response from: /10.16.1.2:38804
+2015-10-31 23:36:34.712 INFO [Thread 69] com.cosylab.epics.caj.CAJContext (searchResponse) - More than one PVs with name 'XF:16IDA-BI{FS:4-Cam:1}Stats1:HistMax_RBV' detected, additional response from: /10.16.1.2:38804
+2015-10-31 23:36:34.712 INFO [Thread 69] com.cosylab.epics.caj.CAJContext (searchResponse) - More than one PVs with name 'XF:16IDA-BI{FS:4-Cam:1}Stats1:ComputeHistogram_RBV' detected, additional response from: /10.16.1.2:38804

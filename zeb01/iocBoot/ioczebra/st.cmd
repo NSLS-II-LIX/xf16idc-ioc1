@@ -4,19 +4,18 @@
 ## everywhere it appears in this file
 
 < envPaths
+< /epics/common/xf16idc-ioc1-netsetup.cmd
 
 cd "$(TOP)"
 
 epicsEnvSet("ENGINEER", "LIX")
 epicsEnvSet("LOCATION", "XF:16ID")
-epicsEnvSet("EPICS_CA_AUTO_ADDR_LIST", "NO")
-epicsEnvSet("EPICS_CA_ADDR_LIST", "10.16.0.255")
 
 ## Register all support components
 dbLoadDatabase("dbd/zebra.dbd",0,0)
 zebra_registerRecordDeviceDriver(pdbbase) 
 
-drvAsynIPPortConfigure("ty_zebra","10.16.2.50:7003")
+drvAsynIPPortConfigure("ty_zebra","xf16idc-tsrv7.nsls2.bnl.local:7003")
 
 #zebraConfig(Port, SerialPort, MaxPosCompPoints)
 zebraConfig("ZEBRA", "ty_zebra", 100000)

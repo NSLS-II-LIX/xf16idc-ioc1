@@ -2,6 +2,6 @@ file "$(TOP)/db/basic_asyn_motor.db"
 {
 pattern
 {P,                  M,                 PORT, ADDR,  DESC,          DTYPE,      EGU,   MRES}
-{"XF:16IDC-ES:Sol", "{Enc-Ax:Xu}Mtr",  MCB4B1,  0, "upper x",      asynMotor, "mm",   "4.763e-4" }
+{"XF:16IDC-ES:Sol", "{Enc-Ax:Yu}Mtr",  MCB4B1,  0, "upper x",      asynMotor, "mm",   "1.906143e-4" }
 {"XF:16IDC-ES:Sol", "{Enc-Ax:Xl}Mtr",  MCB4B1,  1, "lower x",      asynMotor, "mm",   "3.969e-3" }
 }

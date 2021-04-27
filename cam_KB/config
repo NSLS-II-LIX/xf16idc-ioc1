@@ -1,0 +1,4 @@
+NAME=cam_KB
+PORT=4316
+HOST=xf16idc-ioc1
+USER=softioc

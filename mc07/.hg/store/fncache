@@ -12,10 +12,12 @@ data/tpmacApp/Db/motor.db.i
 data/as/req/info_settings.req.i
 data/st.cmd.i
 data/configure/RULES.ioc.i
+data/configure/RULES.i
 data/tpmacApp/pmc/build/pip-delete-this-directory.txt.i
 data/tpmacApp/pmc/BRICK_M_variables.pmc.i
 data/configure/RULES_PMC.i
 data/tpmacApp/Db/cs.substitutions.i
+data/tpmacApp/pmc/02-02-16-mc07-backup.CFG.i
 data/tpmacApp/Db/pmacStatus.substitutions.i
 data/configure/CONFIG.i
 data/XF16IDB-MC07.CFG.i
@@ -23,7 +25,7 @@ data/tpmacApp/Db/pmac_asyn_motor.substitutions.i
 data/iocBoot/Makefile.i
 data/iocBoot/iocmtrctl/st.cmd.i
 data/tpmacApp/pmc/xf16idc-mc07-plc05-cpu.substitutions.i
-data/configure/RULES.i
+data/.hgignore.i
 data/as/req/info_positions.req.i
 data/tpmacApp/pmc/xf16idc-mc07-plc07-holding.pmc.i
 data/as/save/.README.i

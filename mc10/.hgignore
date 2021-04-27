@@ -12,6 +12,10 @@ O.*
 envPaths$
 ^as/
 \.dbl$
+pmc/
 
 syntax: glob
 *~
+.gitignore
+.git/
+records.dbl

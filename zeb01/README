@@ -1,0 +1,9 @@
+LiX Zebra box configuration
+
+1. Pilatus hardware trigger
+
+inputs (logic low is active): 
+	(a) software (soft IN1, inverted)
+	(b) XPS trigger signal (in3-OC, inverted), use PULSE to widen the trigger signal to 0.5 ms
+
+output: out4-TTL, AND of inputs (trigger from either inputs)

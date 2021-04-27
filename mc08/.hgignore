@@ -15,3 +15,6 @@ envPaths$
 
 syntax: glob
 *~
+.gitignore
+.git/
+records.dbl

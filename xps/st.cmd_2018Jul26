@@ -3,8 +3,9 @@
 # refer to https://confluence.slac.stanford.edu/display/PCDS/Newport+XPS+Series+Motor+Controllers
 errlogInit(5000)
 < envPaths
+< /epics/common/xf16idc-ioc1-netsetup.cmd
 
-epicsEnvSet("XPS_IP", "10.16.2.100")
+epicsEnvSet("XPS_IP", "xf16idc-mc-xps-q8.nsls2.bnl.local")
 epicsEnvSet("XPS_PORT", "5001")
 
 # Tell EPICS all about the record types, device-support modules, drivers,

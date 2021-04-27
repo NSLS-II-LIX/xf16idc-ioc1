@@ -3,6 +3,7 @@
 # refer to https://confluence.slac.stanford.edu/display/PCDS/Newport+XPS+Series+Motor+Controllers
 errlogInit(5000)
 < envPaths
+< /epics/common/xf16idc-ioc1-netsetup.cmd
 # Tell EPICS all about the record types, device-support modules, drivers,
 # etc. in this build from CARS
 dbLoadDatabase("$(TOP)/dbd/WithAsyn.dbd")
@@ -17,10 +18,10 @@ dbLoadTemplate "XPSAux.substitutions"
 XPSSetup(1)
 
 # card, IP, PORT, number of axes, active poll period (ms), idle poll period (ms)
-XPSConfig(0, "10.16.2.100", 5001, 3, 10, 1000)
+XPSConfig(0, "xf16idc-mc-xps-q8.nsls2.bnl.local", 5001, 3, 10, 1000)
 
 # asynPort, IP address, IP port, poll period (ms)
-XPSAuxConfig("XPS_AUX1", "10.16.2.100", 5001, 50)
+XPSAuxConfig("XPS_AUX1", "xf16idc-mc-xps-q8.nsls2.bnl.local", 5001, 50)
 #asynSetTraceMask("XPS_AUX1", 0, 255)
 #asynSetTraceIOMask("XPS_AUX1", 0, 2)
 

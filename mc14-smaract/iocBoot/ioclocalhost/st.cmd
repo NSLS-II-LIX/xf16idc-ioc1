@@ -4,24 +4,23 @@
 ## everywhere it appears in this file
 
 < envPaths
+< /epics/common/xf16idc-ioc1-netsetup.cmd
 
 cd ${TOP}
 
-#epicsEnvSet("EPICS_CA_AUTO_ADDR_LIST", "NO")
-#epicsEnvSet("EPICS_CA_ADDR_LIST", "10.11.0.255")
 
 ## Register all support components
 dbLoadDatabase("dbd/smaract.dbd",0,0)
 smaract_registerRecordDeviceDriver(pdbbase) 
 
 #drvAsynIPPortConfigure("tsrv1-P13","192.168.0.121:5000")
-drvAsynIPPortConfigure("P0","10.16.2.94:5000")
+drvAsynIPPortConfigure("P0","xf16idb-mc14-smaract.nsls2.bnl.local:5000")
 
 #drvAsynIPPortConfigure("tsrv1-P13", "xf11ida-tsrv1:4013")
 #drvAsynSerialPortConfigure("tsrv1-P13", "/dev/ttyUSB0")
 #asynSetOption ("tsrv1-P13", 0, "baud",    "9600")
 #asynSetOption ("tsrv1-P13", 0, "bits",    "8")
-#asynSetOption ("tsrv1-P13", 0, "parity",  "none")
+#asynSetOption ("tsrv1-P13", 0, "parity",  "xf16ida-ioc1-1613.nsls2.bnl.local")
 #asynSetOption ("tsrv1-P13", 0, "stop",    "1")
 #asynSetOption ("tsrv1-P13", 0, "clocal",  "N")
 

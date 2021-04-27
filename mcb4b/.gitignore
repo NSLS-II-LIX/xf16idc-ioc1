@@ -1,0 +1,5 @@
+syntax: glob
+*~
+.hgignore
+.hg/
+records.dbl

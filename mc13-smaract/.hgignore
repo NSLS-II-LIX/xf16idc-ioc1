@@ -7,3 +7,6 @@ O.*
 db
 dbd
 envPaths
+.gitignore
+.git/
+records.dbl

@@ -1,0 +1,22 @@
+O.*
+bin
+db
+dbd
+include
+lib
+envPaths
+html
+rtf
+documentation/html
+.cvsignore
+envPaths
+as/
+\.dbl
+
+syntax: glob
+*~
+syntax: glob
+*~
+.hgignore
+.hg/
+records.dbl

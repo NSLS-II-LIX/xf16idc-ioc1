@@ -1,4 +1,2 @@
 [paths]
-default = https://code.nsls2.bnl.gov/hg/xf/16id/iocs/xf16idc-ioc1/mc07
-[ui]
-username = Ji Li <liji@bnl.gov>
+default = http://code.nsls2.bnl.gov/hg/xf/16id/iocs/xf16idc-ioc1/mc07

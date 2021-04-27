@@ -5,8 +5,6 @@
 
 epicsEnvSet("ENGINEER", "LIX")
 epicsEnvSet("LOCATION", "XF:16{RG:C1}")
-epicsEnvSet("EPICS_CA_AUTO_ADDR_LIST", "NO")
-epicsEnvSet("EPICS_CA_ADDR_LIST", "10.16.0.255")
 
 #< envPaths
 
@@ -17,6 +15,7 @@ bestcalc_registerRecordDeviceDriver(pdbbase)
 ## Load record instances
 dbLoadRecords("../../db/bestcalc.db","user=softioc,P=XF:16IDB-CT{Best}")
 
+< /epics/common/xf16idc-ioc1-netsetup.cmd
 iocInit()
 
 ## Start any sequence programs

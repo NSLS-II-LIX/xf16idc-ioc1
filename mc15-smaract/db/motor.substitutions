@@ -5,8 +5,8 @@ file "db/motor.db"
 # NOTE ---> 2 asyn ports: 1) lowel comms ("P0"), and 2) Motor Record ("motor")
 pattern
 { P,            M,                   MOTOR,   PORT, ADDR, DESC,           DTYP,      EGU,  MRES,   PREC }
-{"XF:16IDC-ES:Scan2", "{Ax:Gx}Mtr", "motor", "P0", 0,    "Scanning Stage Gx", asynMotor, "mm", "1e-6", 6    }
-{"XF:16IDC-ES:Scan2", "{Ax:Gz}Mtr", "motor", "P0", 1,    "Scanning Stage Gz", asynMotor, "mm", "1e-6", 6    }
-{"XF:16IDC-ES:Scan2", "{Ax:RX}Mtr", "motor", "P0", 2, "Scanning Stage Rotary", asynMotor, "deg", "1e-6", 6}
+{"XF:16IDC-ES:Scan2-Gonio", "{Ax:sZ}Mtr", "motor", "P0", 0,    "Scanning Stage Gx", asynMotor, "mm", "1e-6", 6    }
+{"XF:16IDC-ES:Scan2-Gonio", "{Ax:sX}Mtr", "motor", "P0", 1,    "Scanning Stage Gz", asynMotor, "mm", "1e-6", 6    }
+{"XF:16IDC-ES:Scan2-Gonio", "{Ax:RX}Mtr", "motor", "P0", 2, "Scanning Stage Rotary", asynMotor, "deg", "1e-6", 6}
 }
 

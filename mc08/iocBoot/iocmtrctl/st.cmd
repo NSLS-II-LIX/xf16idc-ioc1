@@ -4,13 +4,12 @@
 ## everywhere it appears in this file
 
 < envPaths
+< /epics/common/xf16idc-ioc1-netsetup.cmd
 
 cd ${TOP} #/iocBoot/${IOC}
 
 epicsEnvSet("ENGINEER", "LIX")
 epicsEnvSet("LOCATION", "XF:16{RG:C2}")
-epicsEnvSet("EPICS_CA_AUTO_ADDR_LIST", "NO")
-epicsEnvSet("EPICS_CA_ADDR_LIST", "10.16.0.255")
 epicsEnvSet("STREAM_PROTOCOL_PATH", "/usr/share/epics-pmacutil-dev/protocol")
 
 ## Register all support components
@@ -20,7 +19,7 @@ tpmac_registerRecordDeviceDriver(pdbbase)
 # pmacAsynIPConfigure() is a wrapper for drvAsynIPPort::drvAsynIPPortConfigure() and
 # pmacAsynIPPort::pmacAsynIPPortConfigureEos().
 # See pmacAsynIPPort.c
-pmacAsynIPConfigure("P0","10.16.2.88:1025")
+pmacAsynIPConfigure("P0","xf16idc-mc8.nsls2.bnl.local:1025")
 
 # WARNING: a trace-mask of containing 0x10 will TRACE_FLOW (v. noisy!!)
 #asynSetTraceMask("P0",-1,0x9)

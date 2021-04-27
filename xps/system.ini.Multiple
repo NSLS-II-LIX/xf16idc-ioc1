@@ -1,0 +1,48 @@
+[GENERAL]
+BootScriptFileName = 
+BootScriptArguments = 
+ 
+[GROUPS]
+SingleAxisInUse = 
+SpindleInUse = 
+XYInUse = 
+XYZInUse = 
+MultipleAxesInUse =  M
+ 
+[M]
+PositionerNumber = 3
+PositionerInUse = Y,X,RY
+InitializationAndHomeSearchSequence = OneAfterAnother
+ 
+[M.Y]
+PlugNumber = 1
+StageName = GTS30V@XPS-DRV01
+;--- Time flasher filter 
+TimeFlasherBaseFrequency = 40e6
+;--- CIE08CompensatedPCO mode
+CIE08CompensatedPCOMode = Disabled 	; Enabled or Disabled
+;CIE08CompensatedPCOMaximumDataNumber = 1000000	; Value <= 1000000
+;--- Secondary positioner 
+SecondaryPositionerGantry = Disabled
+ 
+[M.X]
+PlugNumber = 2
+StageName = VP-25XA@XPS-DRV01
+;--- Time flasher filter 
+TimeFlasherBaseFrequency = 40e6
+;--- CIE08CompensatedPCO mode
+CIE08CompensatedPCOMode = Disabled 	; Enabled or Disabled
+;CIE08CompensatedPCOMaximumDataNumber = 1000000	; Value <= 1000000
+;--- Secondary positioner 
+SecondaryPositionerGantry = Disabled
+ 
+[M.RY]
+PlugNumber = 3
+StageName = URS50BCC@XPS-DRV01
+;--- Time flasher filter 
+TimeFlasherBaseFrequency = 40e6
+;--- CIE08CompensatedPCO mode
+CIE08CompensatedPCOMode = Disabled 	; Enabled or Disabled
+;CIE08CompensatedPCOMaximumDataNumber = 1000000	; Value <= 1000000
+;--- Secondary positioner 
+SecondaryPositionerGantry = Disabled

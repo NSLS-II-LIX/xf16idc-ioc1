@@ -2,10 +2,10 @@ file "db/motorstatus.db"
 {
 pattern
 {SYS,                  DEV,                 PORT,  AXIS }
-{"XF:16IDC-ES:InAir",  "{Slt:G2-Ax:X}",     "P0",  1    }
-{"XF:16IDC-ES:InAir",  "{Slt:G2-Ax:dX}",    "P0",  2    }
-{"XF:16IDC-ES:InAir",  "{Slt:G2-Ax:Y}",     "P0",  3    }
-{"XF:16IDC-ES:InAir",  "{Slt:G2-Ax:dY}",    "P0",  4    }
+{"XF:16IDC-OP",  "{Slt:G2-Ax:X}",     "P0",  1    }
+{"XF:16IDC-OP",  "{Slt:G2-Ax:dX}",    "P0",  2    }
+{"XF:16IDC-OP",  "{Slt:G2-Ax:Y}",     "P0",  3    }
+{"XF:16IDC-OP",  "{Slt:G2-Ax:dY}",    "P0",  4    }
 {"XF:16IDC-ES",        "{BS:SAXS-Ax:X}",    "P0",  5    }
 {"XF:16IDC-ES",        "{BS:SAXS-Ax:Y}",    "P0",  6    }
 }

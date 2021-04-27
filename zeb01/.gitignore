@@ -1,0 +1,18 @@
+syntax: glob
+
+as/*
+O.*
+bin/*
+db/*
+dbd/*
+lib/*
+envPaths
+.viminfo
+
+*~
+*.swp
+syntax: glob
+*~
+.hgignore
+.hg/
+records.dbl

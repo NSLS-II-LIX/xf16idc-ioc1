@@ -2,12 +2,13 @@
 
 #errlogInit(5000)
 < envPaths
+< /epics/common/xf16idc-ioc1-netsetup.cmd
 # Tell EPICS all about the record types, device-support modules, drivers,
 # etc. in this build from CARS
 dbLoadDatabase("$(TOP)/dbd/WithAsyn.dbd")
 WithAsyn_registerRecordDeviceDriver(pdbbase)
 
-drvAsynIPPortConfigure("serial1", "10.16.2.92:5000",0,0,0)
+drvAsynIPPortConfigure("serial1", "xf16idc-mc-mcb4b1.nsls2.bnl.local:5000",0,0,0)
 asynOctetSetInputEos("serial1",0,"\r")
 asynOctetSetOutputEos("serial1",0,"\r")
 #asynSetTraceIOMask("serial1", 0, 2)

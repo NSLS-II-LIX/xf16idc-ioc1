@@ -1,0 +1,18 @@
+syntax: glob
+*~
+*.o
+*.d
+*.log
+*.dbl
+db/
+dbd/
+O.*
+envPaths
+bin/
+lib/
+as/
+autosave/
+/pmc/
+.hgignore
+.hg/
+

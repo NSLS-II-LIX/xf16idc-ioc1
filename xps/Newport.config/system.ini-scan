@@ -1,0 +1,59 @@
+[GENERAL]
+BootScriptFileName = 
+BootScriptArguments = 
+ 
+[GROUPS]
+SingleAxisInUse = 
+SpindleInUse = 
+XYInUse = 
+XYZInUse = 
+MultipleAxesInUse =  scan
+ 
+[scan]
+PositionerNumber = 4
+PositionerInUse = Y,X,rY,Z
+InitializationAndHomeSearchSequence = OneAfterAnother
+ 
+[scan.Y]
+PlugNumber = 1
+StageName = GTS30V@XPS-DRV01
+;--- Time flasher filter 
+TimeFlasherBaseFrequency = 40e6
+;--- CIE08CompensatedPCO mode
+CIE08CompensatedPCOMode = Disabled 	; Enabled or Disabled
+;CIE08CompensatedPCOMaximumDataNumber = 1000000	; Value <= 1000000
+;--- Secondary positioner 
+SecondaryPositionerGantry = Disabled
+ 
+[scan.X]
+PlugNumber = 2
+StageName = VP-25XA@XPS-DRV01
+;--- Time flasher filter 
+TimeFlasherBaseFrequency = 40e6
+;--- CIE08CompensatedPCO mode
+CIE08CompensatedPCOMode = Disabled 	; Enabled or Disabled
+;CIE08CompensatedPCOMaximumDataNumber = 1000000	; Value <= 1000000
+;--- Secondary positioner 
+SecondaryPositionerGantry = Disabled
+ 
+[scan.rY]
+PlugNumber = 3
+StageName = URS75BCC@XPS-DRV01
+;--- Time flasher filter 
+TimeFlasherBaseFrequency = 40e6
+;--- CIE08CompensatedPCO mode
+CIE08CompensatedPCOMode = Disabled 	; Enabled or Disabled
+;CIE08CompensatedPCOMaximumDataNumber = 1000000	; Value <= 1000000
+;--- Secondary positioner 
+SecondaryPositionerGantry = Disabled
+ 
+[scan.Z]
+PlugNumber = 4
+StageName = TRA12PPD@XPS-DRV01
+;--- Time flasher filter 
+TimeFlasherBaseFrequency = 40e6
+;--- CIE08CompensatedPCO mode
+CIE08CompensatedPCOMode = Disabled 	; Enabled or Disabled
+;CIE08CompensatedPCOMaximumDataNumber = 1000000	; Value <= 1000000
+;--- Secondary positioner 
+SecondaryPositionerGantry = Disabled

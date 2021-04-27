@@ -1,0 +1,20 @@
+file "$(MOTOR)/db/basic_asyn_motor.db"
+{
+pattern
+{P,                   N,  M,          DTYP,         PORT,  ADDR,  DESC,   EGU,  DIR,  VELO,  VBAS,  ACCL,  BDST,  BVEL,  BACC,  MRES,         PREC,  DHLM,  DLLM,  INIT}
+{"XF:16IDC-ES:Scan2", 1, "{Ax:Y}Mtr",  "asynMotor", XPS1,    0,  "scanY",      mm,  Pos,    1.,   1,   0.5,     0,    1,   .2,   0.0001,    4,    30.,     0., ""}
+{"XF:16IDC-ES:Scan2", 2, "{Ax:X}Mtr",  "asynMotor", XPS1,    1,  "scanX",      mm,  Pos,    5.,   1,   0.5,     0,    1,   .2,   0.0001,    4,    12.4,    -12.4, ""}
+{"XF:16IDC-ES:Scan2", 3, "{Ax:RY}Mtr", "asynMotor", XPS1,    2,  "theta",     deg,  Pos,   20.,   1,   0.5,     0,    1,   .2,   0.0005,    4,   150.0,   -150.0, ""}
+{"XF:16IDC-ES:Scan2", 4, "{Ax:X1}Mtr",  "asynMotor", XPS1,    3,  "scanX1",      mm,  Neg,    1.,   1,   0.5,     0,    1,   .2,   0.001,    4,    50.0,     -50.0, ""}
+{"XF:16IDC-ES:Scan2", 5, "{Ax:Y1}Mtr",  "asynMotor", XPS1,    4,  "scanY1",      mm,  Neg,    1.,   1,   0.5,     0,    1,   .2,   0.0001,    4,     2.4,     -2.4, ""}
+}
+file "$(MOTOR)/db/XPS_extra.db"
+{
+pattern
+{P,     R,  PORT,  ADDR}
+{"XF:16IDC-ES:Scan2",  "{Ax:Y1}Mtr",  XPS1,   0}
+{"XF:16IDC-ES:Scan2",  "{Ax:X}Mtr",  XPS1,   1}
+{"XF:16IDC-ES:Scan2",  "{Ax:RY}Mtr", XPS1,   2}
+{"XF:16IDC-ES:Scan2",  "{Ax:X1}Mtr",  XPS1,   3}
+{"XF:16IDC-ES:Scan2",  "{Ax:Y1}Mtr",  XPS1,   4}
+}

@@ -1,4 +1,4 @@
-# autosave R5.3	Automatically generated - DO NOT MODIFY - 190131-154826
+# autosave R5.3	Automatically generated - DO NOT MODIFY - 210427-084609
 XF:16IDB-OP{Fltr:Atn-Ax:X1}Mode:PostHome-Sel.VAL 0
 XF:16IDB-OP{Fltr:Atn-Ax:X2}Mode:PostHome-Sel.VAL 0
 XF:16IDB-OP{Fltr:Atn-Ax:X3}Mode:PostHome-Sel.VAL 0
@@ -35,7 +35,7 @@ XF:16IDB-OP{Fltr:Atn-Ax:X1}Mtr.PREC 4
 XF:16IDB-OP{Fltr:Atn-Ax:X1}Mtr.DISA 0
 XF:16IDB-OP{Fltr:Atn-Ax:X1}Mtr.DISP 0
 XF:16IDB-OP{Fltr:Atn-Ax:X1}Mtr.FOFF 0
-XF:16IDB-OP{Fltr:Atn-Ax:X1}Mtr.OFF -5.1948
+XF:16IDB-OP{Fltr:Atn-Ax:X1}Mtr.OFF 0
 XF:16IDB-OP{Fltr:Atn-Ax:X1}Mtr.FRAC 1
 XF:16IDB-OP{Fltr:Atn-Ax:X1}Mtr.OMSL 0
 XF:16IDB-OP{Fltr:Atn-Ax:X1}Mtr.JVEL 0
@@ -49,7 +49,7 @@ XF:16IDB-OP{Fltr:Atn-Ax:X1}Mtr.NTMF 2
 XF:16IDB-OP{Fltr:Atn-Ax:X2}Mtr.DIR 0
 XF:16IDB-OP{Fltr:Atn-Ax:X2}Mtr.DHLM 0
 XF:16IDB-OP{Fltr:Atn-Ax:X2}Mtr.DLLM 0
-XF:16IDB-OP{Fltr:Atn-Ax:X2}Mtr.TWV 0.1
+XF:16IDB-OP{Fltr:Atn-Ax:X2}Mtr.TWV 0
 XF:16IDB-OP{Fltr:Atn-Ax:X2}Mtr.SREV 200
 XF:16IDB-OP{Fltr:Atn-Ax:X2}Mtr.MRES 0.0052
 XF:16IDB-OP{Fltr:Atn-Ax:X2}Mtr.ERES 0.0052
@@ -73,7 +73,7 @@ XF:16IDB-OP{Fltr:Atn-Ax:X2}Mtr.PREC 4
 XF:16IDB-OP{Fltr:Atn-Ax:X2}Mtr.DISA 0
 XF:16IDB-OP{Fltr:Atn-Ax:X2}Mtr.DISP 0
 XF:16IDB-OP{Fltr:Atn-Ax:X2}Mtr.FOFF 0
-XF:16IDB-OP{Fltr:Atn-Ax:X2}Mtr.OFF -19.617
+XF:16IDB-OP{Fltr:Atn-Ax:X2}Mtr.OFF 0
 XF:16IDB-OP{Fltr:Atn-Ax:X2}Mtr.FRAC 1
 XF:16IDB-OP{Fltr:Atn-Ax:X2}Mtr.OMSL 0
 XF:16IDB-OP{Fltr:Atn-Ax:X2}Mtr.JVEL 0
@@ -85,9 +85,9 @@ XF:16IDB-OP{Fltr:Atn-Ax:X2}Mtr.HVEL 0
 XF:16IDB-OP{Fltr:Atn-Ax:X2}Mtr.NTM 1
 XF:16IDB-OP{Fltr:Atn-Ax:X2}Mtr.NTMF 2
 XF:16IDB-OP{Fltr:Atn-Ax:X3}Mtr.DIR 0
-XF:16IDB-OP{Fltr:Atn-Ax:X3}Mtr.DHLM -1.4004
-XF:16IDB-OP{Fltr:Atn-Ax:X3}Mtr.DLLM -28.4004
-XF:16IDB-OP{Fltr:Atn-Ax:X3}Mtr.TWV 0.2
+XF:16IDB-OP{Fltr:Atn-Ax:X3}Mtr.DHLM 0
+XF:16IDB-OP{Fltr:Atn-Ax:X3}Mtr.DLLM 0
+XF:16IDB-OP{Fltr:Atn-Ax:X3}Mtr.TWV 0
 XF:16IDB-OP{Fltr:Atn-Ax:X3}Mtr.SREV 200
 XF:16IDB-OP{Fltr:Atn-Ax:X3}Mtr.MRES 0.0052
 XF:16IDB-OP{Fltr:Atn-Ax:X3}Mtr.ERES 0.0052
@@ -111,7 +111,7 @@ XF:16IDB-OP{Fltr:Atn-Ax:X3}Mtr.PREC 4
 XF:16IDB-OP{Fltr:Atn-Ax:X3}Mtr.DISA 0
 XF:16IDB-OP{Fltr:Atn-Ax:X3}Mtr.DISP 0
 XF:16IDB-OP{Fltr:Atn-Ax:X3}Mtr.FOFF 0
-XF:16IDB-OP{Fltr:Atn-Ax:X3}Mtr.OFF 16.4004
+XF:16IDB-OP{Fltr:Atn-Ax:X3}Mtr.OFF 0
 XF:16IDB-OP{Fltr:Atn-Ax:X3}Mtr.FRAC 1
 XF:16IDB-OP{Fltr:Atn-Ax:X3}Mtr.OMSL 0
 XF:16IDB-OP{Fltr:Atn-Ax:X3}Mtr.JVEL 0

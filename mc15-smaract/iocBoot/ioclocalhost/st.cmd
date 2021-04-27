@@ -4,17 +4,16 @@
 ## everywhere it appears in this file
 
 < envPaths
+< /epics/common/xf16idc-ioc1-netsetup.cmd
 
 cd ${TOP}
 
-epicsEnvSet("EPICS_CA_AUTO_ADDR_LIST", "NO")
-epicsEnvSet("EPICS_CA_ADDR_LIST", "10.16.0.255")
 
 ## Register all support components
 dbLoadDatabase("dbd/smaract.dbd",0,0)
 smaract_registerRecordDeviceDriver(pdbbase) 
 
-drvAsynIPPortConfigure("P0","10.16.2.98:5000")
+drvAsynIPPortConfigure("P0","xf16idc-mc15-smaract.nsls2.bnl.local:5000")
 
 smarActMCSCreateController("motor", "P0", 3, 0.1, 1.0)
 smarActMCSCreateAxis("motor", 0, 0)
